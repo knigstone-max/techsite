@@ -1,0 +1,100 @@
+{
+  "site_url": "https://USERNAME.github.io/REPO",
+  "base_path": "/",
+  "default_lang": "he",
+  "categories": [
+    {
+      "slug": "smartphones-gadgets",
+      "he": "סמארטפונים וגאדג'טים",
+      "en": "Smartphones & Gadgets"
+    },
+    {
+      "slug": "home-appliances",
+      "he": "מוצרי חשמל לבית",
+      "en": "Home Appliances"
+    },
+    {
+      "slug": "tech-news",
+      "he": "חדשות טכנולוגיה",
+      "en": "Tech News"
+    },
+    {
+      "slug": "reviews",
+      "he": "ביקורות",
+      "en": "Reviews"
+    },
+    {
+      "slug": "tips",
+      "he": "טיפים",
+      "en": "Tips"
+    }
+  ],
+  "strings": {
+    "he": {
+      "site_name": "טכנו-בית",
+      "tagline": "חדשות, ביקורות וטיפים על טכנולוגיה, גאדג'טים ומוצרי חשמל",
+      "home": "בית",
+      "archive": "ארכיון",
+      "about": "אודות",
+      "categories": "קטגוריות",
+      "latest": "פוסטים אחרונים",
+      "read_more": "להמשך קריאה",
+      "sources": "מקורות",
+      "no_posts": "עדיין אין כאן פוסטים.",
+      "switch": "English",
+      "all_posts": "כל הפוסטים",
+      "not_found_title": "הדף לא נמצא",
+      "not_found_body": "הדף שחיפשת לא קיים או שהועבר.",
+      "back_home": "חזרה לדף הבית",
+      "rss": "RSS",
+      "published": "פורסם",
+      "placeholder": "פוסט לדוגמה",
+      "account": "החשבון שלי",
+      "login": "התחברות",
+      "theme": "מצב תצוגה",
+      "menu": "תפריט",
+      "skip": "דלג לתוכן",
+      "top_story": "הסיפור המרכזי",
+      "comments": "תגובות",
+      "favorite": "שמירה למועדפים",
+      "login_title": "התחברות / הרשמה",
+      "account_title": "החשבון שלי",
+      "home_label": "דף הבית"
+    },
+    "en": {
+      "site_name": "TechnoBayit",
+      "tagline": "News, reviews and tips on tech, gadgets and home appliances",
+      "home": "Home",
+      "archive": "Archive",
+      "about": "About",
+      "categories": "Categories",
+      "latest": "Latest posts",
+      "read_more": "Read more",
+      "sources": "Sources",
+      "no_posts": "No posts here yet.",
+      "switch": "עברית",
+      "all_posts": "All posts",
+      "not_found_title": "Page not found",
+      "not_found_body": "The page you're looking for doesn't exist or has moved.",
+      "back_home": "Back to home",
+      "rss": "RSS",
+      "published": "Published",
+      "placeholder": "Sample post",
+      "account": "My account",
+      "login": "Sign in",
+      "theme": "Theme",
+      "menu": "Menu",
+      "skip": "Skip to content",
+      "top_story": "Top story",
+      "comments": "Comments",
+      "favorite": "Save to favorites",
+      "login_title": "Sign in / Sign up",
+      "account_title": "My account",
+      "home_label": "Home"
+    }
+  },
+  "about": {
+    "he": "<p>טכנו-בית הוא אתר עצמאי ודו-לשוני על טכנולוגיה: סמארטפונים, גאדג'טים, מוצרי חשמל לבית וחדשות מהתעשייה.</p><p>כל פוסט כאן מבוסס על מקורות שמופיעים בסופו. אנחנו מסכמים בשפה פשוטה, בלי הגזמות, ומציינים מתי משהו עדיין לא אושר רשמית.</p><p>האתר סטטי ומתארח בחינם. אין פרסומות ואין מעקב. חשבון משתמש הוא אופציונלי: הוא משמש רק לשמירת מועדפים ולכתיבת תגובות.</p>",
+    "en": "<p>TechnoBayit is an independent, bilingual site about technology: smartphones, gadgets, home appliances and industry news.</p><p>Every post lists its sources at the end. We summarize in plain language, skip the hype, and say so when something isn't officially confirmed yet.</p><p>The site is static and hosted for free. No ads, no tracking. Accounts are optional and only used for saving favorites and posting comments.</p>"
+  }
+}

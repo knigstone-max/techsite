@@ -1,0 +1,58 @@
+# Build with build.py (Python stdlib only) and deploy dist/ to GitHub Pages. Free for public repos.
+# One-time setup: repo Settings -> Pages -> Source: "GitHub Actions".
+# Optional: repo Settings -> Secrets and variables -> Actions -> Variables:
+#   SUPABASE_URL, SUPABASE_ANON_KEY  (public anon key only; never the service_role key)
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: "30 4 * * *"   # daily rebuild (keeps dated pages/feeds fresh)
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - id: pages
+        uses: actions/configure-pages@v5
+      - name: Write public client config (optional)
+        if: ${{ vars.SUPABASE_URL != '' && vars.SUPABASE_ANON_KEY != '' }}
+        run: |
+          cat > static/config.js <<CFG
+          window.SITE_CONFIG = { SUPABASE_URL: "${{ vars.SUPABASE_URL }}", SUPABASE_ANON_KEY: "${{ vars.SUPABASE_ANON_KEY }}" };
+          CFG
+      - name: Build
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: python3 build.py
+      - name: Check internal links
+        run: python3 scripts/check_links.py dist "${{ steps.pages.outputs.base_path }}"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

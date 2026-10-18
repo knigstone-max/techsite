@@ -1,0 +1,473 @@
+#!/usr/bin/env python3
+"""Static site generator for the bilingual tech site. Python 3 stdlib only.
+
+Usage:  python3 build.py
+Env overrides:
+  SITE_URL   absolute site URL used in sitemap/RSS/canonical (e.g. https://user.github.io/repo)
+  BASE_PATH  URL path prefix where the site is served (e.g. /repo/ for GitHub project pages, / for pages.dev)
+Output: ./dist
+"""
+import html, json, os, re, shutil, sys
+from datetime import datetime, timezone
+from email.utils import format_datetime
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+CONTENT = ROOT / "content"
+STATIC = ROOT / "static"
+DIST = ROOT / "dist"
+CFG = json.loads((ROOT / "site.json").read_text(encoding="utf-8"))
+SITE_URL = os.environ.get("SITE_URL", CFG["site_url"]).rstrip("/")
+BASE = os.environ.get("BASE_PATH", CFG["base_path"])
+BASE = "/" + BASE.strip("/") + "/" if BASE.strip("/") else "/"
+LANGS = ["he", "en"]
+DIR = {"he": "rtl", "en": "ltr"}
+OG_LOCALE = {"he": "he_IL", "en": "en_US"}
+CATS = CFG["categories"]
+CAT_SLUGS = {c["slug"] for c in CATS}
+REQUIRED = ["title", "date", "slug", "category", "excerpt"]
+esc = lambda s: html.escape(str(s), quote=True)
+
+
+# ---------- paths ----------
+def lang_prefix(lang):
+    return "" if lang == CFG["default_lang"] else f"{lang}/"
+
+def rel(lang, path=""):
+    """Site-relative path (no base), e.g. 'en/posts/x/'."""
+    return lang_prefix(lang) + path
+
+def url(lang, path=""):
+    return BASE + rel(lang, path)
+
+def abs_url(lang, path=""):
+    return SITE_URL + "/" + rel(lang, path)
+
+def asset(name):
+    return BASE + "assets/" + name
+
+
+# ---------- content parsing ----------
+def parse_frontmatter(text, fname):
+    m = re.match(r"^---\s*\n(.*?)\n---\s*\n(.*)$", text, re.S)
+    if not m:
+        sys.exit(f"ERROR {fname}: missing frontmatter (--- ... ---)")
+    meta, key = {}, None
+    for line in m.group(1).splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        li = re.match(r"^\s+-\s+(.*)$", line)
+        if li and key:
+            meta.setdefault(key, [])
+            if not isinstance(meta[key], list):
+                meta[key] = []
+            meta[key].append(li.group(1).strip().strip('"'))
+            continue
+        kv = re.match(r"^([A-Za-z_]+):\s*(.*)$", line)
+        if not kv:
+            sys.exit(f"ERROR {fname}: bad frontmatter line: {line!r}")
+        key, val = kv.group(1), kv.group(2).strip()
+        if val.startswith("[") and val.endswith("]"):
+            meta[key] = [v.strip().strip('"') for v in val[1:-1].split(",") if v.strip()]
+        elif val.lower() in ("true", "false"):
+            meta[key] = val.lower() == "true"
+        else:
+            meta[key] = val.strip('"')
+    return meta, m.group(2)
+
+def inline_md(s):
+    s = esc(s)
+    s = re.sub(r"`([^`]+)`", r"<code>\1</code>", s)
+    s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
+    s = re.sub(r"(?<!\*)\*(?!\*)(.+?)\*", r"<em>\1</em>", s)
+    def link(m):
+        href = m.group(2)
+        ext = href.startswith("http")
+        attrs = ' rel="noopener" target="_blank"' if ext else ""
+        return f'<a href="{href}"{attrs}>{m.group(1)}</a>'
+    s = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", link, s)
+    return s
+
+def md_to_html(md):
+    out, para, lst = [], [], None
+    def flush():
+        nonlocal para, lst
+        if para:
+            out.append("<p>" + inline_md(" ".join(para)) + "</p>"); para = []
+        if lst:
+            tag = lst[0]
+            out.append(f"<{tag}>" + "".join(f"<li>{inline_md(i)}</li>" for i in lst[1]) + f"</{tag}>")
+            lst = None
+    for line in md.splitlines():
+        s = line.strip()
+        if not s:
+            flush(); continue
+        h = re.match(r"^(#{2,4})\s+(.*)$", s)
+        ul = re.match(r"^[-*]\s+(.*)$", s)
+        ol = re.match(r"^\d+[.)]\s+(.*)$", s)
+        if h:
+            flush(); n = len(h.group(1)); out.append(f"<h{n}>{inline_md(h.group(2))}</h{n}>")
+        elif s.startswith(">"):
+            flush(); out.append(f"<blockquote><p>{inline_md(s.lstrip('> '))}</p></blockquote>")
+        elif ul or ol:
+            if para:
+                out.append("<p>" + inline_md(" ".join(para)) + "</p>"); para = []
+            tag = "ul" if ul else "ol"
+            if not lst or lst[0] != tag:
+                flush(); lst = (tag, [])
+            lst[1].append((ul or ol).group(1))
+        else:
+            if lst: flush()
+            para.append(s)
+    flush()
+    return "\n".join(out)
+
+def load_posts(lang):
+    posts = []
+    folder = CONTENT / lang
+    for f in sorted(folder.glob("*.md")):
+        meta, body = parse_frontmatter(f.read_text(encoding="utf-8"), f.name)
+        miss = [k for k in REQUIRED if not meta.get(k)]
+        if miss:
+            sys.exit(f"ERROR {lang}/{f.name}: missing {miss}")
+        if meta["category"] not in CAT_SLUGS:
+            sys.exit(f"ERROR {lang}/{f.name}: unknown category {meta['category']!r}; use one of {sorted(CAT_SLUGS)}")
+        if not re.fullmatch(r"[a-z0-9-]+", meta["slug"]):
+            sys.exit(f"ERROR {lang}/{f.name}: slug must be lowercase latin letters, digits, hyphens")
+        try:
+            meta["dt"] = datetime.fromisoformat(meta["date"]).replace(tzinfo=timezone.utc) \
+                if len(meta["date"]) == 10 else datetime.fromisoformat(meta["date"])
+            if meta["dt"].tzinfo is None:
+                meta["dt"] = meta["dt"].replace(tzinfo=timezone.utc)
+        except ValueError:
+            sys.exit(f"ERROR {lang}/{f.name}: date must be YYYY-MM-DD or ISO 8601")
+        if meta.get("draft") is True:
+            continue
+        src = meta.get("source_links", [])
+        meta["source_links"] = src if isinstance(src, list) else [src]
+        meta["html"] = md_to_html(body)
+        meta["lang"] = lang
+        posts.append(meta)
+    slugs = [p["slug"] for p in posts]
+    dup = {s for s in slugs if slugs.count(s) > 1}
+    if dup:
+        sys.exit(f"ERROR {lang}: duplicate slugs {dup}")
+    posts.sort(key=lambda p: p["dt"], reverse=True)
+    return posts
+
+
+# ---------- templates ----------
+def cat_name(slug, lang):
+    return next(c[lang] for c in CATS if c["slug"] == slug)
+
+def fmt_date(dt, lang):
+    if lang == "he":
+        return dt.strftime("%d.%m.%Y")
+    return dt.strftime("%b %-d, %Y")
+
+THEME_BOOT = ("(function(){try{var t=localStorage.getItem('theme');"
+              "if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}"
+              "document.documentElement.dataset.theme=t}catch(e){}})();")
+
+ICON_SUN = '<svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>'
+ICON_MOON = '<svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>'
+ICON_MENU = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>'
+ICON_USER = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>'
+
+def layout(lang, path, title, description, body, other_path, og_type="website", noindex=False, needs_auth=False):
+    """path / other_path: site-relative paths without lang prefix, e.g. 'posts/x/'."""
+    t = CFG["strings"][lang]
+    other = "en" if lang == "he" else "he"
+    full_title = f"{title} | {t['site_name']}" if title != t["site_name"] else title
+    nav = "".join(
+        f'<li><a href="{url(lang, "category/" + c["slug"] + "/")}">{esc(c[lang])}</a></li>' for c in CATS)
+    alt = "".join(
+        f'<link rel="alternate" hreflang="{l}" href="{abs_url(l, p)}">'
+        for l, p in ((lang, path), (other, other_path)))
+    alt += f'<link rel="alternate" hreflang="x-default" href="{abs_url(CFG["default_lang"], path if lang == CFG["default_lang"] else other_path)}">'
+    auth_js = f'<script src="{asset("config.js")}"></script>\n<script type="module" src="{asset("auth.js")}"></script>'
+    robots = '<meta name="robots" content="noindex">' if noindex else ""
+    return f"""<!doctype html>
+<html lang="{lang}" dir="{DIR[lang]}" data-base="{BASE}" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>{THEME_BOOT}</script>
+<title>{esc(full_title)}</title>
+<meta name="description" content="{esc(description)}">
+{robots}
+<link rel="canonical" href="{abs_url(lang, path)}">
+{alt}
+<meta property="og:type" content="{og_type}">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(description)}">
+<meta property="og:url" content="{abs_url(lang, path)}">
+<meta property="og:site_name" content="{esc(t['site_name'])}">
+<meta property="og:locale" content="{OG_LOCALE[lang]}">
+<meta property="og:locale:alternate" content="{OG_LOCALE[other]}">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d12">
+<link rel="alternate" type="application/rss+xml" title="{esc(t['site_name'])} RSS" href="{url(lang, 'feed.xml')}">
+<link rel="stylesheet" href="{asset('style.css')}">
+<link rel="icon" href="{asset('favicon.svg')}" type="image/svg+xml">
+<script src="{asset('main.js')}" defer></script>
+{auth_js}
+</head>
+<body>
+<a class="skip" href="#main">{esc(t['skip'])}</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <button class="icon-btn nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="{esc(t['menu'])}">{ICON_MENU}</button>
+    <a class="brand" href="{url(lang)}"><span class="brand-mark" aria-hidden="true"></span>{esc(t['site_name'])}</a>
+    <nav id="site-nav" class="site-nav" aria-label="{esc(t['categories'])}">
+      <ul>
+        {nav}
+        <li><a href="{url(lang, 'archive/')}">{esc(t['archive'])}</a></li>
+        <li><a href="{url(lang, 'about/')}">{esc(t['about'])}</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <a class="lang-switch" href="{url(other, other_path)}" hreflang="{other}" lang="{other}">{esc(t['switch'])}</a>
+      <button class="icon-btn theme-toggle" type="button" aria-label="{esc(t['theme'])}" title="{esc(t['theme'])}">{ICON_SUN}{ICON_MOON}</button>
+      <a class="icon-btn account-link" href="{url(lang, 'account/')}" aria-label="{esc(t['account'])}" title="{esc(t['account'])}" data-auth-link>{ICON_USER}</a>
+    </div>
+  </div>
+</header>
+<main id="main" class="wrap">
+{body}
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <div><a class="brand" href="{url(lang)}"><span class="brand-mark" aria-hidden="true"></span>{esc(t['site_name'])}</a><p>{esc(t['tagline'])}</p></div>
+    <ul class="footer-links">
+      <li><a href="{url(lang, 'archive/')}">{esc(t['archive'])}</a></li>
+      <li><a href="{url(lang, 'about/')}">{esc(t['about'])}</a></li>
+      <li><a href="{url(lang, 'feed.xml')}">{esc(t['rss'])}</a></li>
+      <li><a href="{url(other, other_path)}" hreflang="{other}" lang="{other}">{esc(t['switch'])}</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
+"""
+
+def thumb(p, lang, big=False):
+    # Image placeholder: CSS gradient per category, no stock images.
+    return f'<div class="thumb c-{p["category"]}{" thumb-big" if big else ""}" aria-hidden="true"><span>{esc(cat_name(p["category"], lang))}</span></div>'
+
+def meta_line(p, lang):
+    t = CFG["strings"][lang]
+    badge = f' <span class="badge">{esc(t["placeholder"])}</span>' if p.get("placeholder") else ""
+    return (f'<p class="meta"><a class="cat" href="{url(lang, "category/" + p["category"] + "/")}">{esc(cat_name(p["category"], lang))}</a>'
+            f'<time datetime="{p["dt"].date().isoformat()}">{fmt_date(p["dt"], lang)}</time>{badge}</p>')
+
+def card(p, lang):
+    href = url(lang, "posts/" + p["slug"] + "/")
+    return f"""<article class="card">
+  <a class="card-media" href="{href}" tabindex="-1" aria-hidden="true">{thumb(p, lang)}</a>
+  <div class="card-body">
+  {meta_line(p, lang)}
+  <h3><a href="{href}">{esc(p['title'])}</a></h3>
+  <p class="excerpt">{esc(p['excerpt'])}</p>
+  </div>
+</article>"""
+
+def hero(p, lang):
+    t = CFG["strings"][lang]
+    href = url(lang, "posts/" + p["slug"] + "/")
+    return f"""<article class="hero-story">
+  <a class="hero-media" href="{href}" tabindex="-1" aria-hidden="true">{thumb(p, lang, big=True)}</a>
+  <div class="hero-body">
+    <p class="kicker">{esc(t['top_story'])}</p>
+    {meta_line(p, lang)}
+    <h2><a href="{href}">{esc(p['title'])}</a></h2>
+    <p class="excerpt">{esc(p['excerpt'])}</p>
+    <a class="btn" href="{href}">{esc(t['read_more'])}</a>
+  </div>
+</article>"""
+
+def listing(posts, lang):
+    if not posts:
+        return f'<p class="empty">{esc(CFG["strings"][lang]["no_posts"])}</p>'
+    return '<div class="cards">' + "\n".join(card(p, lang) for p in posts) + "</div>"
+
+
+# ---------- writers ----------
+WRITTEN = []
+def write(lang, path, content):
+    out = DIST / rel(lang, path)
+    if path == "" or path.endswith("/"):
+        out = out / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(content, encoding="utf-8")
+    WRITTEN.append(out.relative_to(DIST).as_posix())
+
+def write_raw(relpath, content):
+    out = DIST / relpath
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(content, encoding="utf-8")
+    WRITTEN.append(relpath)
+
+def build_lang(lang, posts, other_slugs):
+    t = CFG["strings"][lang]
+    # home: hero story + latest grid + per-category rows
+    cat_blocks = []
+    for c in CATS:
+        cp = [p for p in posts if p["category"] == c["slug"]][:3]
+        if cp:
+            cat_blocks.append(f'<section class="cat-block"><h2 class="section-title"><a href="{url(lang, "category/" + c["slug"] + "/")}">{esc(c[lang])}</a></h2>{listing(cp, lang)}</section>')
+    chips = "".join(f'<li><a class="chip c-{c["slug"]}" href="{url(lang, "category/" + c["slug"] + "/")}">{esc(c[lang])}</a></li>' for c in CATS)
+    top = hero(posts[0], lang) if posts else f'<section class="intro"><h1>{esc(t["site_name"])}</h1><p>{esc(t["tagline"])}</p></section>'
+    rest = posts[1:13]
+    latest = f'<section><h2 class="section-title">{esc(t["latest"])}</h2>{listing(rest, lang)}</section>' if rest else ""
+    home = f"""<h1 class="visually-hidden">{esc(t['site_name'])}: {esc(t['tagline'])}</h1>
+<nav class="chips" aria-label="{esc(t['categories'])}"><ul>{chips}</ul></nav>
+{top}
+{latest}
+{''.join(cat_blocks) if len(posts) > 3 else ''}
+<p class="more"><a class="btn btn-ghost" href="{url(lang, 'archive/')}">{esc(t['all_posts'])}</a></p>"""
+    write(lang, "", layout(lang, "", t["site_name"], t["tagline"], home, ""))
+
+    # categories
+    for c in CATS:
+        p = "category/" + c["slug"] + "/"
+        cp = [x for x in posts if x["category"] == c["slug"]]
+        body = f'<header class="page-head c-{c["slug"]}"><p class="kicker">{esc(t["categories"])}</p><h1>{esc(c[lang])}</h1></header>{listing(cp, lang)}'
+        write(lang, p, layout(lang, p, c[lang], f"{c[lang]} | {t['tagline']}", body, p))
+
+    # archive grouped by month
+    groups, cur = [], None
+    for x in posts:
+        k = x["dt"].strftime("%Y-%m")
+        if k != cur:
+            groups.append((k, [])); cur = k
+        groups[-1][1].append(x)
+    arch = "".join(
+        f'<section><h2>{k}</h2><ul class="archive">' + "".join(
+            f'<li><time datetime="{x["dt"].date().isoformat()}">{fmt_date(x["dt"], lang)}</time> <a href="{url(lang, "posts/" + x["slug"] + "/")}">{esc(x["title"])}</a> <span class="cat-label">{esc(cat_name(x["category"], lang))}</span></li>'
+            for x in items) + "</ul></section>" for k, items in groups) or f'<p>{esc(t["no_posts"])}</p>'
+    write(lang, "archive/", layout(lang, "archive/", t["archive"], t["all_posts"], f'<header class="page-head"><h1>{esc(t["archive"])}</h1></header>{arch}', "archive/"))
+
+    # about
+    write(lang, "about/", layout(lang, "about/", t["about"], t["tagline"],
+                                 f'<article class="prose"><h1>{esc(t["about"])}</h1>{CFG["about"][lang]}</article>', "about/"))
+
+    # login + account (filled in client-side by assets/auth.js; graceful when no keys)
+    write(lang, "login/", layout(lang, "login/", t["login_title"], t["login_title"],
+        f'<section class="auth-page prose"><h1>{esc(t["login_title"])}</h1><div id="auth-root" data-view="login"><noscript>JavaScript</noscript></div></section>',
+        "login/", noindex=True))
+    write(lang, "account/", layout(lang, "account/", t["account_title"], t["account_title"],
+        f'<section class="auth-page prose"><h1>{esc(t["account_title"])}</h1><div id="auth-root" data-view="account"><noscript>JavaScript</noscript></div></section>',
+        "account/", noindex=True))
+
+    # posts
+    for x in posts:
+        p = "posts/" + x["slug"] + "/"
+        other_p = p if x["slug"] in other_slugs else ""
+        src = ""
+        if x["source_links"]:
+            src = f'<section class="sources"><h2>{esc(t["sources"])}</h2><ul>' + "".join(
+                f'<li><a href="{esc(s)}" rel="noopener" target="_blank">{esc(s)}</a></li>' for s in x["source_links"]) + "</ul></section>"
+        badge = f' <span class="badge">{esc(t["placeholder"])}</span>' if x.get("placeholder") else ""
+        related = [r for r in posts if r["category"] == x["category"] and r["slug"] != x["slug"]][:3]
+        rel_html = f'<section class="related"><h2 class="section-title">{esc(cat_name(x["category"], lang))}</h2>{listing(related, lang)}</section>' if related else ""
+        body = f"""<article class="post" data-slug="{esc(x['slug'])}" data-title="{esc(x['title'])}">
+<header class="post-head">
+<p class="meta"><a class="cat" href="{url(lang, 'category/' + x['category'] + '/')}">{esc(cat_name(x['category'], lang))}</a><span>{esc(t['published'])} <time datetime="{x['dt'].isoformat()}">{fmt_date(x['dt'], lang)}</time></span>{badge}</p>
+<h1>{esc(x['title'])}</h1>
+<p class="lead">{esc(x['excerpt'])}</p>
+<div class="post-actions" id="fav-root" hidden></div>
+</header>
+{thumb(x, lang, big=True)}
+<div class="prose">
+{x['html']}
+{src}
+</div>
+<section class="comments prose" id="comments-root" aria-label="{esc(t['comments'])}" hidden></section>
+</article>
+{rel_html}"""
+        write(lang, p, layout(lang, p, x["title"], x["excerpt"], body, other_p, og_type="article"))
+
+    # RSS
+    items = "".join(f"""
+  <item>
+    <title>{esc(x['title'])}</title>
+    <link>{abs_url(lang, 'posts/' + x['slug'] + '/')}</link>
+    <guid isPermaLink="true">{abs_url(lang, 'posts/' + x['slug'] + '/')}</guid>
+    <pubDate>{format_datetime(x['dt'])}</pubDate>
+    <category>{esc(cat_name(x['category'], lang))}</category>
+    <description>{esc(x['excerpt'])}</description>
+  </item>""" for x in posts[:30])
+    rss = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>{esc(t['site_name'])}</title>
+  <link>{abs_url(lang)}</link>
+  <description>{esc(t['tagline'])}</description>
+  <language>{'he-IL' if lang == 'he' else 'en-US'}</language>
+  <atom:link href="{abs_url(lang, 'feed.xml')}" rel="self" type="application/rss+xml"/>
+  <lastBuildDate>{format_datetime(datetime.now(timezone.utc))}</lastBuildDate>{items}
+</channel>
+</rss>
+"""
+    write_raw(rel(lang, "feed.xml"), rss)
+
+def build_404():
+    blocks = []
+    for lang in LANGS:
+        t = CFG["strings"][lang]
+        blocks.append(f'<section lang="{lang}" dir="{DIR[lang]}" class="nf"><p class="kicker">404</p><h1>{esc(t["not_found_title"])}</h1><p>{esc(t["not_found_body"])}</p><p><a class="btn" href="{url(lang)}">{esc(t["back_home"])}</a></p></section>')
+    t = CFG["strings"]["he"]
+    page = f"""<!doctype html>
+<html lang="he" dir="rtl" data-theme="light">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<script>{THEME_BOOT}</script>
+<title>404 | {esc(t['site_name'])}</title><meta name="robots" content="noindex">
+<link rel="stylesheet" href="{asset('style.css')}"></head>
+<body><main id="main" class="wrap nf-wrap">{''.join(blocks)}</main></body></html>
+"""
+    write_raw("404.html", page)
+
+def build_sitemap(all_posts):
+    entries = []
+    pages = ["", "archive/", "about/"] + ["category/" + c["slug"] + "/" for c in CATS]
+    for lang in LANGS:
+        other = "en" if lang == "he" else "he"
+        for p in pages:
+            entries.append((lang, p, p, other, None))
+        other_slugs = {x["slug"] for x in all_posts[other]}
+        for x in all_posts[lang]:
+            p = "posts/" + x["slug"] + "/"
+            entries.append((lang, p, p if x["slug"] in other_slugs else None, other, x["dt"].date().isoformat()))
+    xml = ['<?xml version="1.0" encoding="UTF-8"?>',
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
+    for lang, p, op, other, lastmod in entries:
+        xml.append(f"  <url><loc>{abs_url(lang, p)}</loc>")
+        if lastmod:
+            xml.append(f"    <lastmod>{lastmod}</lastmod>")
+        xml.append(f'    <xhtml:link rel="alternate" hreflang="{lang}" href="{abs_url(lang, p)}"/>')
+        if op is not None:
+            xml.append(f'    <xhtml:link rel="alternate" hreflang="{other}" href="{abs_url(other, op)}"/>')
+        xml.append("  </url>")
+    xml.append("</urlset>\n")
+    write_raw("sitemap.xml", "\n".join(xml))
+    write_raw("robots.txt", f"User-agent: *\nAllow: /\nDisallow: {BASE}login/\nDisallow: {BASE}account/\nDisallow: {BASE}en/login/\nDisallow: {BASE}en/account/\nSitemap: {SITE_URL}/sitemap.xml\n")
+
+def main():
+    if DIST.exists():
+        shutil.rmtree(DIST)
+    DIST.mkdir()
+    shutil.copytree(STATIC, DIST / "assets")
+    (DIST / ".nojekyll").write_text("")
+    posts = {l: load_posts(l) for l in LANGS}
+    for lang in LANGS:
+        other = "en" if lang == "he" else "he"
+        build_lang(lang, posts[lang], {x["slug"] for x in posts[other]})
+    build_404()
+    build_sitemap(posts)
+    print(f"Built {len(WRITTEN)} files into {DIST} (base_path={BASE}, site_url={SITE_URL})")
+    for l in LANGS:
+        print(f"  {l}: {len(posts[l])} posts")
+
+if __name__ == "__main__":
+    main()
