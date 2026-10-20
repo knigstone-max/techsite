@@ -6,27 +6,82 @@
     {
       "slug": "smartphones-gadgets",
       "he": "סמארטפונים וגאדג'טים",
-      "en": "Smartphones & Gadgets"
+      "en": "Smartphones & Gadgets",
+      "image": "img/categories/smartphones-gadgets.webp",
+      "image_credit": "Petar Milošević, CC BY-SA 4.0, via Wikimedia Commons",
+      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Xiaomi_Redmi_Note_10_Pro.jpg",
+      "desc": {
+        "he": "טלפונים, שעונים, אוזניות וכל מה שנכנס לכיס",
+        "en": "Phones, watches, earbuds and everything that fits in a pocket"
+      },
+      "alt": {
+        "he": "גב של סמארטפון עם מודול מצלמות",
+        "en": "Back of a smartphone with its camera module"
+      }
     },
     {
       "slug": "home-appliances",
       "he": "מוצרי חשמל לבית",
-      "en": "Home Appliances"
+      "en": "Home Appliances",
+      "image": "img/categories/home-appliances.webp",
+      "image_credit": "ajay_suresh, CC BY 2.0, via Wikimedia Commons",
+      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Robot_Vacuum_-_Charging_(50841204983).jpg",
+      "desc": {
+        "he": "שואבים, מטהרים, מטבח ובית חכם",
+        "en": "Vacuums, purifiers, kitchen and smart home"
+      },
+      "alt": {
+        "he": "שואב אבק רובוטי בעמדת הטעינה",
+        "en": "A robot vacuum on its charging dock"
+      }
     },
     {
       "slug": "tech-news",
       "he": "חדשות טכנולוגיה",
-      "en": "Tech News"
+      "en": "Tech News",
+      "image": "img/categories/tech-news.webp",
+      "image_credit": "Smial, Free Art License 1.3, via Wikimedia Commons",
+      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Leiterbahnen_IMGP2839_smial_wp.jpg",
+      "desc": {
+        "he": "מה קורה בתעשייה, השקות ומחירים",
+        "en": "Industry news, launches and prices"
+      },
+      "alt": {
+        "he": "מסלולי נחושת על לוח מעגלים ירוק",
+        "en": "Copper traces on a green circuit board"
+      }
     },
     {
       "slug": "reviews",
       "he": "ביקורות",
-      "en": "Reviews"
+      "en": "Reviews",
+      "image": "img/categories/reviews.webp",
+      "image_credit": "Florian Fuchs, CC BY-SA 3.0, via Wikimedia Commons",
+      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones_with_Carry_Case.jpg",
+      "desc": {
+        "he": "סקירות והשוואות לפי מפרטים ובדיקות שפורסמו",
+        "en": "Reviews and comparisons based on specs and published tests"
+      },
+      "alt": {
+        "he": "אוזניות Bose QuietComfort 25 ליד נרתיק הנשיאה",
+        "en": "Bose QuietComfort 25 headphones next to their carry case"
+      }
     },
     {
       "slug": "tips",
       "he": "טיפים",
-      "en": "Tips"
+      "en": "Tips",
+      "image": "img/categories/tips.webp",
+      "image_credit": "Colin, CC BY-SA 4.0, via Wikimedia Commons",
+      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Backlit_keyboard.jpg",
+      "desc": {
+        "he": "מדריכים קצרים שחוסכים זמן וכסף",
+        "en": "Short guides that save time and money"
+      },
+      "alt": {
+        "he": "ידיים מקלידות על מקלדת מוארת",
+        "en": "Hands typing on a backlit keyboard"
+      }
     }
   ],
   "strings": {
@@ -59,7 +114,25 @@
       "favorite": "שמירה למועדפים",
       "login_title": "התחברות / הרשמה",
       "account_title": "החשבון שלי",
-      "home_label": "דף הבית"
+      "home_label": "דף הבית",
+      "all_categories": "כל הקטגוריות",
+      "categories_page_desc": "כל הנושאים באתר במקום אחד",
+      "posts_count": "פוסטים",
+      "post_count_one": "פוסט אחד",
+      "latest_in": "אחרונים",
+      "image_credits": "קרדיט לתמונות",
+      "credits_intro": "תמונות הקטגוריות לקוחות מ-Wikimedia Commons ברישיונות חופשיים. תמונות בפוסטים מקבלות קרדיט מתחת לתמונה.",
+      "admin": "ניהול משתמשים",
+      "dashboard": "לוח כתיבה ועריכה",
+      "admin_title": "ניהול משתמשים",
+      "dashboard_title": "כתיבה ועריכה",
+      "roles_title": "תפקידים",
+      "role_reader": "קורא/ת: קריאה, מועדפים ותגובות (ברירת מחדל)",
+      "role_writer": "כתב/ת: שולח/ת טיוטות לפוסטים",
+      "role_editor": "עורך/ת: מאשר/ת או דוחה טיוטות ומוחק/ת תגובות",
+      "role_admin": "אדמין: כל מה שעורך יכול, וגם קובע תפקידים",
+      "queue_note": "טיוטות שאושרו נכנסות לתור. העדכון היומי הופך אותן לפוסטים באתר בעברית ובאנגלית.",
+      "view_all": "לכל הפוסטים בקטגוריה"
     },
     "en": {
       "site_name": "TechnoBayit",
@@ -90,7 +163,25 @@
       "favorite": "Save to favorites",
       "login_title": "Sign in / Sign up",
       "account_title": "My account",
-      "home_label": "Home"
+      "home_label": "Home",
+      "all_categories": "All categories",
+      "categories_page_desc": "Every topic on the site in one place",
+      "posts_count": "posts",
+      "post_count_one": "1 post",
+      "latest_in": "Latest",
+      "image_credits": "Image credits",
+      "credits_intro": "Category images come from Wikimedia Commons under free licenses. Post images are credited under each image.",
+      "admin": "User management",
+      "dashboard": "Write & review",
+      "admin_title": "User management",
+      "dashboard_title": "Write & review",
+      "roles_title": "Roles",
+      "role_reader": "Reader: read, save favorites and comment (default)",
+      "role_writer": "Writer: submits post drafts",
+      "role_editor": "Editor: approves or rejects drafts and deletes comments",
+      "role_admin": "Admin: everything an editor can do, plus assigning roles",
+      "queue_note": "Approved drafts go into a queue. The daily update turns them into posts on the site in Hebrew and English.",
+      "view_all": "All posts in this category"
     }
   },
   "about": {

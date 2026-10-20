@@ -29,7 +29,7 @@
     });
   }
   var here = location.pathname.replace(/index\.html$/, '');
-  document.querySelectorAll('.site-nav a').forEach(function (a) {
+  document.querySelectorAll('.site-nav a, .cat-bar a').forEach(function (a) {
     if (a.pathname === here) a.setAttribute('aria-current', 'page');
   });
 })();

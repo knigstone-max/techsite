@@ -25,6 +25,7 @@ techsite/
 │   ├── config.js            # מפתחות Supabase ציבוריים (ריק = חשבונות כבויים)
 │   ├── auth.js              # התחברות, מועדפים, תגובות
 │   ├── img/posts/           # תמונות הפוסטים (WebP, נשמרות במאגר)
+│   ├── img/categories/      # תמונות הקטגוריות (WebP 600px, קרדיט ב-site.json ובעמוד אודות)
 │   └── favicon.svg
 ├── supabase/schema.sql      # טבלאות + Row Level Security
 ├── scripts/check_links.py   # בדיקת קישורים פנימיים
@@ -34,7 +35,7 @@ techsite/
 
 עברית היא שפת ברירת המחדל בכתובת `/`, אנגלית ב-`/en/`. בכל עמוד יש קישור לעמוד המקביל בשפה השנייה.
 
-עמודים בכל שפה: דף בית, 5 קטגוריות (`category/<slug>/`), ארכיון, אודות, התחברות, חשבון, ופוסט לכל קובץ תוכן (`posts/<slug>/`). בנוסף: `404.html`, `sitemap.xml`, `robots.txt`, `feed.xml`, `en/feed.xml`.
+עמודים בכל שפה: דף בית, אינדקס קטגוריות (`categories/`), 5 קטגוריות (`category/<slug>/`), ארכיון, אודות, התחברות, חשבון, ניהול (`admin/`), כתיבה ועריכה (`dashboard/`), ופוסט לכל קובץ תוכן (`posts/<slug>/`). בנוסף: `404.html`, `sitemap.xml`, `robots.txt`, `feed.xml`, `en/feed.xml`.
 
 ### הוספת פוסט
 
@@ -78,6 +79,10 @@ image_credit_url: https://commons.wikimedia.org/wiki/File:Xbox_series_X_(5064811
 
 עיבוד: רוחב עד כ-1200 פיקסלים, WebP, פחות מ-200KB, יחס 16:9 בערך (התמונה נחתכת עם `object-fit: cover`). שם הקובץ באותיות לטיניות קטנות ומקפים.
 
+### תמונות הקטגוריות
+
+כל קטגוריה ב-`site.json` מקבלת `image` (קובץ תחת `static/`), `image_credit`, `image_credit_url`, `desc` ו-`alt` בשתי השפות. התמונות מופיעות בפס הקטגוריות בדף הבית, בתפריט "קטגוריות", בפס הקטגוריות שמתחת לכותרת, בעמוד `categories/` ובראש עמוד כל קטגוריה. הקרדיטים מופיעים בעמוד אודות ובמאפיין title של התמונה. אותו כלל מקור כמו לתמונות פוסטים: רישיון חופשי או איור מקורי, WebP בגודל 600 פיקסלים בערך, בלי קישור חיצוני לתמונה.
+
 ### בנייה מקומית
 
 ```
@@ -119,7 +124,27 @@ python3 -m http.server 8000 -d dist     # http://localhost:8000
 5. Project Settings ← API: העתיקו את Project URL ואת מפתח ה-`anon` (public) ל-`static/config.js`, או הגדירו אותם כ-Variables במאגר (`SUPABASE_URL`, `SUPABASE_ANON_KEY`) וה-workflow יכתוב אותם בזמן הבנייה.
 6. **לעולם אל תשימו את מפתח ה-`service_role` באתר או במאגר.** מפתח ה-anon ציבורי מטבעו; ההגנה על הנתונים היא ה-RLS.
 
-הרשאות (RLS): תגובות גלויות לכולם, וכל משתמש יכול להוסיף ולמחוק רק את התגובות שלו. מועדפים גלויים רק לבעלים. בפרופיל נשמר רק שם תצוגה, בלי אימייל.
+הרשאות (RLS): תגובות גלויות לכולם, וכל משתמש יכול להוסיף ולמחוק רק את התגובות שלו (עורכים ואדמינים יכולים למחוק כל תגובה). מועדפים גלויים רק לבעלים. בפרופיל נשמרים שם תצוגה ותפקיד, בלי אימייל.
+
+### תפקידים, ניהול משתמשים ותור כתיבה
+
+תפקידים: `reader` (קורא/ת, ברירת מחדל) < `writer` (כתב/ת) < `editor` (עורך/ת) < `admin` (אדמין).
+
+- `/admin/` (אדמין בלבד): רשימת משתמשים עם חיפוש לפי אימייל או שם, ותפריט לשינוי תפקיד. האימיילים נשארים ב-`auth.users` ומגיעים רק דרך הפונקציה `admin_list_users`, שבודקת שהקורא הוא אדמין.
+- `/dashboard/` (כתב/ת ומעלה): כתיבת טיוטות בעברית ובאנגלית, שמירה כטיוטה או שליחה לאישור, ועריכה של טיוטות שעוד לא אושרו. עורכים ואדמינים רואים גם תור לבדיקה עם אישור ודחייה והערה לכתב/ת.
+- טיוטות שאושרו (`status = 'approved'`) הן תור לפרסום: העדכון היומי הופך אותן לקובצי markdown ב-`content/he` וב-`content/en`. הן לא מתפרסמות באתר אוטומטית.
+- קישורי "ניהול" ו"כתיבה" בכותרת מופיעים רק למי שיש לו את התפקיד. ההגנה האמיתית היא במסד הנתונים: RLS, טריגר שחוסם שינוי תפקיד על ידי מי שאינו אדמין (וגם אדמין לא יכול לשנות את התפקיד של עצמו), וטריגר שמונע מכתבים לאשר טיוטות של עצמם.
+- עד שמחברים את Supabase, שני הדפים מציגים "יופעל ברגע שמסד נתוני המשתמשים יחובר". הם לא נכנסים ל-sitemap ומסומנים noindex.
+
+הפעלה (בנוסף לשלבים למעלה):
+1. הריצו שוב את `supabase/schema.sql` כולו ב-SQL Editor. הקובץ בטוח להרצה חוזרת ומוסיף את עמודת התפקיד, הפונקציות `has_role` / `is_admin`, הטבלה `submissions` והמדיניות.
+2. הירשמו באתר עם האימייל שלכם, ואז הריצו ב-SQL Editor (עם האימייל שלכם):
+   ```sql
+   update public.profiles set role = 'admin'
+   where id = (select id from auth.users where email = 'you@example.com');
+   ```
+3. במאגר ב-GitHub: Settings ← Secrets and variables ← Actions ← לשונית Variables ← New repository variable. הוסיפו `SUPABASE_URL` (ה-Project URL) ו-`SUPABASE_ANON_KEY` (מפתח ה-anon הציבורי). אחר כך Actions ← Deploy to GitHub Pages ← Run workflow. משתנים ולא Secrets, כי המפתחות האלה ציבוריים ממילא ונכנסים לקובץ `config.js` באתר.
+4. מעכשיו האדמין נותן תפקידים מ-`/admin/`.
 
 שימו לב: שליחת המיילים המובנית של Supabase בתוכנית החינמית מוגבלת בכמות לשעה. לשימוש רחב יותר אפשר לחבר SMTP חינמי (למשל Brevo או Resend בתוכנית החינמית).
 
@@ -139,7 +164,7 @@ python3 -m http.server 8000 -d dist     # http://localhost:8000
 
 See the tree above. Hebrew is the default language at `/`, English lives at `/en/`. Every page links to its counterpart in the other language and declares `hreflang` alternates.
 
-Per language: home, 5 category pages (`category/<slug>/`), archive, about, login, account, and one page per post (`posts/<slug>/`). Plus `404.html`, `sitemap.xml`, `robots.txt`, `feed.xml`, `en/feed.xml`.
+Per language: home, a categories index (`categories/`), 5 category pages (`category/<slug>/`), archive, about (with image credits), login, account, admin (`admin/`), write & review (`dashboard/`), and one page per post (`posts/<slug>/`). Plus `404.html`, `sitemap.xml`, `robots.txt`, `feed.xml`, `en/feed.xml`.
 
 **Output directory: `dist/`** (git-ignored, built in CI).
 
@@ -184,6 +209,10 @@ Sourcing rule, in order:
 
 Processing: up to ~1200px wide, WebP, under 200KB, roughly 16:9 (displayed with `object-fit: cover`). Lowercase latin file names with hyphens.
 
+### Category images
+
+Each category in `site.json` has `image` (a file under `static/`), `image_credit`, `image_credit_url`, plus `desc` and `alt` in both languages. They show in the homepage category strip, the "Categories" mega-menu, the one-tap category bar under the header, the `categories/` index and the top of each category page. Credits are listed on the about page and in each image's title attribute. Same sourcing rule as post images: freely licensed or original artwork, ~600px WebP, never hotlinked.
+
 ### Build locally
 
 ```
@@ -225,7 +254,27 @@ To turn accounts on:
 5. Project Settings -> API: copy the Project URL and the `anon` public key into `static/config.js`, or set repo Actions Variables `SUPABASE_URL` and `SUPABASE_ANON_KEY` and the workflow writes `config.js` at build time.
 6. **Never commit or ship the `service_role` key.** The anon key is meant to be public; Row Level Security protects the data.
 
-RLS summary: comments are readable by everyone, users can insert and delete only their own. Favorites are visible only to their owner. Profiles store only a display name (no email).
+RLS summary: comments are readable by everyone, users can insert and delete only their own (editors and admins can delete any comment). Favorites are visible only to their owner. Profiles store a display name and a role, no email.
+
+### Roles, user management and the writing queue
+
+Roles: `reader` (default) < `writer` < `editor` < `admin`.
+
+- `/admin/` (admins only): user list with search by email or name and a role dropdown per user. Emails stay in `auth.users` and are only returned by the `admin_list_users` function, which checks that the caller is an admin.
+- `/dashboard/` (writers and up): write Hebrew and English drafts, save as draft or submit for review, and edit drafts that aren't approved yet. Editors and admins also get a review queue with approve, reject and a note to the writer.
+- Approved submissions (`status = 'approved'`) are a publishing queue: the daily update turns them into markdown files in `content/he` and `content/en`. Nothing is published to the site automatically.
+- The header shortcuts to these pages only show for the matching roles. The real protection is in the database: RLS, a trigger that blocks role changes by non-admins (and stops admins from changing their own role), and a trigger that stops writers from approving their own drafts.
+- Until Supabase is connected, both pages say "This will be activated once the user database is connected". They are noindex and left out of the sitemap.
+
+Setup (on top of the steps above):
+1. Run the whole `supabase/schema.sql` again in the SQL Editor. It is safe to re-run and adds the role column, the `has_role` / `is_admin` helpers, the `submissions` table and the policies.
+2. Sign up on the site with your email, then run in the SQL Editor (with your email):
+   ```sql
+   update public.profiles set role = 'admin'
+   where id = (select id from auth.users where email = 'you@example.com');
+   ```
+3. On GitHub: repo Settings -> Secrets and variables -> Actions -> Variables tab -> New repository variable. Add `SUPABASE_URL` (Project URL) and `SUPABASE_ANON_KEY` (the public anon key), then Actions -> Deploy to GitHub Pages -> Run workflow. Use Variables, not Secrets: these values are public anyway and end up in the site's `config.js`.
+4. From then on, the admin assigns roles at `/admin/`.
 
 Note: Supabase's built-in email sending on the free plan is rate-limited. For more volume, plug in a free SMTP tier (for example Brevo or Resend).
 

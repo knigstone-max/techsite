@@ -25,6 +25,9 @@ DIR = {"he": "rtl", "en": "ltr"}
 OG_LOCALE = {"he": "he_IL", "en": "en_US"}
 CATS = CFG["categories"]
 CAT_SLUGS = {c["slug"] for c in CATS}
+for _c in CATS:
+    if _c.get("image") and not (STATIC / _c["image"]).is_file():
+        sys.exit(f"ERROR site.json: category {_c['slug']}: image not found: static/{_c['image']}")
 REQUIRED = ["title", "date", "slug", "category", "excerpt"]
 esc = lambda s: html.escape(str(s), quote=True)
 
@@ -229,15 +232,54 @@ THEME_BOOT = ("(function(){try{var t=localStorage.getItem('theme');"
 ICON_SUN = '<svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>'
 ICON_MOON = '<svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>'
 ICON_MENU = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>'
+ICON_PEN = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>'
+ICON_SHIELD = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>'
+ICON_CHEV = '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>'
 ICON_USER = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>'
 
-def layout(lang, path, title, description, body, other_path, og_type="website", noindex=False, needs_auth=False, image=None):
+def cat_img(c, lang, size="tile", eager=False):
+    """Category image (decorative inside a labelled link). Credit goes in the title attribute and on the about page."""
+    if not c.get("image"):
+        return ""
+    w, h = image_size(STATIC / c["image"])
+    load = 'loading="eager"' if eager else 'loading="lazy"'
+    return (f'<img src="{asset(c["image"])}" alt="" width="{w}" height="{h}" {load} decoding="async" '
+            f'title="{esc(c.get("image_credit", ""))}">')
+
+def cat_counts(lang):
+    return CAT_COUNTS.get(lang, {})
+
+def count_label(n, lang):
+    t = CFG["strings"][lang]
+    return t["post_count_one"] if n == 1 else f'{n} {t["posts_count"]}'
+
+def cat_tiles(lang, cls="cat-tiles", eager=False):
+    """Image tiles for every category: homepage strip (scrolls sideways on mobile) and mega-menu."""
+    counts = cat_counts(lang)
+    items = "".join(
+        f'<li><a class="cat-tile c-{c["slug"]}" href="{url(lang, "category/" + c["slug"] + "/")}">'
+        f'<span class="cat-tile-media">{cat_img(c, lang, eager=eager)}</span>'
+        f'<span class="cat-tile-text"><strong>{esc(c[lang])}</strong><small>{esc(count_label(counts.get(c["slug"], 0), lang))}</small></span></a></li>'
+        for c in CATS)
+    return f'<ul class="{cls}">{items}</ul>'
+
+def cat_bar(lang):
+    """Slim one-tap category bar under the header (all pages except home and the categories index)."""
+    t = CFG["strings"][lang]
+    items = "".join(
+        f'<li><a class="cat-pill c-{c["slug"]}" href="{url(lang, "category/" + c["slug"] + "/")}">'
+        f'<span class="cat-pill-img" aria-hidden="true">{cat_img(c, lang)}</span>{esc(c[lang])}</a></li>' for c in CATS)
+    items += f'<li><a class="cat-pill cat-pill-all" href="{url(lang, "categories/")}">{esc(t["all_categories"])}</a></li>'
+    return f'<nav class="cat-bar" aria-label="{esc(t["categories"])}"><div class="wrap"><ul>{items}</ul></div></nav>'
+
+def layout(lang, path, title, description, body, other_path, og_type="website", noindex=False, needs_auth=False, image=None, catbar=True):
     """path / other_path: site-relative paths without lang prefix, e.g. 'posts/x/'."""
     t = CFG["strings"][lang]
     other = "en" if lang == "he" else "he"
     full_title = f"{title} | {t['site_name']}" if title != t["site_name"] else title
-    nav = "".join(
-        f'<li><a href="{url(lang, "category/" + c["slug"] + "/")}">{esc(c[lang])}</a></li>' for c in CATS)
+    mega = (f'<div class="mega" id="mega-cats"><div class="mega-inner">{cat_tiles(lang, "mega-tiles")}'
+            f'<a class="mega-all" href="{url(lang, "categories/")}">{esc(t["all_categories"])} &rarr;</a></div></div>')
+    nav = (f'<li class="has-mega"><a class="nav-cats" href="{url(lang, "categories/")}" aria-haspopup="true">{esc(t["categories"])}{ICON_CHEV}</a>{mega}</li>')
     alt = "".join(
         f'<link rel="alternate" hreflang="{l}" href="{abs_url(l, p)}">'
         for l, p in ((lang, path), (other, other_path)))
@@ -296,10 +338,13 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
     <div class="header-tools">
       <a class="lang-switch" href="{url(other, other_path)}" hreflang="{other}" lang="{other}">{esc(t['switch'])}</a>
       <button class="icon-btn theme-toggle" type="button" aria-label="{esc(t['theme'])}" title="{esc(t['theme'])}">{ICON_SUN}{ICON_MOON}</button>
+      <a class="icon-btn role-link" href="{url(lang, 'dashboard/')}" data-role-min="writer" hidden aria-label="{esc(t['dashboard'])}" title="{esc(t['dashboard'])}">{ICON_PEN}</a>
+      <a class="icon-btn role-link" href="{url(lang, 'admin/')}" data-role-min="admin" hidden aria-label="{esc(t['admin'])}" title="{esc(t['admin'])}">{ICON_SHIELD}</a>
       <a class="icon-btn account-link" href="{url(lang, 'account/')}" aria-label="{esc(t['account'])}" title="{esc(t['account'])}" data-auth-link>{ICON_USER}</a>
     </div>
   </div>
 </header>
+{cat_bar(lang) if catbar else ""}
 <main id="main" class="wrap">
 {body}
 </main>
@@ -381,6 +426,7 @@ def listing(posts, lang):
 
 # ---------- writers ----------
 WRITTEN = []
+CAT_COUNTS = {}
 def write(lang, path, content):
     out = DIST / rel(lang, path)
     if path == "" or path.endswith("/"):
@@ -403,23 +449,46 @@ def build_lang(lang, posts, other_slugs):
         cp = [p for p in posts if p["category"] == c["slug"]][:3]
         if cp:
             cat_blocks.append(f'<section class="cat-block"><h2 class="section-title"><a href="{url(lang, "category/" + c["slug"] + "/")}">{esc(c[lang])}</a></h2>{listing(cp, lang)}</section>')
-    chips = "".join(f'<li><a class="chip c-{c["slug"]}" href="{url(lang, "category/" + c["slug"] + "/")}">{esc(c[lang])}</a></li>' for c in CATS)
     top = hero(posts[0], lang) if posts else f'<section class="intro"><h1>{esc(t["site_name"])}</h1><p>{esc(t["tagline"])}</p></section>'
     rest = posts[1:13]
     latest = f'<section><h2 class="section-title">{esc(t["latest"])}</h2>{listing(rest, lang)}</section>' if rest else ""
     home = f"""<h1 class="visually-hidden">{esc(t['site_name'])}: {esc(t['tagline'])}</h1>
-<nav class="chips" aria-label="{esc(t['categories'])}"><ul>{chips}</ul></nav>
+<nav class="cat-strip" aria-label="{esc(t['categories'])}">{cat_tiles(lang, eager=True)}</nav>
 {top}
 {latest}
 {''.join(cat_blocks) if len(posts) > 3 else ''}
 <p class="more"><a class="btn btn-ghost" href="{url(lang, 'archive/')}">{esc(t['all_posts'])}</a></p>"""
-    write(lang, "", layout(lang, "", t["site_name"], t["tagline"], home, ""))
+    write(lang, "", layout(lang, "", t["site_name"], t["tagline"], home, "", catbar=False))
+
+    # categories index
+    counts = cat_counts(lang)
+    cards = []
+    for c in CATS:
+        cp = [x for x in posts if x["category"] == c["slug"]]
+        latest_items = "".join(f'<li><a href="{url(lang, "posts/" + x["slug"] + "/")}">{esc(x["title"])}</a></li>' for x in cp[:3])
+        latest_html = f'<ul class="cat-card-latest">{latest_items}</ul>' if latest_items else f'<p class="cat-card-empty">{esc(t["no_posts"])}</p>'
+        href = url(lang, "category/" + c["slug"] + "/")
+        cards.append(f"""<article class="cat-card c-{c['slug']}">
+  <a class="cat-card-media" href="{href}" tabindex="-1" aria-hidden="true">{cat_img(c, lang)}</a>
+  <div class="cat-card-body">
+    <h2><a href="{href}">{esc(c[lang])}</a></h2>
+    <p class="cat-card-desc">{esc(c.get('desc', {}).get(lang, ''))}</p>
+    <p class="meta">{esc(count_label(counts.get(c['slug'], 0), lang))}</p>
+    {latest_html}
+    <a class="btn btn-ghost" href="{href}">{esc(t['view_all'])}</a>
+  </div>
+</article>""")
+    cbody = (f'<header class="page-head"><p class="kicker">{esc(t["site_name"])}</p><h1>{esc(t["all_categories"])}</h1>'
+             f'<p class="page-desc">{esc(t["categories_page_desc"])}</p></header><div class="cat-cards">{"".join(cards)}</div>')
+    write(lang, "categories/", layout(lang, "categories/", t["all_categories"], t["categories_page_desc"], cbody, "categories/", catbar=False))
 
     # categories
     for c in CATS:
         p = "category/" + c["slug"] + "/"
         cp = [x for x in posts if x["category"] == c["slug"]]
-        body = f'<header class="page-head c-{c["slug"]}"><p class="kicker">{esc(t["categories"])}</p><h1>{esc(c[lang])}</h1></header>{listing(cp, lang)}'
+        head_img = f'<div class="page-head-img" aria-hidden="true">{cat_img(c, lang, eager=True)}</div>' if c.get("image") else ""
+        body = (f'<header class="page-head cat-head c-{c["slug"]}">{head_img}<div><p class="kicker">{esc(t["categories"])}</p><h1>{esc(c[lang])}</h1>'
+                f'<p class="page-desc">{esc(c.get("desc", {}).get(lang, ""))}</p></div></header>{listing(cp, lang)}')
         write(lang, p, layout(lang, p, c[lang], f"{c[lang]} | {t['tagline']}", body, p))
 
     # archive grouped by month
@@ -436,8 +505,13 @@ def build_lang(lang, posts, other_slugs):
     write(lang, "archive/", layout(lang, "archive/", t["archive"], t["all_posts"], f'<header class="page-head"><h1>{esc(t["archive"])}</h1></header>{arch}', "archive/"))
 
     # about
+    credits = "".join(
+        f'<li><strong>{esc(c[lang])}</strong>: <a href="{esc(c["image_credit_url"])}" rel="noopener" target="_blank">{esc(c["image_credit"])}</a></li>'
+        for c in CATS if c.get("image") and c.get("image_credit"))
+    credits_html = (f'<section class="credits" id="credits"><h2>{esc(t["image_credits"])}</h2><p>{esc(t["credits_intro"])}</p><ul>{credits}</ul></section>'
+                    if credits else "")
     write(lang, "about/", layout(lang, "about/", t["about"], t["tagline"],
-                                 f'<article class="prose"><h1>{esc(t["about"])}</h1>{CFG["about"][lang]}</article>', "about/"))
+                                 f'<article class="prose"><h1>{esc(t["about"])}</h1>{CFG["about"][lang]}{credits_html}</article>', "about/"))
 
     # login + account (filled in client-side by assets/auth.js; graceful when no keys)
     write(lang, "login/", layout(lang, "login/", t["login_title"], t["login_title"],
@@ -446,6 +520,17 @@ def build_lang(lang, posts, other_slugs):
     write(lang, "account/", layout(lang, "account/", t["account_title"], t["account_title"],
         f'<section class="auth-page prose"><h1>{esc(t["account_title"])}</h1><div id="auth-root" data-view="account"><noscript>JavaScript</noscript></div></section>',
         "account/", noindex=True))
+
+    # role pages (filled in client-side; show a notice until Supabase is connected)
+    roles = (f'<section class="panel roles-info"><h2>{esc(t["roles_title"])}</h2><ul>'
+             + "".join(f'<li>{esc(t["role_" + r])}</li>' for r in ("reader", "writer", "editor", "admin")) + "</ul></section>")
+    write(lang, "admin/", layout(lang, "admin/", t["admin_title"], t["admin_title"],
+        f'<section class="auth-page app-page"><h1>{esc(t["admin_title"])}</h1><div id="auth-root" data-view="admin"><noscript>JavaScript</noscript></div>{roles}</section>',
+        "admin/", noindex=True))
+    write(lang, "dashboard/", layout(lang, "dashboard/", t["dashboard_title"], t["dashboard_title"],
+        f'<section class="auth-page app-page"><h1>{esc(t["dashboard_title"])}</h1><p class="notice queue-note">{esc(t["queue_note"])}</p>'
+        f'<div id="auth-root" data-view="dashboard"><noscript>JavaScript</noscript></div>{roles}</section>',
+        "dashboard/", noindex=True))
 
     # posts
     for x in posts:
@@ -517,7 +602,7 @@ def build_404():
 
 def build_sitemap(all_posts):
     entries = []
-    pages = ["", "archive/", "about/"] + ["category/" + c["slug"] + "/" for c in CATS]
+    pages = ["", "archive/", "about/", "categories/"] + ["category/" + c["slug"] + "/" for c in CATS]
     for lang in LANGS:
         other = "en" if lang == "he" else "he"
         for p in pages:
@@ -538,7 +623,7 @@ def build_sitemap(all_posts):
         xml.append("  </url>")
     xml.append("</urlset>\n")
     write_raw("sitemap.xml", "\n".join(xml))
-    write_raw("robots.txt", f"User-agent: *\nAllow: /\nDisallow: {BASE}login/\nDisallow: {BASE}account/\nDisallow: {BASE}en/login/\nDisallow: {BASE}en/account/\nSitemap: {SITE_URL}/sitemap.xml\n")
+    write_raw("robots.txt", f"User-agent: *\nAllow: /\n" + "".join(f"Disallow: {BASE}{l}{p}/\n" for l in ("", "en/") for p in ("login", "account", "admin", "dashboard")) + f"Sitemap: {SITE_URL}/sitemap.xml\n")
 
 def main():
     if DIST.exists():
@@ -547,6 +632,8 @@ def main():
     shutil.copytree(STATIC, DIST / "assets")
     (DIST / ".nojekyll").write_text("")
     posts = {l: load_posts(l) for l in LANGS}
+    for l in LANGS:
+        CAT_COUNTS[l] = {c["slug"]: sum(1 for x in posts[l] if x["category"] == c["slug"]) for c in CATS}
     for lang in LANGS:
         other = "en" if lang == "he" else "he"
         build_lang(lang, posts[lang], {x["slug"] for x in posts[other]})
