@@ -4,6 +4,10 @@ date: 2026-10-19
 slug: xiaomi-smart-band-10-pro-spain
 category: smartphones-gadgets
 excerpt: Xiaomi's new fitness band is thinner than the 9 Pro, has a brighter 1.74-inch AMOLED screen, and works with both iPhone and Android.
+image: img/posts/xiaomi-smart-band-10-pro.webp
+image_alt: "Xiaomi Smart Band 10 Pro in silver, black and pink"
+image_credit: "Image: Xiaomi"
+image_credit_url: https://www.mi.com/es/product/xiaomi-smart-band-10-pro/
 source_links:
   - https://www.elespanol.com/elandroidelibre/20261018/xiaomi-lanza-mejor-pulsera-fecha-espana-smart-band-pro-bateria-dias-compatible-iphone/1003744422803_0.html
 ---

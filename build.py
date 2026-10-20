@@ -7,7 +7,7 @@ Env overrides:
   BASE_PATH  URL path prefix where the site is served (e.g. /repo/ for GitHub project pages, / for pages.dev)
 Output: ./dist
 """
-import html, json, os, re, shutil, sys
+import html, json, os, re, shutil, struct, sys
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from pathlib import Path
@@ -45,6 +45,62 @@ def abs_url(lang, path=""):
 
 def asset(name):
     return BASE + "assets/" + name
+
+def abs_asset(name):
+    return SITE_URL + "/assets/" + name
+
+
+# ---------- images ----------
+def image_size(path):
+    """(width, height) of a WebP, PNG or JPEG file, stdlib only."""
+    b = path.read_bytes()
+    if b[:4] == b"RIFF" and b[8:12] == b"WEBP":
+        c = b[12:16]
+        if c == b"VP8 ":
+            w, h = struct.unpack("<HH", b[26:30]); return w & 0x3FFF, h & 0x3FFF
+        if c == b"VP8L":
+            v = int.from_bytes(b[21:25], "little"); return (v & 0x3FFF) + 1, ((v >> 14) & 0x3FFF) + 1
+        if c == b"VP8X":
+            return int.from_bytes(b[24:27], "little") + 1, int.from_bytes(b[27:30], "little") + 1
+    if b[:8] == b"\x89PNG\r\n\x1a\n":
+        return struct.unpack(">II", b[16:24])
+    if b[:2] == b"\xff\xd8":
+        i = 2
+        while i < len(b) - 9:
+            if b[i] != 0xFF: i += 1; continue
+            m = b[i + 1]
+            if m in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF):
+                h, w = struct.unpack(">HH", b[i + 5:i + 9]); return w, h
+            i += 2 + struct.unpack(">H", b[i + 2:i + 4])[0]
+    raise ValueError("unsupported image format (use .webp, .png or .jpg)")
+
+def load_image(meta, where):
+    """Validate the optional image fields. `image` is a path under static/ (e.g. img/posts/x.webp)."""
+    img = meta.get("image")
+    if not img:
+        meta["image"] = None
+        return
+    img = img.lstrip("/")
+    if img.startswith("assets/"):
+        img = img[len("assets/"):]
+    if img.startswith("static/"):
+        img = img[len("static/"):]
+    if re.match(r"^[a-z]+://", img):
+        sys.exit(f"ERROR {where}: image must be a local file under static/, not a URL (no hotlinking)")
+    f = STATIC / img
+    if not f.is_file():
+        sys.exit(f"ERROR {where}: image file not found: static/{img}")
+    if not meta.get("image_alt"):
+        sys.exit(f"ERROR {where}: image_alt is required when image is set")
+    if not meta.get("image_credit"):
+        sys.exit(f"ERROR {where}: image_credit is required when image is set")
+    try:
+        w, h = image_size(f)
+    except ValueError as e:
+        sys.exit(f"ERROR {where}: static/{img}: {e}")
+    meta["image"] = {"path": img, "src": asset(img), "abs": abs_asset(img), "w": w, "h": h,
+                     "alt": meta["image_alt"], "credit": meta["image_credit"],
+                     "credit_url": meta.get("image_credit_url") or ""}
 
 
 # ---------- content parsing ----------
@@ -147,6 +203,7 @@ def load_posts(lang):
         meta["source_links"] = src if isinstance(src, list) else [src]
         meta["html"] = md_to_html(body)
         meta["lang"] = lang
+        load_image(meta, f"{lang}/{f.name}")
         posts.append(meta)
     slugs = [p["slug"] for p in posts]
     dup = {s for s in slugs if slugs.count(s) > 1}
@@ -174,7 +231,7 @@ ICON_MOON = '<svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d=
 ICON_MENU = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>'
 ICON_USER = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>'
 
-def layout(lang, path, title, description, body, other_path, og_type="website", noindex=False, needs_auth=False):
+def layout(lang, path, title, description, body, other_path, og_type="website", noindex=False, needs_auth=False, image=None):
     """path / other_path: site-relative paths without lang prefix, e.g. 'posts/x/'."""
     t = CFG["strings"][lang]
     other = "en" if lang == "he" else "he"
@@ -187,6 +244,16 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
     alt += f'<link rel="alternate" hreflang="x-default" href="{abs_url(CFG["default_lang"], path if lang == CFG["default_lang"] else other_path)}">'
     auth_js = f'<script src="{asset("config.js")}"></script>\n<script type="module" src="{asset("auth.js")}"></script>'
     robots = '<meta name="robots" content="noindex">' if noindex else ""
+    if image:
+        og_img = (f'<meta property="og:image" content="{esc(image["abs"])}">\n'
+                  f'<meta property="og:image:width" content="{image["w"]}">\n'
+                  f'<meta property="og:image:height" content="{image["h"]}">\n'
+                  f'<meta property="og:image:alt" content="{esc(image["alt"])}">\n'
+                  f'<meta name="twitter:card" content="summary_large_image">\n'
+                  f'<meta name="twitter:image" content="{esc(image["abs"])}">\n'
+                  f'<meta name="twitter:image:alt" content="{esc(image["alt"])}">')
+    else:
+        og_img = '<meta name="twitter:card" content="summary">'
     return f"""<!doctype html>
 <html lang="{lang}" dir="{DIR[lang]}" data-base="{BASE}" data-theme="light">
 <head>
@@ -205,7 +272,7 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
 <meta property="og:site_name" content="{esc(t['site_name'])}">
 <meta property="og:locale" content="{OG_LOCALE[lang]}">
 <meta property="og:locale:alternate" content="{OG_LOCALE[other]}">
-<meta name="twitter:card" content="summary">
+{og_img}
 <meta name="theme-color" content="#0b0d12">
 <link rel="alternate" type="application/rss+xml" title="{esc(t['site_name'])} RSS" href="{url(lang, 'feed.xml')}">
 <link rel="stylesheet" href="{asset('style.css')}">
@@ -251,9 +318,29 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
 </html>
 """
 
-def thumb(p, lang, big=False):
-    # Image placeholder: CSS gradient per category, no stock images.
-    return f'<div class="thumb c-{p["category"]}{" thumb-big" if big else ""}" aria-hidden="true"><span>{esc(cat_name(p["category"], lang))}</span></div>'
+def thumb(p, lang, big=False, eager=False):
+    """Card/hero media. Real image when the post has one, otherwise the CSS-gradient placeholder.
+    Decorative here (the linked title next to it carries the meaning), so alt is empty."""
+    cls = f'thumb c-{p["category"]}{" thumb-big" if big else ""}'
+    label = f'<span>{esc(cat_name(p["category"], lang))}</span>'
+    im = p.get("image")
+    if not im:
+        return f'<div class="{cls}" aria-hidden="true">{label}</div>'
+    load = 'loading="eager" fetchpriority="high"' if eager else 'loading="lazy"'
+    return (f'<div class="{cls} has-img" aria-hidden="true"><img src="{esc(im["src"])}" alt="" width="{im["w"]}" height="{im["h"]}" '
+            f'{load} decoding="async">{label}</div>')
+
+def post_figure(p, lang):
+    """Lead image at the top of a post, with alt text and a credit line."""
+    im = p.get("image")
+    if not im:
+        return thumb(p, lang, big=True)
+    credit = esc(im["credit"])
+    if im["credit_url"]:
+        credit = f'<a href="{esc(im["credit_url"])}" rel="noopener" target="_blank">{credit}</a>'
+    return (f'<figure class="post-figure"><div class="thumb thumb-big has-img c-{p["category"]}">'
+            f'<img src="{esc(im["src"])}" alt="{esc(im["alt"])}" width="{im["w"]}" height="{im["h"]}" loading="eager" fetchpriority="high" decoding="async"></div>'
+            f'<figcaption class="credit">{credit}</figcaption></figure>')
 
 def meta_line(p, lang):
     t = CFG["strings"][lang]
@@ -276,7 +363,7 @@ def hero(p, lang):
     t = CFG["strings"][lang]
     href = url(lang, "posts/" + p["slug"] + "/")
     return f"""<article class="hero-story">
-  <a class="hero-media" href="{href}" tabindex="-1" aria-hidden="true">{thumb(p, lang, big=True)}</a>
+  <a class="hero-media" href="{href}" tabindex="-1" aria-hidden="true">{thumb(p, lang, big=True, eager=True)}</a>
   <div class="hero-body">
     <p class="kicker">{esc(t['top_story'])}</p>
     {meta_line(p, lang)}
@@ -378,7 +465,7 @@ def build_lang(lang, posts, other_slugs):
 <p class="lead">{esc(x['excerpt'])}</p>
 <div class="post-actions" id="fav-root" hidden></div>
 </header>
-{thumb(x, lang, big=True)}
+{post_figure(x, lang)}
 <div class="prose">
 {x['html']}
 {src}
@@ -386,7 +473,7 @@ def build_lang(lang, posts, other_slugs):
 <section class="comments prose" id="comments-root" aria-label="{esc(t['comments'])}" hidden></section>
 </article>
 {rel_html}"""
-        write(lang, p, layout(lang, p, x["title"], x["excerpt"], body, other_p, og_type="article"))
+        write(lang, p, layout(lang, p, x["title"], x["excerpt"], body, other_p, og_type="article", image=x.get("image")))
 
     # RSS
     items = "".join(f"""

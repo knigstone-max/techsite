@@ -4,6 +4,10 @@ date: 2026-10-20
 slug: microsoft-xbox-best-buy-trade-in-emails
 category: tech-news
 excerpt: Owners who haven't used their Xbox Series X in a while are getting an offer of Best Buy gift cards, while a new Series X costs $799 in the US.
+image: img/posts/xbox-series-x.webp
+image_alt: "A black Xbox Series X console standing on a wooden shelf"
+image_credit: "Photo: Ian Hughes, CC BY 2.0, via Wikimedia Commons (cropped)"
+image_credit_url: https://commons.wikimedia.org/wiki/File:Xbox_series_X_(50648118708).jpg
 source_links:
   - https://www.notebookcheck.net/Microsoft-asks-Xbox-console-owners-to-sell-used-Series-X-amid-high-prices-and-shortages.1428346.0.html
   - https://www.xda-developers.com/please-sell-your-xbox-series-x-to-best-buy-asks-microsoft/

@@ -4,6 +4,10 @@ date: 2026-10-19
 slug: xiaomi-smart-band-10-pro-spain
 category: smartphones-gadgets
 excerpt: צמיד הכושר החדש של שיאומי דק יותר מה-9 Pro, עם מסך AMOLED בגודל 1.74 אינץ' בהיר יותר, ועובד גם עם אייפון וגם עם אנדרואיד.
+image: img/posts/xiaomi-smart-band-10-pro.webp
+image_alt: "Xiaomi Smart Band 10 Pro בצבעים כסף, שחור וורוד"
+image_credit: "תמונה: Xiaomi"
+image_credit_url: https://www.mi.com/es/product/xiaomi-smart-band-10-pro/
 source_links:
   - https://www.elespanol.com/elandroidelibre/20261018/xiaomi-lanza-mejor-pulsera-fecha-espana-smart-band-pro-bateria-dias-compatible-iphone/1003744422803_0.html
 ---

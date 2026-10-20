@@ -24,6 +24,7 @@ techsite/
 │   ├── main.js              # מתג מצב תצוגה, תפריט מובייל
 │   ├── config.js            # מפתחות Supabase ציבוריים (ריק = חשבונות כבויים)
 │   ├── auth.js              # התחברות, מועדפים, תגובות
+│   ├── img/posts/           # תמונות הפוסטים (WebP, נשמרות במאגר)
 │   └── favicon.svg
 ├── supabase/schema.sql      # טבלאות + Row Level Security
 ├── scripts/check_links.py   # בדיקת קישורים פנימיים
@@ -56,6 +57,26 @@ source_links:
 קטגוריות: `smartphones-gadgets`, `home-appliances`, `tech-news`, `reviews`, `tips`.
 שדות אופציונליים: `draft: true` (לא יפורסם), `placeholder: true` (תווית "פוסט לדוגמה").
 ה-slug באותיות לטיניות קטנות, ספרות ומקפים בלבד.
+
+### תמונות לפוסטים
+
+שדות אופציונליים, זהים בגרסה העברית ובאנגלית של אותו פוסט (רק הטקסטים מתורגמים):
+
+```
+image: img/posts/xbox-series-x.webp      # קובץ מקומי תחת static/
+image_alt: "קונסולת Xbox Series X שחורה עומדת על מדף עץ"
+image_credit: "צילום: Ian Hughes, רישיון CC BY 2.0, דרך Wikimedia Commons (חתוך)"
+image_credit_url: https://commons.wikimedia.org/wiki/File:Xbox_series_X_(50648118708).jpg
+```
+
+כשיש תמונה היא מופיעה בסיפור המרכזי, בכרטיסים (בית, קטגוריה), בראש הפוסט עם שורת קרדיט, וב-`og:image` / `twitter:image`. בלי תמונה נשאר הרקע הצבעוני של הקטגוריה. `image_alt` ו-`image_credit` חובה כש-`image` מוגדר, והבנייה נכשלת אם הקובץ חסר או אם `image` הוא כתובת URL.
+
+כללי מקור (לפי סדר עדיפות):
+1. תמונה רשמית של היצרן: חדר עיתונות, הודעה לעיתונות, דף המוצר הרשמי, או ה-og:image של דף היצרן עצמו. קרדיט: "תמונה: <יצרן>" עם קישור לדף.
+2. תמונה ברישיון חופשי מ-Wikimedia Commons / Unsplash / Pexels שבאמת מראה את הנושא. קרדיט: צלם, רישיון, מקור, ו-"(חתוך)" אם נחתכה.
+3. אחרת, בלי תמונה. לא משתמשים בתמונות מאתרי חדשות (The Verge, Gizmochina וכו'), לא מקשרים לתמונות חיצוניות, ולא ממציאים קרדיט.
+
+עיבוד: רוחב עד כ-1200 פיקסלים, WebP, פחות מ-200KB, יחס 16:9 בערך (התמונה נחתכת עם `object-fit: cover`). שם הקובץ באותיות לטיניות קטנות ומקפים.
 
 ### בנייה מקומית
 
@@ -142,6 +163,26 @@ Body in simple Markdown: paragraphs, ## headings, lists, **bold**, *italic*, [li
 Categories: `smartphones-gadgets`, `home-appliances`, `tech-news`, `reviews`, `tips`.
 Optional fields: `draft: true` (skipped), `placeholder: true` (shows a "Sample post" badge).
 The build fails with a clear error on missing fields, unknown categories or duplicate slugs.
+
+### Post images
+
+Optional fields. The he and en versions of a post use the same file; only the text is translated.
+
+```
+image: img/posts/xbox-series-x.webp      # local file under static/
+image_alt: "A black Xbox Series X console standing on a wooden shelf"
+image_credit: "Photo: Ian Hughes, CC BY 2.0, via Wikimedia Commons (cropped)"
+image_credit_url: https://commons.wikimedia.org/wiki/File:Xbox_series_X_(50648118708).jpg
+```
+
+When set, the image appears on the top story, on cards (home, category), at the top of the post with a credit line, and as `og:image` / `twitter:image`. Without it the category gradient placeholder stays. `image_alt` and `image_credit` are required when `image` is set; the build fails if the file is missing or if `image` is a URL.
+
+Sourcing rule, in order:
+1. The manufacturer's official image: newsroom, press release, official product page, or the og:image of the manufacturer's own page. Credit: "Image: <maker>" linking to that page.
+2. A freely licensed image from Wikimedia Commons / Unsplash / Pexels that really shows the subject. Credit: author, license, source, plus "(cropped)" if cropped.
+3. Otherwise no image. Never use pictures from news sites (The Verge, Gizmochina, etc.), never hotlink, never invent a credit.
+
+Processing: up to ~1200px wide, WebP, under 200KB, roughly 16:9 (displayed with `object-fit: cover`). Lowercase latin file names with hyphens.
 
 ### Build locally
 

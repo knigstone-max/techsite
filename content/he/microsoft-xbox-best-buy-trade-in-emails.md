@@ -4,6 +4,10 @@ date: 2026-10-20
 slug: microsoft-xbox-best-buy-trade-in-emails
 category: tech-news
 excerpt: מי שלא הדליק את ה-Xbox Series X שלו כבר זמן מה מקבל הצעה לכרטיסי מתנה של Best Buy, בזמן ש-Series X חדש עולה בארה"ב 799 דולר.
+image: img/posts/xbox-series-x.webp
+image_alt: "קונסולת Xbox Series X שחורה עומדת על מדף עץ"
+image_credit: "צילום: Ian Hughes, רישיון CC BY 2.0, דרך Wikimedia Commons (חתוך)"
+image_credit_url: https://commons.wikimedia.org/wiki/File:Xbox_series_X_(50648118708).jpg
 source_links:
   - https://www.notebookcheck.net/Microsoft-asks-Xbox-console-owners-to-sell-used-Series-X-amid-high-prices-and-shortages.1428346.0.html
   - https://www.xda-developers.com/please-sell-your-xbox-series-x-to-best-buy-asks-microsoft/

@@ -4,6 +4,10 @@ date: 2026-10-20
 slug: xiaomi-smart-switch-2-pro
 category: home-appliances
 excerpt: The new switch replaces a standard wall switch, works with both regular and smart bulbs, and starts at 114 yuan in a crowdfunding campaign in China.
+image: img/posts/xiaomi-smart-switch-2-pro.webp
+image_alt: "Two Xiaomi Smart Switch 2 Pro wall switches, one white and one dark gray"
+image_credit: "Image: Xiaomi (Xiaomi Youpin product page)"
+image_credit_url: https://www.xiaomiyoupin.com/detail?gid=185146
 source_links:
   - https://www.gizmochina.com/2026/10/19/xiaomi-launches-smart-switch-2-pro-with-app-and-voice-control-automation-2200w-max-load/
 ---
