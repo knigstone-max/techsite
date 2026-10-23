@@ -315,8 +315,10 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
 <meta property="og:locale" content="{OG_LOCALE[lang]}">
 <meta property="og:locale:alternate" content="{OG_LOCALE[other]}">
 {og_img}
-<meta name="theme-color" content="#0b0d12">
+<meta name="theme-color" content="#ffffff">
 <link rel="alternate" type="application/rss+xml" title="{esc(t['site_name'])} RSS" href="{url(lang, 'feed.xml')}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=Heebo:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="{asset('style.css')}">
 <link rel="icon" href="{asset('favicon.svg')}" type="image/svg+xml">
 <script src="{asset('main.js')}" defer></script>
@@ -595,6 +597,8 @@ def build_404():
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <script>{THEME_BOOT}</script>
 <title>404 | {esc(t['site_name'])}</title><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=Heebo:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="{asset('style.css')}"></head>
 <body><main id="main" class="wrap nf-wrap">{''.join(blocks)}</main></body></html>
 """
