@@ -322,7 +322,7 @@ h1, h2, h3 { font-weight: 700 !important; letter-spacing: 0; }
 .cat-tile { border-radius: var(--radius); border-color: var(--line); color: var(--fg); background: var(--surface); }
 .cat-tile::after { display: none; }
 .cat-tile-media { aspect-ratio: 16 / 10; }
-.cat-tile-media img { filter: grayscale(.25); }
+.cat-tile-media img { filter: none; }
 .cat-tile:hover .cat-tile-media img { transform: none; filter: none; }
 .cat-tile-text { position: static; padding: .55rem .7rem .65rem; border-block-start: 2px solid var(--accent); }
 .cat-tile-text strong { text-shadow: none; font-size: 1.02rem; }

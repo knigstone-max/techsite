@@ -8,15 +8,15 @@
       "he": "סמארטפונים וגאדג'טים",
       "en": "Smartphones & Gadgets",
       "image": "img/categories/smartphones-gadgets.webp",
-      "image_credit": "Petar Milošević, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
-      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Xiaomi_Redmi_Note_10_Pro.jpg",
+      "image_credit": "Ka Kit Pang, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
+      "image_credit_url": "https://commons.wikimedia.org/wiki/File:IPhone_Pro_(Max).png",
       "desc": {
         "he": "טלפונים, שעונים, אוזניות וכל מה שנכנס לכיס",
         "en": "Phones, watches, earbuds and everything that fits in a pocket"
       },
       "alt": {
-        "he": "גב של סמארטפון עם מודול מצלמות",
-        "en": "Back of a smartphone with its camera module"
+        "he": "ארבעה סמארטפונים בצבעים שונים על רקע שחור",
+        "en": "Four smartphones in different colors on a black background"
       }
     },
     {
@@ -24,15 +24,15 @@
       "he": "מוצרי חשמל לבית",
       "en": "Home Appliances",
       "image": "img/categories/home-appliances.webp",
-      "image_credit": "ajay_suresh, CC BY 2.0, via Wikimedia Commons (cropped and resized)",
-      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Robot_Vacuum_-_Charging_(50841204983).jpg",
+      "image_credit": "Stilfehler, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
+      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Large_Household_Appliances_in_a_Home_Improvement_Store_in_California,_in_2024_(06).jpg",
       "desc": {
         "he": "שואבים, מטהרים, מטבח ובית חכם",
         "en": "Vacuums, purifiers, kitchen and smart home"
       },
       "alt": {
-        "he": "שואב אבק רובוטי בעמדת הטעינה",
-        "en": "A robot vacuum on its charging dock"
+        "he": "שורה של מדיחי כלים ומוצרי חשמל גדולים בחנות",
+        "en": "A row of dishwashers and other large home appliances in a store"
       }
     },
     {
@@ -40,15 +40,15 @@
       "he": "חדשות טכנולוגיה",
       "en": "Tech News",
       "image": "img/categories/tech-news.webp",
-      "image_credit": "Smial, Free Art License 1.3, via Wikimedia Commons (cropped and resized)",
-      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Leiterbahnen_IMGP2839_smial_wp.jpg",
+      "image_credit": "BalticServers.com, CC BY-SA 3.0, via Wikimedia Commons (cropped and resized)",
+      "image_credit_url": "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg",
       "desc": {
         "he": "מה קורה בתעשייה, השקות ומחירים",
         "en": "Industry news, launches and prices"
       },
       "alt": {
-        "he": "מסלולי נחושת על לוח מעגלים ירוק",
-        "en": "Copper traces on a green circuit board"
+        "he": "ארונות שרתים מוארים בכחול בחוות שרתים",
+        "en": "Server racks lit in blue inside a data center"
       }
     },
     {
@@ -56,15 +56,15 @@
       "he": "ביקורות",
       "en": "Reviews",
       "image": "img/categories/reviews.webp",
-      "image_credit": "Florian Fuchs, CC BY-SA 3.0, via Wikimedia Commons (cropped and resized)",
-      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Bose_QuietComfort_25_Acoustic_Noise_Cancelling_Headphones_with_Carry_Case.jpg",
+      "image_credit": "SimonWaldherr, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
+      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Apple_iPhone_13_Pro_on_MacBook_Pro_08.jpg",
       "desc": {
         "he": "סקירות והשוואות לפי מפרטים ובדיקות שפורסמו",
         "en": "Reviews and comparisons based on specs and published tests"
       },
       "alt": {
-        "he": "אוזניות Bose QuietComfort 25 ליד נרתיק הנשיאה",
-        "en": "Bose QuietComfort 25 headphones next to their carry case"
+        "he": "סמארטפון מונח על מקלדת של מחשב נייד באור אדום",
+        "en": "A smartphone lying on a laptop keyboard in red light"
       }
     },
     {
@@ -72,15 +72,15 @@
       "he": "טיפים",
       "en": "Tips",
       "image": "img/categories/tips.webp",
-      "image_credit": "Colin, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
-      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Backlit_keyboard.jpg",
+      "image_credit": "Basile Morin, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
+      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Lamp_with_lit_incandescent_light_bulb_and_black_background.jpg",
       "desc": {
         "he": "מדריכים קצרים שחוסכים זמן וכסף",
         "en": "Short guides that save time and money"
       },
       "alt": {
-        "he": "ידיים מקלידות על מקלדת מוארת",
-        "en": "Hands typing on a backlit keyboard"
+        "he": "נורה דולקת בתוך מנורה על רקע שחור",
+        "en": "A lit light bulb inside a lamp against a black background"
       }
     }
   ],
