@@ -4,9 +4,9 @@ date: 2026-10-23
 slug: samsung-smart-repair-appliances-italy
 category: home-appliances
 excerpt: בעלים של מכונות כביסה, מקררים, תנורים ומוצרים נוספים של סמסונג שיצאו מהאחריות יכולים לקנות תיקון ב-Samsung.com ולקבל טכנאי הביתה, בדרך כלל תוך חמישה ימי עבודה.
-image: img/posts/samsung-smart-repair-appliances.webp
+image: img/posts/samsung-smart-repair-appliances-crop.webp
 image_alt: "מקרר, תנור ביל-אין ומכונת כביסה של סמסונג עומדים מאחורי הכיתוב Smart Repair"
-image_credit: "תמונה: Samsung Newsroom Italia"
+image_credit: "תמונה: Samsung Newsroom Italia (חתוך)"
 image_credit_url: https://news.samsung.com/it/samsung-smart-repair-arriva-anche-per-gli-elettrodomestici
 source_links:
   - https://news.samsung.com/it/samsung-smart-repair-arriva-anche-per-gli-elettrodomestici

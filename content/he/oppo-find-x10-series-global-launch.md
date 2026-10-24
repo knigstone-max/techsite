@@ -4,9 +4,10 @@ date: 2026-10-22
 slug: oppo-find-x10-series-global-launch
 category: smartphones-gadgets
 excerpt: ב-Pro Max יש חיישן של 200 מגה-פיקסל מאחורי כל שלוש העדשות האחוריות, בשני הדגמים סוללה של עד 8,000 מיליאמפר-שעה, והמכירות בעולם מתחילות בסוף אוקטובר.
-image: img/posts/oppo-find-x10-series.webp
+image: img/posts/oppo-find-x10-series-crop.webp
+image_position: "center 22%"
 image_alt: "הגב של Oppo Find X10 בצבע תכלת ושל Find X10 Pro Max בלבן, ליד הכיתוב Find X10 Series"
-image_credit: "תמונה: Oppo (הודעה לעיתונות על השקת סדרת Find X10)"
+image_credit: "תמונה: Oppo (הודעה לעיתונות על השקת סדרת Find X10, חתוך)"
 image_credit_url: https://www.oppo.com/en/newsroom/press/oppo-find-x10-series-global-launch/
 source_links:
   - https://www.oppo.com/en/newsroom/press/oppo-find-x10-series-global-launch/

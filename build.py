@@ -103,7 +103,7 @@ def load_image(meta, where):
         sys.exit(f"ERROR {where}: static/{img}: {e}")
     meta["image"] = {"path": img, "src": asset(img), "abs": abs_asset(img), "w": w, "h": h,
                      "alt": meta["image_alt"], "credit": meta["image_credit"],
-                     "credit_url": meta.get("image_credit_url") or ""}
+                     "credit_url": meta.get("image_credit_url") or "", "pos": meta.get("image_position") or ""}
 
 
 # ---------- content parsing ----------
@@ -226,7 +226,7 @@ def fmt_date(dt, lang):
     return dt.strftime("%b %-d, %Y")
 
 THEME_BOOT = ("(function(){try{var t=localStorage.getItem('theme');"
-              "if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}"
+              "if(t!=='light'&&t!=='dark'){t='dark'}"
               "document.documentElement.dataset.theme=t}catch(e){}})();")
 
 ICON_SUN = '<svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>'
@@ -297,7 +297,7 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
     else:
         og_img = '<meta name="twitter:card" content="summary">'
     return f"""<!doctype html>
-<html lang="{lang}" dir="{DIR[lang]}" data-base="{BASE}" data-theme="light">
+<html lang="{lang}" dir="{DIR[lang]}" data-base="{BASE}" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -315,10 +315,10 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
 <meta property="og:locale" content="{OG_LOCALE[lang]}">
 <meta property="og:locale:alternate" content="{OG_LOCALE[other]}">
 {og_img}
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#0b0e14">
 <link rel="alternate" type="application/rss+xml" title="{esc(t['site_name'])} RSS" href="{url(lang, 'feed.xml')}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=Heebo:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Rubik:wght@400;500;600;700&family=Secular+One&display=swap">
 <link rel="stylesheet" href="{asset('style.css')}">
 <link rel="icon" href="{asset('favicon.svg')}" type="image/svg+xml">
 <script src="{asset('main.js')}" defer></script>
@@ -374,7 +374,8 @@ def thumb(p, lang, big=False, eager=False):
     if not im:
         return f'<div class="{cls}" aria-hidden="true">{label}</div>'
     load = 'loading="eager" fetchpriority="high"' if eager else 'loading="lazy"'
-    return (f'<div class="{cls} has-img" aria-hidden="true"><img src="{esc(im["src"])}" alt="" width="{im["w"]}" height="{im["h"]}" '
+    pos = f' style="object-position:{esc(im["pos"])}"' if im.get("pos") else ""
+    return (f'<div class="{cls} has-img" aria-hidden="true"><img src="{esc(im["src"])}" alt="" width="{im["w"]}" height="{im["h"]}"{pos} '
             f'{load} decoding="async">{label}</div>')
 
 def post_figure(p, lang):
@@ -593,12 +594,12 @@ def build_404():
         blocks.append(f'<section lang="{lang}" dir="{DIR[lang]}" class="nf"><p class="kicker">404</p><h1>{esc(t["not_found_title"])}</h1><p>{esc(t["not_found_body"])}</p><p><a class="btn" href="{url(lang)}">{esc(t["back_home"])}</a></p></section>')
     t = CFG["strings"]["he"]
     page = f"""<!doctype html>
-<html lang="he" dir="rtl" data-theme="light">
+<html lang="he" dir="rtl" data-theme="dark">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <script>{THEME_BOOT}</script>
 <title>404 | {esc(t['site_name'])}</title><meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=Heebo:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Rubik:wght@400;500;600;700&family=Secular+One&display=swap">
 <link rel="stylesheet" href="{asset('style.css')}"></head>
 <body><main id="main" class="wrap nf-wrap">{''.join(blocks)}</main></body></html>
 """

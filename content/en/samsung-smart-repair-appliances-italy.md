@@ -4,9 +4,9 @@ date: 2026-10-23
 slug: samsung-smart-repair-appliances-italy
 category: home-appliances
 excerpt: Owners of out-of-warranty Samsung washers, fridges, ovens and more can now buy a repair on Samsung.com and get a technician at home, usually within five working days.
-image: img/posts/samsung-smart-repair-appliances.webp
+image: img/posts/samsung-smart-repair-appliances-crop.webp
 image_alt: "A Samsung refrigerator, built-in oven and washing machine standing behind the words Smart Repair"
-image_credit: "Image: Samsung Newsroom Italia"
+image_credit: "Image: Samsung Newsroom Italia (cropped)"
 image_credit_url: https://news.samsung.com/it/samsung-smart-repair-arriva-anche-per-gli-elettrodomestici
 source_links:
   - https://news.samsung.com/it/samsung-smart-repair-arriva-anche-per-gli-elettrodomestici

@@ -4,9 +4,10 @@ date: 2026-10-22
 slug: oppo-find-x10-series-global-launch
 category: smartphones-gadgets
 excerpt: The Pro Max puts a 200MP sensor behind all three rear lenses, both phones get up to 8,000mAh batteries, and sales start globally in late October.
-image: img/posts/oppo-find-x10-series.webp
+image: img/posts/oppo-find-x10-series-crop.webp
+image_position: "center 22%"
 image_alt: "The backs of a light blue Oppo Find X10 and a white Find X10 Pro Max next to the text Find X10 Series"
-image_credit: "Image: Oppo (official Find X10 Series launch press release)"
+image_credit: "Image: Oppo (official Find X10 Series launch press release, cropped)"
 image_credit_url: https://www.oppo.com/en/newsroom/press/oppo-find-x10-series-global-launch/
 source_links:
   - https://www.oppo.com/en/newsroom/press/oppo-find-x10-series-global-launch/

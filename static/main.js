@@ -14,7 +14,7 @@
   // Follow OS changes only if the user never picked a theme.
   try {
     var mq = matchMedia('(prefers-color-scheme: dark)');
-    mq.addEventListener('change', function (e) { if (!localStorage.getItem('theme')) root.dataset.theme = e.matches ? 'dark' : 'light'; });
+    mq.addEventListener('change', function (e) { /* dark is the default; OS changes no longer switch themes */ });
   } catch (e) {}
 
   var toggle = document.querySelector('.nav-toggle');

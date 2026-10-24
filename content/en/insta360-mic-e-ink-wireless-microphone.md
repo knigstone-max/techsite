@@ -4,9 +4,9 @@ date: 2026-10-23
 slug: insta360-mic-e-ink-wireless-microphone
 category: smartphones-gadgets
 excerpt: The new wireless mic sits between the Mic Air and Mic Pro, records 32-bit float backups to a microSD card, and connects straight to six Insta360 cameras over Bluetooth.
-image: img/posts/insta360-mic.webp
+image: img/posts/insta360-mic-crop.webp
 image_alt: "Two round Insta360 Mic transmitters with custom images on their E-Ink screens, floating above a black charging case and receiver"
-image_credit: "Image: Insta360 (press release)"
+image_credit: "Image: Insta360 (press release, cropped)"
 image_credit_url: https://www.prnewswire.com/news-releases/insta360-launches-mic-to-complete-its-wireless-microphone-lineup-flagship-level-audio-for-everyday-creators-302916915.html
 source_links:
   - https://www.prnewswire.com/news-releases/insta360-launches-mic-to-complete-its-wireless-microphone-lineup-flagship-level-audio-for-everyday-creators-302916915.html
