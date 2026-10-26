@@ -156,8 +156,29 @@ def inline_md(s):
     s = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", link, s)
     return s
 
-def md_to_html(md):
+BODY_IMG = re.compile(r'^!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]*)")?\)$')
+
+def body_figure(alt, src, caption, where):
+    """In-body image: ![alt](img/posts/x.webp "caption"). Local files under static/ only."""
+    if re.match(r"^[a-z]+://", src):
+        sys.exit(f"ERROR {where}: body image must be a local file under static/, not a URL (no hotlinking)")
+    src = src.lstrip("/")
+    for pre in ("assets/", "static/"):
+        if src.startswith(pre):
+            src = src[len(pre):]
+    f = STATIC / src
+    if not f.is_file():
+        sys.exit(f"ERROR {where}: body image not found: static/{src}")
+    if not alt:
+        sys.exit(f"ERROR {where}: body image {src} needs alt text")
+    w, h = image_size(f)
+    cap = f'<figcaption>{inline_md(caption)}</figcaption>' if caption else ""
+    return (f'<figure class="body-figure"><img src="{esc(asset(src))}" alt="{esc(alt)}" width="{w}" height="{h}" '
+            f'loading="lazy" decoding="async">{cap}</figure>')
+
+def md_to_html(md, where="post"):
     out, para, lst = [], [], None
+    box = None  # (class, start index in out)
     def flush():
         nonlocal para, lst
         if para:
@@ -170,6 +191,20 @@ def md_to_html(md):
         s = line.strip()
         if not s:
             flush(); continue
+        bx = re.match(r"^:::\s*([a-z-]*)\s*$", s)
+        if bx:
+            flush()
+            if box is None:
+                box = (bx.group(1) or "box", len(out))
+            else:
+                cls, start = box
+                inner = "\n".join(out[start:]); del out[start:]
+                inner = re.sub(r"<p>(\d+(?:\.\d)?/10)</p>", r'<p class="score">\1</p>', inner)
+                out.append(f'<aside class="box box-{cls}">{inner}</aside>'); box = None
+            continue
+        im = BODY_IMG.match(s)
+        if im:
+            flush(); out.append(body_figure(im.group(1), im.group(2), im.group(3) or "", where)); continue
         h = re.match(r"^(#{2,4})\s+(.*)$", s)
         ul = re.match(r"^[-*]\s+(.*)$", s)
         ol = re.match(r"^\d+[.)]\s+(.*)$", s)
@@ -188,6 +223,8 @@ def md_to_html(md):
             if lst: flush()
             para.append(s)
     flush()
+    if box is not None:
+        sys.exit(f"ERROR {where}: unclosed ::: block")
     return "\n".join(out)
 
 def load_posts(lang):
@@ -213,7 +250,7 @@ def load_posts(lang):
             continue
         src = meta.get("source_links", [])
         meta["source_links"] = src if isinstance(src, list) else [src]
-        meta["html"] = md_to_html(body)
+        meta["html"] = md_to_html(body, f"{lang}/{f.name}")
         meta["lang"] = lang
         load_image(meta, f"{lang}/{f.name}")
         posts.append(meta)
