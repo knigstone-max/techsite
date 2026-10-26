@@ -317,3 +317,13 @@ article.prose { background: var(--surface); border: 1px solid var(--line); borde
 }
 .footer-links a { display: inline-flex; align-items: center; min-block-size: 44px; }
 .site-footer { color: #e6ecf3; }
+
+/* uniform icon sizes + logo + equal tiles */
+.brand-logo { inline-size: 34px; block-size: 34px; display: block; flex: none; }
+.brand { display: inline-flex; align-items: center; gap: .5rem; }
+.sub-links svg, .icon-btn svg, .lang-switch svg, .search-btn svg, .pill svg { inline-size: 18px !important; block-size: 18px !important; flex: none; }
+.cat-tiles > li { display: flex; }
+.cat-tile { display: flex; flex-direction: column; inline-size: 100%; }
+.cat-tile-text { min-block-size: 3.2em; display: flex; align-items: center; justify-content: center; text-align: center; }
+.cat-tile-text strong { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cat-pill-img img, .cat-pill-img { inline-size: 28px; block-size: 28px; flex: none; }

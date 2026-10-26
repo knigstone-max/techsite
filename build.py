@@ -284,7 +284,7 @@ def cat_tiles(lang, cls="cat-tiles", eager=False):
     items = "".join(
         f'<li><a class="cat-tile c-{c["slug"]}" href="{url(lang, "category/" + c["slug"] + "/")}">'
         f'<span class="cat-tile-media">{cat_img(c, lang, eager=eager)}</span>'
-        f'<span class="cat-tile-text"><strong>{esc(c[lang])}</strong><small>{esc(count_label(counts.get(c["slug"], 0), lang))}</small></span></a></li>'
+        f'<span class="cat-tile-text"><strong>{esc(c[lang])}</strong></span></a></li>'
         for c in CATS)
     return f'<ul class="{cls}">{items}</ul>'
 
@@ -357,7 +357,7 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
 <header class="site-header">
   <div class="wrap">
     <div class="topbar">
-      <a class="brand" href="{url(lang)}"><span class="brand-mark" aria-hidden="true"></span>{esc(t['site_name'])}</a>
+      <a class="brand" href="{url(lang)}"><img class="brand-logo" src="{asset('logo.svg')}" alt="" width="34" height="34">{esc(t['site_name'])}</a>
       <ul class="sub-links">
         <li><a class="home-link" href="{url(lang)}">{ICON_HOME}{esc(t['home'])}</a></li>
         <li><a href="{url(lang, 'categories/')}">{ICON_GRID}{esc(t['all_categories'])}</a></li>
@@ -376,10 +376,6 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
     <div class="header-panels">
       <section class="hp hp-info" aria-label="{esc(t['site_name'])}">
         <p class="hp-tagline">{esc(t['tagline'])}</p>
-        <ul class="stats">
-          <li class="stat s-blue"><b>{total_posts}</b> {esc(t['stat_posts'])}</li>
-          <li class="stat s-green"><b>{len(CATS)}</b> {esc(t['stat_cats'])}</li>
-        </ul>
       </section>
       <form class="hp hp-search" role="search" action="{url(lang, 'archive/')}" method="get">
         <label class="visually-hidden" for="site-q">{esc(t['search'])}</label>
@@ -394,7 +390,7 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
 </main>
 <footer class="site-footer">
   <div class="wrap footer-row">
-    <div><a class="brand" href="{url(lang)}"><span class="brand-mark" aria-hidden="true"></span>{esc(t['site_name'])}</a><p>{esc(t['tagline'])}</p></div>
+    <div><a class="brand" href="{url(lang)}"><img class="brand-logo" src="{asset('logo.svg')}" alt="" width="34" height="34">{esc(t['site_name'])}</a><p>{esc(t['tagline'])}</p></div>
     <ul class="footer-links">
       <li><a href="{url(lang, 'archive/')}">{esc(t['archive'])}</a></li>
       <li><a href="{url(lang, 'about/')}">{esc(t['about'])}</a></li>
@@ -519,7 +515,6 @@ def build_lang(lang, posts, other_slugs):
   <div class="cat-card-body">
     <h2><a href="{href}">{esc(c[lang])}</a></h2>
     <p class="cat-card-desc">{esc(c.get('desc', {}).get(lang, ''))}</p>
-    <p class="meta">{esc(count_label(counts.get(c['slug'], 0), lang))}</p>
     {latest_html}
     <a class="btn btn-ghost" href="{href}">{esc(t['view_all'])}</a>
   </div>
@@ -554,7 +549,7 @@ def build_lang(lang, posts, other_slugs):
 
     # about
     credits = "".join(
-        f'<li><strong>{esc(c[lang])}</strong>: <a href="{esc(c["image_credit_url"])}" rel="noopener" target="_blank">{esc(c["image_credit"])}</a></li>'
+        (f'<li><strong>{esc(c[lang])}</strong>: <a href="{esc(c["image_credit_url"])}" rel="noopener" target="_blank">{esc(c["image_credit"])}</a></li>' if c.get("image_credit_url") else f'<li><strong>{esc(c[lang])}</strong>: {esc(c["image_credit"])}</li>')
         for c in CATS if c.get("image") and c.get("image_credit"))
     credits_html = (f'<section class="credits" id="credits"><h2>{esc(t["image_credits"])}</h2><p>{esc(t["credits_intro"])}</p><ul>{credits}</ul></section>'
                     if credits else "")

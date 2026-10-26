@@ -72,21 +72,21 @@
       "image_credit_he": "איור: טכנו-בית, מורכב מ-Fluent Emoji Flat (מיקרוסופט, רישיון MIT) ומאיורים וקטוריים מקוריים"
     },
     {
-      "slug": "tips",
-      "he": "טיפים",
-      "en": "Tips",
-      "image": "img/categories/tips.webp",
-      "image_credit": "Illustration: TechnoBayit, composed from Fluent Emoji Flat (Microsoft, MIT License) and original vector drawings",
-      "image_credit_url": "https://github.com/microsoft/fluentui-emoji",
+      "slug": "gaming-lite",
+      "he": "גיימינג לייט",
+      "en": "Gaming Lite",
+      "image": "img/categories/gaming-lite.webp",
+      "image_credit": "Illustration: TechnoBayit, original vector drawing",
+      "image_credit_he": "איור: טכנו-בית, איור וקטורי מקורי",
+      "image_credit_url": "",
       "desc": {
-        "he": "מדריכים קצרים שחוסכים זמן וכסף",
-        "en": "Short guides that save time and money"
+        "he": "משחקים, קונסולות ואביזרים, בלי להפוך לאתר גיימינג",
+        "en": "Games, consoles and gear, without turning into a gaming site"
       },
       "alt": {
-        "he": "איור שטוח של נורה, תקע חשמל, מפתח ברגים וסימן וי על רקע כתום",
-        "en": "Flat illustration of a light bulb, plug, wrench and check mark on an orange background"
-      },
-      "image_credit_he": "איור: טכנו-בית, מורכב מ-Fluent Emoji Flat (מיקרוסופט, רישיון MIT) ומאיורים וקטוריים מקוריים"
+        "he": "איור שטוח של שלט משחק, אוזניות גיימינג וקונסולה על רקע כתום",
+        "en": "Flat illustration of a game controller, gaming headset and console on an orange background"
+      }
     }
   ],
   "strings": {
