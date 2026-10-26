@@ -8,80 +8,85 @@
       "he": "סמארטפונים וגאדג'טים",
       "en": "Smartphones & Gadgets",
       "image": "img/categories/smartphones-gadgets.webp",
-      "image_credit": "Ka Kit Pang, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
-      "image_credit_url": "https://commons.wikimedia.org/wiki/File:IPhone_Pro_(Max).png",
+      "image_credit": "Illustration: TechnoBayit, composed from Fluent Emoji Flat (Microsoft, MIT License) and original vector drawings",
+      "image_credit_url": "https://github.com/microsoft/fluentui-emoji",
       "desc": {
         "he": "טלפונים, שעונים, אוזניות וכל מה שנכנס לכיס",
         "en": "Phones, watches, earbuds and everything that fits in a pocket"
       },
       "alt": {
-        "he": "ארבעה סמארטפונים בצבעים שונים על רקע שחור",
-        "en": "Four smartphones in different colors on a black background"
-      }
+        "he": "איור שטוח של סמארטפון, שעון חכם, אוזניות ומחשב נייד על רקע כתום",
+        "en": "Flat illustration of a smartphone, smartwatch, headphones and a laptop on an orange background"
+      },
+      "image_credit_he": "איור: טכנו-בית, מורכב מ-Fluent Emoji Flat (מיקרוסופט, רישיון MIT) ומאיורים וקטוריים מקוריים"
     },
     {
       "slug": "home-appliances",
       "he": "מוצרי חשמל לבית",
       "en": "Home Appliances",
       "image": "img/categories/home-appliances.webp",
-      "image_credit": "Stilfehler, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
-      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Large_Household_Appliances_in_a_Home_Improvement_Store_in_California,_in_2024_(06).jpg",
+      "image_credit": "Illustration: TechnoBayit, composed from Fluent Emoji Flat (Microsoft, MIT License) and original vector drawings",
+      "image_credit_url": "https://github.com/microsoft/fluentui-emoji",
       "desc": {
         "he": "שואבים, מטהרים, מטבח ובית חכם",
         "en": "Vacuums, purifiers, kitchen and smart home"
       },
       "alt": {
-        "he": "שורה של מדיחי כלים ומוצרי חשמל גדולים בחנות",
-        "en": "A row of dishwashers and other large home appliances in a store"
-      }
+        "he": "איור שטוח של מכונת כביסה, מקרר, מזגן ושואב רובוטי על רקע כתום",
+        "en": "Flat illustration of a washing machine, fridge, air conditioner and robot vacuum on an orange background"
+      },
+      "image_credit_he": "איור: טכנו-בית, מורכב מ-Fluent Emoji Flat (מיקרוסופט, רישיון MIT) ומאיורים וקטוריים מקוריים"
     },
     {
       "slug": "tech-news",
       "he": "חדשות טכנולוגיה",
       "en": "Tech News",
       "image": "img/categories/tech-news.webp",
-      "image_credit": "BalticServers.com, CC BY-SA 3.0, via Wikimedia Commons (cropped and resized)",
-      "image_credit_url": "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg",
+      "image_credit": "Illustration: TechnoBayit, composed from Fluent Emoji Flat (Microsoft, MIT License) and original vector drawings",
+      "image_credit_url": "https://github.com/microsoft/fluentui-emoji",
       "desc": {
         "he": "מה קורה בתעשייה, השקות ומחירים",
         "en": "Industry news, launches and prices"
       },
       "alt": {
-        "he": "ארונות שרתים מוארים בכחול בחוות שרתים",
-        "en": "Server racks lit in blue inside a data center"
-      }
+        "he": "איור שטוח של עיתון, טלוויזיה, צלחת לוויין ומגפון על רקע כתום",
+        "en": "Flat illustration of a newspaper, TV, satellite dish and megaphone on an orange background"
+      },
+      "image_credit_he": "איור: טכנו-בית, מורכב מ-Fluent Emoji Flat (מיקרוסופט, רישיון MIT) ומאיורים וקטוריים מקוריים"
     },
     {
       "slug": "reviews",
       "he": "ביקורות",
       "en": "Reviews",
       "image": "img/categories/reviews.webp",
-      "image_credit": "SimonWaldherr, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
-      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Apple_iPhone_13_Pro_on_MacBook_Pro_08.jpg",
+      "image_credit": "Illustration: TechnoBayit, composed from Fluent Emoji Flat (Microsoft, MIT License) and original vector drawings",
+      "image_credit_url": "https://github.com/microsoft/fluentui-emoji",
       "desc": {
         "he": "סקירות והשוואות לפי מפרטים ובדיקות שפורסמו",
         "en": "Reviews and comparisons based on specs and published tests"
       },
       "alt": {
-        "he": "סמארטפון מונח על מקלדת של מחשב נייד באור אדום",
-        "en": "A smartphone lying on a laptop keyboard in red light"
-      }
+        "he": "איור שטוח של זכוכית מגדלת, כוכב, גרף ולוח בדיקה על רקע כתום",
+        "en": "Flat illustration of a magnifying glass, star, bar chart and clipboard on an orange background"
+      },
+      "image_credit_he": "איור: טכנו-בית, מורכב מ-Fluent Emoji Flat (מיקרוסופט, רישיון MIT) ומאיורים וקטוריים מקוריים"
     },
     {
       "slug": "tips",
       "he": "טיפים",
       "en": "Tips",
       "image": "img/categories/tips.webp",
-      "image_credit": "Basile Morin, CC BY-SA 4.0, via Wikimedia Commons (cropped and resized)",
-      "image_credit_url": "https://commons.wikimedia.org/wiki/File:Lamp_with_lit_incandescent_light_bulb_and_black_background.jpg",
+      "image_credit": "Illustration: TechnoBayit, composed from Fluent Emoji Flat (Microsoft, MIT License) and original vector drawings",
+      "image_credit_url": "https://github.com/microsoft/fluentui-emoji",
       "desc": {
         "he": "מדריכים קצרים שחוסכים זמן וכסף",
         "en": "Short guides that save time and money"
       },
       "alt": {
-        "he": "נורה דולקת בתוך מנורה על רקע שחור",
-        "en": "A lit light bulb inside a lamp against a black background"
-      }
+        "he": "איור שטוח של נורה, תקע חשמל, מפתח ברגים וסימן וי על רקע כתום",
+        "en": "Flat illustration of a light bulb, plug, wrench and check mark on an orange background"
+      },
+      "image_credit_he": "איור: טכנו-בית, מורכב מ-Fluent Emoji Flat (מיקרוסופט, רישיון MIT) ומאיורים וקטוריים מקוריים"
     }
   ],
   "strings": {
@@ -121,7 +126,7 @@
       "post_count_one": "פוסט אחד",
       "latest_in": "אחרונים",
       "image_credits": "קרדיט לתמונות",
-      "credits_intro": "תמונות הקטגוריות לקוחות מ-Wikimedia Commons ברישיונות חופשיים. תמונות בפוסטים מקבלות קרדיט מתחת לתמונה.",
+      "credits_intro": "איורי הקטגוריות הורכבו במערכת האתר מאייקונים של Fluent Emoji Flat (מיקרוסופט, רישיון MIT) ומאיורים וקטוריים מקוריים של האתר (מכונת כביסה, מקרר, מזגן ושואב רובוטי). כתבות בלי תמונת יצרן מוצגות עם איור הקטגוריה. תמונות בכתבות מקבלות קרדיט מתחת לתמונה.",
       "admin": "ניהול משתמשים",
       "dashboard": "לוח כתיבה ועריכה",
       "admin_title": "ניהול משתמשים",
@@ -132,7 +137,16 @@
       "role_editor": "עורך/ת: מאשר/ת או דוחה טיוטות ומוחק/ת תגובות",
       "role_admin": "אדמין: כל מה שעורך יכול, וגם קובע תפקידים",
       "queue_note": "טיוטות שאושרו נכנסות לתור. העדכון היומי הופך אותן לפוסטים באתר בעברית ובאנגלית.",
-      "view_all": "לכל הפוסטים בקטגוריה"
+      "view_all": "לכל הפוסטים בקטגוריה",
+      "search": "חיפוש",
+      "search_placeholder": "חפשו כתבה, מוצר או מותג…",
+      "stat_posts": "כתבות",
+      "stat_cats": "קטגוריות",
+      "stat_updated": "עודכן",
+      "col_date": "תאריך",
+      "col_title": "כותרת",
+      "col_cat": "קטגוריה",
+      "no_results": "לא נמצאו כתבות מתאימות"
     },
     "en": {
       "site_name": "TechnoBayit",
@@ -170,7 +184,7 @@
       "post_count_one": "1 post",
       "latest_in": "Latest",
       "image_credits": "Image credits",
-      "credits_intro": "Category images come from Wikimedia Commons under free licenses. Post images are credited under each image.",
+      "credits_intro": "Category illustrations were composed by the site from Fluent Emoji Flat icons (Microsoft, MIT License) plus the site's own original vector drawings (washing machine, fridge, air conditioner, robot vacuum). Stories without a manufacturer photo show the category illustration. Story images are credited under each image.",
       "admin": "User management",
       "dashboard": "Write & review",
       "admin_title": "User management",
@@ -181,7 +195,16 @@
       "role_editor": "Editor: approves or rejects drafts and deletes comments",
       "role_admin": "Admin: everything an editor can do, plus assigning roles",
       "queue_note": "Approved drafts go into a queue. The daily update turns them into posts on the site in Hebrew and English.",
-      "view_all": "All posts in this category"
+      "view_all": "All posts in this category",
+      "search": "Search",
+      "search_placeholder": "Search a story, product or brand…",
+      "stat_posts": "stories",
+      "stat_cats": "categories",
+      "stat_updated": "Updated",
+      "col_date": "Date",
+      "col_title": "Title",
+      "col_cat": "Category",
+      "no_results": "No matching stories"
     }
   },
   "about": {

@@ -4,10 +4,6 @@ date: 2026-10-21
 slug: gemini-personal-intelligence-android-auto
 category: tech-news
 excerpt: גוגל מתחילה להפעיל את Personal Intelligence ב-Android Auto, ובהמשך גם במכוניות עם Google built-in. צריך להפעיל את זה ידנית, וזה לא זמין באיחוד האירופי, בשווייץ ובבריטניה.
-image: img/posts/gemini-personal-intelligence-android-auto.webp
-image_alt: "איור של גוגל: מבט של נהג דרך השמשה הקדמית, ומסביב דוגמאות לבקשות מ-Gemini, כמו שאלה על שער הטיסה"
-image_credit: "תמונה: Google (הבלוג The Keyword)"
-image_credit_url: https://blog.google/products-and-platforms/platforms/android/android-auto-cars-with-google-built-in-gemini-personal-intelligence/
 source_links:
   - https://blog.google/products-and-platforms/platforms/android/android-auto-cars-with-google-built-in-gemini-personal-intelligence/
   - https://www.androidauthority.com/gemini-personal-intelligence-on-android-auto-3725650/

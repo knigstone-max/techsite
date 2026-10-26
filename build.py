@@ -81,7 +81,16 @@ def load_image(meta, where):
     """Validate the optional image fields. `image` is a path under static/ (e.g. img/posts/x.webp)."""
     img = meta.get("image")
     if not img:
-        meta["image"] = None
+        # Uniform fallback: the category illustration (same 3:2 set, credited on the about page)
+        c = next((c for c in CATS if c["slug"] == meta.get("category")), None)
+        if c and c.get("image"):
+            w, h = image_size(STATIC / c["image"])
+            lang = meta.get("lang", "he")
+            meta["image"] = {"path": c["image"], "src": asset(c["image"]), "abs": abs_asset(c["image"]), "w": w, "h": h,
+                             "alt": c.get("alt", {}).get(lang, c[lang]), "credit": c.get("image_credit_he" if lang == "he" else "image_credit", c.get("image_credit", "")),
+                             "credit_url": c.get("image_credit_url", ""), "pos": "", "fallback": True}
+        else:
+            meta["image"] = None
         return
     img = img.lstrip("/")
     if img.startswith("assets/"):
@@ -226,7 +235,7 @@ def fmt_date(dt, lang):
     return dt.strftime("%b %-d, %Y")
 
 THEME_BOOT = ("(function(){try{var t=localStorage.getItem('theme');"
-              "if(t!=='light'&&t!=='dark'){t='dark'}"
+              "if(t!=='light'&&t!=='dark'){t='light'}"
               "document.documentElement.dataset.theme=t}catch(e){}})();")
 
 ICON_SUN = '<svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>'
@@ -236,6 +245,22 @@ ICON_PEN = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4
 ICON_SHIELD = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>'
 ICON_CHEV = '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>'
 ICON_USER = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>'
+
+ICON_SEARCH = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>'
+ICON_HOME = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5h4v5"/></svg>'
+ICON_ARCHIVE = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 9v10h14V9M10 13h4"/></svg>'
+ICON_GRID = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>'
+ICON_INFO = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>'
+ICON_RSS = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19h.01M5 12a7 7 0 0 1 7 7M5 5a14 14 0 0 1 14 14"/></svg>'
+ICON_GLOBE = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z"/></svg>'
+CAT_ICONS = {
+    "smartphones-gadgets": '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></svg>',
+    "home-appliances": '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="2.5" width="16" height="19" rx="2.2"/><path d="M4 7h16M7 5h.01"/><circle cx="12" cy="14" r="4"/></svg>',
+    "tech-news": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h13v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v10a2 2 0 0 1-2 2"/><path d="M7 9h7M7 13h7M7 17h4"/></svg>',
+    "reviews": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg>',
+    "tips": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg>',
+}
+LATEST = {}
 
 def cat_img(c, lang, size="tile", eager=False):
     """Category image (decorative inside a labelled link). Credit goes in the title attribute and on the about page."""
@@ -277,6 +302,9 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
     t = CFG["strings"][lang]
     other = "en" if lang == "he" else "he"
     full_title = f"{title} | {t['site_name']}" if title != t["site_name"] else title
+    total_posts = sum(CAT_COUNTS.get(lang, {}).values())
+    latest_date = LATEST.get(lang, "")
+    pills = "".join(f'<li><a class="pill c-{c["slug"]}" href="{url(lang, "category/" + c["slug"] + "/")}">{CAT_ICONS.get(c["slug"], "")}{esc(c[lang])}</a></li>' for c in CATS)
     mega = (f'<div class="mega" id="mega-cats"><div class="mega-inner">{cat_tiles(lang, "mega-tiles")}'
             f'<a class="mega-all" href="{url(lang, "categories/")}">{esc(t["all_categories"])} &rarr;</a></div></div>')
     nav = (f'<li class="has-mega"><a class="nav-cats" href="{url(lang, "categories/")}" aria-haspopup="true">{esc(t["categories"])}{ICON_CHEV}</a>{mega}</li>')
@@ -297,7 +325,7 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
     else:
         og_img = '<meta name="twitter:card" content="summary">'
     return f"""<!doctype html>
-<html lang="{lang}" dir="{DIR[lang]}" data-base="{BASE}" data-theme="dark">
+<html lang="{lang}" dir="{DIR[lang]}" data-base="{BASE}" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -315,10 +343,10 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
 <meta property="og:locale" content="{OG_LOCALE[lang]}">
 <meta property="og:locale:alternate" content="{OG_LOCALE[other]}">
 {og_img}
-<meta name="theme-color" content="#0b0e14">
+<meta name="theme-color" content="#e9eef5">
 <link rel="alternate" type="application/rss+xml" title="{esc(t['site_name'])} RSS" href="{url(lang, 'feed.xml')}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Rubik:wght@400;500;600;700&family=Secular+One&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="{asset('style.css')}">
 <link rel="icon" href="{asset('favicon.svg')}" type="image/svg+xml">
 <script src="{asset('main.js')}" defer></script>
@@ -327,26 +355,46 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
 <body>
 <a class="skip" href="#main">{esc(t['skip'])}</a>
 <header class="site-header">
-  <div class="wrap header-row">
-    <button class="icon-btn nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="{esc(t['menu'])}">{ICON_MENU}</button>
-    <a class="brand" href="{url(lang)}"><span class="brand-mark" aria-hidden="true"></span>{esc(t['site_name'])}</a>
-    <nav id="site-nav" class="site-nav" aria-label="{esc(t['categories'])}">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="{url(lang)}"><span class="brand-mark" aria-hidden="true"></span>{esc(t['site_name'])}</a>
+      <ul class="sub-links">
+        <li><a href="{url(lang, 'categories/')}">{ICON_GRID}{esc(t['all_categories'])}</a></li>
+        <li><a href="{url(lang, 'about/')}">{ICON_INFO}{esc(t['about'])}</a></li>
+        <li><a href="{url(lang, 'feed.xml')}">{ICON_RSS}{esc(t['rss'])}</a></li>
+      </ul>
+      <div class="header-tools">
+        <a class="lang-switch" href="{url(other, other_path)}" hreflang="{other}" lang="{other}">{ICON_GLOBE}{esc(t['switch'])}</a>
+        <button class="icon-btn theme-toggle" type="button" aria-label="{esc(t['theme'])}" title="{esc(t['theme'])}">{ICON_SUN}{ICON_MOON}</button>
+        <a class="icon-btn role-link" href="{url(lang, 'dashboard/')}" data-role-min="writer" hidden aria-label="{esc(t['dashboard'])}" title="{esc(t['dashboard'])}">{ICON_PEN}</a>
+        <a class="icon-btn role-link" href="{url(lang, 'admin/')}" data-role-min="admin" hidden aria-label="{esc(t['admin'])}" title="{esc(t['admin'])}">{ICON_SHIELD}</a>
+        <a class="icon-btn account-link" href="{url(lang, 'account/')}" aria-label="{esc(t['account'])}" title="{esc(t['account'])}" data-auth-link>{ICON_USER}</a>
+      </div>
+    </div>
+    <div class="header-panels">
+      <section class="hp hp-info" aria-label="{esc(t['site_name'])}">
+        <p class="hp-tagline">{esc(t['tagline'])}</p>
+        <ul class="stats">
+          <li class="stat s-blue"><b>{total_posts}</b> {esc(t['stat_posts'])}</li>
+          <li class="stat s-green"><b>{len(CATS)}</b> {esc(t['stat_cats'])}</li>
+          <li class="stat s-orange">{esc(t['stat_updated'])} <b>{latest_date}</b></li>
+        </ul>
+      </section>
+      <form class="hp hp-search" role="search" action="{url(lang, 'archive/')}" method="get">
+        <label class="visually-hidden" for="site-q">{esc(t['search'])}</label>
+        <input type="search" id="site-q" name="q" placeholder="{esc(t['search_placeholder'])}" autocomplete="off">
+        <button type="submit" class="search-btn">{ICON_SEARCH}<span>{esc(t['search'])}</span></button>
+      </form>
+    </div>
+    <nav id="site-nav" class="site-nav nav-pills" aria-label="{esc(t['categories'])}">
       <ul>
-        {nav}
-        <li><a href="{url(lang, 'archive/')}">{esc(t['archive'])}</a></li>
-        <li><a href="{url(lang, 'about/')}">{esc(t['about'])}</a></li>
+        <li><a class="pill" href="{url(lang)}">{ICON_HOME}{esc(t['home'])}</a></li>
+        {pills}
+        <li><a class="pill" href="{url(lang, 'archive/')}">{ICON_ARCHIVE}{esc(t['archive'])}</a></li>
       </ul>
     </nav>
-    <div class="header-tools">
-      <a class="lang-switch" href="{url(other, other_path)}" hreflang="{other}" lang="{other}">{esc(t['switch'])}</a>
-      <button class="icon-btn theme-toggle" type="button" aria-label="{esc(t['theme'])}" title="{esc(t['theme'])}">{ICON_SUN}{ICON_MOON}</button>
-      <a class="icon-btn role-link" href="{url(lang, 'dashboard/')}" data-role-min="writer" hidden aria-label="{esc(t['dashboard'])}" title="{esc(t['dashboard'])}">{ICON_PEN}</a>
-      <a class="icon-btn role-link" href="{url(lang, 'admin/')}" data-role-min="admin" hidden aria-label="{esc(t['admin'])}" title="{esc(t['admin'])}">{ICON_SHIELD}</a>
-      <a class="icon-btn account-link" href="{url(lang, 'account/')}" aria-label="{esc(t['account'])}" title="{esc(t['account'])}" data-auth-link>{ICON_USER}</a>
-    </div>
   </div>
 </header>
-{cat_bar(lang) if catbar else ""}
 <main id="main" class="wrap">
 {body}
 </main>
@@ -386,14 +434,15 @@ def post_figure(p, lang):
     credit = esc(im["credit"])
     if im["credit_url"]:
         credit = f'<a href="{esc(im["credit_url"])}" rel="noopener" target="_blank">{credit}</a>'
-    return (f'<figure class="post-figure"><div class="thumb thumb-big has-img c-{p["category"]}">'
+    fb = " is-fallback" if im.get("fallback") else ""
+    return (f'<figure class="post-figure{fb}"><div class="thumb thumb-big has-img c-{p["category"]}">'
             f'<img src="{esc(im["src"])}" alt="{esc(im["alt"])}" width="{im["w"]}" height="{im["h"]}" loading="eager" fetchpriority="high" decoding="async"></div>'
             f'<figcaption class="credit">{credit}</figcaption></figure>')
 
 def meta_line(p, lang):
     t = CFG["strings"][lang]
     badge = f' <span class="badge">{esc(t["placeholder"])}</span>' if p.get("placeholder") else ""
-    return (f'<p class="meta"><a class="cat" href="{url(lang, "category/" + p["category"] + "/")}">{esc(cat_name(p["category"], lang))}</a>'
+    return (f'<p class="meta"><a class="cat chip-cat c-{p["category"]}" href="{url(lang, "category/" + p["category"] + "/")}">{esc(cat_name(p["category"], lang))}</a>'
             f'<time datetime="{p["dt"].date().isoformat()}">{fmt_date(p["dt"], lang)}</time>{badge}</p>')
 
 def card(p, lang):
@@ -502,9 +551,11 @@ def build_lang(lang, posts, other_slugs):
             groups.append((k, [])); cur = k
         groups[-1][1].append(x)
     arch = "".join(
-        f'<section><h2>{k}</h2><ul class="archive">' + "".join(
-            f'<li><time datetime="{x["dt"].date().isoformat()}">{fmt_date(x["dt"], lang)}</time> <a href="{url(lang, "posts/" + x["slug"] + "/")}">{esc(x["title"])}</a> <span class="cat-label">{esc(cat_name(x["category"], lang))}</span></li>'
-            for x in items) + "</ul></section>" for k, items in groups) or f'<p>{esc(t["no_posts"])}</p>'
+        f'<section class="arch-month" data-arch><h2>{k}</h2><div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">{esc(t["col_date"])}</th><th scope="col">{esc(t["col_title"])}</th><th scope="col">{esc(t["col_cat"])}</th></tr></thead><tbody>' + "".join(
+            f'<tr data-search="{esc((x["title"] + " " + x["excerpt"] + " " + cat_name(x["category"], lang)).lower())}"><td class="td-date"><time datetime="{x["dt"].date().isoformat()}">{fmt_date(x["dt"], lang)}</time></td><td class="td-title"><a href="{url(lang, "posts/" + x["slug"] + "/")}">{esc(x["title"])}</a></td><td><a class="chip-cat c-{x["category"]}" href="{url(lang, "category/" + x["category"] + "/")}">{esc(cat_name(x["category"], lang))}</a></td></tr>'
+            for x in items) + "</tbody></table></div></section>" for k, items in groups) or f'<p>{esc(t["no_posts"])}</p>'
+    arch = (f'<form class="panel arch-search" role="search" action="" method="get"><label class="visually-hidden" for="arch-q">{esc(t["search"])}</label>'
+            f'<input type="search" id="arch-q" name="q" placeholder="{esc(t["search_placeholder"])}" autocomplete="off"><span class="arch-count" aria-live="polite" data-none="{esc(t["no_results"])}"></span></form>' + arch)
     write(lang, "archive/", layout(lang, "archive/", t["archive"], t["all_posts"], f'<header class="page-head"><h1>{esc(t["archive"])}</h1></header>{arch}', "archive/"))
 
     # about
@@ -548,7 +599,7 @@ def build_lang(lang, posts, other_slugs):
         rel_html = f'<section class="related"><h2 class="section-title">{esc(cat_name(x["category"], lang))}</h2>{listing(related, lang)}</section>' if related else ""
         body = f"""<article class="post" data-slug="{esc(x['slug'])}" data-title="{esc(x['title'])}">
 <header class="post-head">
-<p class="meta"><a class="cat" href="{url(lang, 'category/' + x['category'] + '/')}">{esc(cat_name(x['category'], lang))}</a><span>{esc(t['published'])} <time datetime="{x['dt'].isoformat()}">{fmt_date(x['dt'], lang)}</time></span>{badge}</p>
+<p class="meta"><a class="cat chip-cat c-{x['category']}" href="{url(lang, 'category/' + x['category'] + '/')}">{esc(cat_name(x['category'], lang))}</a><span>{esc(t['published'])} <time datetime="{x['dt'].isoformat()}">{fmt_date(x['dt'], lang)}</time></span>{badge}</p>
 <h1>{esc(x['title'])}</h1>
 <p class="lead">{esc(x['excerpt'])}</p>
 <div class="post-actions" id="fav-root" hidden></div>
@@ -594,12 +645,12 @@ def build_404():
         blocks.append(f'<section lang="{lang}" dir="{DIR[lang]}" class="nf"><p class="kicker">404</p><h1>{esc(t["not_found_title"])}</h1><p>{esc(t["not_found_body"])}</p><p><a class="btn" href="{url(lang)}">{esc(t["back_home"])}</a></p></section>')
     t = CFG["strings"]["he"]
     page = f"""<!doctype html>
-<html lang="he" dir="rtl" data-theme="dark">
+<html lang="he" dir="rtl" data-theme="light">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <script>{THEME_BOOT}</script>
 <title>404 | {esc(t['site_name'])}</title><meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Rubik:wght@400;500;600;700&family=Secular+One&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="{asset('style.css')}"></head>
 <body><main id="main" class="wrap nf-wrap">{''.join(blocks)}</main></body></html>
 """
@@ -638,6 +689,7 @@ def main():
     (DIST / ".nojekyll").write_text("")
     posts = {l: load_posts(l) for l in LANGS}
     for l in LANGS:
+        LATEST[l] = fmt_date(posts[l][0]["dt"], l) if posts[l] else ""
         CAT_COUNTS[l] = {c["slug"]: sum(1 for x in posts[l] if x["category"] == c["slug"]) for c in CATS}
     for lang in LANGS:
         other = "en" if lang == "he" else "he"
