@@ -359,7 +359,9 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
     <div class="topbar">
       <a class="brand" href="{url(lang)}"><span class="brand-mark" aria-hidden="true"></span>{esc(t['site_name'])}</a>
       <ul class="sub-links">
+        <li><a class="home-link" href="{url(lang)}">{ICON_HOME}{esc(t['home'])}</a></li>
         <li><a href="{url(lang, 'categories/')}">{ICON_GRID}{esc(t['all_categories'])}</a></li>
+        <li><a href="{url(lang, 'archive/')}">{ICON_ARCHIVE}{esc(t['archive'])}</a></li>
         <li><a href="{url(lang, 'about/')}">{ICON_INFO}{esc(t['about'])}</a></li>
         <li><a href="{url(lang, 'feed.xml')}">{ICON_RSS}{esc(t['rss'])}</a></li>
       </ul>
@@ -377,7 +379,6 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
         <ul class="stats">
           <li class="stat s-blue"><b>{total_posts}</b> {esc(t['stat_posts'])}</li>
           <li class="stat s-green"><b>{len(CATS)}</b> {esc(t['stat_cats'])}</li>
-          <li class="stat s-orange">{esc(t['stat_updated'])} <b>{latest_date}</b></li>
         </ul>
       </section>
       <form class="hp hp-search" role="search" action="{url(lang, 'archive/')}" method="get">
@@ -386,13 +387,6 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
         <button type="submit" class="search-btn">{ICON_SEARCH}<span>{esc(t['search'])}</span></button>
       </form>
     </div>
-    <nav id="site-nav" class="site-nav nav-pills" aria-label="{esc(t['categories'])}">
-      <ul>
-        <li><a class="pill" href="{url(lang)}">{ICON_HOME}{esc(t['home'])}</a></li>
-        {pills}
-        <li><a class="pill" href="{url(lang, 'archive/')}">{ICON_ARCHIVE}{esc(t['archive'])}</a></li>
-      </ul>
-    </nav>
   </div>
 </header>
 <main id="main" class="wrap">
