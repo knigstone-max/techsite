@@ -7,12 +7,12 @@ excerpt: "This year Israel launched alongside the rest of the world. The 256GB P
 image: img/posts/iphone-18-pro.webp
 image_alt: "iPhone 18 Pro and iPhone 18 Pro Max in burgundy, Apple press photo"
 image_credit: "Image: Apple Newsroom"
-image_credit_url: https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/
+image_credit_url: "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/"
 source_links:
-  - https://www.gadgety.co.il/369462/iphone-18-pro-israel-launch/
-  - https://www.c14.co.il/article/1698207
-  - https://www.poenta.co.il/article/iphone-18-pro-and-pro-max/
-  - https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/
+  - "https://www.gadgety.co.il/369462/iphone-18-pro-israel-launch/"
+  - "https://www.c14.co.il/article/1698207"
+  - "https://www.poenta.co.il/article/iphone-18-pro-and-pro-max/"
+  - "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/"
 ---
 
 For the first time, a new iPhone reached Israel on the same day as the US and Europe. Deliveries began on 18 September, and instead of a second-wave wait, retailers published price lists during launch week.

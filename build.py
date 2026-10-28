@@ -116,32 +116,93 @@ def load_image(meta, where):
 
 
 # ---------- content parsing ----------
+CMS_URL = "https://app.pagescms.org/knigstone-max/techsite/main"
+CMS_TEXT = {
+    "he": ("ניהול תוכן (CMS)", "עריכה, הוספה ומחיקה של כתבות ותמונות נעשות במערכת הניהול Pages CMS (חינמית). כל שמירה מתפרסמת באתר תוך 2-3 דקות.",
+           [("מנהל: כניסה עם GitHub", "https://app.pagescms.org"), ("כותבים שהוזמנו במייל", "https://app.pagescms.org/sign-in"),
+            ("ניהול כותבים (מנהל בלבד)", CMS_URL + "/collaborators")]),
+    "en": ("Content management (CMS)", "Posts and images are edited, added and deleted in Pages CMS (free). Every save goes live on the site in 2-3 minutes.",
+           [("Admin: sign in with GitHub", "https://app.pagescms.org"), ("Writers invited by email", "https://app.pagescms.org/sign-in"),
+            ("Manage writers (admin only)", CMS_URL + "/collaborators")]),
+}
+
+def cms_panel(lang):
+    h, p, links = CMS_TEXT[lang]
+    li = "".join(f'<li><a href="{esc(u)}" rel="noopener" target="_blank">{esc(l)}</a></li>' for l, u in links)
+    return f'<section class="panel cms-panel"><h2>{esc(h)}</h2><p>{esc(p)}</p><ul>{li}</ul></section>'
+
+
+def _fold(lines):
+    """YAML line folding: lines join with a space, an empty line becomes a newline."""
+    out, prev_blank = "", False
+    for i, ln in enumerate(lines):
+        if not ln:
+            out += "\n"; prev_blank = True; continue
+        if i and not prev_blank and not out.endswith("\n"):
+            out = out[:-1] if out.endswith("\\") else out + " "
+        out += ln; prev_blank = False
+    return out
+
+def _yaml_scalar(lines, fname):
+    s = _fold([l.strip() for l in lines]).strip()
+    if s.startswith('"') and s.endswith('"') and len(s) >= 2:
+        try:
+            return json.loads(s)
+        except ValueError:
+            return s[1:-1].replace('\\"', '"')
+    if s.startswith("'") and s.endswith("'") and len(s) >= 2:
+        return s[1:-1].replace("''", "'")
+    if s.startswith("[") and s.endswith("]"):
+        return [_yaml_scalar([v], fname) for v in re.findall(r'"(?:[^"\\]|\\.)*"|\'(?:[^\']|\'\')*\'|[^,]+', s[1:-1]) if v.strip()]
+    if s.lower() in ("true", "false"):
+        return s.lower() == "true"
+    if s in ("null", "~"):
+        return ""
+    return s
+
 def parse_frontmatter(text, fname):
-    m = re.match(r"^---\s*\n(.*?)\n---\s*\n(.*)$", text, re.S)
+    """Frontmatter parser for the YAML subset written by hand and by Pages CMS (yaml.stringify):
+    plain/single/double-quoted scalars folded over several lines, block scalars (| >), block and flow lists."""
+    text = text.replace("\r\n", "\n").lstrip("\ufeff")
+    m = re.match(r"^---\s*\n(.*?)\n---\s*(?:\n(.*))?$", text, re.S)
     if not m:
         sys.exit(f"ERROR {fname}: missing frontmatter (--- ... ---)")
-    meta, key = {}, None
+    entries = []  # [key, first value, [continuation lines]]
     for line in m.group(1).splitlines():
-        if not line.strip() or line.lstrip().startswith("#"):
+        if line[:1] not in (" ", "\t", "") and not line.startswith("#"):
+            kv = re.match(r"^([A-Za-z_][A-Za-z0-9_]*):(?:\s+(.*))?$", line)
+            if not kv:
+                sys.exit(f"ERROR {fname}: bad frontmatter line: {line!r}")
+            entries.append([kv.group(1), (kv.group(2) or "").strip(), []])
+        elif line.startswith("#") or (not line.strip() and not entries):
             continue
-        li = re.match(r"^\s+-\s+(.*)$", line)
-        if li and key:
-            meta.setdefault(key, [])
-            if not isinstance(meta[key], list):
-                meta[key] = []
-            meta[key].append(li.group(1).strip().strip('"'))
-            continue
-        kv = re.match(r"^([A-Za-z_]+):\s*(.*)$", line)
-        if not kv:
+        elif not entries:
             sys.exit(f"ERROR {fname}: bad frontmatter line: {line!r}")
-        key, val = kv.group(1), kv.group(2).strip()
-        if val.startswith("[") and val.endswith("]"):
-            meta[key] = [v.strip().strip('"') for v in val[1:-1].split(",") if v.strip()]
-        elif val.lower() in ("true", "false"):
-            meta[key] = val.lower() == "true"
         else:
-            meta[key] = val.strip('"')
-    return meta, m.group(2)
+            entries[-1][2].append(line)
+    meta = {}
+    for key, val, cont in entries:
+        while cont and not cont[-1].strip():
+            cont.pop()
+        if val[:1] in ("|", ">"):
+            ind = min((len(l) - len(l.lstrip()) for l in cont if l.strip()), default=0)
+            body = [l[ind:] for l in cont]
+            meta[key] = ("\n".join(body) if val[0] == "|" else _fold(body)).strip()
+        elif not val and cont and cont[0].lstrip().startswith("-"):
+            items, ind = [], len(cont[0]) - len(cont[0].lstrip())
+            for l in cont:
+                im = re.match(r"^\s*-(?:\s+(.*))?$", l)
+                if im and len(l) - len(l.lstrip()) == ind:
+                    items.append([im.group(1) or ""])
+                elif items:
+                    items[-1].append(l)
+            meta[key] = [v for v in (_yaml_scalar(i, fname) for i in items) if v != ""]
+        else:
+            meta[key] = _yaml_scalar([val] + cont, fname)
+    for k in ("date", "slug", "category", "title", "excerpt"):
+        if k in meta and not isinstance(meta[k], str):
+            meta[k] = str(meta[k])
+    return meta, m.group(2) or ""
 
 def inline_md(s):
     s = esc(s)
@@ -605,10 +666,10 @@ def build_lang(lang, posts, other_slugs):
     roles = (f'<section class="panel roles-info"><h2>{esc(t["roles_title"])}</h2><ul>'
              + "".join(f'<li>{esc(t["role_" + r])}</li>' for r in ("reader", "writer", "editor", "admin")) + "</ul></section>")
     write(lang, "admin/", layout(lang, "admin/", t["admin_title"], t["admin_title"],
-        f'<section class="auth-page app-page"><h1>{esc(t["admin_title"])}</h1><div id="auth-root" data-view="admin"><noscript>JavaScript</noscript></div>{roles}</section>',
+        f'<section class="auth-page app-page"><h1>{esc(t["admin_title"])}</h1>{cms_panel(lang)}<div id="auth-root" data-view="admin"><noscript>JavaScript</noscript></div>{roles}</section>',
         "admin/", noindex=True))
     write(lang, "dashboard/", layout(lang, "dashboard/", t["dashboard_title"], t["dashboard_title"],
-        f'<section class="auth-page app-page"><h1>{esc(t["dashboard_title"])}</h1><p class="notice queue-note">{esc(t["queue_note"])}</p>'
+        f'<section class="auth-page app-page"><h1>{esc(t["dashboard_title"])}</h1>{cms_panel(lang)}<p class="notice queue-note">{esc(t["queue_note"])}</p>'
         f'<div id="auth-root" data-view="dashboard"><noscript>JavaScript</noscript></div>{roles}</section>',
         "dashboard/", noindex=True))
 

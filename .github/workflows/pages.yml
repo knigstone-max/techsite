@@ -36,6 +36,8 @@ jobs:
           cat > static/config.js <<CFG
           window.SITE_CONFIG = { SUPABASE_URL: "${{ vars.SUPABASE_URL }}", SUPABASE_ANON_KEY: "${{ vars.SUPABASE_ANON_KEY }}" };
           CFG
+      - name: Check frontmatter is CMS-readable (warning only)
+        run: python3 scripts/normalize_frontmatter.py --check || echo "::warning::Some posts have frontmatter Pages CMS may not open; run scripts/normalize_frontmatter.py"
       - name: Build
         env:
           SITE_URL: ${{ steps.pages.outputs.base_url }}

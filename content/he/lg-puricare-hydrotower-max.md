@@ -1,17 +1,18 @@
 ---
-title: LG משיקה את PuriCare HydroTower Max, מכשיר אדים ומטהר אוויר לסלון גדול
+title: "LG משיקה את PuriCare HydroTower Max, מכשיר אדים ומטהר אוויר לסלון גדול"
 date: 2026-10-19
 slug: lg-puricare-hydrotower-max
 category: home-appliances
-excerpt: המכשיר החדש של LG מרתיח מים מסוננים לפני שהוא מפזר אדים, מטהר אוויר בשטח של כ-66 מ"ר ועולה 2.39 מיליון וון בדרום קוריאה.
+excerpt: "המכשיר החדש של LG מרתיח מים מסוננים לפני שהוא מפזר אדים, מטהר אוויר בשטח של כ-66 מ\"ר ועולה 2.39 מיליון וון בדרום קוריאה."
 image: img/posts/lg-puricare-hydrotower-max.webp
 image_alt: "LG PuriCare HydroTower Max, מכשיר אדים ומטהר אוויר גבוה בצבע כסף, מפזר אדים בסלון"
 image_credit: "תמונה: LG Electronics (הודעה לעיתונות)"
-image_credit_url: https://www.lg.co.kr/media/release/30685
+image_credit_url: "https://www.lg.co.kr/media/release/30685"
 source_links:
-  - https://www.lg.co.kr/media/release/30685
-  - https://www.asiae.co.kr/en/article/2026101811101127865
+  - "https://www.lg.co.kr/media/release/30685"
+  - "https://www.asiae.co.kr/en/article/2026101811101127865"
 ---
+
 LG Electronics התחילה למכור בדרום קוריאה ב-18 באוקטובר את PuriCare HydroTower Max. זה מכשיר אדים ומטהר אוויר בגוף אחד, והחברה מכוונת אותו לסלון ולחללים גדולים. דגם ה-HydroTower הקיים נשאר בסדרה לחדרי שינה ולחדרים קטנים יותר.
 
 ## איך עובד מכשיר האדים

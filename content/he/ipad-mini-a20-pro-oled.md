@@ -1,18 +1,19 @@
 ---
-title: 'iPad mini חדש: מסך OLED של 8.5 אינץ'', שבב A20 Pro ועמידות למים'
+title: "iPad mini חדש: מסך OLED של 8.5 אינץ', שבב A20 Pro ועמידות למים"
 date: 2026-10-27
 slug: ipad-mini-a20-pro-oled
 category: smartphones-gadgets
-excerpt: אפל הכריזה על iPad mini עם מסך OLED גדול יותר באותו גוף, עובי של 5.4 מ"מ ותקן IP67. בארה"ב הוא מתחיל ב-699 דולר (כ-2,150 ₪), וישראל לא נמצאת בגל ההשקה הראשון.
+excerpt: "אפל הכריזה על iPad mini עם מסך OLED גדול יותר באותו גוף, עובי של 5.4 מ\"מ ותקן IP67. בארה\"ב הוא מתחיל ב-699 דולר (כ-2,150 ₪), וישראל לא נמצאת בגל ההשקה הראשון."
 image: img/posts/ipad-mini-a20-pro-2026.webp
 image_alt: "יד מחזיקה iPad mini חדש בצבע midnight, על המסך הכיתוב mini בכחול וסגול"
 image_credit: "תמונה: Apple (חדר העיתונות)"
-image_credit_url: https://www.apple.com/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/
+image_credit_url: "https://www.apple.com/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/"
 source_links:
-  - https://www.apple.com/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/
-  - https://www.gadgety.co.il/371488/ipad-mini-oled-announced/
-  - https://www.poenta.co.il/article/ipad-mini-oled-a20-pro/
+  - "https://www.apple.com/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/"
+  - "https://www.gadgety.co.il/371488/ipad-mini-oled-announced/"
+  - "https://www.poenta.co.il/article/ipad-mini-oled-a20-pro/"
 ---
+
 אפל הכריזה ב-26 באוקטובר על דור חדש של iPad mini. השינוי הגדול הוא המסך: במקום LCD יש עכשיו OLED, והוא גדל מ-8.3 ל-8.5 אינץ' בלי שהטאבלט עצמו גדל, כי המסגרות סביב המסך דקות ב-24%.
 
 ## המסך

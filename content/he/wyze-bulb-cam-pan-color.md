@@ -1,17 +1,18 @@
 ---
-title: Wyze Bulb Cam Pan Color: מצלמת אבטחה מסתובבת ב-2.5K בתוך נורה חכמה צבעונית
+title: "Wyze Bulb Cam Pan Color: מצלמת אבטחה מסתובבת ב-2.5K בתוך נורה חכמה צבעונית"
 date: 2026-10-23
 slug: wyze-bulb-cam-pan-color
 category: home-appliances
-excerpt: המכשיר עולה 99.98 דולר, מתברג לבית נורה רגיל מסוג E26, מסתובב 360 מעלות, מקליט לכרטיס microSD בלי מנוי ומשמש גם כנורה צבעונית של 1100 לומן.
+excerpt: "המכשיר עולה 99.98 דולר, מתברג לבית נורה רגיל מסוג E26, מסתובב 360 מעלות, מקליט לכרטיס microSD בלי מנוי ומשמש גם כנורה צבעונית של 1100 לומן."
 image: img/posts/wyze-bulb-cam-pan-color.webp
 image_alt: "Wyze Bulb Cam Pan Color: נורה לבנה עם ראש מצלמה שתלוי מתחתיה, על רקע הילה בצבעי הקשת"
 image_credit: "תמונה: Wyze (דף המוצר הרשמי, חתוך)"
-image_credit_url: https://www.wyze.com/products/wyze-bulb-cam-pan-color
+image_credit_url: "https://www.wyze.com/products/wyze-bulb-cam-pan-color"
 source_links:
-  - https://www.businesswire.com/news/home/20261022388934/en/Wyze-Bulb-Cam-Pan-Color-Is-a-2.5K-Security-Camera-and-Smart-Light-That-Screws-Into-A-Light-Socket
-  - https://www.wyze.com/products/wyze-bulb-cam-pan-color
+  - "https://www.businesswire.com/news/home/20261022388934/en/Wyze-Bulb-Cam-Pan-Color-Is-a-2.5K-Security-Camera-and-Smart-Light-That-Screws-Into-A-Light-Socket"
+  - "https://www.wyze.com/products/wyze-bulb-cam-pan-color"
 ---
+
 Wyze הכריזה ב-22 באוקטובר על Bulb Cam Pan Color, אחד המוצרים בשבוע ההשקות שלה. זו מצלמת אבטחה ונורה חכמה צבעונית בגוף אחד, והיא מקבלת חשמל מבית נורה רגיל.
 
 ## התקנה

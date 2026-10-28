@@ -7,10 +7,10 @@ excerpt: "The flat design from Samsung's premium models moves to its new front-l
 image: img/posts/samsung-ifa-2026-washers.webp
 image_alt: "Samsung washers and fridges on display at Samsung Connect in Berlin"
 image_credit: "Image: Samsung Newsroom"
-image_credit_url: https://news.samsung.com/uk/samsung-showcases-new-washers-with-flat-design-at-ifa-2026
+image_credit_url: "https://news.samsung.com/uk/samsung-showcases-new-washers-with-flat-design-at-ifa-2026"
 source_links:
-  - https://news.samsung.com/uk/samsung-showcases-new-washers-with-flat-design-at-ifa-2026
-  - https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html
+  - "https://news.samsung.com/uk/samsung-showcases-new-washers-with-flat-design-at-ifa-2026"
+  - "https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html"
 ---
 
 The washing machine is one of the few appliances that still looks like the 1990s: a protruding front, a round porthole and a control panel that fights with the cabinet. Samsung wants its mainstream models to get the clean line it kept for premium ones.

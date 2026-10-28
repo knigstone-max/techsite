@@ -7,7 +7,7 @@ excerpt: "After a few years of entries that felt rushed, Infinity Ward is back w
 image: img/posts/mw4-hero-korea-front.webp
 image_alt: "Three helmeted soldiers take cover behind a wall, watching huge explosions tear through a forest as a fighter jet passes overhead"
 image_credit: "Image: Activision"
-image_credit_url: https://www.callofduty.com/blog/2026/05/call-of-duty-modern-warfare-4-announcement
+image_credit_url: "https://www.callofduty.com/blog/2026/05/call-of-duty-modern-warfare-4-announcement"
 ---
 
 I haven't looked forward to a Call of Duty like this in a long time. After Modern Warfare III and Black Ops 7, which to me felt like games that shipped before they were ready, I'd started to lose faith in the series. Every year it was the same ritual: buy it, play for two weeks, and feel like something was missing. Modern Warfare 4 broke that streak for me, and it did it on the very first evening.

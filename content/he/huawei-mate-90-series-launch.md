@@ -1,19 +1,20 @@
 ---
-title: וואווי השיקה בסין את סדרת Mate 90, ארבעה טלפונים החל מ-5,999 יואן
+title: "וואווי השיקה בסין את סדרת Mate 90, ארבעה טלפונים החל מ-5,999 יואן"
 date: 2026-10-21
 slug: huawei-mate-90-series-launch
 category: smartphones-gadgets
-excerpt: Mate 90, Mate 90 Pro, Mate 90 Pro Max ו-Mate 90 RS עובדים עם שבבי Kirin של וואווי ועם HarmonyOS 7, במחירים של 5,999 עד 12,999 יואן.
+excerpt: "Mate 90, Mate 90 Pro, Mate 90 Pro Max ו-Mate 90 RS עובדים עם שבבי Kirin של וואווי ועם HarmonyOS 7, במחירים של 5,999 עד 12,999 יואן."
 image: img/posts/huawei-mate-90-pro.webp
 image_alt: "הגב של Huawei Mate 90 Pro בצבע ירוק עם מודול מצלמה עגול וגדול, על רקע כהה"
 image_credit: "תמונה: Huawei (דף המוצר הרשמי של Mate 90 Pro, חתוך)"
-image_credit_url: https://consumer.huawei.com/cn/phones/mate90-pro/
+image_credit_url: "https://consumer.huawei.com/cn/phones/mate90-pro/"
 source_links:
-  - https://efecomunica.efe.com/en/huawei-unveils-mate-90-new-generation-flagship-smartphones-house-chips/
-  - https://consumer.huawei.com/cn/phones/mate90/
-  - https://consumer.huawei.com/cn/phones/mate90-pro/
-  - https://consumer.huawei.com/cn/phones/mate90-pro-max/
+  - "https://efecomunica.efe.com/en/huawei-unveils-mate-90-new-generation-flagship-smartphones-house-chips/"
+  - "https://consumer.huawei.com/cn/phones/mate90/"
+  - "https://consumer.huawei.com/cn/phones/mate90-pro/"
+  - "https://consumer.huawei.com/cn/phones/mate90-pro-max/"
 ---
+
 וואווי הציגה ב-20 באוקטובר את סדרת הדגל החדשה שלה, Mate 90. יש בה ארבעה דגמים: Mate 90, Mate 90 Pro, Mate 90 Pro Max ו-Mate 90 RS Ultimate Design. כולם מבוססים על שבבים שוואווי מתכננת בעצמה, ובדפי המוצר מופיעה מערכת ההפעלה HarmonyOS 7.
 
 ## המחירים בסין

@@ -1,16 +1,17 @@
 ---
-title: הסוללה המגנטית הדקה של שיאומי (6.75 מ"מ) מקבלת טעינה מהירה יותר ותקן בטיחות מחמיר
+title: "הסוללה המגנטית הדקה של שיאומי (6.75 מ\"מ) מקבלת טעינה מהירה יותר ותקן בטיחות מחמיר"
 date: 2026-10-19
 slug: xiaomi-ultra-thin-magnetic-power-bank-5000mah-27w
 category: smartphones-gadgets
-excerpt: הדגם המעודכן של 5,000mAh עבה מעט מהמקור (6 מ"מ), אבל הטעינה האלחוטית עולה ל-20W והחוטית ל-27W. המחיר בסין: 299 יואן.
+excerpt: "הדגם המעודכן של 5,000mAh עבה מעט מהמקור (6 מ\"מ), אבל הטעינה האלחוטית עולה ל-20W והחוטית ל-27W. המחיר בסין: 299 יואן."
 image: img/posts/xiaomi-magnetic-power-bank-5000-27w.webp
 image_alt: "סוללת הגיבוי המגנטית הדקה של Xiaomi, דגם 5000 27W, בשחור, אדום כהה וכסף"
 image_credit: "תמונה: Xiaomi (דף המוצר ב-Xiaomi Youpin)"
-image_credit_url: https://www.xiaomiyoupin.com/detail?gid=185214
+image_credit_url: "https://www.xiaomiyoupin.com/detail?gid=185214"
 source_links:
-  - https://www.notebookcheck.net/Xiaomi-launches-new-version-of-UltraThin-magnetic-power-bank-Only-6-75-mm-thick.1426753.0.html
+  - "https://www.notebookcheck.net/Xiaomi-launches-new-version-of-UltraThin-magnetic-power-bank-Only-6-75-mm-thick.1426753.0.html"
 ---
+
 שיאומי הוציאה בסין גרסה מעודכנת של הסוללה הניידת המגנטית והדקה שלה בקיבולת 5,000mAh. היא מגיעה פחות משבועיים אחרי דגם של 10,000mAh באותה סדרה.
 
 ## מה השתנה

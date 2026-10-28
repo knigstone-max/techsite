@@ -1,13 +1,14 @@
 ---
-title: Redmi K100 launches in China on October 27 with a 165Hz screen and Bose-tuned speakers
+title: "Redmi K100 launches in China on October 27 with a 165Hz screen and Bose-tuned speakers"
 date: 2026-10-20
 slug: redmi-k100-launch-date-october-27
 category: smartphones-gadgets
-excerpt: Xiaomi has set the date for the standard Redmi K100 and shown its design. It joins the K100 Pro and Pro Max that came out in August.
+excerpt: "Xiaomi has set the date for the standard Redmi K100 and shown its design. It joins the K100 Pro and Pro Max that came out in August."
 source_links:
-  - https://www.notebookcheck.net/Xiaomi-reveals-new-Snapdragon-8-Elite-phone-with-165Hz-display-and-Bose-tuned-audio.1427654.0.html
-  - https://www.gadgets360.com/mobiles/news/redmi-k100-launch-date-announced-colour-option-design-display-specifications-features-12205507
+  - "https://www.notebookcheck.net/Xiaomi-reveals-new-Snapdragon-8-Elite-phone-with-165Hz-display-and-Bose-tuned-audio.1427654.0.html"
+  - "https://www.gadgets360.com/mobiles/news/redmi-k100-launch-date-announced-colour-option-design-display-specifications-features-12205507"
 ---
+
 Redmi announced on Weibo on Monday that the standard Redmi K100 will launch in China on October 27 at 7:00 pm local time. It is the third phone in the K100 line, after the K100 Pro and K100 Pro Max that went on sale in China in August.
 
 ## What Xiaomi has confirmed so far

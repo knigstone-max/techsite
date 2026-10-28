@@ -1,18 +1,19 @@
 ---
-title: Gemini now talks to drivers in Google Maps on Apple CarPlay
+title: "Gemini now talks to drivers in Google Maps on Apple CarPlay"
 date: 2026-10-22
 slug: gemini-google-maps-apple-carplay
 category: tech-news
-excerpt: A Gemini button in Google Maps on CarPlay answers multi-step questions and reports traffic problems by voice. It's live in the US, with a global rollout underway.
+excerpt: "A Gemini button in Google Maps on CarPlay answers multi-step questions and reports traffic problems by voice. It's live in the US, with a global rollout underway."
 image: img/posts/carplay-vw-id4.webp
 image_alt: "The Apple CarPlay home screen on the dashboard display of a Volkswagen ID.4"
 image_credit: "Photo: Sunnyboy122, CC0, via Wikimedia Commons"
-image_credit_url: https://commons.wikimedia.org/wiki/File:2023_Volkswagen_ID.4_running_wireless_CarPlay.jpg
+image_credit_url: "https://commons.wikimedia.org/wiki/File:2023_Volkswagen_ID.4_running_wireless_CarPlay.jpg"
 source_links:
-  - https://9to5google.com/2026/10/21/google-maps-carplay-gemini/
-  - https://www.theverge.com/transportation/1015281/gemini-ai-apple-carplay-voice-google-maps
-  - https://www.androidauthority.com/gemini-navigation-google-maps-carplay-3725752/
+  - "https://9to5google.com/2026/10/21/google-maps-carplay-gemini/"
+  - "https://www.theverge.com/transportation/1015281/gemini-ai-apple-carplay-voice-google-maps"
+  - "https://www.androidauthority.com/gemini-navigation-google-maps-carplay-3725752/"
 ---
+
 Google started rolling out Gemini in navigation to Google Maps on Apple CarPlay on October 21. It's available now in the US, and Google says a global rollout is also underway.
 
 ## How it works

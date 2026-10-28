@@ -7,9 +7,9 @@ excerpt: "קבוצת Beko, שמחזיקה 22 מותגים ובהם Whirlpool, Ho
 image: img/posts/beko-ultimatewash-ifa-2026.webp
 image_alt: "מכונת כביסה של Beko עם טכנולוגיית UltimateWash בחדר כביסה"
 image_credit: "תמונה: Beko / PR Newswire"
-image_credit_url: https://www.prnewswire.com/news-releases/beko-lets-the-numbers-tell-the-story-of-easier-everyday-living-302869073.html
+image_credit_url: "https://www.prnewswire.com/news-releases/beko-lets-the-numbers-tell-the-story-of-easier-everyday-living-302869073.html"
 source_links:
-  - https://www.prnewswire.com/news-releases/beko-lets-the-numbers-tell-the-story-of-easier-everyday-living-302869073.html
+  - "https://www.prnewswire.com/news-releases/beko-lets-the-numbers-tell-the-story-of-easier-everyday-living-302869073.html"
 ---
 
 Beko היא אולי חברת מוצרי החשמל הלבנים הגדולה באירופה שרוב הישראלים לא יודעים כמה מהמכשירים שלה כבר יש להם בבית. הקבוצה מחזיקה או מפעילה ברישיון 22 מותגים, ובהם Beko, Grundig, Whirlpool, Hotpoint, Indesit, Blomberg ו-Bauknecht, והגיעה ב-2025 למחזור של 10.7 מיליארד יורו. ב-IFA היא בחרה לדבר במספרים.

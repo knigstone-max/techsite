@@ -1,16 +1,17 @@
 ---
-title: Insta360 Mic adds a customizable E-Ink screen and microSD recording for $79.99 and up
+title: "Insta360 Mic adds a customizable E-Ink screen and microSD recording for $79.99 and up"
 date: 2026-10-23
 slug: insta360-mic-e-ink-wireless-microphone
 category: smartphones-gadgets
-excerpt: The new wireless mic sits between the Mic Air and Mic Pro, records 32-bit float backups to a microSD card, and connects straight to six Insta360 cameras over Bluetooth.
+excerpt: "The new wireless mic sits between the Mic Air and Mic Pro, records 32-bit float backups to a microSD card, and connects straight to six Insta360 cameras over Bluetooth."
 image: img/posts/insta360-mic-crop.webp
 image_alt: "Two round Insta360 Mic transmitters with custom images on their E-Ink screens, floating above a black charging case and receiver"
 image_credit: "Image: Insta360 (press release, cropped)"
-image_credit_url: https://www.prnewswire.com/news-releases/insta360-launches-mic-to-complete-its-wireless-microphone-lineup-flagship-level-audio-for-everyday-creators-302916915.html
+image_credit_url: "https://www.prnewswire.com/news-releases/insta360-launches-mic-to-complete-its-wireless-microphone-lineup-flagship-level-audio-for-everyday-creators-302916915.html"
 source_links:
-  - https://www.prnewswire.com/news-releases/insta360-launches-mic-to-complete-its-wireless-microphone-lineup-flagship-level-audio-for-everyday-creators-302916915.html
+  - "https://www.prnewswire.com/news-releases/insta360-launches-mic-to-complete-its-wireless-microphone-lineup-flagship-level-audio-for-everyday-creators-302916915.html"
 ---
+
 Insta360 launched the Insta360 Mic worldwide on October 22. It's a wireless microphone for video creators and fills the middle of the company's lineup, between the entry-level Mic Air and the flagship Mic Pro.
 
 ## The screen

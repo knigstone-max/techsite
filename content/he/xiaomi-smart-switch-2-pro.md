@@ -1,16 +1,17 @@
 ---
-title: Xiaomi Smart Switch 2 Pro הופך מתג קיר רגיל למתג חכם, גם בלי חוט אפס
+title: "Xiaomi Smart Switch 2 Pro הופך מתג קיר רגיל למתג חכם, גם בלי חוט אפס"
 date: 2026-10-20
 slug: xiaomi-smart-switch-2-pro
 category: home-appliances
-excerpt: המתג החדש של שיאומי נכנס במקום מתג הקיר הקיים, עובד עם נורות רגילות וחכמות, ומחירו מתחיל ב-114 יואן בקמפיין מימון המונים בסין.
+excerpt: "המתג החדש של שיאומי נכנס במקום מתג הקיר הקיים, עובד עם נורות רגילות וחכמות, ומחירו מתחיל ב-114 יואן בקמפיין מימון המונים בסין."
 image: img/posts/xiaomi-smart-switch-2-pro.webp
 image_alt: "שני מתגי קיר Xiaomi Smart Switch 2 Pro, אחד לבן ואחד אפור כהה"
 image_credit: "תמונה: Xiaomi (דף המוצר ב-Xiaomi Youpin)"
-image_credit_url: https://www.xiaomiyoupin.com/detail?gid=185146
+image_credit_url: "https://www.xiaomiyoupin.com/detail?gid=185146"
 source_links:
-  - https://www.gizmochina.com/2026/10/19/xiaomi-launches-smart-switch-2-pro-with-app-and-voice-control-automation-2200w-max-load/
+  - "https://www.gizmochina.com/2026/10/19/xiaomi-launches-smart-switch-2-pro-with-app-and-voice-control-automation-2200w-max-load/"
 ---
+
 שיאומי פתחה בפלטפורמת Youpin שלה בסין קמפיין מימון המונים ל-Smart Switch 2 Pro. זה מתג קיר שמחליף את המתג הקיים, וכך אפשר לשלוט בתאורה מהטלפון או בקול בלי להחליף נורות.
 
 ## התקנה

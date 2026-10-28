@@ -1,16 +1,17 @@
 ---
-title: ל-Garmin Edge 1060 יש רמקול ומיקרופון, ורוכבי אופניים יכולים לשלוט בו בקול
+title: "ל-Garmin Edge 1060 יש רמקול ומיקרופון, ורוכבי אופניים יכולים לשלוט בו בקול"
 date: 2026-10-22
 slug: garmin-edge-1060-voice-control
 category: smartphones-gadgets
-excerpt: אומרים "Okay, Garmin" ושומעים נתוני רכיבה, בוחרים מסלול או מדווחים על בור בכביש. מחשב הרכיבה החדש נמכר כבר עכשיו ב-799.99 דולר.
+excerpt: "אומרים \"Okay, Garmin\" ושומעים נתוני רכיבה, בוחרים מסלול או מדווחים על בור בכביש. מחשב הרכיבה החדש נמכר כבר עכשיו ב-799.99 דולר."
 image: img/posts/garmin-edge-1060.webp
 image_alt: "ארבעה רוכבי אופניים בכביש הררי, ולצידם Garmin Edge 1060 שמציג מפה והתראה על בור"
 image_credit: "תמונה: Garmin (הודעה לעיתונות על Edge 1060)"
-image_credit_url: https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/new-garmin-edge-1060-cycling-computer-gives-cyclists-hands-free-voice-control/
+image_credit_url: "https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/new-garmin-edge-1060-cycling-computer-gives-cyclists-hands-free-voice-control/"
 source_links:
-  - https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/new-garmin-edge-1060-cycling-computer-gives-cyclists-hands-free-voice-control/
+  - "https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/new-garmin-edge-1060-cycling-computer-gives-cyclists-hands-free-voice-control/"
 ---
+
 גרמין הכריזה ב-20 באוקטובר על Edge 1060, מחשב הרכיבה המתקדם החדש שלה. השינוי העיקרי הוא מיקרופון ורמקול מובנים, כדי שהרוכב יוכל להשאיר את שתי הידיים על הכידון.
 
 ## מה עושים עם הפקודות הקוליות

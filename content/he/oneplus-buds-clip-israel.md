@@ -1,19 +1,20 @@
 ---
-title: אוזניות הקליפס OnePlus Buds Clip הגיעו לישראל ב-499 ₪
+title: "אוזניות הקליפס OnePlus Buds Clip הגיעו לישראל ב-499 ₪"
 date: 2026-10-27
 slug: oneplus-buds-clip-israel
 category: smartphones-gadgets
-excerpt: אוזניות פתוחות שנצמדות לאוזן בקשת גמישה, עם שני דרייברים בכל צד שכוונו עם Dynaudio. היבואנית Cell Now מוכרת אותן ב-499 ₪ (כ-160 דולר) בשלושה צבעים.
+excerpt: "אוזניות פתוחות שנצמדות לאוזן בקשת גמישה, עם שני דרייברים בכל צד שכוונו עם Dynaudio. היבואנית Cell Now מוכרת אותן ב-499 ₪ (כ-160 דולר) בשלושה צבעים."
 image: img/posts/oneplus-buds-clip-pebble-gray.webp
 image_alt: "אוזניית OnePlus Buds Clip בצבע אפור Pebble Gray, עם קשת מתכתית שמחברת בין שני חלקי האוזנייה"
 image_credit: "תמונה: OnePlus (דף המוצר הרשמי, חתוך)"
-image_credit_url: https://www.oneplus.com/global/oneplus-buds-clip
+image_credit_url: "https://www.oneplus.com/global/oneplus-buds-clip"
 source_links:
-  - https://g-rafa.co.il/oneplus-buds-clip-israel-launch/
-  - https://www.oneplus.com/global/oneplus-buds-clip
-  - https://one-plus.co.il/shop/oneplus-buds/oneplus-buds-clip/oneplus-buds-clip-pebble-gray/
-  - https://www.androidauthority.com/oneplus-buds-clip-3727766/
+  - "https://g-rafa.co.il/oneplus-buds-clip-israel-launch/"
+  - "https://www.oneplus.com/global/oneplus-buds-clip"
+  - "https://one-plus.co.il/shop/oneplus-buds/oneplus-buds-clip/oneplus-buds-clip-pebble-gray/"
+  - "https://www.androidauthority.com/oneplus-buds-clip-3727766/"
 ---
+
 OnePlus Buds Clip, אוזניות הקליפס הראשונות של OnePlus, כבר נמכרות בישראל. הן לא נכנסות לתעלת האוזן אלא נצמדות לתנוך בעזרת קשת, כך שאפשר לשמוע מוזיקה ועדיין לשמוע את הרחוב. היבואנית הרשמית Cell Now מוכרת אותן ב-499 ₪, שזה בערך 160 דולר לפי שער משוער.
 
 ## עיצוב ונוחות

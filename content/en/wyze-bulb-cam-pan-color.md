@@ -1,17 +1,18 @@
 ---
-title: Wyze Bulb Cam Pan Color puts a 2.5K pan-tilt camera inside a color smart bulb
+title: "Wyze Bulb Cam Pan Color puts a 2.5K pan-tilt camera inside a color smart bulb"
 date: 2026-10-23
 slug: wyze-bulb-cam-pan-color
 category: home-appliances
-excerpt: The $99.98 device screws into a standard E26 socket, pans 360 degrees, records to a microSD card without a subscription and doubles as an 1100-lumen color light.
+excerpt: "The $99.98 device screws into a standard E26 socket, pans 360 degrees, records to a microSD card without a subscription and doubles as an 1100-lumen color light."
 image: img/posts/wyze-bulb-cam-pan-color.webp
 image_alt: "Wyze Bulb Cam Pan Color, a white bulb-shaped light with a camera head hanging below it, against a rainbow glow"
 image_credit: "Image: Wyze (official product page, cropped)"
-image_credit_url: https://www.wyze.com/products/wyze-bulb-cam-pan-color
+image_credit_url: "https://www.wyze.com/products/wyze-bulb-cam-pan-color"
 source_links:
-  - https://www.businesswire.com/news/home/20261022388934/en/Wyze-Bulb-Cam-Pan-Color-Is-a-2.5K-Security-Camera-and-Smart-Light-That-Screws-Into-A-Light-Socket
-  - https://www.wyze.com/products/wyze-bulb-cam-pan-color
+  - "https://www.businesswire.com/news/home/20261022388934/en/Wyze-Bulb-Cam-Pan-Color-Is-a-2.5K-Security-Camera-and-Smart-Light-That-Screws-Into-A-Light-Socket"
+  - "https://www.wyze.com/products/wyze-bulb-cam-pan-color"
 ---
+
 Wyze announced the Bulb Cam Pan Color on October 22, as part of its Wyze Week launches. It's a security camera and a color smart light in one body, and it gets its power from an ordinary light socket.
 
 ## Installation

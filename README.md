@@ -37,6 +37,10 @@ techsite/
 
 עמודים בכל שפה: דף בית, אינדקס קטגוריות (`categories/`), 5 קטגוריות (`category/<slug>/`), ארכיון, אודות, התחברות, חשבון, ניהול (`admin/`), כתיבה ועריכה (`dashboard/`), ופוסט לכל קובץ תוכן (`posts/<slug>/`). בנוסף: `404.html`, `sitemap.xml`, `robots.txt`, `feed.xml`, `en/feed.xml`.
 
+### ניהול תוכן (CMS)
+
+עריכה, הוספה ומחיקה של כתבות, והזמנת כותבים, דרך Pages CMS (חינם): https://app.pagescms.org. ההגדרות ב-`.pages.yml`, המדריך המלא ב-[docs/CMS-GUIDE.md](docs/CMS-GUIDE.md). כתבות שנכתבות ידנית: להריץ `python3 scripts/normalize_frontmatter.py` לפני commit כדי שה-CMS יוכל לפתוח אותן.
+
 ### הוספת פוסט
 
 צרו קובץ `content/he/<slug>.md` (ובאותו slug גם `content/en/<slug>.md` אם יש תרגום. ה-slug המשותף הוא מה שמחבר בין השפות):

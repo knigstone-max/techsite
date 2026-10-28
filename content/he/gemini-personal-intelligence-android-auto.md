@@ -1,14 +1,15 @@
 ---
-title: Gemini ב-Android Auto יכול עכשיו להיעזר ב-Gmail, ביומן ובמפות שלכם כדי לענות
+title: "Gemini ב-Android Auto יכול עכשיו להיעזר ב-Gmail, ביומן ובמפות שלכם כדי לענות"
 date: 2026-10-21
 slug: gemini-personal-intelligence-android-auto
 category: tech-news
-excerpt: גוגל מתחילה להפעיל את Personal Intelligence ב-Android Auto, ובהמשך גם במכוניות עם Google built-in. צריך להפעיל את זה ידנית, וזה לא זמין באיחוד האירופי, בשווייץ ובבריטניה.
+excerpt: "גוגל מתחילה להפעיל את Personal Intelligence ב-Android Auto, ובהמשך גם במכוניות עם Google built-in. צריך להפעיל את זה ידנית, וזה לא זמין באיחוד האירופי, בשווייץ ובבריטניה."
 source_links:
-  - https://blog.google/products-and-platforms/platforms/android/android-auto-cars-with-google-built-in-gemini-personal-intelligence/
-  - https://www.androidauthority.com/gemini-personal-intelligence-on-android-auto-3725650/
-  - https://9to5google.com/2026/10/20/gemini-android-auto-personal-intelligence/
+  - "https://blog.google/products-and-platforms/platforms/android/android-auto-cars-with-google-built-in-gemini-personal-intelligence/"
+  - "https://www.androidauthority.com/gemini-personal-intelligence-on-android-auto-3725650/"
+  - "https://9to5google.com/2026/10/20/gemini-android-auto-personal-intelligence/"
 ---
+
 גוגל הודיעה ב-20 באוקטובר ש-Gemini זמין עכשיו בכל העולם ב-Android Auto ובמכוניות עם Google built-in. במקביל היא התחילה להפעיל ברכב את Personal Intelligence, תכונה שמאפשרת ל-Gemini לשלוף פרטים מאפליקציות גוגל שלכם כשהוא עונה.
 
 ## למה זה מתחבר

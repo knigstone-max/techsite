@@ -1,18 +1,19 @@
 ---
-title: שואבי הרובוט R1 ו-R2 Nurovi של דייסון יוצאים למכירה באיטליה, החל מ-549 יורו
+title: "שואבי הרובוט R1 ו-R2 Nurovi של דייסון יוצאים למכירה באיטליה, החל מ-549 יורו"
 date: 2026-10-21
 slug: dyson-r1-r2-nurovi-robot-vacuums-italy
 category: home-appliances
-excerpt: R1 Nurovi Dry רק שואב, R2 Nurovi Wash+Dry גם שוטף עם רפידות בצורת משולש, ושניהם מתרוקנים לתחנה בלי שקית שמכילה אבק של עד 90 יום.
+excerpt: "R1 Nurovi Dry רק שואב, R2 Nurovi Wash+Dry גם שוטף עם רפידות בצורת משולש, ושניהם מתרוקנים לתחנה בלי שקית שמכילה אבק של עד 90 יום."
 image: img/posts/dyson-r2-nurovi-wash-dry-dock.webp
 image_alt: "שואב הרובוט Dyson R2 Nurovi Wash+Dry חונה בתחנה הפתוחה שלו, ורואים את מכלי המים ואת מכל האבק הציקלוני"
 image_credit: "תמונה: Dyson (דף המוצר הרשמי של R2 Nurovi Wash+Dry, חתוך)"
-image_credit_url: https://www.dyson.com.au/products/vacuum-cleaners/robot/r2-nurovi-wash-dry
+image_credit_url: "https://www.dyson.com.au/products/vacuum-cleaners/robot/r2-nurovi-wash-dry"
 source_links:
-  - https://www.notizie.it/en/New-Dyson-R1-and-R2-robot-vacuums-and-smart-mopping/
-  - https://www.dyson.com/discover/news/latest/introducing-r1-nurovi-r2-nurovi
-  - https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue
+  - "https://www.notizie.it/en/New-Dyson-R1-and-R2-robot-vacuums-and-smart-mopping/"
+  - "https://www.dyson.com/discover/news/latest/introducing-r1-nurovi-r2-nurovi"
+  - "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
 ---
+
 דייסון הכריזה על שני שואבי רובוט, R1 Nurovi Dry ו-R2 Nurovi Wash+Dry, בלונדון ב-3 בספטמבר. לפי notizie.it, ב-20 באוקטובר החברה התחילה למכור את שניהם באיטליה בערוצים הרשמיים שלה, וחנויות מורשות יצטרפו בחודשים הקרובים.
 
 ## שני דגמים

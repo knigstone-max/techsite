@@ -5,8 +5,8 @@ slug: electrolux-aeg-ifa-2026
 category: home-appliances
 excerpt: "אלקטרולוקס הציגה מכונה שמורידה כתמים ב-30 מעלות ב-39 דקות, ו-AEG הביאה כיריים עם תוכנית פסטה ורובוט שואב בגובה 7.89 ס״מ."
 source_links:
-  - https://www.marketscreener.com/news/electrolux-group-showcases-innovations-at-ifa-2026-that-give-people-more-time-for-what-truly-matters-ce785bdede81f723
-  - https://www.prnewswire.com/news-releases/ifa-2026-premium-brand-aeg-challenges-the-expected-with-its-first-ever-pasta-hob-and-a-celebration-of-the-art-of-hosting-302865848.html
+  - "https://www.marketscreener.com/news/electrolux-group-showcases-innovations-at-ifa-2026-that-give-people-more-time-for-what-truly-matters-ce785bdede81f723"
+  - "https://www.prnewswire.com/news-releases/ifa-2026-premium-brand-aeg-challenges-the-expected-with-its-first-ever-pasta-hob-and-a-celebration-of-the-art-of-hosting-302865848.html"
 ---
 
 הקבוצה השוודית Electrolux הגיעה ל-IFA עם שני מותגים ושתי גישות. Electrolux דיברה על לשמור על הבגדים, ו-AEG ניסתה להפתיע.

@@ -1,19 +1,20 @@
 ---
-title: Huawei launches the Mate 90 series in China, four phones from 5,999 yuan
+title: "Huawei launches the Mate 90 series in China, four phones from 5,999 yuan"
 date: 2026-10-21
 slug: huawei-mate-90-series-launch
 category: smartphones-gadgets
-excerpt: The Mate 90, Mate 90 Pro, Mate 90 Pro Max and Mate 90 RS run on Huawei's own Kirin chips and HarmonyOS 7, with prices from 5,999 to 12,999 yuan.
+excerpt: "The Mate 90, Mate 90 Pro, Mate 90 Pro Max and Mate 90 RS run on Huawei's own Kirin chips and HarmonyOS 7, with prices from 5,999 to 12,999 yuan."
 image: img/posts/huawei-mate-90-pro.webp
 image_alt: "The back of a green Huawei Mate 90 Pro with a large round camera module, standing against a dark background"
 image_credit: "Image: Huawei (official Mate 90 Pro product page, cropped)"
-image_credit_url: https://consumer.huawei.com/cn/phones/mate90-pro/
+image_credit_url: "https://consumer.huawei.com/cn/phones/mate90-pro/"
 source_links:
-  - https://efecomunica.efe.com/en/huawei-unveils-mate-90-new-generation-flagship-smartphones-house-chips/
-  - https://consumer.huawei.com/cn/phones/mate90/
-  - https://consumer.huawei.com/cn/phones/mate90-pro/
-  - https://consumer.huawei.com/cn/phones/mate90-pro-max/
+  - "https://efecomunica.efe.com/en/huawei-unveils-mate-90-new-generation-flagship-smartphones-house-chips/"
+  - "https://consumer.huawei.com/cn/phones/mate90/"
+  - "https://consumer.huawei.com/cn/phones/mate90-pro/"
+  - "https://consumer.huawei.com/cn/phones/mate90-pro-max/"
 ---
+
 Huawei unveiled its new flagship line, the Mate 90 series, on October 20. There are four models: Mate 90, Mate 90 Pro, Mate 90 Pro Max and Mate 90 RS Ultimate Design. All of them use chips Huawei designs itself, and the product pages list HarmonyOS 7 as the software.
 
 ## Prices in China

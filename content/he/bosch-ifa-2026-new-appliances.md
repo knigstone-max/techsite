@@ -7,10 +7,10 @@ excerpt: "מכונת כביסה-מייבש ראשונה של בוש עם משא�
 image: img/posts/bosch-ifa-2026-booth.webp
 image_alt: "הביתן של בוש ב-IFA 2026 בברלין"
 image_credit: "תמונה: BSH Home Appliances (Bosch)"
-image_credit_url: https://press.bsh-group.com/blog_posts/quality-for-everyday-life-bosch-presents-new-home-solutions-at-ifa-2026-126425
+image_credit_url: "https://press.bsh-group.com/blog_posts/quality-for-everyday-life-bosch-presents-new-home-solutions-at-ifa-2026-126425"
 source_links:
-  - https://press.bsh-group.com/blog_posts/quality-for-everyday-life-bosch-presents-new-home-solutions-at-ifa-2026-126425
-  - https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html
+  - "https://press.bsh-group.com/blog_posts/quality-for-everyday-life-bosch-presents-new-home-solutions-at-ifa-2026-126425"
+  - "https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html"
 ---
 
 הביתן של בוש ב-IFA נקרא השנה "Bosch Factory of Quality", ובפועל היה שם הרבה פחות מדע בדיוני ממה שהציגו המתחרות. מכשירים רגילים, עם שיפור אחד ברור בכל אחד.

@@ -1,17 +1,18 @@
 ---
-title: Oppo takes the Find X10 and Find X10 Pro Max global, with up to three 200MP cameras
+title: "Oppo takes the Find X10 and Find X10 Pro Max global, with up to three 200MP cameras"
 date: 2026-10-22
 slug: oppo-find-x10-series-global-launch
 category: smartphones-gadgets
-excerpt: The Pro Max puts a 200MP sensor behind all three rear lenses, both phones get up to 8,000mAh batteries, and sales start globally in late October.
+excerpt: "The Pro Max puts a 200MP sensor behind all three rear lenses, both phones get up to 8,000mAh batteries, and sales start globally in late October."
 image: img/posts/oppo-find-x10-series-crop.webp
 image_position: "center 22%"
 image_alt: "The backs of a light blue Oppo Find X10 and a white Find X10 Pro Max next to the text Find X10 Series"
 image_credit: "Image: Oppo (official Find X10 Series launch press release, cropped)"
-image_credit_url: https://www.oppo.com/en/newsroom/press/oppo-find-x10-series-global-launch/
+image_credit_url: "https://www.oppo.com/en/newsroom/press/oppo-find-x10-series-global-launch/"
 source_links:
-  - https://www.oppo.com/en/newsroom/press/oppo-find-x10-series-global-launch/
+  - "https://www.oppo.com/en/newsroom/press/oppo-find-x10-series-global-launch/"
 ---
+
 Oppo announced the global launch of two flagship phones on October 21 at an event in Mallorca: the Find X10 and the Find X10 Pro Max. Both use a camera system developed with Hasselblad and ship with ColorOS 17.
 
 ## Cameras

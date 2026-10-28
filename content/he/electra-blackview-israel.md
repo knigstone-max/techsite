@@ -5,8 +5,8 @@ slug: electra-blackview-israel
 category: smartphones-gadgets
 excerpt: "השקעה של כ-10 מיליון ₪ (כ-3.2 מיליון דולר), אזורי חוויה בסניפים, וטלפונים, טאבלטים ומחשבי מיני של מותג סיני שמוכר בעיקר לאנשי שטח."
 source_links:
-  - https://www.geektime.co.il/flash/electra-retail-exclusive-blackview-israel/
-  - https://www.gadgety.co.il/364185/pixel-11-pro-israel-electra/
+  - "https://www.geektime.co.il/flash/electra-retail-exclusive-blackview-israel/"
+  - "https://www.gadgety.co.il/364185/pixel-11-pro-israel-electra/"
 ---
 
 אם עבדתם פעם באתר בנייה, בחקלאות או במחסן, יש סיכוי טוב שראיתם טלפון עבה עם פינות גומי שלא נשבר כשהוא נופל מהסולם. רוב הטלפונים האלה הגיעו לישראל עד היום דרך עלי אקספרס או יבואנים קטנים. מעכשיו חלק מהם יימכר במחסני חשמל ובשקם אלקטריק.

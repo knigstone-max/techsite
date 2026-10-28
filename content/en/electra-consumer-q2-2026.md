@@ -5,7 +5,7 @@ slug: electra-consumer-q2-2026
 category: tech-news
 excerpt: "Quarterly revenue of ₪1.8 billion (about $584 million), net profit of ₪30 million and a ₪45 million dividend. What the report says about the appliance market."
 source_links:
-  - https://www.funder.co.il/article/208009
+  - "https://www.funder.co.il/article/208009"
 ---
 
 Electra Consumer Products is one of the big players in Israel's electronics market: it owns Machsanei Hashmal and Shekem Electric, makes and sells air conditioners, and also runs Carrefour and adidas in Israel. Its second-quarter 2026 results, published on 20 August, give a good look at what is happening in stores.

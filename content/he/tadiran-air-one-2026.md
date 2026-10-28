@@ -7,9 +7,9 @@ excerpt: "חמישה דגמים מ-1 ועד 3.5 כ״ס, דירוג A++, חייש
 image: img/posts/tadiran-air-one.webp
 image_alt: "מזגן עילי של תדיראן מסדרת AIR ONE על קיר בסלון"
 image_credit: "תמונה: קבוצת תדיראן"
-image_credit_url: https://www.tadiran-group.co.il/new-tadiran-air-one-2026-inverter-ac/
+image_credit_url: "https://www.tadiran-group.co.il/new-tadiran-air-one-2026-inverter-ac/"
 source_links:
-  - https://www.tadiran-group.co.il/new-tadiran-air-one-2026-inverter-ac/
+  - "https://www.tadiran-group.co.il/new-tadiran-air-one-2026-inverter-ac/"
 ---
 
 לקראת הקיץ תדיראן הוציאה סדרת מזגנים עיליים חדשה, AIR ONE, והפעם החברה מדברת לא פחות על עיצוב מאשר על BTU. המזגן זמין בלבן ובשחור, באותו מחיר, וזה כבר אומר משהו על הקהל שאליו היא מכוונת.

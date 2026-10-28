@@ -7,11 +7,11 @@ excerpt: "Machsanei Hashmal and Shekem Electric now sell the Pixel 11 Pro and Pr
 image: img/posts/pixel-11-pro-collection.webp
 image_alt: "The Pixel 11 lineup with Google's watch and earbuds, press photo"
 image_credit: "Image: Google (The Keyword blog)"
-image_credit_url: https://blog.google/products-and-platforms/devices/pixel/new-pixel-devices-2026/
+image_credit_url: "https://blog.google/products-and-platforms/devices/pixel/new-pixel-devices-2026/"
 source_links:
-  - https://www.gadgety.co.il/364185/pixel-11-pro-israel-electra/
-  - https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/
-  - https://store.google.com/product/pixel_11_pro_specs?hl=en-US
+  - "https://www.gadgety.co.il/364185/pixel-11-pro-israel-electra/"
+  - "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/"
+  - "https://store.google.com/product/pixel_11_pro_specs?hl=en-US"
 ---
 
 Until now, buying a new Pixel in Israel meant choosing between a small shop selling parallel imports and ordering from abroad. In late August Electra Retail, which owns the Machsanei Hashmal and Shekem Electric chains, started selling the Pixel 11 Pro series in stores and online.

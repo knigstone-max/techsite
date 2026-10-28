@@ -1,18 +1,19 @@
 ---
-title: LG's new STEM fridge swaps freezer doors for drawers, one of which converts
+title: "LG's new STEM fridge swaps freezer doors for drawers, one of which converts"
 date: 2026-10-27
 slug: lg-stem-drawer-freezer-fridge
 category: home-appliances
-excerpt: LG's latest STEM ice-and-water fridge, launched in Korea, replaces the bottom freezer doors with two drawers. The middle one switches between fridge and freezer, with 14 food-specific storage modes.
+excerpt: "LG's latest STEM ice-and-water fridge, launched in Korea, replaces the bottom freezer doors with two drawers. The middle one switches between fridge and freezer, with 14 food-specific storage modes."
 image: img/posts/lg-stem-drawer-fridge.webp
 image_alt: "A beige LG STEM refrigerator built into kitchen cabinets, with a water and ice dispenser on the left door and two rows of drawers below"
 image_credit: "Image: LG (press release, cropped)"
-image_credit_url: https://www.lg.co.kr/media/release/30711
+image_credit_url: "https://www.lg.co.kr/media/release/30711"
 source_links:
-  - https://www.lg.co.kr/media/release/30711
-  - https://en.sedaily.com/finance/2026/10/26/lg-launches-ai-fridge-with-drawer-style-freezer
-  - https://www.asiae.co.kr/en/article/2026102608161376630
+  - "https://www.lg.co.kr/media/release/30711"
+  - "https://en.sedaily.com/finance/2026/10/26/lg-launches-ai-fridge-with-drawer-style-freezer"
+  - "https://www.asiae.co.kr/en/article/2026102608161376630"
 ---
+
 LG launched a new version of STEM in Korea on October 26. STEM is LG's line of fridges plumbed straight into the water supply, and it makes several kinds of ice: round Craft Ice, cubes and crushed. This model's news is at the bottom.
 
 ## Drawers instead of doors

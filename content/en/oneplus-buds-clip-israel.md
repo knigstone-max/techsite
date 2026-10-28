@@ -1,19 +1,20 @@
 ---
-title: OnePlus Buds Clip open-ear earbuds land in Israel at ₪499
+title: "OnePlus Buds Clip open-ear earbuds land in Israel at ₪499"
 date: 2026-10-27
 slug: oneplus-buds-clip-israel
 category: smartphones-gadgets
-excerpt: Clip-on open-ear buds with two Dynaudio-tuned drivers per side. Importer Cell Now sells them in Israel for ₪499 (about $160) in three colors.
+excerpt: "Clip-on open-ear buds with two Dynaudio-tuned drivers per side. Importer Cell Now sells them in Israel for ₪499 (about $160) in three colors."
 image: img/posts/oneplus-buds-clip-pebble-gray.webp
 image_alt: "A OnePlus Buds Clip earbud in Pebble Gray, with a metal arc joining the two halves of the bud"
 image_credit: "Image: OnePlus (official product page, cropped)"
-image_credit_url: https://www.oneplus.com/global/oneplus-buds-clip
+image_credit_url: "https://www.oneplus.com/global/oneplus-buds-clip"
 source_links:
-  - https://g-rafa.co.il/oneplus-buds-clip-israel-launch/
-  - https://www.oneplus.com/global/oneplus-buds-clip
-  - https://one-plus.co.il/shop/oneplus-buds/oneplus-buds-clip/oneplus-buds-clip-pebble-gray/
-  - https://www.androidauthority.com/oneplus-buds-clip-3727766/
+  - "https://g-rafa.co.il/oneplus-buds-clip-israel-launch/"
+  - "https://www.oneplus.com/global/oneplus-buds-clip"
+  - "https://one-plus.co.il/shop/oneplus-buds/oneplus-buds-clip/oneplus-buds-clip-pebble-gray/"
+  - "https://www.androidauthority.com/oneplus-buds-clip-3727766/"
 ---
+
 The OnePlus Buds Clip, the company's first clip-style earbuds, are now on sale in Israel. They don't go into the ear canal. Instead they hook onto the ear with a flexible arc, so you can listen to music and still hear traffic. Official importer Cell Now is selling them for ₪499, roughly $160 at an approximate exchange rate.
 
 ## Design and fit

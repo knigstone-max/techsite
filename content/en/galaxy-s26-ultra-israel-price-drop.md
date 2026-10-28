@@ -7,12 +7,12 @@ excerpt: "At preorder in February the 512GB Ultra cost ₪4,549. The official im
 image: img/posts/galaxy-s26-ultra.webp
 image_alt: "Three Galaxy S26 phones in violet, Samsung press photo"
 image_credit: "Image: Samsung Newsroom"
-image_credit_url: https://news.samsung.com/global/samsung-unveils-galaxy-s26-series-the-most-intuitive-galaxy-ai-phone-yet
+image_credit_url: "https://news.samsung.com/global/samsung-unveils-galaxy-s26-series-the-most-intuitive-galaxy-ai-phone-yet"
 source_links:
-  - https://www.ice.co.il/consumerism/news/article/1104400
-  - https://www.mobileonline.co.il/product-category/phones/samsung-devices/galaxy-s-series/
-  - https://www.itechmobile.co.il/product-category/mobile-phones/samsung-devices/samsung-galaxy-s/samsung-galaxy-s26/
-  - https://news.samsung.com/global/samsung-unveils-galaxy-s26-series-the-most-intuitive-galaxy-ai-phone-yet
+  - "https://www.ice.co.il/consumerism/news/article/1104400"
+  - "https://www.mobileonline.co.il/product-category/phones/samsung-devices/galaxy-s-series/"
+  - "https://www.itechmobile.co.il/product-category/mobile-phones/samsung-devices/samsung-galaxy-s/samsung-galaxy-s26/"
+  - "https://news.samsung.com/global/samsung-unveils-galaxy-s26-series-the-most-intuitive-galaxy-ai-phone-yet"
 ---
 
 Eight months after launch, the Galaxy S26 Ultra is where many buyers like to catch a phone: still current, and noticeably cheaper.

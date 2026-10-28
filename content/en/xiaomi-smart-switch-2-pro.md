@@ -1,16 +1,17 @@
 ---
-title: Xiaomi Smart Switch 2 Pro turns ordinary wall switches into smart ones, even without a neutral wire
+title: "Xiaomi Smart Switch 2 Pro turns ordinary wall switches into smart ones, even without a neutral wire"
 date: 2026-10-20
 slug: xiaomi-smart-switch-2-pro
 category: home-appliances
-excerpt: The new switch replaces a standard wall switch, works with both regular and smart bulbs, and starts at 114 yuan in a crowdfunding campaign in China.
+excerpt: "The new switch replaces a standard wall switch, works with both regular and smart bulbs, and starts at 114 yuan in a crowdfunding campaign in China."
 image: img/posts/xiaomi-smart-switch-2-pro.webp
 image_alt: "Two Xiaomi Smart Switch 2 Pro wall switches, one white and one dark gray"
 image_credit: "Image: Xiaomi (Xiaomi Youpin product page)"
-image_credit_url: https://www.xiaomiyoupin.com/detail?gid=185146
+image_credit_url: "https://www.xiaomiyoupin.com/detail?gid=185146"
 source_links:
-  - https://www.gizmochina.com/2026/10/19/xiaomi-launches-smart-switch-2-pro-with-app-and-voice-control-automation-2200w-max-load/
+  - "https://www.gizmochina.com/2026/10/19/xiaomi-launches-smart-switch-2-pro-with-app-and-voice-control-automation-2200w-max-load/"
 ---
+
 Xiaomi has opened a crowdfunding campaign on its Youpin platform in China for the Smart Switch 2 Pro. It is a wall switch that goes in place of your existing one, so you can control lights from your phone or by voice without changing the bulbs.
 
 ## Installation

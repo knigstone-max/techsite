@@ -1,18 +1,19 @@
 ---
-title: 'LG STEM: מקרר עם מתקן מים וקרח, מקפיא במגירות ותא שעובר בין קירור להקפאה'
+title: "LG STEM: מקרר עם מתקן מים וקרח, מקפיא במגירות ותא שעובר בין קירור להקפאה"
 date: 2026-10-27
 slug: lg-stem-drawer-freezer-fridge
 category: home-appliances
-excerpt: בדגם החדש שהושק בקוריאה, LG החליפה את דלתות המקפיא התחתון בשתי מגירות. המגירה האמצעית יכולה להיות מקרר או מקפיא, עם 14 מצבי אחסון לפי סוג המזון.
+excerpt: "בדגם החדש שהושק בקוריאה, LG החליפה את דלתות המקפיא התחתון בשתי מגירות. המגירה האמצעית יכולה להיות מקרר או מקפיא, עם 14 מצבי אחסון לפי סוג המזון."
 image: img/posts/lg-stem-drawer-fridge.webp
 image_alt: "מקרר LG STEM בצבע בז' משולב בארונות מטבח, עם מתקן מים וקרח בדלת השמאלית ושתי שורות מגירות למטה"
 image_credit: "תמונה: LG (הודעה לעיתונות, חתוך)"
-image_credit_url: https://www.lg.co.kr/media/release/30711
+image_credit_url: "https://www.lg.co.kr/media/release/30711"
 source_links:
-  - https://www.lg.co.kr/media/release/30711
-  - https://en.sedaily.com/finance/2026/10/26/lg-launches-ai-fridge-with-drawer-style-freezer
-  - https://www.asiae.co.kr/en/article/2026102608161376630
+  - "https://www.lg.co.kr/media/release/30711"
+  - "https://en.sedaily.com/finance/2026/10/26/lg-launches-ai-fridge-with-drawer-style-freezer"
+  - "https://www.asiae.co.kr/en/article/2026102608161376630"
 ---
+
 LG השיקה ב-26 באוקטובר בקוריאה גרסה חדשה של STEM, סדרת המקררים שלה עם חיבור ישיר לצנרת המים. STEM מכינה כמה סוגי קרח: קרח עגול (Craft Ice), קוביות וקרח כתוש. החידוש בדגם הזה נמצא בחלק התחתון.
 
 ## מגירות במקום דלתות

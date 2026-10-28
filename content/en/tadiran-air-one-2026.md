@@ -7,9 +7,9 @@ excerpt: "Five models from 1 to 3.5 horsepower, A++ rating, a sensor that aims a
 image: img/posts/tadiran-air-one.webp
 image_alt: "A Tadiran AIR ONE wall-mounted air conditioner in a living room"
 image_credit: "Image: Tadiran Group"
-image_credit_url: https://www.tadiran-group.co.il/new-tadiran-air-one-2026-inverter-ac/
+image_credit_url: "https://www.tadiran-group.co.il/new-tadiran-air-one-2026-inverter-ac/"
 source_links:
-  - https://www.tadiran-group.co.il/new-tadiran-air-one-2026-inverter-ac/
+  - "https://www.tadiran-group.co.il/new-tadiran-air-one-2026-inverter-ac/"
 ---
 
 Ahead of the summer Tadiran released a new wall-mounted series, AIR ONE, and this time it talks about design as much as BTU. The unit comes in white or black at the same price, which says something about its target buyer.

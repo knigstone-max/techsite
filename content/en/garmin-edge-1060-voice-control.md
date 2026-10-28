@@ -1,16 +1,17 @@
 ---
-title: Garmin Edge 1060 adds a speaker and microphone so cyclists can control it by voice
+title: "Garmin Edge 1060 adds a speaker and microphone so cyclists can control it by voice"
 date: 2026-10-22
 slug: garmin-edge-1060-voice-control
 category: smartphones-gadgets
-excerpt: Say "Okay, Garmin" to hear ride stats, pick a route or report a pothole. The new cycling computer is on sale now for $799.99.
+excerpt: "Say \"Okay, Garmin\" to hear ride stats, pick a route or report a pothole. The new cycling computer is on sale now for $799.99."
 image: img/posts/garmin-edge-1060.webp
 image_alt: "Four cyclists riding on a mountain road next to a Garmin Edge 1060 showing a map and a pothole alert"
 image_credit: "Image: Garmin (Edge 1060 press release)"
-image_credit_url: https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/new-garmin-edge-1060-cycling-computer-gives-cyclists-hands-free-voice-control/
+image_credit_url: "https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/new-garmin-edge-1060-cycling-computer-gives-cyclists-hands-free-voice-control/"
 source_links:
-  - https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/new-garmin-edge-1060-cycling-computer-gives-cyclists-hands-free-voice-control/
+  - "https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/new-garmin-edge-1060-cycling-computer-gives-cyclists-hands-free-voice-control/"
 ---
+
 Garmin announced the Edge 1060 on October 20. It is the company's new premium bike computer, and the main change is a built-in microphone and speaker, so riders can keep both hands on the bars.
 
 ## What the voice control does

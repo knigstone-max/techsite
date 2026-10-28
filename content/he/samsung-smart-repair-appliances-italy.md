@@ -1,16 +1,17 @@
 ---
-title: סמסונג מרחיבה את Smart Repair למוצרי חשמל ביתיים באיטליה: הזמנת תיקון מחוץ לאחריות דרך האתר
+title: "סמסונג מרחיבה את Smart Repair למוצרי חשמל ביתיים באיטליה: הזמנת תיקון מחוץ לאחריות דרך האתר"
 date: 2026-10-23
 slug: samsung-smart-repair-appliances-italy
 category: home-appliances
-excerpt: בעלים של מכונות כביסה, מקררים, תנורים ומוצרים נוספים של סמסונג שיצאו מהאחריות יכולים לקנות תיקון ב-Samsung.com ולקבל טכנאי הביתה, בדרך כלל תוך חמישה ימי עבודה.
+excerpt: "בעלים של מכונות כביסה, מקררים, תנורים ומוצרים נוספים של סמסונג שיצאו מהאחריות יכולים לקנות תיקון ב-Samsung.com ולקבל טכנאי הביתה, בדרך כלל תוך חמישה ימי עבודה."
 image: img/posts/samsung-smart-repair-appliances-crop.webp
 image_alt: "מקרר, תנור ביל-אין ומכונת כביסה של סמסונג עומדים מאחורי הכיתוב Smart Repair"
 image_credit: "תמונה: Samsung Newsroom Italia (חתוך)"
-image_credit_url: https://news.samsung.com/it/samsung-smart-repair-arriva-anche-per-gli-elettrodomestici
+image_credit_url: "https://news.samsung.com/it/samsung-smart-repair-arriva-anche-per-gli-elettrodomestici"
 source_links:
-  - https://news.samsung.com/it/samsung-smart-repair-arriva-anche-per-gli-elettrodomestici
+  - "https://news.samsung.com/it/samsung-smart-repair-arriva-anche-per-gli-elettrodomestici"
 ---
+
 סמסונג איטליה הודיעה ב-22 באוקטובר ששירות Smart Repair, שכבר קיים לטלפוני Galaxy, מכסה עכשיו גם מוצרי חשמל ביתיים. השירות מיועד למוצרים שכבר לא נמצאים באחריות.
 
 ## איך זה עובד

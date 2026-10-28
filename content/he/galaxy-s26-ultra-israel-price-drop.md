@@ -7,12 +7,12 @@ excerpt: "בהזמנה המוקדמת בפברואר ה-Ultra בנפח 512GB ע�
 image: img/posts/galaxy-s26-ultra.webp
 image_alt: "שלושה מכשירי Galaxy S26 בגוון סגול, צילום יחצ של סמסונג"
 image_credit: "תמונה: Samsung Newsroom"
-image_credit_url: https://news.samsung.com/global/samsung-unveils-galaxy-s26-series-the-most-intuitive-galaxy-ai-phone-yet
+image_credit_url: "https://news.samsung.com/global/samsung-unveils-galaxy-s26-series-the-most-intuitive-galaxy-ai-phone-yet"
 source_links:
-  - https://www.ice.co.il/consumerism/news/article/1104400
-  - https://www.mobileonline.co.il/product-category/phones/samsung-devices/galaxy-s-series/
-  - https://www.itechmobile.co.il/product-category/mobile-phones/samsung-devices/samsung-galaxy-s/samsung-galaxy-s26/
-  - https://news.samsung.com/global/samsung-unveils-galaxy-s26-series-the-most-intuitive-galaxy-ai-phone-yet
+  - "https://www.ice.co.il/consumerism/news/article/1104400"
+  - "https://www.mobileonline.co.il/product-category/phones/samsung-devices/galaxy-s-series/"
+  - "https://www.itechmobile.co.il/product-category/mobile-phones/samsung-devices/samsung-galaxy-s/samsung-galaxy-s26/"
+  - "https://news.samsung.com/global/samsung-unveils-galaxy-s26-series-the-most-intuitive-galaxy-ai-phone-yet"
 ---
 
 שמונה חודשים אחרי ההשקה, ה-Galaxy S26 Ultra נמצא בדיוק בנקודה שבה הרבה קונים מחכים לו: המכשיר עדיין עדכני, וגם המחיר כבר ירד.

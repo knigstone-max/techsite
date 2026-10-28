@@ -7,10 +7,10 @@ excerpt: "Haier Europe showed a washer that spots colours and forgotten items, a
 image: img/posts/haier-ifa-2026.webp
 image_alt: "A humanoid robot next to a washing machine at Haier's IFA 2026 stand"
 image_credit: "Image: Haier Europe / Antinori Vegetti"
-image_credit_url: https://corporate.haier-europe.com/en-gb/press-release/ifa-2026-haier-intelligent-home-understands-you-before-you-ask/
+image_credit_url: "https://corporate.haier-europe.com/en-gb/press-release/ifa-2026-haier-intelligent-home-understands-you-before-you-ask/"
 source_links:
-  - https://corporate.haier-europe.com/en-gb/press-release/ifa-2026-haier-intelligent-home-understands-you-before-you-ask/
-  - https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html
+  - "https://corporate.haier-europe.com/en-gb/press-release/ifa-2026-haier-intelligent-home-understands-you-before-you-ask/"
+  - "https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html"
 ---
 
 If Bosch brought ordinary appliances to Berlin, Haier brought the future, or its idea of it. At its stand in Hall 3.1, humanoid robots loaded laundry and put food in the fridge.

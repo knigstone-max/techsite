@@ -7,10 +7,10 @@ excerpt: "LG brought an LLM voice assistant in a SIGNATURE fridge, a new WashTow
 image: img/posts/lg-ifa-2026-booth.webp
 image_alt: "Visitors at LG's IFA 2026 booth watch a Fit & Max refrigerator demo"
 image_credit: "Image: LG Electronics"
-image_credit_url: https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-electronics-highlights-seven-home-appliances-at-ifa-2026/
+image_credit_url: "https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-electronics-highlights-seven-home-appliances-at-ifa-2026/"
 source_links:
-  - https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-electronics-highlights-seven-home-appliances-at-ifa-2026/
-  - https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html
+  - "https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-electronics-highlights-seven-home-appliances-at-ifa-2026/"
+  - "https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html"
 ---
 
 LG showed only seven products at IFA this year, and nearly all of them tackle the same problem: small homes, high power bills and not much time.

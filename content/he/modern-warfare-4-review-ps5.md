@@ -7,7 +7,7 @@ excerpt: "אחרי כמה שנים של כותרים שהרגישו ממהרים
 image: img/posts/mw4-hero-korea-front.webp
 image_alt: "שלושה חיילים בקסדות מסתתרים מאחורי חומה ומביטים בפיצוצים ענקיים ביער, ומעליהם חולף מטוס קרב"
 image_credit: "תמונה: Activision"
-image_credit_url: https://www.callofduty.com/blog/2026/05/call-of-duty-modern-warfare-4-announcement
+image_credit_url: "https://www.callofduty.com/blog/2026/05/call-of-duty-modern-warfare-4-announcement"
 ---
 
 הרבה זמן לא חיכיתי לקול אוף דיוטי ככה. אחרי Modern Warfare III ו-Black Ops 7, שבעיניי הרגישו כמו משחקים שיצאו לפני שהיו מוכנים, כבר התחלתי להתייאש מהסדרה. כל שנה אותו טקס: קונים, משחקים שבועיים, ומרגישים שמשהו חסר. Modern Warfare 4 שבר לי את הרצף הזה, והוא עשה את זה כבר בערב הראשון.

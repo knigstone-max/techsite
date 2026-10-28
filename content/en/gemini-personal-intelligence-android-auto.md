@@ -1,14 +1,15 @@
 ---
-title: Gemini on Android Auto can now use your Gmail, Calendar and Maps to answer questions
+title: "Gemini on Android Auto can now use your Gmail, Calendar and Maps to answer questions"
 date: 2026-10-21
 slug: gemini-personal-intelligence-android-auto
 category: tech-news
-excerpt: Google is rolling out Personal Intelligence on Android Auto, with cars that have Google built-in to follow. It's opt-in and not available in the EU, Switzerland or the UK.
+excerpt: "Google is rolling out Personal Intelligence on Android Auto, with cars that have Google built-in to follow. It's opt-in and not available in the EU, Switzerland or the UK."
 source_links:
-  - https://blog.google/products-and-platforms/platforms/android/android-auto-cars-with-google-built-in-gemini-personal-intelligence/
-  - https://www.androidauthority.com/gemini-personal-intelligence-on-android-auto-3725650/
-  - https://9to5google.com/2026/10/20/gemini-android-auto-personal-intelligence/
+  - "https://blog.google/products-and-platforms/platforms/android/android-auto-cars-with-google-built-in-gemini-personal-intelligence/"
+  - "https://www.androidauthority.com/gemini-personal-intelligence-on-android-auto-3725650/"
+  - "https://9to5google.com/2026/10/20/gemini-android-auto-personal-intelligence/"
 ---
+
 Google announced on October 20 that Gemini is now available worldwide on Android Auto and in cars with Google built-in. Alongside that, it started rolling out Personal Intelligence in the car, a feature that lets Gemini pull details from your own Google apps when it answers.
 
 ## What it connects to

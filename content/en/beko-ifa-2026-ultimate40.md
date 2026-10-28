@@ -7,9 +7,9 @@ excerpt: "The Beko group, which owns 22 brands including Whirlpool, Hotpoint and
 image: img/posts/beko-ultimatewash-ifa-2026.webp
 image_alt: "A Beko washing machine with UltimateWash technology in a laundry room"
 image_credit: "Image: Beko / PR Newswire"
-image_credit_url: https://www.prnewswire.com/news-releases/beko-lets-the-numbers-tell-the-story-of-easier-everyday-living-302869073.html
+image_credit_url: "https://www.prnewswire.com/news-releases/beko-lets-the-numbers-tell-the-story-of-easier-everyday-living-302869073.html"
 source_links:
-  - https://www.prnewswire.com/news-releases/beko-lets-the-numbers-tell-the-story-of-easier-everyday-living-302869073.html
+  - "https://www.prnewswire.com/news-releases/beko-lets-the-numbers-tell-the-story-of-easier-everyday-living-302869073.html"
 ---
 
 Beko may be the biggest white-goods company in Europe that most Israelis do not realise they already own. The group owns or licenses 22 brands, including Beko, Grundig, Whirlpool, Hotpoint, Indesit, Blomberg and Bauknecht, and turned over €10.7 billion in 2025. At IFA it chose to talk in numbers.

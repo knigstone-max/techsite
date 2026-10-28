@@ -7,12 +7,12 @@ excerpt: "השנה ההשקה בישראל הייתה סימולטנית. Pro ב
 image: img/posts/iphone-18-pro.webp
 image_alt: "iPhone 18 Pro ו-iPhone 18 Pro Max בגוון בורדו, צילום יחצ של אפל"
 image_credit: "תמונה: Apple Newsroom"
-image_credit_url: https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/
+image_credit_url: "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/"
 source_links:
-  - https://www.gadgety.co.il/369462/iphone-18-pro-israel-launch/
-  - https://www.c14.co.il/article/1698207
-  - https://www.poenta.co.il/article/iphone-18-pro-and-pro-max/
-  - https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/
+  - "https://www.gadgety.co.il/369462/iphone-18-pro-israel-launch/"
+  - "https://www.c14.co.il/article/1698207"
+  - "https://www.poenta.co.il/article/iphone-18-pro-and-pro-max/"
+  - "https://www.apple.com/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/"
 ---
 
 לראשונה, אייפון חדש נחת אצלנו באותו יום כמו בארה"ב ובאירופה. המשלוחים התחילו ב-18 בספטמבר, ובמקום לחכות שבועיים לגל השני, המשווקים פרסמו מחירונים כבר בשבוע ההכרזה.

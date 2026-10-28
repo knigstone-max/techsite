@@ -7,10 +7,10 @@ excerpt: "Haier Europe הציגה מכונת כביסה שמזהה צבעים ו
 image: img/posts/haier-ifa-2026.webp
 image_alt: "רובוט דמוי אדם ליד מכונת כביסה בביתן של Haier ב-IFA 2026"
 image_credit: "תמונה: Haier Europe / Antinori Vegetti"
-image_credit_url: https://corporate.haier-europe.com/en-gb/press-release/ifa-2026-haier-intelligent-home-understands-you-before-you-ask/
+image_credit_url: "https://corporate.haier-europe.com/en-gb/press-release/ifa-2026-haier-intelligent-home-understands-you-before-you-ask/"
 source_links:
-  - https://corporate.haier-europe.com/en-gb/press-release/ifa-2026-haier-intelligent-home-understands-you-before-you-ask/
-  - https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html
+  - "https://corporate.haier-europe.com/en-gb/press-release/ifa-2026-haier-intelligent-home-understands-you-before-you-ask/"
+  - "https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html"
 ---
 
 אם בוש הביאה לברלין מכשירים רגילים, Haier הביאה את העתיד, או לפחות את מה שהיא חושבת שיהיה העתיד. בביתן שלה באולם 3.1 רובוטים דמויי אדם העמיסו כביסה ושמו אוכל במקרר.

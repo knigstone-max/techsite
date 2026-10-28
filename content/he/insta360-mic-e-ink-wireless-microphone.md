@@ -1,16 +1,17 @@
 ---
-title: Insta360 Mic: מיקרופון אלחוטי עם מסך E-Ink שאפשר לעצב והקלטה לכרטיס microSD, מ-79.99 דולר
+title: "Insta360 Mic: מיקרופון אלחוטי עם מסך E-Ink שאפשר לעצב והקלטה לכרטיס microSD, מ-79.99 דולר"
 date: 2026-10-23
 slug: insta360-mic-e-ink-wireless-microphone
 category: smartphones-gadgets
-excerpt: המיקרופון החדש ממוקם בין Mic Air ל-Mic Pro, מקליט גיבוי ב-32-bit float לכרטיס microSD ומתחבר ישירות לשש מצלמות של Insta360 בבלוטות'.
+excerpt: "המיקרופון החדש ממוקם בין Mic Air ל-Mic Pro, מקליט גיבוי ב-32-bit float לכרטיס microSD ומתחבר ישירות לשש מצלמות של Insta360 בבלוטות'."
 image: img/posts/insta360-mic-crop.webp
 image_alt: "שני משדרים עגולים של Insta360 Mic עם תמונות מותאמות על מסכי ה-E-Ink, מעל נרתיק טעינה שחור ומקלט"
 image_credit: "תמונה: Insta360 (הודעה לעיתונות, חתוך)"
-image_credit_url: https://www.prnewswire.com/news-releases/insta360-launches-mic-to-complete-its-wireless-microphone-lineup-flagship-level-audio-for-everyday-creators-302916915.html
+image_credit_url: "https://www.prnewswire.com/news-releases/insta360-launches-mic-to-complete-its-wireless-microphone-lineup-flagship-level-audio-for-everyday-creators-302916915.html"
 source_links:
-  - https://www.prnewswire.com/news-releases/insta360-launches-mic-to-complete-its-wireless-microphone-lineup-flagship-level-audio-for-everyday-creators-302916915.html
+  - "https://www.prnewswire.com/news-releases/insta360-launches-mic-to-complete-its-wireless-microphone-lineup-flagship-level-audio-for-everyday-creators-302916915.html"
 ---
+
 Insta360 השיקה ב-22 באוקטובר, בכל העולם, את Insta360 Mic. זה מיקרופון אלחוטי ליוצרי וידאו, והוא ממלא את האמצע של סדרת המיקרופונים של החברה, בין Mic Air הבסיסי ל-Mic Pro שבראש הסדרה.
 
 ## המסך

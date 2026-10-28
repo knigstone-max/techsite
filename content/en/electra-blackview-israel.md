@@ -5,8 +5,8 @@ slug: electra-blackview-israel
 category: smartphones-gadgets
 excerpt: "An investment of about ₪10 million (about $3.2 million), experience zones in stores, and phones, tablets and mini PCs from a Chinese brand best known to people who work outdoors."
 source_links:
-  - https://www.geektime.co.il/flash/electra-retail-exclusive-blackview-israel/
-  - https://www.gadgety.co.il/364185/pixel-11-pro-israel-electra/
+  - "https://www.geektime.co.il/flash/electra-retail-exclusive-blackview-israel/"
+  - "https://www.gadgety.co.il/364185/pixel-11-pro-israel-electra/"
 ---
 
 If you have worked on a building site, a farm or in a warehouse, you have probably seen a chunky phone with rubber corners that survives a fall from a ladder. Most of these reached Israel through AliExpress or small importers. Some will now be sold at Machsanei Hashmal and Shekem Electric.

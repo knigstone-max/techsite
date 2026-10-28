@@ -7,11 +7,11 @@ excerpt: "מחסני חשמל ושקם אלקטריק מוכרות עכשיו א
 image: img/posts/pixel-11-pro-collection.webp
 image_alt: "סדרת Pixel 11 לצד שעון ואוזניות של גוגל, צילום יחצ"
 image_credit: "תמונה: Google (הבלוג The Keyword)"
-image_credit_url: https://blog.google/products-and-platforms/devices/pixel/new-pixel-devices-2026/
+image_credit_url: "https://blog.google/products-and-platforms/devices/pixel/new-pixel-devices-2026/"
 source_links:
-  - https://www.gadgety.co.il/364185/pixel-11-pro-israel-electra/
-  - https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/
-  - https://store.google.com/product/pixel_11_pro_specs?hl=en-US
+  - "https://www.gadgety.co.il/364185/pixel-11-pro-israel-electra/"
+  - "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/"
+  - "https://store.google.com/product/pixel_11_pro_specs?hl=en-US"
 ---
 
 מי שרצה פיקסל חדש בישראל היה צריך עד היום לבחור בין חנות סלולר קטנה עם יבוא מקביל לבין הזמנה מחו"ל. בסוף אוגוסט נכנסה לתמונה אלקטרה ריטייל, שמחזיקה את מחסני חשמל ושקם אלקטריק, והתחילה למכור את סדרת Pixel 11 Pro בסניפים ובאתרים של שתי הרשתות.

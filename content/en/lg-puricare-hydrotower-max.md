@@ -1,17 +1,18 @@
 ---
-title: LG launches the PuriCare HydroTower Max, a humidifier and air purifier for large living rooms
+title: "LG launches the PuriCare HydroTower Max, a humidifier and air purifier for large living rooms"
 date: 2026-10-19
 slug: lg-puricare-hydrotower-max
 category: home-appliances
-excerpt: LG's new two-in-one unit boils filtered water before humidifying, covers about 66 square meters for air purification, and costs 2.39 million won in South Korea.
+excerpt: "LG's new two-in-one unit boils filtered water before humidifying, covers about 66 square meters for air purification, and costs 2.39 million won in South Korea."
 image: img/posts/lg-puricare-hydrotower-max.webp
 image_alt: "LG PuriCare HydroTower Max, a tall silver humidifier and air purifier, releasing mist in a living room"
 image_credit: "Image: LG Electronics (press release)"
-image_credit_url: https://www.lg.co.kr/media/release/30685
+image_credit_url: "https://www.lg.co.kr/media/release/30685"
 source_links:
-  - https://www.lg.co.kr/media/release/30685
-  - https://www.asiae.co.kr/en/article/2026101811101127865
+  - "https://www.lg.co.kr/media/release/30685"
+  - "https://www.asiae.co.kr/en/article/2026101811101127865"
 ---
+
 LG Electronics put the PuriCare HydroTower Max on sale in South Korea on October 18. It's a humidifier and an air purifier in one body, and LG pitches it at living rooms and other large spaces. The existing HydroTower stays in the lineup for bedrooms and smaller rooms.
 
 ## How the humidifier works

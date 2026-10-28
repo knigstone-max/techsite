@@ -5,11 +5,11 @@ slug: ifa-2026-recap-ces-mwc-2027
 category: tech-news
 excerpt: "ארבע מגמות שחזרו כמעט בכל ביתן בברלין, ותאריכי CES ו-MWC הבאות. וגם תזכורת לניו-טק, התערוכה הישראלית שנדחתה לקיץ."
 source_links:
-  - https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html
-  - https://corporate.haier-europe.com/en-gb/press-release/ifa-2026-haier-intelligent-home-understands-you-before-you-ask/
-  - https://www.ces.tech/
-  - https://www.mwcbarcelona.com/articles/gsma-mwc27-barcelona-countdown-begins-with-new-dedicated-technology-spaces-for-automotive-health-and-aviation
-  - https://new-techonline.com/2026/07/%d7%aa%d7%a2%d7%a8%d7%95%d7%9b%d7%aa-%d7%a0%d7%99%d7%95-%d7%98%d7%a7-2026-%d7%9b%d7%a9%d7%94%d7%aa%d7%a2%d7%a9%d7%99%d7%99%d7%94-%d7%a0%d7%a4%d7%92%d7%a9%d7%aa/
+  - "https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html"
+  - "https://corporate.haier-europe.com/en-gb/press-release/ifa-2026-haier-intelligent-home-understands-you-before-you-ask/"
+  - "https://www.ces.tech/"
+  - "https://www.mwcbarcelona.com/articles/gsma-mwc27-barcelona-countdown-begins-with-new-dedicated-technology-spaces-for-automotive-health-and-aviation"
+  - "https://new-techonline.com/2026/07/%d7%aa%d7%a2%d7%a8%d7%95%d7%9b%d7%aa-%d7%a0%d7%99%d7%95-%d7%98%d7%a7-2026-%d7%9b%d7%a9%d7%94%d7%aa%d7%a2%d7%a9%d7%99%d7%99%d7%94-%d7%a0%d7%a4%d7%92%d7%a9%d7%aa/"
 ---
 
 IFA 2026 נסגרה בברלין ב-8 בספטמבר, ואחרי שעברנו על ההודעות של כל היצרנים הגדולים, ארבעה דברים חזרו כמעט בכל ביתן.

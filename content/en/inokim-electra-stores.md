@@ -5,8 +5,8 @@ slug: inokim-electra-stores
 category: tech-news
 excerpt: "The scooter brand born as MyWay in 2009 will be sold in about 200 Electra branches. 7,500 scooters a year, about a quarter of the market, and an Israeli standards mark no rival has."
 source_links:
-  - https://www.ice.co.il/consumerism/news/article/1131276
-  - https://www.ynet.co.il/economy/article/sk3smk8qzl
+  - "https://www.ice.co.il/consumerism/news/article/1131276"
+  - "https://www.ynet.co.il/economy/article/sk3smk8qzl"
 ---
 
 Few Israeli electronics brands sell in thirty countries. INOKIM is one of them, yet in Israel most of its sales have been through its own website. That is about to change.

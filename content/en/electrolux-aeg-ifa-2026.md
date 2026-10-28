@@ -5,8 +5,8 @@ slug: electrolux-aeg-ifa-2026
 category: home-appliances
 excerpt: "Electrolux showed a washer that removes stains at 30°C in 39 minutes, and AEG brought a hob with a pasta programme and a 7.89cm-tall robot vacuum."
 source_links:
-  - https://www.marketscreener.com/news/electrolux-group-showcases-innovations-at-ifa-2026-that-give-people-more-time-for-what-truly-matters-ce785bdede81f723
-  - https://www.prnewswire.com/news-releases/ifa-2026-premium-brand-aeg-challenges-the-expected-with-its-first-ever-pasta-hob-and-a-celebration-of-the-art-of-hosting-302865848.html
+  - "https://www.marketscreener.com/news/electrolux-group-showcases-innovations-at-ifa-2026-that-give-people-more-time-for-what-truly-matters-ce785bdede81f723"
+  - "https://www.prnewswire.com/news-releases/ifa-2026-premium-brand-aeg-challenges-the-expected-with-its-first-ever-pasta-hob-and-a-celebration-of-the-art-of-hosting-302865848.html"
 ---
 
 Sweden's Electrolux Group came to IFA with two brands and two approaches. Electrolux talked about looking after clothes, and AEG tried to surprise.

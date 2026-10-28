@@ -1,18 +1,19 @@
 ---
-title: Gemini מדבר עכשיו עם נהגים ב-Google Maps על Apple CarPlay
+title: "Gemini מדבר עכשיו עם נהגים ב-Google Maps על Apple CarPlay"
 date: 2026-10-22
 slug: gemini-google-maps-apple-carplay
 category: tech-news
-excerpt: כפתור Gemini ב-Google Maps על CarPlay עונה על שאלות מרובות שלבים ומדווח על בעיות תנועה בקול. זמין עכשיו בארה"ב, והפריסה העולמית כבר התחילה.
+excerpt: "כפתור Gemini ב-Google Maps על CarPlay עונה על שאלות מרובות שלבים ומדווח על בעיות תנועה בקול. זמין עכשיו בארה\"ב, והפריסה העולמית כבר התחילה."
 image: img/posts/carplay-vw-id4.webp
 image_alt: "מסך הבית של Apple CarPlay בתצוגה שבלוח המחוונים של פולקסווגן ID.4"
 image_credit: "צילום: Sunnyboy122, רישיון CC0, דרך Wikimedia Commons"
-image_credit_url: https://commons.wikimedia.org/wiki/File:2023_Volkswagen_ID.4_running_wireless_CarPlay.jpg
+image_credit_url: "https://commons.wikimedia.org/wiki/File:2023_Volkswagen_ID.4_running_wireless_CarPlay.jpg"
 source_links:
-  - https://9to5google.com/2026/10/21/google-maps-carplay-gemini/
-  - https://www.theverge.com/transportation/1015281/gemini-ai-apple-carplay-voice-google-maps
-  - https://www.androidauthority.com/gemini-navigation-google-maps-carplay-3725752/
+  - "https://9to5google.com/2026/10/21/google-maps-carplay-gemini/"
+  - "https://www.theverge.com/transportation/1015281/gemini-ai-apple-carplay-voice-google-maps"
+  - "https://www.androidauthority.com/gemini-navigation-google-maps-carplay-3725752/"
 ---
+
 גוגל התחילה ב-21 באוקטובר לפרוס את Gemini בניווט של Google Maps על Apple CarPlay. הפיצ'ר זמין כבר עכשיו בארה"ב, ולפי גוגל הפריסה העולמית כבר בדרך.
 
 ## איך זה עובד

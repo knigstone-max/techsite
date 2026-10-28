@@ -1,16 +1,17 @@
 ---
-title: Xiaomi's 6.75 mm magnetic power bank gets faster charging and a stricter safety standard
+title: "Xiaomi's 6.75 mm magnetic power bank gets faster charging and a stricter safety standard"
 date: 2026-10-19
 slug: xiaomi-ultra-thin-magnetic-power-bank-5000mah-27w
 category: smartphones-gadgets
-excerpt: The updated 5,000 mAh model is slightly thicker than the 6 mm original, but wireless charging rises to 20W and wired to 27W. It costs 299 yuan in China.
+excerpt: "The updated 5,000 mAh model is slightly thicker than the 6 mm original, but wireless charging rises to 20W and wired to 27W. It costs 299 yuan in China."
 image: img/posts/xiaomi-magnetic-power-bank-5000-27w.webp
 image_alt: "Xiaomi ultra-thin magnetic power bank 5000 27W in black, dark red and silver"
 image_credit: "Image: Xiaomi (Xiaomi Youpin product page)"
-image_credit_url: https://www.xiaomiyoupin.com/detail?gid=185214
+image_credit_url: "https://www.xiaomiyoupin.com/detail?gid=185214"
 source_links:
-  - https://www.notebookcheck.net/Xiaomi-launches-new-version-of-UltraThin-magnetic-power-bank-Only-6-75-mm-thick.1426753.0.html
+  - "https://www.notebookcheck.net/Xiaomi-launches-new-version-of-UltraThin-magnetic-power-bank-Only-6-75-mm-thick.1426753.0.html"
 ---
+
 Xiaomi has released an updated version of its ultra-thin 5,000 mAh magnetic power bank in China. It comes less than two weeks after a 10,000 mAh model in the same line.
 
 ## What changed

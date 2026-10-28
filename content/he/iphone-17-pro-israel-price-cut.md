@@ -5,8 +5,8 @@ slug: iphone-17-pro-israel-price-cut
 category: smartphones-gadgets
 excerpt: "אפל הורידה 90 דולר, ובישראל זה תורגם ל-320 ₪ (כ-104 דולר). ה-17 Pro בנפח 256GB עולה עכשיו 4,279 ₪ (כ-1,390 דולר) במחסני חשמל."
 source_links:
-  - https://tech.walla.co.il/item/3862038
-  - https://www.geektime.co.il/apple-cuts-prices-of-iphone-17-pro/
+  - "https://tech.walla.co.il/item/3862038"
+  - "https://www.geektime.co.il/apple-cuts-prices-of-iphone-17-pro/"
 ---
 
 לא בכל יום אפל מורידה מחיר לדגם שעוד לא הוחלף. ב-20 באוגוסט, כמעט חודש לפני השקת הדור החדש, החברה קיצצה 90 דולר מה-iPhone 17 Pro וה-17 Pro Max. בישראל ההנחה הגיעה ל-320 ₪ (כ-104 דולר), ובאילת, בלי מע"מ, לכ-270 ₪.

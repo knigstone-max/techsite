@@ -7,10 +7,10 @@ excerpt: "LG הביאה לברלין מקרר SIGNATURE עם עוזר קולי �
 image: img/posts/lg-ifa-2026-booth.webp
 image_alt: "מבקרים בביתן של LG ב-IFA 2026 צופים בהדגמה של מקררי Fit & Max"
 image_credit: "תמונה: LG Electronics"
-image_credit_url: https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-electronics-highlights-seven-home-appliances-at-ifa-2026/
+image_credit_url: "https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-electronics-highlights-seven-home-appliances-at-ifa-2026/"
 source_links:
-  - https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-electronics-highlights-seven-home-appliances-at-ifa-2026/
-  - https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html
+  - "https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-electronics-highlights-seven-home-appliances-at-ifa-2026/"
+  - "https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html"
 ---
 
 LG בחרה השנה להציג ב-IFA שבעה מוצרים בלבד, וכמעט כולם עונים על אותה בעיה: דירות קטנות, חשבון חשמל גבוה ומעט זמן. הנה מה שהיה שם.

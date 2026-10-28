@@ -7,10 +7,10 @@ excerpt: "העיצוב השטוח של הדגמים היקרים עובר ללי
 image: img/posts/samsung-ifa-2026-washers.webp
 image_alt: "תצוגת מכונות כביסה ומקררים של סמסונג בתערוכת Samsung Connect בברלין"
 image_credit: "תמונה: Samsung Newsroom"
-image_credit_url: https://news.samsung.com/uk/samsung-showcases-new-washers-with-flat-design-at-ifa-2026
+image_credit_url: "https://news.samsung.com/uk/samsung-showcases-new-washers-with-flat-design-at-ifa-2026"
 source_links:
-  - https://news.samsung.com/uk/samsung-showcases-new-washers-with-flat-design-at-ifa-2026
-  - https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html
+  - "https://news.samsung.com/uk/samsung-showcases-new-washers-with-flat-design-at-ifa-2026"
+  - "https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html"
 ---
 
 מכונת כביסה היא אחד המכשירים היחידים בבית שעדיין נראים כאילו עוצבו בשנות התשעים: חזית בולטת, חלון עגול ופאנל כפתורים שמתווכח עם הארון. בסמסונג החליטו שגם הדגמים העממיים יקבלו את הקו הנקי שהיה שמור עד עכשיו לדגמי הפרימיום.
