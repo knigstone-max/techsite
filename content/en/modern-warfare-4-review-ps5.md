@@ -52,6 +52,8 @@ Every trip into Hajin forces decisions: what to take, who to fight, who to make 
 
 I played on a standard PS5, and the game runs smoothly and looks great. PS5 Pro owners get an enhanced version, since the game is marked PS5 Pro Enhanced. The DualSense does a lovely job: vibration and adaptive triggers are supported, and every weapon feels a little different in your hands. At first I thought it was a gimmick, and after one evening I didn't want to play without it.
 
+Let's be honest: on PS5 this game just feels right. Sony's controller always adds to the atmosphere. The subtle haptics, triggers that push back when you squeeze them, the little speaker in the pad: it all pulls you in that bit further. It's a bonus you feel less on PC or Xbox, and to be clear, that doesn't take anything away from the game there. It's great on every platform. PlayStation players just get an extra layer of "content" through the controller, a lot more of it than a standard Xbox pad can deliver, and that's always nice to have.
+
 Online supports up to 60 players, and remember that you need a PS Plus subscription to play online. The campaign works without it. Remote Play is supported too, so you can keep going on your phone or PlayStation Portal when someone at home grabs the TV.
 
 ## What it costs
@@ -68,7 +70,7 @@ If you love cinematic campaigns, this is the best one the series has had in year
 
 ## The downsides
 
-No game is perfect, and a few things bugged me here. There's no Hebrew at all, not in the menus and not in the subtitles, so players who aren't comfortable with English will miss part of the story. Shipment only arrives a few days after launch. All three Ground War maps are set around Hajin, so there's less variety there than in the regular maps. And above all, there are in-game purchases, and online play needs PS Plus, so the real cost is higher than ₪319 if you get into it seriously.
+No game is perfect, and a few things bugged me here. Shipment only arrives a few days after launch. All three Ground War maps are set around Hajin, so there's less variety there than in the regular maps. And above all, there are in-game purchases, and online play needs PS Plus, so the real cost is higher than ₪319 if you get into it seriously.
 
 :::score
 ## The bottom line
@@ -85,10 +87,10 @@ Modern Warfare 4 is the most complete Call of Duty in years: a strong campaign w
 - 20 maps at launch, plus Kill Block, which changes every round
 - DMZ in Hajin, with a base that grows with you and runs that never repeat
 - Full DualSense support and an enhanced PS5 Pro version
+- On PS5 the controller adds to the atmosphere: a nice bonus for PlayStation players that takes nothing away from anyone else
 
 **What I didn't**
 
-- No Hebrew menus or subtitles
 - PS Plus required for online, plus in-game purchases
 - The Vault Edition is pricey (₪439)
 - Shipment only arrives after launch
