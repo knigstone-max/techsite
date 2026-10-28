@@ -35,7 +35,7 @@ Leo Cardoso from Sony's Color, Material and Finish team says they know how much 
 - **Pre-orders:** from November 10, 2026 at 10am local time, direct from PlayStation where available and at participating retailers.
 - **Launch:** from February 4, 2027. Sony says exact dates and availability can vary by country.
 
-The covers are sold mainly direct from PlayStation, and elsewhere in limited quantities through select retailers.
+Where PlayStation sells direct, the covers are exclusive to its store. Elsewhere they come in limited quantities through select retailers.
 
 ## What about Israel
 
