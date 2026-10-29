@@ -37,9 +37,15 @@ techsite/
 
 עמודים בכל שפה: דף בית, אינדקס קטגוריות (`categories/`), 5 קטגוריות (`category/<slug>/`), ארכיון, אודות, התחברות, חשבון, ניהול (`admin/`), כתיבה ועריכה (`dashboard/`), ופוסט לכל קובץ תוכן (`posts/<slug>/`). בנוסף: `404.html`, `sitemap.xml`, `robots.txt`, `feed.xml`, `en/feed.xml`.
 
-### ניהול תוכן (CMS)
+### מערכת ניהול התוכן (CMS)
 
-עריכה, הוספה ומחיקה של כתבות, והזמנת כותבים, דרך Pages CMS (חינם): https://app.pagescms.org. ההגדרות ב-`.pages.yml`, המדריך המלא ב-[docs/CMS-GUIDE.md](docs/CMS-GUIDE.md). כתבות שנכתבות ידנית: להריץ `python3 scripts/normalize_frontmatter.py` לפני commit כדי שה-CMS יוכל לפתוח אותן.
+האתר מנוהל במערכת CMS עצמאית בכתובת https://knigstone-max.github.io/techsite/admin/ : כניסה עם אימייל וסיסמה, רשימת כתבות עם סינון, עורך עם תצוגה מקדימה חיה, העלאת תמונות, טיוטה / פרסום / הסרת פרסום / מחיקה, וניהול משתמשים. הכול בחינם: Supabase (Free), GitHub Pages ו-GitHub Actions.
+
+- **מקור האמת הוא Supabase** (טבלת `posts`). `build.py` מושך את הכתבות שפורסמו, מוריד את התמונות שהועלו ל-`assets/img/cms/` ובונה אתר סטטי. אם Supabase לא זמין, הבנייה חוזרת לקובצי ה-Markdown שב-`content/`.
+- **בנייה מחדש כל 30 דקות** (וגם ידנית: Actions → Deploy → Run workflow). כתבה שנמחקה או שהפרסום שלה הוסר נעלמת מהאתר בבנייה הבאה.
+- **תפקידים:** כותב/ת (יוצר/ת ועורך/ת טיוטות משלו/ה) < עורך/ת (מפרסם/ת ועורך/ת הכול) < אדמין (גם מזמין/ה משתמשים ומשנה תפקידים). ההגנה האמיתית היא RLS במסד הנתונים; מפתח השירות קיים רק בתוך פונקציית ה-Edge `cms-admin`.
+- **כתבות מ-Markdown:** `python3 scripts/upsert_post.py content/he/<slug>.md content/en/<slug>.md` מעלה אותן ל-CMS (פרטי הכניסה ב-`~/.techsite-supabase-env`, מחוץ למאגר). כתבה שכבר רשומה ב-CMS נלקחת רק מה-CMS, ולכן עריכה של קובץ ה-md שלה (כולל Pages CMS) לא תשפיע עליה.
+- סכמה: `supabase/cms_schema.sql`. פונקציה: `supabase/functions/cms-admin/`. מדריך מלא: [docs/CMS-GUIDE.md](docs/CMS-GUIDE.md).
 
 ### הוספת פוסט
 
@@ -129,30 +135,6 @@ python3 -m http.server 8000 -d dist     # http://localhost:8000
 6. **לעולם אל תשימו את מפתח ה-`service_role` באתר או במאגר.** מפתח ה-anon ציבורי מטבעו; ההגנה על הנתונים היא ה-RLS.
 
 הרשאות (RLS): תגובות גלויות לכולם, וכל משתמש יכול להוסיף ולמחוק רק את התגובות שלו (עורכים ואדמינים יכולים למחוק כל תגובה). מועדפים גלויים רק לבעלים. בפרופיל נשמרים שם תצוגה ותפקיד, בלי אימייל.
-
-### תפקידים, ניהול משתמשים ותור כתיבה
-
-תפקידים: `reader` (קורא/ת, ברירת מחדל) < `writer` (כתב/ת) < `editor` (עורך/ת) < `admin` (אדמין).
-
-- `/admin/` (אדמין בלבד): רשימת משתמשים עם חיפוש לפי אימייל או שם, ותפריט לשינוי תפקיד. האימיילים נשארים ב-`auth.users` ומגיעים רק דרך הפונקציה `admin_list_users`, שבודקת שהקורא הוא אדמין.
-- `/dashboard/` (כתב/ת ומעלה): כתיבת טיוטות בעברית ובאנגלית, שמירה כטיוטה או שליחה לאישור, ועריכה של טיוטות שעוד לא אושרו. עורכים ואדמינים רואים גם תור לבדיקה עם אישור ודחייה והערה לכתב/ת.
-- טיוטות שאושרו (`status = 'approved'`) הן תור לפרסום: העדכון היומי הופך אותן לקובצי markdown ב-`content/he` וב-`content/en`. הן לא מתפרסמות באתר אוטומטית.
-- קישורי "ניהול" ו"כתיבה" בכותרת מופיעים רק למי שיש לו את התפקיד. ההגנה האמיתית היא במסד הנתונים: RLS, טריגר שחוסם שינוי תפקיד על ידי מי שאינו אדמין (וגם אדמין לא יכול לשנות את התפקיד של עצמו), וטריגר שמונע מכתבים לאשר טיוטות של עצמם.
-- עד שמחברים את Supabase, שני הדפים מציגים "יופעל ברגע שמסד נתוני המשתמשים יחובר". הם לא נכנסים ל-sitemap ומסומנים noindex.
-
-הפעלה (בנוסף לשלבים למעלה):
-1. הריצו שוב את `supabase/schema.sql` כולו ב-SQL Editor. הקובץ בטוח להרצה חוזרת ומוסיף את עמודת התפקיד, הפונקציות `has_role` / `is_admin`, הטבלה `submissions` והמדיניות.
-2. הירשמו באתר עם האימייל שלכם, ואז הריצו ב-SQL Editor (עם האימייל שלכם):
-   ```sql
-   update public.profiles set role = 'admin'
-   where id = (select id from auth.users where email = 'you@example.com');
-   ```
-3. במאגר ב-GitHub: Settings ← Secrets and variables ← Actions ← לשונית Variables ← New repository variable. הוסיפו `SUPABASE_URL` (ה-Project URL) ו-`SUPABASE_ANON_KEY` (מפתח ה-anon הציבורי). אחר כך Actions ← Deploy to GitHub Pages ← Run workflow. משתנים ולא Secrets, כי המפתחות האלה ציבוריים ממילא ונכנסים לקובץ `config.js` באתר.
-4. מעכשיו האדמין נותן תפקידים מ-`/admin/`.
-
-שימו לב: שליחת המיילים המובנית של Supabase בתוכנית החינמית מוגבלת בכמות לשעה. לשימוש רחב יותר אפשר לחבר SMTP חינמי (למשל Brevo או Resend בתוכנית החינמית).
-
-חלופה: **Firebase** בתוכנית Spark החינמית (Authentication עם קישור באימייל + Firestore עם Security Rules). זה ידרוש לכתוב מחדש את `auth.js` ואת הכללים במקום `schema.sql`.
 
 ### כללי כתיבה
 
@@ -260,29 +242,15 @@ To turn accounts on:
 
 RLS summary: comments are readable by everyone, users can insert and delete only their own (editors and admins can delete any comment). Favorites are visible only to their owner. Profiles store a display name and a role, no email.
 
-### Roles, user management and the writing queue
+### Content management system (CMS)
 
-Roles: `reader` (default) < `writer` < `editor` < `admin`.
+The site is managed in its own CMS at https://knigstone-max.github.io/techsite/admin/ : email and password login, a post list with filters, an editor with live preview, image uploads, draft / publish / unpublish / delete, and user management. Everything is free: Supabase (Free), GitHub Pages and GitHub Actions.
 
-- `/admin/` (admins only): user list with search by email or name and a role dropdown per user. Emails stay in `auth.users` and are only returned by the `admin_list_users` function, which checks that the caller is an admin.
-- `/dashboard/` (writers and up): write Hebrew and English drafts, save as draft or submit for review, and edit drafts that aren't approved yet. Editors and admins also get a review queue with approve, reject and a note to the writer.
-- Approved submissions (`status = 'approved'`) are a publishing queue: the daily update turns them into markdown files in `content/he` and `content/en`. Nothing is published to the site automatically.
-- The header shortcuts to these pages only show for the matching roles. The real protection is in the database: RLS, a trigger that blocks role changes by non-admins (and stops admins from changing their own role), and a trigger that stops writers from approving their own drafts.
-- Until Supabase is connected, both pages say "This will be activated once the user database is connected". They are noindex and left out of the sitemap.
-
-Setup (on top of the steps above):
-1. Run the whole `supabase/schema.sql` again in the SQL Editor. It is safe to re-run and adds the role column, the `has_role` / `is_admin` helpers, the `submissions` table and the policies.
-2. Sign up on the site with your email, then run in the SQL Editor (with your email):
-   ```sql
-   update public.profiles set role = 'admin'
-   where id = (select id from auth.users where email = 'you@example.com');
-   ```
-3. On GitHub: repo Settings -> Secrets and variables -> Actions -> Variables tab -> New repository variable. Add `SUPABASE_URL` (Project URL) and `SUPABASE_ANON_KEY` (the public anon key), then Actions -> Deploy to GitHub Pages -> Run workflow. Use Variables, not Secrets: these values are public anyway and end up in the site's `config.js`.
-4. From then on, the admin assigns roles at `/admin/`.
-
-Note: Supabase's built-in email sending on the free plan is rate-limited. For more volume, plug in a free SMTP tier (for example Brevo or Resend).
-
-Alternative: **Firebase** on the free Spark plan (Email link auth + Firestore with Security Rules). That means rewriting `auth.js` and replacing `schema.sql` with Firestore rules.
+- **Supabase is the source of truth** (`posts` table). `build.py` fetches published posts, downloads uploaded images into `assets/img/cms/` and builds the static site. If Supabase is unreachable it falls back to the Markdown files in `content/`.
+- **Rebuilds every 30 minutes** (or manually: Actions → Deploy → Run workflow). Deleted or unpublished posts disappear on the next build.
+- **Roles:** writer (creates and edits own drafts) < editor (publishes and edits everything) < admin (also invites users and changes roles). Real protection is Row Level Security; the service key only exists inside the `cms-admin` Edge Function.
+- **Markdown posts:** `python3 scripts/upsert_post.py content/he/<slug>.md content/en/<slug>.md` pushes them into the CMS (credentials in `~/.techsite-supabase-env`, outside the repo). Once a post is registered in the CMS, only the CMS version is used, so editing its .md file (including via Pages CMS) has no effect.
+- Schema: `supabase/cms_schema.sql`. Function: `supabase/functions/cms-admin/`. Full guide: [docs/CMS-GUIDE.md](docs/CMS-GUIDE.md).
 
 ### Writing rules
 
