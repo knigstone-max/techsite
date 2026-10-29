@@ -9,7 +9,7 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: "30 4 * * *"   # daily rebuild (keeps dated pages/feeds fresh)
+    - cron: "*/30 * * * *"   # rebuild every 30 min so CMS edits go live
 
 permissions:
   contents: read
