@@ -7,7 +7,7 @@ Env overrides:
   BASE_PATH  URL path prefix where the site is served (e.g. /repo/ for GitHub project pages, / for pages.dev)
 Output: ./dist
 """
-import html, json, os, re, shutil, struct, sys
+import hashlib, html, json, os, re, shutil, struct, sys, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from pathlib import Path
@@ -29,6 +29,11 @@ for _c in CATS:
     if _c.get("image") and not (STATIC / _c["image"]).is_file():
         sys.exit(f"ERROR site.json: category {_c['slug']}: image not found: static/{_c['image']}")
 REQUIRED = ["title", "date", "slug", "category", "excerpt"]
+CMS = CFG.get("cms", {})
+SB_URL = os.environ.get("SUPABASE_URL", CMS.get("supabase_url", "")).rstrip("/")
+SB_KEY = os.environ.get("SUPABASE_PUBLISHABLE_KEY", CMS.get("publishable_key", ""))
+STORAGE_PREFIX = f"{SB_URL}/storage/v1/object/public/{CMS.get('bucket', 'post-images')}/" if SB_URL else None
+CACHE = ROOT / ".cache" / "cms-images"
 esc = lambda s: html.escape(str(s), quote=True)
 
 
@@ -77,6 +82,41 @@ def image_size(path):
             i += 2 + struct.unpack(">H", b[i + 2:i + 4])[0]
     raise ValueError("unsupported image format (use .webp, .png or .jpg)")
 
+def local_image(src, where):
+    """Map an image reference to a path under static/ (or the CMS image cache).
+    Images uploaded in the CMS live in Supabase Storage; they are downloaded at build time and served
+    from the site itself (no hotlinking). Any other URL is an error."""
+    src = src.strip()
+    if STORAGE_PREFIX and src.startswith(STORAGE_PREFIX):
+        name = urllib.parse.unquote(src[len(STORAGE_PREFIX):])
+        if not re.fullmatch(r"[A-Za-z0-9._/-]+\.(webp|png|jpe?g)", name) or ".." in name:
+            sys.exit(f"ERROR {where}: bad CMS image name {name!r}")
+        rel_path = "img/cms/" + name
+        dest = CACHE / name
+        if not dest.is_file():
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            try:
+                with urllib.request.urlopen(src, timeout=30) as r:
+                    data = r.read(6_000_000)
+            except (urllib.error.URLError, OSError) as e:
+                sys.exit(f"ERROR {where}: could not download CMS image {name}: {e}")
+            dest.write_bytes(data)
+        out = DIST / "assets" / rel_path
+        out.parent.mkdir(parents=True, exist_ok=True)
+        if not out.is_file():
+            shutil.copyfile(dest, out)
+        return rel_path, dest
+    if re.match(r"^[a-z]+://", src):
+        sys.exit(f"ERROR {where}: image must be a local file under static/ or a CMS upload, not an outside URL (no hotlinking)")
+    src = src.lstrip("/")
+    for pre in ("assets/", "static/"):
+        if src.startswith(pre):
+            src = src[len(pre):]
+    f = STATIC / src
+    if not f.is_file():
+        sys.exit(f"ERROR {where}: image file not found: static/{src}")
+    return src, f
+
 def load_image(meta, where):
     """Validate the optional image fields. `image` is a path under static/ (e.g. img/posts/x.webp)."""
     img = meta.get("image")
@@ -92,46 +132,21 @@ def load_image(meta, where):
         else:
             meta["image"] = None
         return
-    img = img.lstrip("/")
-    if img.startswith("assets/"):
-        img = img[len("assets/"):]
-    if img.startswith("static/"):
-        img = img[len("static/"):]
-    if re.match(r"^[a-z]+://", img):
-        sys.exit(f"ERROR {where}: image must be a local file under static/, not a URL (no hotlinking)")
-    f = STATIC / img
-    if not f.is_file():
-        sys.exit(f"ERROR {where}: image file not found: static/{img}")
+    img, f = local_image(img, where)
     if not meta.get("image_alt"):
         sys.exit(f"ERROR {where}: image_alt is required when image is set")
     if not meta.get("image_credit"):
         sys.exit(f"ERROR {where}: image_credit is required when image is set")
     try:
         w, h = image_size(f)
-    except ValueError as e:
-        sys.exit(f"ERROR {where}: static/{img}: {e}")
+    except (ValueError, struct.error, IndexError) as e:
+        sys.exit(f"ERROR {where}: {img}: {e}")
     meta["image"] = {"path": img, "src": asset(img), "abs": abs_asset(img), "w": w, "h": h,
                      "alt": meta["image_alt"], "credit": meta["image_credit"],
                      "credit_url": meta.get("image_credit_url") or "", "pos": meta.get("image_position") or ""}
 
 
 # ---------- content parsing ----------
-CMS_URL = "https://app.pagescms.org/knigstone-max/techsite/main"
-CMS_TEXT = {
-    "he": ("ניהול תוכן (CMS)", "עריכה, הוספה ומחיקה של כתבות ותמונות נעשות במערכת הניהול Pages CMS (חינמית). כל שמירה מתפרסמת באתר תוך 2-3 דקות.",
-           [("מנהל: כניסה עם GitHub", "https://app.pagescms.org"), ("כותבים שהוזמנו במייל", "https://app.pagescms.org/sign-in"),
-            ("ניהול כותבים (מנהל בלבד)", CMS_URL + "/collaborators")]),
-    "en": ("Content management (CMS)", "Posts and images are edited, added and deleted in Pages CMS (free). Every save goes live on the site in 2-3 minutes.",
-           [("Admin: sign in with GitHub", "https://app.pagescms.org"), ("Writers invited by email", "https://app.pagescms.org/sign-in"),
-            ("Manage writers (admin only)", CMS_URL + "/collaborators")]),
-}
-
-def cms_panel(lang):
-    h, p, links = CMS_TEXT[lang]
-    li = "".join(f'<li><a href="{esc(u)}" rel="noopener" target="_blank">{esc(l)}</a></li>' for l, u in links)
-    return f'<section class="panel cms-panel"><h2>{esc(h)}</h2><p>{esc(p)}</p><ul>{li}</ul></section>'
-
-
 def _fold(lines):
     """YAML line folding: lines join with a space, an empty line becomes a newline."""
     out, prev_blank = "", False
@@ -211,6 +226,8 @@ def inline_md(s):
     s = re.sub(r"(?<!\*)\*(?!\*)(.+?)\*", r"<em>\1</em>", s)
     def link(m):
         href = m.group(2)
+        if re.match(r"(?i)(javascript|data|vbscript):", href):
+            return m.group(1)
         ext = href.startswith("http")
         attrs = ' rel="noopener" target="_blank"' if ext else ""
         return f'<a href="{href}"{attrs}>{m.group(1)}</a>'
@@ -221,15 +238,7 @@ BODY_IMG = re.compile(r'^!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]*)")?\)$')
 
 def body_figure(alt, src, caption, where):
     """In-body image: ![alt](img/posts/x.webp "caption"). Local files under static/ only."""
-    if re.match(r"^[a-z]+://", src):
-        sys.exit(f"ERROR {where}: body image must be a local file under static/, not a URL (no hotlinking)")
-    src = src.lstrip("/")
-    for pre in ("assets/", "static/"):
-        if src.startswith(pre):
-            src = src[len(pre):]
-    f = STATIC / src
-    if not f.is_file():
-        sys.exit(f"ERROR {where}: body image not found: static/{src}")
+    src, f = local_image(src, where)
     if not alt:
         sys.exit(f"ERROR {where}: body image {src} needs alt text")
     w, h = image_size(f)
@@ -288,33 +297,81 @@ def md_to_html(md, where="post"):
         sys.exit(f"ERROR {where}: unclosed ::: block")
     return "\n".join(out)
 
-def load_posts(lang):
+def finish_post(meta, body, lang, where):
+    """Validate one post and render its body. Returns None for drafts."""
+    miss = [k for k in REQUIRED if not meta.get(k)]
+    if miss:
+        sys.exit(f"ERROR {where}: missing {miss}")
+    if meta["category"] not in CAT_SLUGS:
+        sys.exit(f"ERROR {where}: unknown category {meta['category']!r}; use one of {sorted(CAT_SLUGS)}")
+    if not re.fullmatch(r"[a-z0-9-]+", meta["slug"]):
+        sys.exit(f"ERROR {where}: slug must be lowercase latin letters, digits, hyphens")
+    try:
+        d = meta["date"].replace("Z", "+00:00")
+        meta["dt"] = datetime.fromisoformat(d).replace(tzinfo=timezone.utc) if len(d) == 10 else datetime.fromisoformat(d)
+        if meta["dt"].tzinfo is None:
+            meta["dt"] = meta["dt"].replace(tzinfo=timezone.utc)
+    except ValueError:
+        sys.exit(f"ERROR {where}: date must be YYYY-MM-DD or ISO 8601")
+    if meta.get("draft") is True:
+        return None
+    src = meta.get("source_links") or []
+    meta["source_links"] = [s for s in (src if isinstance(src, list) else [src]) if isinstance(s, str) and s.strip()]
+    meta["html"] = md_to_html(body, where)
+    meta["lang"] = lang
+    load_image(meta, where)
+    return meta
+
+def sb_get(path):
+    req = urllib.request.Request(f"{SB_URL}/rest/v1/{path}", headers={"apikey": SB_KEY, "Authorization": f"Bearer {SB_KEY}"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.loads(r.read())
+
+CMS_STATE = {"source": "markdown"}
+def fetch_cms():
+    """Published posts + every (lang, slug) the CMS has ever stored. None when Supabase is off or unreachable."""
+    if os.environ.get("TECHSITE_NO_SUPABASE") == "1" or not (SB_URL and SB_KEY):
+        return None
+    try:
+        rows, start = [], 0
+        while True:
+            page = sb_get(f"posts?select=*&status=eq.published&order=published_at.desc&limit=500&offset={start}")
+            rows += page; start += 500
+            if len(page) < 500:
+                break
+        reg = sb_get("post_registry?select=lang,slug&limit=100000")
+    except (urllib.error.URLError, OSError, ValueError) as e:
+        print(f"WARNING Supabase unreachable ({e}); building from markdown files only", file=sys.stderr)
+        return None
+    CMS_STATE["source"] = "supabase"
+    return rows, {(r["lang"], r["slug"]) for r in reg}
+
+def load_posts(lang, cms=None):
     posts = []
-    folder = CONTENT / lang
-    for f in sorted(folder.glob("*.md")):
+    registered = cms[1] if cms else set()
+    if cms:
+        for r in cms[0]:
+            if r["lang"] != lang:
+                continue
+            meta = {k: (r.get(k) or "") for k in ("title", "slug", "category", "excerpt", "image", "image_alt",
+                                                     "image_credit", "image_credit_url", "image_position")}
+            meta["date"] = r.get("published_at") or r.get("created_at") or ""
+            meta["source_links"] = r.get("source_links") or []
+            meta["placeholder"] = bool(r.get("placeholder"))
+            where = f"cms:{lang}/{r.get('slug')}"
+            try:
+                m = finish_post(meta, r.get("body") or "", lang, where)
+            except SystemExit as e:  # one bad CMS post must not take the whole site down
+                print(f"WARNING skipped {where}: {e}", file=sys.stderr); continue
+            if m:
+                posts.append(m)
+    for f in sorted((CONTENT / lang).glob("*.md")):
         meta, body = parse_frontmatter(f.read_text(encoding="utf-8"), f.name)
-        miss = [k for k in REQUIRED if not meta.get(k)]
-        if miss:
-            sys.exit(f"ERROR {lang}/{f.name}: missing {miss}")
-        if meta["category"] not in CAT_SLUGS:
-            sys.exit(f"ERROR {lang}/{f.name}: unknown category {meta['category']!r}; use one of {sorted(CAT_SLUGS)}")
-        if not re.fullmatch(r"[a-z0-9-]+", meta["slug"]):
-            sys.exit(f"ERROR {lang}/{f.name}: slug must be lowercase latin letters, digits, hyphens")
-        try:
-            meta["dt"] = datetime.fromisoformat(meta["date"]).replace(tzinfo=timezone.utc) \
-                if len(meta["date"]) == 10 else datetime.fromisoformat(meta["date"])
-            if meta["dt"].tzinfo is None:
-                meta["dt"] = meta["dt"].replace(tzinfo=timezone.utc)
-        except ValueError:
-            sys.exit(f"ERROR {lang}/{f.name}: date must be YYYY-MM-DD or ISO 8601")
-        if meta.get("draft") is True:
-            continue
-        src = meta.get("source_links", [])
-        meta["source_links"] = src if isinstance(src, list) else [src]
-        meta["html"] = md_to_html(body, f"{lang}/{f.name}")
-        meta["lang"] = lang
-        load_image(meta, f"{lang}/{f.name}")
-        posts.append(meta)
+        if (lang, str(meta.get("slug", ""))) in registered:
+            continue  # the CMS owns this post (it may be edited, unpublished or deleted there)
+        m = finish_post(meta, body, lang, f"{lang}/{f.name}")
+        if m:
+            posts.append(m)
     slugs = [p["slug"] for p in posts]
     dup = {s for s in slugs if slugs.count(s) > 1}
     if dup:
@@ -466,9 +523,7 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
       <div class="header-tools">
         <a class="lang-switch" href="{url(other, other_path)}" hreflang="{other}" lang="{other}">{ICON_GLOBE}{esc(t['switch'])}</a>
         <button class="icon-btn theme-toggle" type="button" aria-label="{esc(t['theme'])}" title="{esc(t['theme'])}">{ICON_SUN}{ICON_MOON}</button>
-        <a class="icon-btn role-link" href="{url(lang, 'dashboard/')}" data-role-min="writer" hidden aria-label="{esc(t['dashboard'])}" title="{esc(t['dashboard'])}">{ICON_PEN}</a>
-        <a class="icon-btn role-link" href="{url(lang, 'admin/')}" data-role-min="admin" hidden aria-label="{esc(t['admin'])}" title="{esc(t['admin'])}">{ICON_SHIELD}</a>
-        <a class="icon-btn account-link" href="{url(lang, 'account/')}" aria-label="{esc(t['account'])}" title="{esc(t['account'])}" data-auth-link>{ICON_USER}</a>
+        <a class="icon-btn account-link" href="{admin_url(lang)}" aria-label="{esc(t['staff_login'])}" title="{esc(t['staff_login'])}" rel="nofollow">{ICON_USER}</a>
       </div>
     </div>
     <div class="header-panels">
@@ -654,24 +709,9 @@ def build_lang(lang, posts, other_slugs):
     write(lang, "about/", layout(lang, "about/", t["about"], t["tagline"],
                                  f'<article class="prose"><h1>{esc(t["about"])}</h1>{CFG["about"][lang]}{credits_html}</article>', "about/"))
 
-    # login + account (filled in client-side by assets/auth.js; graceful when no keys)
-    write(lang, "login/", layout(lang, "login/", t["login_title"], t["login_title"],
-        f'<section class="auth-page prose"><h1>{esc(t["login_title"])}</h1><div id="auth-root" data-view="login"><noscript>JavaScript</noscript></div></section>',
-        "login/", noindex=True))
-    write(lang, "account/", layout(lang, "account/", t["account_title"], t["account_title"],
-        f'<section class="auth-page prose"><h1>{esc(t["account_title"])}</h1><div id="auth-root" data-view="account"><noscript>JavaScript</noscript></div></section>',
-        "account/", noindex=True))
-
-    # role pages (filled in client-side; show a notice until Supabase is connected)
-    roles = (f'<section class="panel roles-info"><h2>{esc(t["roles_title"])}</h2><ul>'
-             + "".join(f'<li>{esc(t["role_" + r])}</li>' for r in ("reader", "writer", "editor", "admin")) + "</ul></section>")
-    write(lang, "admin/", layout(lang, "admin/", t["admin_title"], t["admin_title"],
-        f'<section class="auth-page app-page"><h1>{esc(t["admin_title"])}</h1>{cms_panel(lang)}<div id="auth-root" data-view="admin"><noscript>JavaScript</noscript></div>{roles}</section>',
-        "admin/", noindex=True))
-    write(lang, "dashboard/", layout(lang, "dashboard/", t["dashboard_title"], t["dashboard_title"],
-        f'<section class="auth-page app-page"><h1>{esc(t["dashboard_title"])}</h1>{cms_panel(lang)}<p class="notice queue-note">{esc(t["queue_note"])}</p>'
-        f'<div id="auth-root" data-view="dashboard"><noscript>JavaScript</noscript></div>{roles}</section>',
-        "dashboard/", noindex=True))
+    # old account/role pages now forward to the CMS app at /admin/
+    for old in ("login/", "account/", "dashboard/") + (("admin/",) if lang != CFG["default_lang"] else ()):
+        write(lang, old, redirect_page(admin_url(lang), t["staff_login"]))
 
     # posts
     for x in posts:
@@ -725,6 +765,25 @@ def build_lang(lang, posts, other_slugs):
 """
     write_raw(rel(lang, "feed.xml"), rss)
 
+def admin_url(lang):
+    return BASE + "admin/" + ("" if lang == CFG["default_lang"] else f"?lang={lang}")
+
+def redirect_page(target, title):
+    return (f'<!doctype html><html><head><meta charset="utf-8"><meta name="robots" content="noindex">'
+            f'<title>{esc(title)}</title><meta http-equiv="refresh" content="0; url={esc(target)}">'
+            f'<link rel="canonical" href="{esc(target)}"></head><body><a href="{esc(target)}">{esc(title)}</a></body></html>\n')
+
+def build_admin():
+    """The CMS single-page app (static/admin/*), served at /admin/. Talks to Supabase with the public key only."""
+    cfg = {"supabaseUrl": SB_URL, "publishableKey": SB_KEY, "bucket": CMS.get("bucket", "post-images"),
+           "base": BASE, "siteUrl": SITE_URL, "assets": BASE + "assets/",
+           "categories": [{"slug": c["slug"], "he": c["he"], "en": c["en"]} for c in CATS]}
+    tpl = (STATIC / "admin" / "index.html").read_text(encoding="utf-8")
+    ver = hashlib.sha1(b"".join((STATIC / "admin" / n).read_bytes() for n in ("app.js", "admin.css", "render.js"))).hexdigest()[:10]
+    page = (tpl.replace("{{CONFIG}}", json.dumps(cfg, ensure_ascii=False).replace("</", "<\\/"))
+               .replace("{{ASSETS}}", BASE + "assets/").replace("{{V}}", ver).replace("{{SB}}", SB_URL))
+    write_raw("admin/index.html", page)
+
 def build_404():
     blocks = []
     for lang in LANGS:
@@ -772,9 +831,10 @@ def main():
     if DIST.exists():
         shutil.rmtree(DIST)
     DIST.mkdir()
-    shutil.copytree(STATIC, DIST / "assets")
+    shutil.copytree(STATIC, DIST / "assets", ignore=lambda d, names: ["index.html"] if Path(d).name == "admin" else [])
     (DIST / ".nojekyll").write_text("")
-    posts = {l: load_posts(l) for l in LANGS}
+    cms = fetch_cms()
+    posts = {l: load_posts(l, cms) for l in LANGS}
     for l in LANGS:
         LATEST[l] = fmt_date(posts[l][0]["dt"], l) if posts[l] else ""
         CAT_COUNTS[l] = {c["slug"]: sum(1 for x in posts[l] if x["category"] == c["slug"]) for c in CATS}
@@ -783,7 +843,8 @@ def main():
         build_lang(lang, posts[lang], {x["slug"] for x in posts[other]})
     build_404()
     build_sitemap(posts)
-    print(f"Built {len(WRITTEN)} files into {DIST} (base_path={BASE}, site_url={SITE_URL})")
+    build_admin()
+    print(f"Built {len(WRITTEN)} files into {DIST} (base_path={BASE}, site_url={SITE_URL}, posts from {CMS_STATE['source']})")
     for l in LANGS:
         print(f"  {l}: {len(posts[l])} posts")
 

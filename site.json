@@ -146,7 +146,8 @@
       "col_date": "תאריך",
       "col_title": "כותרת",
       "col_cat": "קטגוריה",
-      "no_results": "לא נמצאו כתבות מתאימות"
+      "no_results": "לא נמצאו כתבות מתאימות",
+      "staff_login": "כניסת צוות"
     },
     "en": {
       "site_name": "TechnoBayit",
@@ -204,11 +205,17 @@
       "col_date": "Date",
       "col_title": "Title",
       "col_cat": "Category",
-      "no_results": "No matching stories"
+      "no_results": "No matching stories",
+      "staff_login": "Staff login"
     }
   },
   "about": {
     "he": "<p>טכנו-בית הוא אתר עצמאי ודו-לשוני על טכנולוגיה: סמארטפונים, גאדג'טים, מוצרי חשמל לבית וחדשות מהתעשייה.</p><p>כל פוסט כאן מבוסס על מקורות שמופיעים בסופו. אנחנו מסכמים בשפה פשוטה, בלי הגזמות, ומציינים מתי משהו עדיין לא אושר רשמית.</p><p>האתר סטטי ומתארח בחינם. אין פרסומות ואין מעקב. חשבון משתמש הוא אופציונלי: הוא משמש רק לשמירת מועדפים ולכתיבת תגובות.</p>",
     "en": "<p>TechnoBayit is an independent, bilingual site about technology: smartphones, gadgets, home appliances and industry news.</p><p>Every post lists its sources at the end. We summarize in plain language, skip the hype, and say so when something isn't officially confirmed yet.</p><p>The site is static and hosted for free. No ads, no tracking. Accounts are optional and only used for saving favorites and posting comments.</p>"
+  },
+  "cms": {
+    "supabase_url": "https://wnhrnqmlaepdmtkgfjsd.supabase.co",
+    "publishable_key": "sb_publishable_-Tbk0y6Ts0uV8dxQfwQVUg_V3119rHz",
+    "bucket": "post-images"
   }
 }

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Check internal links in dist/: every href/src that points inside the site must resolve to a file.
-Also checks that every page has a language-switch link and an hreflang pair.
+Also checks that every indexable page has a language-switch link and an hreflang pair.
 Usage: python3 scripts/check_links.py [dist_dir] [base_path]"""
 import re, sys
 from html.parser import HTMLParser
@@ -13,12 +13,13 @@ BASE = BASE.replace("//", "/")
 
 class P(HTMLParser):
     def __init__(self):
-        super().__init__(); self.links = []; self.switch = False; self.hreflang = set(); self.ids = set()
+        super().__init__(); self.links = []; self.switch = False; self.hreflang = set(); self.ids = set(); self.noindex = False
     def handle_starttag(self, tag, a):
         a = dict(a)
         if "id" in a: self.ids.add(a["id"])
         for k in ("href", "src"):
             if a.get(k): self.links.append(a[k])
+        if tag == "meta" and a.get("name") == "robots" and "noindex" in (a.get("content") or ""): self.noindex = True
         if tag == "a" and "lang-switch" in (a.get("class") or ""): self.switch = True
         if tag == "link" and a.get("rel") == "alternate" and a.get("hreflang"): self.hreflang.add(a["hreflang"])
 
@@ -39,7 +40,7 @@ for page in sorted(DIST.rglob("*.html")):
     pages += 1
     p = P(); p.feed(page.read_text(encoding="utf-8"))
     name = page.relative_to(DIST).as_posix()
-    if name != "404.html":
+    if name != "404.html" and not p.noindex:  # noindex = redirect stubs and the /admin/ app
         if not p.switch: errors.append(f"{name}: no language switch")
         if not {"he", "en"} <= p.hreflang: errors.append(f"{name}: missing hreflang he/en ({p.hreflang})")
     for href in p.links:
