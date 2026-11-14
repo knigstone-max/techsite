@@ -599,13 +599,48 @@ def card(p, lang):
   </div>
 </article>"""
 
-def hero(p, lang):
+COUNTDOWN_JS = r"""(function(){var s=document.currentScript,b=s&&s.previousElementSibling;if(!b)return;
+var end=Date.parse(b.getAttribute('data-target')),g=b.querySelector('.cd-grid'),st=b.querySelector('.cd-status'),f=b.querySelectorAll('[data-u]');
+function p(n){return n<10?'0'+n:''+n}
+function tick(){var d=Math.max(0,Math.floor((end-Date.now())/1000));
+ if(d<=0){b.classList.add('is-done');g.hidden=true;st.textContent=b.getAttribute('data-done');return false}
+ var v={d:Math.floor(d/86400),h:Math.floor(d%86400/3600),m:Math.floor(d%3600/60),s:d%60};
+ for(var i=0;i<f.length;i++){var u=f[i].getAttribute('data-u');f[i].textContent=u==='d'?v.d:p(v[u])}return true}
+b.classList.add('is-live');if(tick()){var t=setInterval(function(){if(!tick())clearInterval(t)},1000)}})();"""
+
+def countdown(lang, current_slug=None):
+    """GTA VI style launch countdown, configured in site.json -> countdown. Fixed UTC target; no-JS shows the date text."""
+    cd = CFG.get("countdown") or {}
+    if not cd.get("enabled"):
+        return ""
+    c = cd[lang]
+    link = ""
+    if cd.get("link_slug") and cd["link_slug"] != current_slug:
+        link = f'<a class="btn cd-cta" href="{url(lang, "posts/" + cd["link_slug"] + "/")}">{esc(c["cta"])}</a>'
+    units = "".join(f'<div class="cd-unit"><span class="cd-num" data-u="{u}">--</span><span class="cd-lbl">{esc(c[k])}</span></div>'
+                    for u, k in (("d", "days"), ("h", "hours"), ("m", "minutes"), ("s", "seconds")))
+    return f"""<section class="countdown" data-target="{esc(cd['target'])}" data-done="{esc(c['done'])}" aria-labelledby="cd-title">
+  <div class="cd-text">
+    <p class="kicker">{esc(c['kicker'])}</p>
+    <h2 id="cd-title">{esc(c['title'])}</h2>
+    <p class="cd-when"><time datetime="{esc(cd['target'])}">{esc(c['when'])}</time></p>
+  </div>
+  <div class="cd-grid" role="timer" aria-live="off">{units}</div>
+  <p class="cd-status" aria-live="polite"></p>
+  {link}
+</section><script>{COUNTDOWN_JS}</script>"""
+
+def featured_post(posts):
+    slug = (CFG.get("featured") or {}).get("slug")
+    return next((p for p in posts if p["slug"] == slug), None) if slug else None
+
+def hero(p, lang, kicker=None):
     t = CFG["strings"][lang]
     href = url(lang, "posts/" + p["slug"] + "/")
     return f"""<article class="hero-story">
   <a class="hero-media" href="{href}" tabindex="-1" aria-hidden="true">{thumb(p, lang, big=True, eager=True)}</a>
   <div class="hero-body">
-    <p class="kicker">{esc(t['top_story'])}</p>
+    <p class="kicker">{esc(kicker or t['top_story'])}</p>
     {meta_line(p, lang)}
     <h2><a href="{href}">{esc(p['title'])}</a></h2>
     <p class="excerpt">{esc(p['excerpt'])}</p>
@@ -644,8 +679,13 @@ def build_lang(lang, posts, other_slugs):
         cp = [p for p in posts if p["category"] == c["slug"]][:3]
         if cp:
             cat_blocks.append(f'<section class="cat-block"><h2 class="section-title"><a href="{url(lang, "category/" + c["slug"] + "/")}">{esc(c[lang])}</a></h2>{listing(cp, lang)}</section>')
-    top = hero(posts[0], lang) if posts else f'<section class="intro"><h1>{esc(t["site_name"])}</h1><p>{esc(t["tagline"])}</p></section>'
-    rest = posts[1:13]
+    feat = featured_post(posts)
+    if feat:
+        top = hero(feat, lang, kicker=t.get("featured")) + countdown(lang)
+        rest = [p for p in posts if p is not feat][:12]
+    else:
+        top = (hero(posts[0], lang) if posts else f'<section class="intro"><h1>{esc(t["site_name"])}</h1><p>{esc(t["tagline"])}</p></section>') + countdown(lang)
+        rest = posts[1:13]
     latest = f'<section><h2 class="section-title">{esc(t["latest"])}</h2>{listing(rest, lang)}</section>' if rest else ""
     home = f"""<h1 class="visually-hidden">{esc(t['site_name'])}: {esc(t['tagline'])}</h1>
 <nav class="cat-strip" aria-label="{esc(t['categories'])}">{cat_tiles(lang, eager=True)}</nav>
@@ -731,6 +771,7 @@ def build_lang(lang, posts, other_slugs):
 <p class="lead">{esc(x['excerpt'])}</p>
 <div class="post-actions" id="fav-root" hidden></div>
 </header>
+{countdown(lang, x['slug']) if x['slug'] in (CFG.get('countdown') or {}).get('show_on_posts', []) else ''}
 {post_figure(x, lang)}
 <div class="prose">
 {x['html']}

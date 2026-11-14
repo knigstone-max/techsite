@@ -147,7 +147,8 @@
       "col_title": "כותרת",
       "col_cat": "קטגוריה",
       "no_results": "לא נמצאו כתבות מתאימות",
-      "staff_login": "כניסת צוות"
+      "staff_login": "כניסת צוות",
+      "featured": "כתבה נבחרת"
     },
     "en": {
       "site_name": "TechnoBayit",
@@ -206,7 +207,8 @@
       "col_title": "Title",
       "col_cat": "Category",
       "no_results": "No matching stories",
-      "staff_login": "Staff login"
+      "staff_login": "Staff login",
+      "featured": "Featured"
     }
   },
   "about": {
@@ -217,5 +219,40 @@
     "supabase_url": "https://wnhrnqmlaepdmtkgfjsd.supabase.co",
     "publishable_key": "sb_publishable_-Tbk0y6Ts0uV8dxQfwQVUg_V3119rHz",
     "bucket": "post-images"
+  },
+  "featured": {
+    "slug": "gta-series-history-1997-2026"
+  },
+  "countdown": {
+    "enabled": true,
+    "target": "2026-11-18T11:00:00Z",
+    "link_slug": "gta-6-new-zealand-early-unlock-guide",
+    "show_on_posts": [
+      "gta-series-history-1997-2026",
+      "gta-6-new-zealand-early-unlock-guide",
+      "gta-6-israel-price-preorder"
+    ],
+    "he": {
+      "kicker": "ספירה לאחור",
+      "title": "GTA VI נפתח בניו זילנד בעוד",
+      "when": "יום רביעי 18.11 בשעה 13:00 שעון ישראל (חצות בניו זילנד, האזור הראשון בעולם)",
+      "days": "ימים",
+      "hours": "שעות",
+      "minutes": "דקות",
+      "seconds": "שניות",
+      "done": "GTA VI זמין עכשיו בניו זילנד",
+      "cta": "איך משחקים כבר ברביעי: המדריך"
+    },
+    "en": {
+      "kicker": "Countdown",
+      "title": "GTA VI unlocks in New Zealand in",
+      "when": "Wednesday 18.11 at 13:00 Israel time (midnight in New Zealand, the first region in the world)",
+      "days": "days",
+      "hours": "hours",
+      "minutes": "minutes",
+      "seconds": "seconds",
+      "done": "GTA VI is out now in New Zealand",
+      "cta": "How to play on Wednesday: the guide"
+    }
   }
 }

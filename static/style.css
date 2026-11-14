@@ -335,3 +335,27 @@ article.prose { background: var(--surface); border: 1px solid var(--line); borde
 .cat-tile-text { min-block-size: 3.2em; display: flex; align-items: center; justify-content: center; text-align: center; }
 .cat-tile-text strong { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .cat-pill-img img, .cat-pill-img { inline-size: 28px; block-size: 28px; flex: none; }
+
+/* ---------- Launch countdown (site.json -> countdown) ---------- */
+.countdown { display: grid; grid-template-columns: 1fr auto; grid-template-areas: "text grid" "status cta"; gap: .6rem 1.5rem; align-items: center; margin-block: 1rem; padding: 1rem 1.25rem;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); border-inline-start: 6px solid #f59e0b; }
+.cd-text { grid-area: text; }
+.countdown h2 { margin: .2rem 0 .25rem; font-size: clamp(1.15rem, 2.4vw, 1.5rem); }
+.cd-when { margin: 0; color: var(--muted); font-size: .95rem; }
+.cd-grid { grid-area: grid; display: flex; gap: .5rem; }
+.cd-unit { display: flex; flex-direction: column; align-items: center; min-inline-size: 4.4rem; padding: .45rem .3rem; background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius-s); }
+.cd-num { font-size: 1.9rem; font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; color: var(--fg); }
+.cd-lbl { font-size: .78rem; color: var(--muted); }
+.countdown:not(.is-live) .cd-grid { display: none; }
+.cd-status { grid-area: status; margin: 0; font-weight: 700; font-size: 1.1rem; }
+.cd-status:empty { display: none; }
+.cd-cta { grid-area: cta; justify-self: end; margin: 0; background: linear-gradient(180deg, #f6a623, #e48a0c); color: #1f2a37; }
+.cd-cta:hover { background: linear-gradient(180deg, #e8961a, #d07c08); }
+.countdown.is-done .cd-status { color: #b45309; }
+@media (max-width: 760px) {
+  .countdown { grid-template-columns: 1fr; grid-template-areas: "text" "grid" "status" "cta"; }
+  .cd-grid { justify-content: space-between; }
+  .cd-unit { flex: 1; min-inline-size: 0; }
+  .cd-cta { justify-self: stretch; justify-content: center; }
+}
+[data-theme="dark"] .cd-status { color: inherit; }
