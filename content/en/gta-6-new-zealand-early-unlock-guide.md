@@ -64,3 +64,5 @@ The part worth saying out loud: Sony's terms ask you to pick your real country o
 ## The boring, smart option
 
 Wait 11 hours. If you pre-ordered on your Israeli account and pre-loaded, you'll get the game at midnight between Wednesday and Thursday without paying twice, without gift cards and without a second account. If you weren't planning to take Wednesday afternoon off anyway, that's probably the right call. If you were, now you know exactly what it takes.
+
+**Update:** the game is out. [Read our full GTA VI review](/techsite/en/posts/gta-6-review/).

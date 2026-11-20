@@ -193,3 +193,5 @@ According to the PlayStation Blog, GTA VI was built from the ground up for PS5. 
 Between 1997 and 2026, GTA went from a game its own publisher nearly shelved to a series that has sold close to half a billion copies. Along the way it defined what an open world should look like, proved adult games are huge business and taught the industry how to sell the same world for more than a decade. Not all of it is pretty. There were pointless scandals, a mountain of Shark Cards and a wait that went on far too long. But no other series has shaped how we play quite like this one.
 
 Now we find out whether GTA VI justifies 13 years of hype. The bar Rockstar set for itself is ridiculously high, and if anyone can clear it, it's them. In the meantime, free up some space, charge your DualSense and warn your boss you'll be "ill" on November 20. See you in Leonida.
+
+**Update:** the game is out, and we gave it 11 out of 10. [Read our full GTA VI review](/techsite/en/posts/gta-6-review/).
