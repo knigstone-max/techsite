@@ -310,6 +310,8 @@ Still deciding? We have a [guide to prices and pre-orders in Israel](/techsite/e
 
 ![Official GTA VI cover art in wide format, the logo in the middle and a collage of characters, vehicles and scenery from Leonida](img/posts/gta6-review-hero.webp "The official cover art. This is what the end of a 13-year wait looks like. Image: Rockstar Games")
 
+**GTA VI world guides:** every car, boat and plane in the [vehicle catalog](/techsite/en/posts/gta-6-vehicles-catalog/), the bikes in the [motorcycle catalog](/techsite/en/posts/gta-6-motorcycles-catalog/), all 66 weapons in the [weapons catalog](/techsite/en/posts/gta-6-weapons-catalog/), and what Ultimate adds in the [editions and extras guide](/techsite/en/posts/gta-6-editions-extras-guide/). It's all on the [guides hub](/techsite/en/posts/gta-6-guides-hub/).
+
 :::score
 ## The bottom line
 

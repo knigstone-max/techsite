@@ -310,6 +310,8 @@ GTA תמיד צחק על אמריקה, אבל לפעמים זה גלש להכו�
 
 ![עטיפת GTA VI הרשמית בפורמט רחב, עם הלוגו במרכז וקולאז' של דמויות, רכבים ונופים מלאונידה](img/posts/gta6-review-hero.webp "העטיפה הרשמית. ככה נראה סוף של 13 שנות המתנה. תמונה: Rockstar Games")
 
+**מדריכים לעולם של GTA VI:** כל המכוניות, הסירות והמטוסים ב[קטלוג הרכבים](/techsite/posts/gta-6-vehicles-catalog/), האופנועים ב[קטלוג האופנועים](/techsite/posts/gta-6-motorcycles-catalog/), כל 66 כלי הנשק ב[קטלוג הנשקים](/techsite/posts/gta-6-weapons-catalog/), ומה מקבלים ב-Ultimate ב[מדריך הגרסאות והתוספות](/techsite/posts/gta-6-editions-extras-guide/). הכול מרוכז ב[עמוד המדריכים](/techsite/posts/gta-6-guides-hub/).
+
 :::score
 ## השורה התחתונה
 

@@ -11,6 +11,27 @@
     btn.setAttribute('aria-pressed', root.dataset.theme === 'dark' ? 'true' : 'false');
     btn.addEventListener('click', function () { setTheme(root.dataset.theme === 'dark' ? 'light' : 'dark'); });
   }
+  // GTA VI mode: optional themed look layered on top of light/dark. Stored in localStorage, applied before paint by the boot script.
+  var gta = document.querySelector('.gta-toggle');
+  var FONT = 'https://fonts.googleapis.com/css2?family=Anton&family=Secular+One&display=swap';
+  function setGta(on) {
+    if (on) {
+      root.dataset.gta = 'on';
+      if (!document.getElementById('gta-font')) {
+        var l = document.createElement('link'); l.rel = 'stylesheet'; l.id = 'gta-font'; l.href = FONT; document.head.appendChild(l);
+      }
+    } else { delete root.dataset.gta; }
+    try { localStorage.setItem('gtaMode', on ? 'on' : 'off'); } catch (e) {}
+    if (gta) gta.setAttribute('aria-pressed', on ? 'true' : 'false');
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', on ? '#2a0f3d' : '#e9eef5');
+  }
+  if (gta) {
+    gta.setAttribute('aria-pressed', root.dataset.gta === 'on' ? 'true' : 'false');
+    gta.addEventListener('click', function () { setGta(root.dataset.gta !== 'on'); });
+    if (root.dataset.gta === 'on') { var m0 = document.querySelector('meta[name="theme-color"]'); if (m0) m0.setAttribute('content', '#2a0f3d'); }
+  }
+
   // Follow OS changes only if the user never picked a theme.
   try {
     var mq = matchMedia('(prefers-color-scheme: dark)');

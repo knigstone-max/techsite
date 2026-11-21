@@ -246,6 +246,23 @@ def body_figure(alt, src, caption, where):
     return (f'<figure class="body-figure"><img src="{esc(asset(src))}" alt="{esc(alt)}" width="{w}" height="{h}" '
             f'loading="lazy" decoding="async">{cap}</figure>')
 
+def card_html(spec, where):
+    """Catalog card: @card img/posts/x.webp | alt | Title | tag line | description.  Use - for no image."""
+    parts = [x.strip() for x in spec.split("|")]
+    if len(parts) != 5:
+        sys.exit(f"ERROR {where}: @card needs 5 fields separated by |, got {len(parts)}: {spec[:60]}")
+    src, alt, title, tag, desc = parts
+    media = ""
+    if src != "-":
+        if not alt:
+            sys.exit(f"ERROR {where}: @card image {src} needs alt text")
+        src, f = local_image(src, where)
+        w, h = image_size(f)
+        media = f'<img src="{esc(asset(src))}" alt="{esc(alt)}" width="{w}" height="{h}" loading="lazy" decoding="async">'
+    cls = "g-card" + ("" if media else " g-card-text")
+    return (f'<div class="{cls}">{media}<div class="g-card-body"><h4>{inline_md(title)}</h4>'
+            f'<p class="g-card-tag">{inline_md(tag)}</p><p>{inline_md(desc)}</p></div></div>')
+
 def md_to_html(md, where="post"):
     out, para, lst = [], [], None
     box = None  # (class, start index in out)
@@ -257,10 +274,28 @@ def md_to_html(md, where="post"):
             tag = lst[0]
             out.append(f"<{tag}>" + "".join(f"<li>{inline_md(i)}</li>" for i in lst[1]) + f"</{tag}>")
             lst = None
+    tbl = []
+    def flush_table():
+        nonlocal tbl
+        if not tbl:
+            return
+        rows = [[c.strip() for c in r.strip().strip("|").split("|")] for r in tbl]
+        tbl = []
+        head, body = rows[0], [r for r in rows[1:] if not all(re.fullmatch(r":?-{2,}:?", c) for c in r)]
+        th = "".join(f'<th scope="col">{inline_md(c)}</th>' for c in head)
+        trs = "".join("<tr>" + "".join(f"<td>{inline_md(c)}</td>" for c in r) + "</tr>" for r in body)
+        out.append(f'<div class="table-scroll" tabindex="0"><table><thead><tr>{th}</tr></thead><tbody>{trs}</tbody></table></div>')
     for line in md.splitlines():
         s = line.strip()
+        if tbl and not s.startswith("|"):
+            flush_table()
+        if s.startswith("|") and s.endswith("|") and s.count("|") >= 3:
+            flush(); tbl.append(s); continue
         if not s:
             flush(); continue
+        cd = re.match(r"^@card\s+(.*)$", s)
+        if cd:
+            flush(); out.append(card_html(cd.group(1), where)); continue
         bx = re.match(r"^:::\s*([a-z-]*)\s*$", s)
         if bx:
             flush()
@@ -292,7 +327,7 @@ def md_to_html(md, where="post"):
         else:
             if lst: flush()
             para.append(s)
-    flush()
+    flush(); flush_table()
     if box is not None:
         sys.exit(f"ERROR {where}: unclosed ::: block")
     return "\n".join(out)
@@ -391,7 +426,11 @@ def fmt_date(dt, lang):
 
 THEME_BOOT = ("(function(){try{var t=localStorage.getItem('theme');"
               "if(t!=='light'&&t!=='dark'){t='light'}"
-              "document.documentElement.dataset.theme=t}catch(e){}})();")
+              "document.documentElement.dataset.theme=t;"
+              "if(localStorage.getItem('gtaMode')==='on'){document.documentElement.dataset.gta='on';"
+              "var l=document.createElement('link');l.rel='stylesheet';l.id='gta-font';"
+              "l.href='https://fonts.googleapis.com/css2?family=Anton&family=Secular+One&display=swap';"
+              "document.head.appendChild(l)}}catch(e){}})();")
 
 ICON_SUN = '<svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1.5 12h3M19.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>'
 ICON_MOON = '<svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>'
@@ -522,6 +561,7 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
       </ul>
       <div class="header-tools">
         <a class="lang-switch" href="{url(other, other_path)}" hreflang="{other}" lang="{other}">{ICON_GLOBE}{esc(t['switch'])}</a>
+        <button class="gta-toggle" type="button" aria-pressed="false" title="{esc(t['gta_mode_hint'])}"><span class="gta-dot" aria-hidden="true"></span><span class="gta-label">{esc(t['gta_mode'])}</span></button>
         <button class="icon-btn theme-toggle" type="button" aria-label="{esc(t['theme'])}" title="{esc(t['theme'])}">{ICON_SUN}{ICON_MOON}</button>
         <a class="icon-btn account-link" href="{admin_url(lang)}" aria-label="{esc(t['staff_login'])}" title="{esc(t['staff_login'])}" rel="nofollow">{ICON_USER}</a>
       </div>
@@ -599,37 +639,6 @@ def card(p, lang):
   </div>
 </article>"""
 
-COUNTDOWN_JS = r"""(function(){var s=document.currentScript,b=s&&s.previousElementSibling;if(!b)return;
-var end=Date.parse(b.getAttribute('data-target')),g=b.querySelector('.cd-grid'),st=b.querySelector('.cd-status'),f=b.querySelectorAll('[data-u]');
-function p(n){return n<10?'0'+n:''+n}
-function tick(){var d=Math.max(0,Math.floor((end-Date.now())/1000));
- if(d<=0){b.classList.add('is-done');g.hidden=true;st.textContent=b.getAttribute('data-done');return false}
- var v={d:Math.floor(d/86400),h:Math.floor(d%86400/3600),m:Math.floor(d%3600/60),s:d%60};
- for(var i=0;i<f.length;i++){var u=f[i].getAttribute('data-u');f[i].textContent=u==='d'?v.d:p(v[u])}return true}
-b.classList.add('is-live');if(tick()){var t=setInterval(function(){if(!tick())clearInterval(t)},1000)}})();"""
-
-def countdown(lang, current_slug=None):
-    """GTA VI style launch countdown, configured in site.json -> countdown. Fixed UTC target; no-JS shows the date text."""
-    cd = CFG.get("countdown") or {}
-    if not cd.get("enabled"):
-        return ""
-    c = cd[lang]
-    link = ""
-    if cd.get("link_slug") and cd["link_slug"] != current_slug:
-        link = f'<a class="btn cd-cta" href="{url(lang, "posts/" + cd["link_slug"] + "/")}">{esc(c["cta"])}</a>'
-    units = "".join(f'<div class="cd-unit"><span class="cd-num" data-u="{u}">--</span><span class="cd-lbl">{esc(c[k])}</span></div>'
-                    for u, k in (("d", "days"), ("h", "hours"), ("m", "minutes"), ("s", "seconds")))
-    return f"""<section class="countdown" data-target="{esc(cd['target'])}" data-done="{esc(c['done'])}" aria-labelledby="cd-title">
-  <div class="cd-text">
-    <p class="kicker">{esc(c['kicker'])}</p>
-    <h2 id="cd-title">{esc(c['title'])}</h2>
-    <p class="cd-when"><time datetime="{esc(cd['target'])}">{esc(c['when'])}</time></p>
-  </div>
-  <div class="cd-grid" role="timer" aria-live="off">{units}</div>
-  <p class="cd-status" aria-live="polite"></p>
-  {link}
-</section><script>{COUNTDOWN_JS}</script>"""
-
 def featured_post(posts):
     slug = (CFG.get("featured") or {}).get("slug")
     return next((p for p in posts if p["slug"] == slug), None) if slug else None
@@ -681,15 +690,17 @@ def build_lang(lang, posts, other_slugs):
             cat_blocks.append(f'<section class="cat-block"><h2 class="section-title"><a href="{url(lang, "category/" + c["slug"] + "/")}">{esc(c[lang])}</a></h2>{listing(cp, lang)}</section>')
     feat = featured_post(posts)
     if feat:
-        top = hero(feat, lang, kicker=t.get("featured")) + countdown(lang)
+        top = hero(feat, lang, kicker=t.get("featured"))
         rest = [p for p in posts if p is not feat][:12]
     else:
-        top = (hero(posts[0], lang) if posts else f'<section class="intro"><h1>{esc(t["site_name"])}</h1><p>{esc(t["tagline"])}</p></section>') + countdown(lang)
+        top = (hero(posts[0], lang) if posts else f'<section class="intro"><h1>{esc(t["site_name"])}</h1><p>{esc(t["tagline"])}</p></section>')
         rest = posts[1:13]
     latest = f'<section><h2 class="section-title">{esc(t["latest"])}</h2>{listing(rest, lang)}</section>' if rest else ""
     home = f"""<h1 class="visually-hidden">{esc(t['site_name'])}: {esc(t['tagline'])}</h1>
+<div class="home-gta-bg" style="--gta-bg-img:url('{asset('img/gta-theme-bg.webp')}')">
 <nav class="cat-strip" aria-label="{esc(t['categories'])}">{cat_tiles(lang, eager=True)}</nav>
 {top}
+</div>
 {latest}
 {''.join(cat_blocks) if len(posts) > 3 else ''}
 <p class="more"><a class="btn btn-ghost" href="{url(lang, 'archive/')}">{esc(t['all_posts'])}</a></p>"""
@@ -771,7 +782,6 @@ def build_lang(lang, posts, other_slugs):
 <p class="lead">{esc(x['excerpt'])}</p>
 <div class="post-actions" id="fav-root" hidden></div>
 </header>
-{countdown(lang, x['slug']) if x['slug'] in (CFG.get('countdown') or {}).get('show_on_posts', []) else ''}
 {post_figure(x, lang)}
 <div class="prose">
 {x['html']}
