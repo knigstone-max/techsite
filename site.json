@@ -162,7 +162,8 @@
       "moved_note_multi": "הסיקורים מחולקים עכשיו לפי עולמות:",
       "in_world": "ב",
       "empty_type": "עדיין אין כאן כתבות. בינתיים אפשר לקרוא את העדכונים האחרונים בעולם הזה.",
-      "col_world": "עולם"
+      "col_world": "עולם",
+      "gateway_title": "בחרו עולם"
     },
     "en": {
       "site_name": "TechnoBayit",
@@ -236,7 +237,8 @@
       "moved_note_multi": "Reviews are now split by world:",
       "in_world": "in ",
       "empty_type": "Nothing here yet. Meanwhile, here is the latest from this world.",
-      "col_world": "World"
+      "col_world": "World",
+      "gateway_title": "Pick a world"
     }
   },
   "about": {
@@ -254,11 +256,11 @@
   "worlds": [
     {
       "slug": "home",
-      "he": "טכנו בית",
-      "en": "Techno Home",
+      "he": "וואט בבית",
+      "en": "Watt's Home",
       "color": "#f08a24",
       "color2": "#ffb547",
-      "image": "img/worlds/home.webp",
+      "image": "img/worlds/home-scene.webp",
       "tagline": {
         "he": "מוצרי חשמל לבית: שואבים, מזגנים, מקררים, כביסה ומטבח",
         "en": "Home appliances: vacuums, ACs, fridges, laundry and the kitchen"
@@ -268,20 +270,25 @@
         "en": "Everything in your home that plugs into the wall. Reviews, comparisons, buying advice and guides, with Israeli prices."
       },
       "alt": {
-        "he": "איור שטוח של מכונת כביסה, מקרר, מזגן ושואב שוטף על רקע כתום",
-        "en": "Flat illustration of a washing machine, fridge, air conditioner and wet-dry vacuum on an orange background"
+        "he": "איור של מטבח וסלון ישראליים בשקיעה: מקרר, תנורים, מכונת אספרסו, מזגן, שואב שוטף ושואב רובוטי",
+        "en": "Illustration of an Israeli kitchen and living room at sunset with a fridge, ovens, espresso machine, AC, wet-dry vacuum and robot vacuum"
       },
       "categories": [
         "home-appliances"
-      ]
+      ],
+      "image_m": "img/worlds/home-scene-m.webp",
+      "tag": {
+        "he": "מוצרי חשמל לבית",
+        "en": "Appliances, done right"
+      }
     },
     {
       "slug": "play",
-      "he": "פלייטק",
-      "en": "PlayTech",
+      "he": "קומבו",
+      "en": "Couch Co-op",
       "color": "#e4505f",
       "color2": "#ff8a6b",
-      "image": "img/worlds/play.webp",
+      "image": "img/worlds/play-scene.webp",
       "tagline": {
         "he": "גיימינג: ביקורות משחקים, קונסולות, אביזרים ומדריכי GTA VI",
         "en": "Gaming: game reviews, consoles, gear and GTA VI guides"
@@ -291,20 +298,25 @@
         "en": "Games, consoles and gear. Reviews, news, Israeli prices and guides to the world of GTA VI."
       },
       "alt": {
-        "he": "איור שטוח של שלט משחק, אוזניות גיימינג, גביע וקונסולה על רקע אדום-כתום",
-        "en": "Flat illustration of a game controller, gaming headset, trophy and console on a red-orange background"
+        "he": "איור של עמדת גיימינג בלילה עם תאורת ניאון, מסך מעוקל, מקלדת, אוזניות ושלט",
+        "en": "Illustration of a neon-lit night gaming setup with a curved monitor, keyboard, headset and controller"
       },
       "categories": [
         "gaming-lite"
-      ]
+      ],
+      "image_m": "img/worlds/play-scene-m.webp",
+      "tag": {
+        "he": "משחקים וקונסולות",
+        "en": "Games after dark"
+      }
     },
     {
       "slug": "techhigh",
-      "he": "טקהיי",
-      "en": "TechHigh",
+      "he": "אגודל",
+      "en": "Swipe Street",
       "color": "#7b5cf0",
       "color2": "#ff8fa3",
-      "image": "img/worlds/techhigh.webp",
+      "image": "img/worlds/techhigh-scene.webp",
       "tagline": {
         "he": "אפליקציות, סמארטפונים, גאדג'טים ולבישים",
         "en": "Apps, smartphones, gadgets and wearables"
@@ -314,13 +326,18 @@
         "en": "Apps, phones, watches, earbuds and digital life. What reached Israel, what it costs and what's worth buying."
       },
       "alt": {
-        "he": "איור שטוח של סמארטפון עם אפליקציות, שעון חכם ואוזניות על רקע סגול-ורוד",
-        "en": "Flat illustration of a smartphone with apps, a smartwatch and earbuds on a purple-pink background"
+        "he": "איור של יד שמחזיקה טלפון ואייקונים של אפליקציות עפים מהמסך, לצד שעון חכם ואוזניות",
+        "en": "Illustration of a hand holding a phone with app icons floating out of the screen, next to a smartwatch and earbuds"
       },
       "categories": [
         "smartphones-gadgets",
         "tech-news"
-      ]
+      ],
+      "image_m": "img/worlds/techhigh-scene-m.webp",
+      "tag": {
+        "he": "אפליקציות וטלפונים",
+        "en": "Apps, phones, gadgets"
+      }
     }
   ],
   "types": [

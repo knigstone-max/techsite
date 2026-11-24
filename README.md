@@ -53,11 +53,11 @@ techsite/
 
 | עולם | slug | מה נכנס |
 |---|---|---|
-| טכנו בית | `home` | מוצרי חשמל לבית (המוקד של האתר) |
-| פלייטק | `play` | גיימינג: משחקים, קונסולות, מדריכי GTA VI |
-| טקהיי | `techhigh` | אפליקציות, סמארטפונים, גאדג'טים, לבישים וחדשות דיגיטל |
+| וואט בבית | `home` | מוצרי חשמל לבית (המוקד של האתר) |
+| קומבו | `play` | גיימינג: משחקים, קונסולות, מדריכי GTA VI |
+| אגודל | `techhigh` | אפליקציות, סמארטפונים, גאדג'טים, לבישים וחדשות דיגיטל |
 
-סוגים (`type`): `reviews` סיקורים, `news` עדכונים, `comparisons` השוואות, `recommendations` המלצות, `guides` מדריכים. עמודים: `/<world>/` ו-`/<world>/<type>/` (וגם תחת `/en/`). כתובות הקטגוריות הישנות (`category/<slug>/`) ממשיכות לעבוד ומפנות לעולם. כתבה בלי `world`/`type` מסווגת אוטומטית לפי הכללים ב-`build.py` (`classify`). `scripts/assign_worlds.py --write` מסווג מחדש את כל הכתבות (קבצים + CMS) בלי לגעת בתוכן.
+סוגים (`type`): `reviews` סיקורים, `news` עדכונים, `comparisons` השוואות, `recommendations` המלצות, `guides` מדריכים. עמודים: `/<world>/` ו-`/<world>/<type>/` (וגם תחת `/en/`). כתובות הקטגוריות הישנות (`category/<slug>/`) ממשיכות לעבוד ומפנות לעולם. דף הבית הוא שער בלבד: שלוש תמונות גדולות, אחת לכל עולם, בלי רשימות כתבות. הביקורת הנבחרת (`featured` / `world_featured` ב-site.json) מופיעה בעמוד העולם. תמונות העולמות (`static/img/worlds/*-scene.webp` ו-`*-scene-m.webp`) נוצרו במחולל תמונות, בלי טקסט ובלי לוגואים. כתבה בלי `world`/`type` מסווגת אוטומטית לפי הכללים ב-`build.py` (`classify`). `scripts/assign_worlds.py --write` מסווג מחדש את כל הכתבות (קבצים + CMS) בלי לגעת בתוכן.
 
 ### הוספת פוסט
 
@@ -170,7 +170,7 @@ Per language: home, a categories index (`categories/`), 5 category pages (`categ
 
 ### Worlds
 
-The site is split into three worlds: Techno Home (`home`, appliances, the main focus), PlayTech (`play`, gaming) and TechHigh (`techhigh`, apps, phones, gadgets, wearables, digital news). Each post also has a `type`: `reviews`, `news`, `comparisons`, `recommendations` or `guides`. Pages: `/<world>/` and `/<world>/<type>/` (plus `/en/`). Old `category/<slug>/` URLs still work and point to the right world. Posts without `world`/`type` are classified by the rules in `build.py` (`classify`); `scripts/assign_worlds.py --write` re-files every post (markdown + CMS) without touching content.
+The site is split into three worlds: Watt's Home (`home`, appliances, the main focus), Couch Co-op (`play`, gaming) and Swipe Street (`techhigh`, apps, phones, gadgets, wearables, digital news). Each post also has a `type`: `reviews`, `news`, `comparisons`, `recommendations` or `guides`. Pages: `/<world>/` and `/<world>/<type>/` (plus `/en/`). Old `category/<slug>/` URLs still work and point to the right world. The homepage is a pure gateway: three large image tiles, one per world, with no post lists. The featured post (`featured` / `world_featured` in site.json) shows on the world page. The world scenes (`static/img/worlds/*-scene.webp`, `*-scene-m.webp`) are AI-generated illustrations with no text or logos. Posts without `world`/`type` are classified by the rules in `build.py` (`classify`); `scripts/assign_worlds.py --write` re-files every post (markdown + CMS) without touching content.
 
 ### Add a post
 

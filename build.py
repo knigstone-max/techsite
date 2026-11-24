@@ -556,12 +556,17 @@ LATEST = {}
 WORLD_COUNTS = {}
 CUR = ' aria-current="page"'
 
-def world_img(w, eager=False, cls=""):
+def world_img(w, eager=False, sizes="(max-width: 860px) 100vw, 50vw"):
+    """World scene (decorative: the link or heading next to it names the world). 1600px + 800px versions."""
     if not w.get("image"):
         return ""
     iw, ih = image_size(STATIC / w["image"])
     load = 'loading="eager" fetchpriority="high"' if eager else 'loading="lazy"'
-    return f'<img{cls} src="{asset(w["image"])}" alt="" width="{iw}" height="{ih}" {load} decoding="async">'
+    srcset = ""
+    if w.get("image_m"):
+        mw, _ = image_size(STATIC / w["image_m"])
+        srcset = f' srcset="{asset(w["image_m"])} {mw}w, {asset(w["image"])} {iw}w" sizes="{sizes}"'
+    return f'<img src="{asset(w.get("image_m") or w["image"])}"{srcset} alt="" width="{iw}" height="{ih}" {load} decoding="async">'
 
 def world_nav(lang, active=None):
     t = CFG["strings"][lang]
@@ -571,20 +576,16 @@ def world_nav(lang, active=None):
         for w in WORLDS)
     return f'<nav class="world-nav" aria-label="{esc(t["worlds"])}"><ul>{items}</ul></nav>'
 
-def world_cards(lang, eager=False):
-    """Big entry cards for the three worlds (homepage)."""
+def gateway(lang):
+    """Homepage: only the three worlds, as full-height image tiles."""
     t = CFG["strings"][lang]
-    out = []
-    for w in WORLDS:
-        n = WORLD_COUNTS.get(lang, {}).get(w["slug"], 0)
-        out.append(f"""<li><a class="world-card w-{w['slug']}" href="{url(lang, world_path(w['slug']))}">
-  <span class="world-card-media">{world_img(w, eager)}</span>
-  <span class="world-card-body">
-    <span class="world-card-title">{WORLD_ICONS[w['slug']]}<strong>{esc(w[lang])}</strong></span>
-    <span class="world-card-tag">{esc(w['tagline'][lang])}</span>
-    <span class="world-card-foot"><small>{esc(count_label(n, lang))}</small><span class="world-card-go">{esc(t['enter_world'])} <span aria-hidden="true">{'&larr;' if DIR[lang] == 'rtl' else '&rarr;'}</span></span></span>
-  </span></a></li>""")
-    return f'<nav class="world-entry" aria-label="{esc(t["worlds"])}"><h2 class="visually-hidden">{esc(t["worlds"])}</h2><ul class="world-cards">{"".join(out)}</ul></nav>'
+    tiles = "".join(
+        f'<li><a class="gate-tile w-{w["slug"]}" href="{url(lang, world_path(w["slug"]))}">'
+        f'<span class="gate-media">{world_img(w, eager=True, sizes="(max-width: 860px) 100vw, 34vw")}</span>'
+        f'<span class="gate-text"><strong>{esc(w[lang])}</strong><small>{esc(w["tag"][lang])}</small></span></a></li>'
+        for w in WORLDS)
+    return (f'<h1 class="visually-hidden">{esc(t["site_name"])}: {esc(t["gateway_title"])}</h1>'
+            f'<nav class="gateway" aria-label="{esc(t["worlds"])}"><ul class="gate-tiles">{tiles}</ul></nav>')
 
 def type_chips(lang, w, posts, active=None):
     """Sub-category tabs inside a world. Types with no posts yet are left out."""
@@ -632,7 +633,7 @@ def cat_bar(lang):
     items += f'<li><a class="cat-pill cat-pill-all" href="{url(lang, "categories/")}">{esc(t["all_categories"])}</a></li>'
     return f'<nav class="cat-bar" aria-label="{esc(t["categories"])}"><div class="wrap"><ul>{items}</ul></div></nav>'
 
-def layout(lang, path, title, description, body, other_path, og_type="website", noindex=False, needs_auth=False, image=None, catbar=True, world=None):
+def layout(lang, path, title, description, body, other_path, og_type="website", noindex=False, needs_auth=False, image=None, catbar=True, world=None, minimal=False):
     """path / other_path: site-relative paths without lang prefix, e.g. 'posts/x/'."""
     t = CFG["strings"][lang]
     other = "en" if lang == "he" else "he"
@@ -659,37 +660,23 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
                   f'<meta name="twitter:image:alt" content="{esc(image["alt"])}">')
     else:
         og_img = '<meta name="twitter:card" content="summary">'
-    return f"""<!doctype html>
-<html lang="{lang}" dir="{DIR[lang]}" data-base="{BASE}" data-theme="light">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script>{THEME_BOOT}</script>
-<title>{esc(full_title)}</title>
-<meta name="description" content="{esc(description)}">
-{robots}
-<link rel="canonical" href="{abs_url(lang, path)}">
-{alt}
-<meta property="og:type" content="{og_type}">
-<meta property="og:title" content="{esc(title)}">
-<meta property="og:description" content="{esc(description)}">
-<meta property="og:url" content="{abs_url(lang, path)}">
-<meta property="og:site_name" content="{esc(t['site_name'])}">
-<meta property="og:locale" content="{OG_LOCALE[lang]}">
-<meta property="og:locale:alternate" content="{OG_LOCALE[other]}">
-{og_img}
-<meta name="theme-color" content="#e9eef5">
-<link rel="alternate" type="application/rss+xml" title="{esc(t['site_name'])} RSS" href="{url(lang, 'feed.xml')}">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="{asset('style.css')}">
-<link rel="icon" href="{asset('favicon.svg')}" type="image/svg+xml">
-<script src="{asset('main.js')}" defer></script>
-{auth_js}
-</head>
-<body>
-<a class="skip" href="#main">{esc(t['skip'])}</a>
-<header class="site-header">
+    if minimal:
+        chrome = f"""<header class="site-header site-header-min">
+  <div class="wrap topbar topbar-min">
+    <a class="brand" href="{url(lang)}"><img class="brand-logo" src="{asset('logo.svg')}" alt="" width="34" height="34">{esc(t['site_name'])}</a>
+    {world_nav(lang, world)}
+    <div class="header-tools">
+      <a class="lang-switch" href="{url(other, other_path)}" hreflang="{other}" lang="{other}">{ICON_GLOBE}{esc(t['switch'])}</a>
+      <button class="gta-toggle" type="button" aria-pressed="false" title="{esc(t['gta_mode_hint'])}"><span class="gta-dot" aria-hidden="true"></span><span class="gta-label">{esc(t['gta_mode'])}</span></button>
+    </div>
+  </div>
+</header>
+<main id="main" class="gateway-main">
+{body}
+</main>
+"""
+    else:
+        chrome = f"""<header class="site-header">
   <div class="wrap">
     <div class="topbar">
       <a class="brand" href="{url(lang)}"><img class="brand-logo" src="{asset('logo.svg')}" alt="" width="34" height="34">{esc(t['site_name'])}</a>
@@ -733,7 +720,38 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
     </ul>
   </div>
 </footer>
-</body>
+"""
+    return f"""<!doctype html>
+<html lang="{lang}" dir="{DIR[lang]}" data-base="{BASE}" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>{THEME_BOOT}</script>
+<title>{esc(full_title)}</title>
+<meta name="description" content="{esc(description)}">
+{robots}
+<link rel="canonical" href="{abs_url(lang, path)}">
+{alt}
+<meta property="og:type" content="{og_type}">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(description)}">
+<meta property="og:url" content="{abs_url(lang, path)}">
+<meta property="og:site_name" content="{esc(t['site_name'])}">
+<meta property="og:locale" content="{OG_LOCALE[lang]}">
+<meta property="og:locale:alternate" content="{OG_LOCALE[other]}">
+{og_img}
+<meta name="theme-color" content="#e9eef5">
+<link rel="alternate" type="application/rss+xml" title="{esc(t['site_name'])} RSS" href="{url(lang, 'feed.xml')}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="{asset('style.css')}">
+<link rel="icon" href="{asset('favicon.svg')}" type="image/svg+xml">
+<script src="{asset('main.js')}" defer></script>
+{auth_js}
+</head>
+<body>
+<a class="skip" href="#main">{esc(t['skip'])}</a>
+{chrome}</body>
 </html>
 """
 
@@ -823,29 +841,10 @@ def write_raw(relpath, content):
 
 def build_lang(lang, posts, other_slugs):
     t = CFG["strings"][lang]
-    # home: world entries + featured story + latest grid + a row per world
-    world_blocks = []
-    for w in WORLDS:
-        wp = [p for p in posts if p["world"] == w["slug"]][:3]
-        if wp:
-            world_blocks.append(f'<section class="cat-block world-block w-{w["slug"]}"><h2 class="section-title section-world"><a href="{url(lang, world_path(w["slug"]))}">{WORLD_ICONS[w["slug"]]}{esc(w[lang])}</a></h2>{listing(wp, lang)}</section>')
-    feat = featured_post(posts)
-    if feat:
-        top = hero(feat, lang, kicker=t.get("featured"))
-        rest = [p for p in posts if p is not feat][:12]
-    else:
-        top = (hero(posts[0], lang) if posts else f'<section class="intro"><h1>{esc(t["site_name"])}</h1><p>{esc(t["tagline"])}</p></section>')
-        rest = posts[1:13]
-    latest = f'<section><h2 class="section-title">{esc(t["latest"])}</h2>{listing(rest, lang)}</section>' if rest else ""
-    home = f"""<h1 class="visually-hidden">{esc(t['site_name'])}: {esc(t['tagline'])}</h1>
-<div class="home-gta-bg" style="--gta-bg-img:url('{asset('img/gta-theme-bg.webp')}')">
-{world_cards(lang, eager=True)}
-{top}
-</div>
-{latest}
-{''.join(world_blocks) if len(posts) > 3 else ''}
-<p class="more"><a class="btn btn-ghost" href="{url(lang, 'archive/')}">{esc(t['all_posts'])}</a></p>"""
-    write(lang, "", layout(lang, "", t["site_name"], t["tagline"], home, "", catbar=False))
+    # home: a pure gateway into the three worlds (no posts, no lists)
+    write(lang, "", layout(lang, "", t["site_name"], t["tagline"], gateway(lang), "", catbar=False, minimal=True,
+                           image={"abs": abs_asset(WORLDS[0]["image"]), "w": image_size(STATIC / WORLDS[0]["image"])[0],
+                                  "h": image_size(STATIC / WORLDS[0]["image"])[1], "alt": WORLDS[0]["alt"][lang]}))
 
     # worlds: landing page per world + a page per sub-category
     for w in WORLDS:
@@ -855,7 +854,7 @@ def build_lang(lang, posts, other_slugs):
                 f'<div class="world-hero-body"><p class="kicker">{esc(t["worlds"])}</p><h1>{WORLD_ICONS[ws]}{esc(w[lang])}</h1>'
                 f'<p class="world-hero-tag">{esc(w["tagline"][lang])}</p><p class="page-desc">{esc(w["desc"][lang])}</p>'
                 f'<p class="world-hero-count">{esc(count_label(len(wp), lang))}</p></div></header>')
-        fslug = (CFG.get("world_featured") or {}).get(ws)
+        fslug = (CFG.get("world_featured") or {}).get(ws) or (CFG.get("featured") or {}).get("slug")
         fp = next((p for p in wp if p["slug"] == fslug), None) or next((p for p in wp if p["type"] == "reviews"), None) or (wp[0] if wp else None)
         sections = []
         for ty in TYPES:
@@ -866,8 +865,10 @@ def build_lang(lang, posts, other_slugs):
             sections.append(f'<section class="cat-block type-block"><h2 class="section-title"><a href="{href}">{esc(ty[lang])}</a></h2>{listing(tp[:3], lang)}'
                             + (f'<p class="more more-type"><a class="btn btn-ghost" href="{href}">{esc(t["see_all_type"])}{esc(ty[lang])} ({len(tp) + (1 if fp is not None and fp["type"] == ty["slug"] else 0)})</a></p>' if len(tp) > 3 else "")
                             + '</section>')
+        latest_w = [p for p in wp if p is not fp][:6]
         body = (f'{head}{type_chips(lang, ws, posts)}'
                 + (f'<div class="world-feature">{hero(fp, lang, kicker=t.get("featured"))}</div>' if fp else "")
+                + (f'<section class="cat-block world-latest"><h2 class="section-title">{esc(t["world_latest"])}</h2>{listing(latest_w, lang)}</section>' if latest_w else "")
                 + ("".join(sections) or listing([], lang)))
         wpath = world_path(ws)
         write(lang, wpath, layout(lang, wpath, w[lang], w["tagline"][lang], body, wpath, image=None, world=ws))

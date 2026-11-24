@@ -412,7 +412,7 @@ article.prose { background: var(--surface); border: 1px solid var(--line); borde
 @media (forced-colors: active) { [data-gta="on"] .brand { color: CanvasText; background: none; } }
 [data-gta="on"] .prose .box-cards { background: none; border: 0; }
 
-/* ---------- Worlds: Techno Home / PlayTech / TechHigh ---------- */
+/* ---------- Worlds: Watt's Home / Couch Co-op / Swipe Street ---------- */
 .w-home     { --w: #c2610c; --ws: #fdebd9; --w1: #ff9a3c; --w2: #ffd25c; --wink: #7a3a05; }
 .w-play     { --w: #c8324a; --ws: #fde3e6; --w1: #ee4f68; --w2: #ffb35c; --wink: #7d1527; }
 .w-techhigh { --w: #6b46d8; --ws: #ece6fd; --w1: #9a63e8; --w2: #ffb08a; --wink: #3d2394; }
@@ -520,3 +520,49 @@ main:has(.world-hero.w-techhigh) .type-chips, main:has(.world-head.w-techhigh) .
   .world-pill { padding: .35rem .3rem; font-size: .84rem; }
   .world-pill svg { display: none; }
 }
+
+/* ---------- Homepage gateway: three full-height world tiles ---------- */
+.site-header-min { padding-block: .6rem; }
+.topbar-min { display: flex; align-items: center; gap: .75rem 1.25rem; flex-wrap: wrap; padding-block-end: 0; }
+.topbar-min .world-nav { flex: 1 1 360px; max-inline-size: 620px; margin-inline: auto; }
+.topbar-min .header-tools { margin-inline-start: 0; }
+.gateway-main { padding: 0 clamp(.5rem, 1.5vw, 1rem) clamp(.5rem, 1.5vw, 1rem); }
+.gate-tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.5rem, 1.2vw, .9rem);
+  block-size: calc(100vh - 86px); block-size: calc(100svh - 86px); min-block-size: 460px; }
+.gate-tiles > li { display: flex; min-block-size: 0; }
+.gate-tile { position: relative; display: block; inline-size: 100%; border-radius: 22px; overflow: hidden; isolation: isolate; text-decoration: none; color: #fff;
+  box-shadow: 0 2px 6px rgb(30 45 70 / .12), 0 18px 40px rgb(30 45 70 / .18); }
+.gate-media, .gate-media img { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; }
+.gate-media img { object-fit: cover; object-position: center 45%; transition: transform .6s cubic-bezier(.2,.7,.2,1), filter .4s; }
+.gate-tile::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, rgb(0 0 0 / 0) 35%, rgb(10 12 25 / .35) 60%, color-mix(in srgb, var(--wink) 82%, #000) 100%); transition: opacity .3s; }
+.gate-text { position: absolute; z-index: 2; inset-inline: 0; inset-block-end: 0; padding: clamp(1rem, 2.4vw, 2rem); display: grid; gap: .35rem; }
+.gate-text strong { font-family: var(--font-head); font-size: clamp(2.1rem, 4.2vw, 3.6rem); font-weight: 800; line-height: 1.02; letter-spacing: -.01em; text-shadow: 0 2px 18px rgb(0 0 0 / .45); }
+[dir="rtl"] .gate-text strong { letter-spacing: 0; }
+.gate-text small { justify-self: start; font-size: .95rem; font-weight: 700; padding: .25rem .8rem; border-radius: 999px; background: rgb(255 255 255 / .18); border: 1px solid rgb(255 255 255 / .35); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.gate-text strong::after { content: ""; display: block; inline-size: 2.2em; block-size: 5px; border-radius: 3px; margin-block-start: .45rem; background: linear-gradient(90deg, var(--w2), var(--w1)); transition: inline-size .35s; }
+.gate-tile:hover .gate-media img, .gate-tile:focus-visible .gate-media img { transform: scale(1.05); filter: saturate(1.12); }
+.gate-tile:hover .gate-text strong::after, .gate-tile:focus-visible .gate-text strong::after { inline-size: 4em; }
+.gate-tile:focus-visible { outline: 4px solid var(--w1); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  .gate-media img, .gate-text strong::after { transition: none; }
+  .gate-tile:hover .gate-media img, .gate-tile:focus-visible .gate-media img { transform: none; }
+}
+@media (max-width: 860px) {
+  .topbar-min .brand { font-size: 1.15rem; }
+  .topbar-min .world-nav { order: 3; flex-basis: 100%; max-inline-size: none; }
+  .topbar-min .header-tools { margin-inline-start: auto; }
+  .gate-tiles { grid-template-columns: 1fr; block-size: auto; min-block-size: 0; }
+  .gate-tile { aspect-ratio: 4 / 3.1; min-block-size: 240px; }
+  .gate-text strong { font-size: clamp(2rem, 10vw, 2.8rem); }
+}
+/* world page hero uses the same scenes */
+.world-hero-media { aspect-ratio: 4 / 3; }
+.world-hero-media img { object-position: center 50%; }
+/* gateway in GTA VI mode */
+[data-gta="on"] .gate-tile { box-shadow: 0 0 0 1px rgb(255 79 163 / .55), 0 0 34px rgb(255 79 163 / .25); }
+[data-gta="on"] .gate-tile::after { background: linear-gradient(180deg, rgb(255 79 163 / .08) 0%, rgb(26 11 46 / 0) 35%, rgb(42 15 61 / .55) 62%, #1a0b2e 100%); }
+[data-gta="on"] .gate-text strong { font-family: var(--font-head); font-weight: 400; text-transform: uppercase; background: var(--gta-sunset); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: none; filter: drop-shadow(0 2px 10px rgb(255 79 163 / .45)); }
+[data-gta="on"] .gate-text strong::after { background: var(--gta-sunset); }
+[data-gta="on"] .gate-text small { background: rgb(26 11 46 / .55); border-color: rgb(255 179 71 / .5); color: #ffd6e8; }
+[data-gta="on"] .gate-tile:focus-visible { outline-color: #ffb347; }
