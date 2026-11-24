@@ -3,6 +3,8 @@ title: "Where the Seeds Fall review: three hours of jumping down, and none of it
 date: 2026-11-13
 slug: where-the-seeds-fall-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "CygamesEdge's first game flips the rage-climbing genre on its head: you climb down a giant tree, fight the wind and gravity, and protect a child everyone fears. At ₪39.99 on Steam ($9.99), it's a great evening, just too short."
 image: img/posts/where-the-seeds-fall-beam.webp
 image_alt: "A figure in a yellow scarf stands at the end of a broken stone beam jutting from a cliff, above an abyss of blue clouds and a flock of white birds"

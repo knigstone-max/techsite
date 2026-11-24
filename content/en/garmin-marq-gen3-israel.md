@@ -3,6 +3,8 @@ title: "Garmin MARQ Gen 3 in Israel: a titanium watch with maps and satellite me
 date: 2026-10-30
 slug: garmin-marq-gen3-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "The third generation of Garmin's luxury line comes in six models, including a new Diver edition. In Israel it starts at ₪8,999 (about $2,890). Here's what that money buys and what to check before buying locally."
 image: img/posts/garmin-marq-gen3-family.webp
 image_alt: "Six Garmin MARQ Gen 3 watches in a row, each with a different strap and dial: black, brown, green, blue, black-gold and blue-red"

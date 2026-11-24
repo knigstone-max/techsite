@@ -3,6 +3,8 @@ title: "OPPO Find X10 Pro Max lands in Israel at ₪6,499, with a launch bundle 
 date: 2026-10-29
 slug: oppo-find-x10-pro-max-israel-price-launch
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Importer Ronlight is selling OPPO's flagship for ₪6,499 (about $2,078) with 512GB. Here's what the launch bundle includes, and why you should check the battery on the box."
 image: img/posts/oppo-find-x10-series.webp
 image_alt: "The backs of a light blue OPPO Find X10 and a white Find X10 Pro Max next to the text Find X10 Series"

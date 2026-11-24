@@ -3,6 +3,8 @@ title: "Sonos Beam Ultra review: real Atmos in a compact bar, for ₪2,899"
 date: 2026-11-08
 slug: sonos-beam-ultra-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "Sonos took the Beam, added four drivers including two that fire at the ceiling, and ended up with a 7.1.2 soundbar that still fits under most TVs. I went through the specs, the price at Bug and what your setup needs for it to actually deliver."
 image: img/posts/sonos-beam-ultra-under-tv.webp
 image_alt: "A white Sonos Beam Ultra soundbar on a wooden sideboard under a large TV in a bright living room with a plant"

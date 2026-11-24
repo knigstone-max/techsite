@@ -3,6 +3,8 @@ title: "LG StanbyME 2 Max lands in Israel: a 32-inch screen on wheels, with a ba
 date: 2026-11-05
 slug: lg-stanbyme-2-max-israel
 category: smartphones-gadgets
+world: home
+type: news
 excerpt: "LG's roll-around screen grows to 32 inches and 4K, with a battery good for up to 4.5 hours of video. There's no official Israeli price yet, but around ₪4,500 is the going estimate. Here's what you get and who it suits."
 image: img/posts/lg-stanbyme-2-max-patio.webp
 image_alt: "A white LG StanbyME 2 Max screen on its tall stand on a covered patio with wooden sofas, showing a boat on a green river"

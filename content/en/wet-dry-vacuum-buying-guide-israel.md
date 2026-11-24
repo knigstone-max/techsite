@@ -3,6 +3,8 @@ title: "Choosing a wet-dry vacuum for an Israeli home: what matters and which mo
 date: 2026-11-18
 slug: wet-dry-vacuum-buying-guide-israel
 category: home-appliances
+world: home
+type: recommendations
 excerpt: "We read Israeli and international tests plus owner ratings to work out what matters in a wet-dry vacuum: self-cleaning with drying, edges, weight, real battery life, hair, sticky messes and warranty. The balanced pick is the Roborock F25 Ace Pro at ₪1,190 (about $366), and the best value is the Xiaomi W30 Pro at ₪1,074 (about $331)."
 image: img/posts/wet-dry-vacuum-guide-hero.webp
 image_alt: "Black Roborock F25 Ace Pro cordless wet-dry vacuum shown at three angles down to fully flat, with a bottle of cleaning solution, a filter, a brush and a phone running the app"

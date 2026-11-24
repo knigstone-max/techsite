@@ -3,6 +3,8 @@ title: "What IFA 2026 left behind, and the trade-show calendar to March"
 date: 2026-10-01
 slug: ifa-2026-recap-ces-mwc-2027
 category: tech-news
+world: home
+type: news
 excerpt: "Four trends we saw in almost every Berlin booth, the dates for the next CES and MWC, and a note on New-Tech, Israel's show that moved to summer."
 source_links:
   - "https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html"

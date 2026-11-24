@@ -3,6 +3,8 @@ title: "קטלוג הרכבים של GTA VI: כל המכוניות, הסירות
 date: 2026-11-21
 slug: gta-6-vehicles-catalog
 category: gaming-lite
+world: play
+type: guides
 excerpt: "277 דגמי בסיס, אין סוכנות רכב, ורוב המכוניות נגנבות ואז נרשמות על שמכם. ריכזנו כאן כל רכב ש-Rockstar או לפחות שני מדריכים רציניים כבר נתנו לו שם: מכוניות לפי סוג, הבונוסים של ה-Ultimate, סירות, מטוסים ומסוקים, ואיפה מוצאים אותם."
 image: img/posts/gta6-veh-cheetah.webp
 image_alt: "Grotti Cheetah לבנה משנת 95 עם פסים אדומים, חונה מול חניון קומות ורוד עם דקלים בוייס סיטי"

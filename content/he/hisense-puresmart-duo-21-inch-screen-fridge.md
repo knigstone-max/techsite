@@ -3,6 +3,8 @@ title: "המקרר של Hisense עם מסך של 21 אינץ': שלוש מצלמ
 date: 2026-11-17
 slug: hisense-puresmart-duo-21-inch-screen-fridge
 category: home-appliances
+world: home
+type: news
 excerpt: "סדרת PureSmart Duo החדשה של Hisense כבר נמכרת בבריטניה: מקרר ארבע דלתות של 611 ליטר עם מסך מגע ענק, מצלמות שעוקבות אחרי האוכל ומתקן קרח ומים בדלת. מה הוא יודע לעשות, מה עוד לא ידוע, ומה זה אומר למי שמחפש מקרר בישראל."
 image: img/posts/hisense-puresmart-duo-hero.webp
 image_alt: "מקרר Hisense PureSmart Duo בגימור נירוסטה שחורה עם ארבע דלתות, מסך מגע גדול בדלת הימנית ומתקן מים בדלת השמאלית, לצד צילומי מסך של ממשק המקרר"

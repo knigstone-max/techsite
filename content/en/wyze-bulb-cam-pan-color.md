@@ -3,6 +3,8 @@ title: "Wyze Bulb Cam Pan Color puts a 2.5K pan-tilt camera inside a color smart
 date: 2026-10-23
 slug: wyze-bulb-cam-pan-color
 category: home-appliances
+world: home
+type: news
 excerpt: "The $99.98 device screws into a standard E26 socket, pans 360 degrees, records to a microSD card without a subscription and doubles as an 1100-lumen color light."
 image: img/posts/wyze-bulb-cam-pan-color.webp
 image_alt: "Wyze Bulb Cam Pan Color, a white bulb-shaped light with a camera head hanging below it, against a rainbow glow"

@@ -3,6 +3,8 @@ title: "המשקפיים החכמים של סמסונג יוצאים באמצע 
 date: 2026-11-03
 slug: samsung-intelligent-eyewear-december-launch
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "לפי דיווח מקוריאה, Samsung Intelligent Eyewear יושקו באמצע דצמבר בקוריאה ובארה\"ב, ואירופה תקבל אותם רק ב-2027. אין עדיין מחיר, ואין מילה על ישראל."
 image: img/posts/samsung-intelligent-eyewear-gentle-monster.webp
 image_alt: "משקפי Samsung Intelligent Eyewear במסגרת שחורה מבריקה של Gentle Monster, עם מצלמה קטנה בפינת המסגרת"

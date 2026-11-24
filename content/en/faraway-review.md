@@ -3,6 +3,8 @@ title: "Faraway review: a shooting star, one button and 16 years in the making"
 date: 2026-11-08
 slug: faraway-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "Steph Thirion, the creator of Eliss, spent close to two decades building an arcade game about linking stars into constellations. It launched Nov 5 on Switch, Switch 2, PS5, Xbox and PC. On the Israeli PS Store it costs ₪40, or ₪32 with the launch discount."
 image: img/posts/faraway-red-constellation.webp
 image_alt: "Screenshot from Faraway: a dark circle ringed in glowing red, with a constellation of stars linked by yellow lines and score markers"

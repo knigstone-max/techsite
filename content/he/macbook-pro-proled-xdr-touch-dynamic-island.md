@@ -3,6 +3,8 @@ title: "אחרי שנים של \"לא\": אפל מכניסה מסך מגע ו-Dy
 date: 2026-10-29
 slug: macbook-pro-proled-xdr-touch-dynamic-island
 category: tech-news
+world: techhigh
+type: news
 excerpt: "המקבוק פרו החדש מקבל מסך OLED כפול שכבות, מגע ראשון במק, אי דינמי ומשקל נמוך יותר. בארה\"ב הוא מתחיל ב-2,899 דולר (כ-9,068 ₪), ובישראל עוד אין מחיר."
 image: img/posts/macbook-pro-proled-xdr-lineup.webp
 image_alt: "שני מחשבי MacBook Pro פתוחים, בגודל 14 ו-16 אינץ', על רקע שחור, עם אי דינמי בראש המסך"

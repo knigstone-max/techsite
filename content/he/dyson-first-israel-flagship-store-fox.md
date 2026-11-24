@@ -3,6 +3,8 @@ title: "דייסון פתחה חנות דגל ראשונה בישראל, ובד�
 date: 2026-10-31
 slug: dyson-first-israel-flagship-store-fox
 category: home-appliances
+world: home
+type: news
 excerpt: "חנות הדגל הראשונה של דייסון בארץ נפתחה בביג פאשן גלילות, תחת היבואנית החדשה קבוצת פוקס. מה יש בחנות, מה אמר המהנדס שמוביל את הרובוטים של דייסון, ומה המוצר הבא שמגיע לישראל."
 image: img/posts/dyson-spot-scrub-ai-israel.webp
 image_alt: "שואב הרובוט Dyson Spot+Scrub Ai בצבע שחור על רצפה בהירה, מאיר באור ירוק על כתם כדי לזהות אותו"

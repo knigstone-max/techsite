@@ -109,3 +109,8 @@ dialog.cms-dialog h2 { margin-block: 0 .5rem; font-size: 1.3rem; }
   .users-table tr { display: grid; padding-block: .5rem; border-block-end: 1px solid var(--line); }
   .users-table td { border: 0; padding: .2rem 0; }
 }
+/* worlds */
+.pill.w-home { background: #fdebd9; color: #9a4a0f; border-color: #f6cfa8; }
+.pill.w-play { background: #fde3e6; color: #a8243a; border-color: #f5b9c2; }
+.pill.w-techhigh { background: #ece6fd; color: #5134b8; border-color: #cfc2f7; }
+.world-hint { display: block; margin: -.35rem 0 .9rem; font-size: .8rem; }

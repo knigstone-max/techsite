@@ -3,6 +3,8 @@ title: "דרים מביאה לישראל את מכונות הקפה הראשונ
 date: 2026-11-04
 slug: dreame-ecceluxe-coffee-machines-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "יצרנית שואבי הרובוט מוכרת עכשיו כאן מכונות אספרסו עם מטחנה. ה-Ecceluxe Master FCM60 עולה 2,110 ₪ ומכינה גם קולד ברו, וה-Slim FCM30 ברוחב 18 ס\"מ בלבד עולה 1,686 ₪. מה ההבדלים, ולמי מתאימה כל אחת."
 image: img/posts/dreame-ecceluxe-master-and-slim.webp
 image_alt: "שתי מכונות קפה של דרים בגווני שמנת ולבן: ה-Master הרחבה עם כוס מתחת לפיה, וה-Slim הצרה עם מיכל חלב לידה"

@@ -3,6 +3,8 @@ title: "Xiaomi 18 Pro עם המסך האחורי יוצא מסין: השקה ע�
 date: 2026-11-10
 slug: xiaomi-18-pro-global-launch-paris
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "שיאומי אישרה שסדרת Xiaomi 18 Pro, עם מסך קטן בגב ליד המצלמות ושתי מצלמות 200 מגה-פיקסל של לייקה, תושק עולמית בשבוע הבא. בישראל עוד אין תאריך ואין מחיר. ריכזנו מה ידוע, ומה המחירים האירופיים שדלפו אומרים על מה שיגיע לכאן."
 image: img/posts/xiaomi-18-pro-max-rear-display.webp
 image_alt: "גב של Xiaomi 18 Pro Max בצבע אדום, עם שתי מצלמות ומסך קטן מואר באדום שמציג שעון, וכיתוב LEICA מתחת"

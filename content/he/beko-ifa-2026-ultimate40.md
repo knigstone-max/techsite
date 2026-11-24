@@ -3,6 +3,8 @@ title: "Beko: כביסה מלאה ב-40 דקות, תנור שמנקה את עצ�
 date: 2026-09-12
 slug: beko-ifa-2026-ultimate40
 category: home-appliances
+world: home
+type: news
 excerpt: "קבוצת Beko, שמחזיקה 22 מותגים ובהם Whirlpool, Hotpoint ו-Grundig, הציגה מספרים במקום סיסמאות. בדקנו מה מאחורי כל אחד מהם."
 image: img/posts/beko-ultimatewash-ifa-2026.webp
 image_alt: "מכונת כביסה של Beko עם טכנולוגיית UltimateWash בחדר כביסה"

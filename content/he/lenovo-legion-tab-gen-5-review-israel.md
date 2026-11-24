@@ -3,6 +3,8 @@ title: "ביקורת Lenovo Legion Tab Gen 5: קונסולה בגודל של ס�
 date: 2026-11-09
 slug: lenovo-legion-tab-gen-5-review-israel
 category: reviews
+world: play
+type: reviews
 excerpt: "טאבלט של 8.8 אינץ' עם Snapdragon 8 Elite Gen 5, מסך 3K ב-165Hz, סוללה של 9,000mAh ושני חיבורי USB-C. בארץ נמכרת רק תצורת 12GB/256GB, ב-2,889 ₪ בבזק סטור. עברתי על המפרט, על מה שנמכר כאן ועל מה שכדאי לדעת לפני שקונים."
 image: img/posts/legion-tab-gen-5.webp
 image_alt: "טאבלט Lenovo Legion Tab Gen 5 שחור, מבט מלפנים עם מסך צבעוני ומבט מאחור עם מודול מצלמה וטבעת תאורה סגולה"

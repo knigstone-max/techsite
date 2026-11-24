@@ -3,6 +3,8 @@ title: "שואבי הרובוט R1 ו-R2 Nurovi של דייסון יוצאים �
 date: 2026-10-21
 slug: dyson-r1-r2-nurovi-robot-vacuums-italy
 category: home-appliances
+world: home
+type: news
 excerpt: "R1 Nurovi Dry רק שואב, R2 Nurovi Wash+Dry גם שוטף עם רפידות בצורת משולש, ושניהם מתרוקנים לתחנה בלי שקית שמכילה אבק של עד 90 יום."
 image: img/posts/dyson-r2-nurovi-wash-dry-dock.webp
 image_alt: "שואב הרובוט Dyson R2 Nurovi Wash+Dry חונה בתחנה הפתוחה שלו, ורואים את מכלי המים ואת מכל האבק הציקלוני"

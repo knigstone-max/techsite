@@ -3,6 +3,8 @@ title: "Sony MDR-3R: the 1979 Walkman headphones are back with USB-C, at ₪219"
 date: 2026-11-08
 slug: sony-mdr-3r-usb-c-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Sony is reviving the headphones that shipped with the first Walkman, now with a direct USB-C plug, an in-line mic and remote. They are due in Israel during November at ₪219, with a Stranger Things Edition at ₪249."
 image: img/posts/sony-mdr-3r-blue-orange.webp
 image_alt: "Two pairs of silver Sony MDR-3R headphones, one with blue ear pads and one with orange, next to the MDR-3R logo"

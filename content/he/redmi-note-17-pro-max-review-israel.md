@@ -3,6 +3,8 @@ title: "ביקורת Redmi Note 17 Pro Max: סוללה של 10,000 מיליאמ�
 date: 2026-11-02
 slug: redmi-note-17-pro-max-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "הדגם הכי גדול בסדרת Redmi Note החדשה מביא סוללה ענקית, עמידות IP69 ומסך של 3,500 ניט. בדקתי מה מקבלים ב-2,199 שקל, איפה הוא מתפשר, ולמי הוא באמת מתאים."
 image: img/posts/redmi-note-17-pro-max-colors.webp
 image_alt: "שלושה טלפונים Redmi Note 17 Pro Max מאחור, בשחור, לבן וסגול, עם אי מצלמות עגול בפינה העליונה"

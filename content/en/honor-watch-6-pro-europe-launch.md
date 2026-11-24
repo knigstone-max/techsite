@@ -3,6 +3,8 @@ title: "Honor Watch 6 Pro goes on sale in Europe: a 5,500-nit screen, up to 18 d
 date: 2026-11-20
 slug: honor-watch-6-pro-europe-launch
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Honor's round flagship watch, launched in China in September, is now on sale in Europe at a €279 launch price (about ₪1,006 or $307) through the end of the year. It works with Android and iPhone, and one medical feature is still waiting for approval. Nothing has been announced for Israel."
 image: img/posts/honor-watch-6-pro-hero.webp
 image_alt: "Three Honor Watch 6 Pro watches: black with a rubber strap, silver with a brown leather strap and brown bezel, and silver with a metal bracelet"

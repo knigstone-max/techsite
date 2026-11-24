@@ -3,6 +3,8 @@ title: "From December 1, evening power costs 2.5 times more, weekends included: 
 date: 2026-11-16
 slug: winter-tou-electricity-peak-hours-appliances
 category: home-appliances
+world: home
+type: news
 excerpt: "Israeli homes on the time-of-use tariff enter winter pricing in two weeks: from 17:00 to 22:00, a kWh will cost 114.70 agorot (about 36 cents), seven days a week, versus 46.63 agorot the rest of the time. Here's what that means for your dryer, dishwasher, water heater and space heater."
 image: img/posts/smart-electricity-meter.webp
 image_alt: "A digital smart electricity meter with an LCD showing a kWh reading, in a clear housing"

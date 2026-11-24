@@ -3,6 +3,8 @@ title: "Roborock F25 Pro Turbo review: a wet-dry vacuum without steam, with a sc
 date: 2026-11-22
 slug: roborock-f25-pro-turbo-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "It launched in Israel at ₪2,190 (about $658), and today it sells for ₪1,529 to ₪1,690 (about $460 to $508). No steam, but a trigger that boosts water, suction and roller speed on demand, 4.7 kg and a dock that dries with hot air. I went through the details and lined it up against its rivals."
 image: img/posts/roborock-f25-pro-turbo-hero.webp
 image_alt: "A dark Roborock F25 Pro Turbo cordless wet-dry vacuum standing in its charging and self-cleaning dock"

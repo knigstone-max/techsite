@@ -3,6 +3,8 @@ title: "ביקורת VOID/BREAKER: להפיל בניין על הרובוטים, 
 date: 2026-11-09
 slug: void-breaker-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "משחק יריות רוגלייט שפיתח אדם אחד, היוצר של The Entropy Centre. נשק אחד לכל ריצה, מודים שהופכים אותו למשהו מטורף, וזירות שאפשר להרוס עד היסוד. יצא ב-4 בנובמבר ל-PS5, ל-Xbox ול-PC, עולה 107 ₪ ב-PS Store ישראל, וכלול ב-Game Pass."
 image: img/posts/void-breaker-key-art.webp
 image_alt: "איור רשמי של VOID/BREAKER: לוחם בקסדה וחליפה לבנה-אדומה יורה ברובה מול רקע אדום זוהר, מוקף ברובוטים שחורים ומשוננים"

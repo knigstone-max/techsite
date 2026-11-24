@@ -3,6 +3,8 @@ title: "שיאומי השיקה מכונת כביסה עם שלושה תופים
 date: 2026-11-11
 slug: xiaomi-mijia-tri-drum-washer-dryer-pro
 category: home-appliances
+world: home
+type: news
 excerpt: "Mijia Tri-Drum Washer-Dryer Pro היא מכונת כביסה ומייבש עם תוף של 12.5 ק״ג ושני תופים קטנים של 1 ק״ג, כל אחד עם מים וניקוז משלו, והם עובדים במקביל. בהונג קונג היא עולה כ-3,626 ₪ במכירה מוקדמת. בישראל היא עוד לא הוכרזה, אבל הרעיון שווה הכרות."
 image: img/posts/xiaomi-mijia-tri-drum-washer-dryer-pro.webp
 image_alt: "מכונת כביסה גבוהה בצבע אפור כהה עם תוף גדול למטה ושני תופים עגולים קטנים למעלה, ליד מדף עץ בחדר מואר"

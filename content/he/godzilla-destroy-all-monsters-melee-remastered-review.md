@@ -3,6 +3,8 @@ title: "ביקורת Godzilla: Destroy All Monsters Melee Remastered: ההרס �
 date: 2026-11-03
 slug: godzilla-destroy-all-monsters-melee-remastered-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "משחק הקרבות של גודזילה מ-2002 חוזר בגרסה מחודשת ב-Unreal Engine 5, עם 12 מפלצות, משחק אונליין ומחיר של 29.99 דולר. כיף גדול על הספה עם חברים, פחות כשמשחקים לבד."
 image: img/posts/godzilla-dam-melee-remastered-key-art.webp
 image_alt: "איור של גודזילה האפור עם סנפירי גב זוהרים בכחול נותן אגרוף למכאגודזילה הכסוף בין גורדי שחקים, עם מסוקים ועב\"ם ברקע"

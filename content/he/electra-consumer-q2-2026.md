@@ -3,6 +3,8 @@ title: "אלקטרה מוצרי צריכה: מחסני חשמל ממשיכים �
 date: 2026-08-21
 slug: electra-consumer-q2-2026
 category: tech-news
+world: home
+type: news
 excerpt: "הכנסות של 1.8 מיליארד ₪ (כ-584 מיליון דולר) ברבעון, רווח נקי של 30 מיליון ₪ ודיבידנד של 45 מיליון ₪. מה הדוחות מספרים על שוק מוצרי החשמל."
 source_links:
   - "https://www.funder.co.il/article/208009"

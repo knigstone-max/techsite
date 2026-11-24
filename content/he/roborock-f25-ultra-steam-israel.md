@@ -3,6 +3,8 @@ title: "Roborock F25 Ultra Steam מגיע לישראל ב-3,290 ₪: קיטור 
 date: 2026-11-06
 slug: roborock-f25-ultra-steam-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "אחרי הרובוט Saros 20, Roborock מביאה לישראל גם את השואבים השוטפים האלחוטיים מסדרת F25. הדגל הוא F25 Ultra Steam Gen 2 עם קיטור עד 180°C ב-3,290 ₪, ומתחתיו F25 Pro Turbo ב-2,190 ₪."
 image: img/posts/roborock-f25-ultra-steam.webp
 image_alt: "שואב שוטף אלחוטי Roborock F25 Ultra Steam Gen 2 באפור כהה, עם ערכת אביזרים וסמארטפון שמציג את האפליקציה"

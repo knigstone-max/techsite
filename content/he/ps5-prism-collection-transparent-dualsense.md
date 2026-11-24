@@ -3,6 +3,8 @@ title: "השלטים השקופים חוזרים: סוני חושפת את Prism
 date: 2026-10-29
 slug: ps5-prism-collection-transparent-dualsense
 category: gaming-lite
+world: play
+type: news
 excerpt: "בקרי DualSense וכיסויים לקונסולה בפלסטיק שקוף ומבריק, בכתום, ירוק ואפור. ההזמנות המוקדמות נפתחות ב-10 בנובמבר, ההשקה ב-4 בפברואר 2027, ובקר עולה 84.99 דולר (כ-266 ₪)."
 image: img/posts/ps5-prism-collection.webp
 image_alt: "שלוש קונסולות PS5 עם כיסויים שקופים באפור, כתום וירוק, ולצד כל אחת בקר DualSense שקוף באותו צבע, על רקע אורות צבעוניים"

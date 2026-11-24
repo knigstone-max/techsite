@@ -3,6 +3,8 @@ title: "Godzilla: Destroy All Monsters Melee Remastered review: the wrecking is 
 date: 2026-11-03
 slug: godzilla-destroy-all-monsters-melee-remastered-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "The 2002 Godzilla brawler returns, rebuilt in Unreal Engine 5 with 12 monsters, online play and a $29.99 price. A blast on the couch with friends, much less so on your own."
 image: img/posts/godzilla-dam-melee-remastered-key-art.webp
 image_alt: "Illustration of grey Godzilla with glowing blue dorsal fins punching a silver Mechagodzilla between skyscrapers, with helicopters and a UFO in the sky"

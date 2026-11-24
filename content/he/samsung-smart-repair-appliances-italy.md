@@ -3,6 +3,8 @@ title: "סמסונג מרחיבה את Smart Repair למוצרי חשמל בית
 date: 2026-10-23
 slug: samsung-smart-repair-appliances-italy
 category: home-appliances
+world: home
+type: news
 excerpt: "בעלים של מכונות כביסה, מקררים, תנורים ומוצרים נוספים של סמסונג שיצאו מהאחריות יכולים לקנות תיקון ב-Samsung.com ולקבל טכנאי הביתה, בדרך כלל תוך חמישה ימי עבודה."
 image: img/posts/samsung-smart-repair-appliances-crop.webp
 image_alt: "מקרר, תנור ביל-אין ומכונת כביסה של סמסונג עומדים מאחורי הכיתוב Smart Repair"

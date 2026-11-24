@@ -3,6 +3,8 @@ title: "GTA VI weapons catalog: all 66 weapons, prices and where to buy them"
 date: 2026-11-21
 slug: gta-6-weapons-catalog
 category: gaming-lite
+world: play
+type: guides
 excerpt: "53 guns, 9 melee weapons and 4 explosives. Every GTA VI weapon with a known name, what it costs at Ammu-Nation, what you need to unlock it, where to find free guns, and what the Ultimate Edition adds."
 image: img/posts/gta6-weap-morgan.webp
 image_alt: "A pair of Hawk & Little Morgan revolvers on a table: one with a scope, the other with a gold palm-tree grip"

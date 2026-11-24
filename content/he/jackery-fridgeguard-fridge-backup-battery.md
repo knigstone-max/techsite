@@ -3,6 +3,8 @@ title: "Jackery FridgeGuard: סוללת גיבוי שיושבת על המקרר 
 date: 2026-11-14
 slug: jackery-fridgeguard-fridge-backup-battery
 category: home-appliances
+world: home
+type: news
 excerpt: "ג'קרי משיקה בקנדה סוללה דקה במיוחד שמתחברת בין השקע למקרר ונכנסת לפעולה תוך 10 אלפיות שנייה. המחיר שם: 699.99 דולר קנדי, כ-1,571 ₪ (כ-491 דולר). לישראל היא עוד לא הוכרזה."
 image: img/posts/jackery-fridgeguard-on-fridge.webp
 image_alt: "גבר לוחץ על כפתור ביחידה כסופה ודקה שמונחת על גג מקרר כהה עם שתי דלתות"

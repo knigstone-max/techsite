@@ -3,6 +3,8 @@ title: "Zelda: Ocarina of Time on Switch 2: the classic gets the remake it deser
 date: 2026-11-04
 slug: zelda-ocarina-of-time-switch-2-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "Nintendo is rebuilding the 1998 Zelda for Switch 2, with new visuals, full voice acting, a jump button and a free camera. It's out tomorrow, and in Israel it costs about ₪315. Here's what's changed, and who it's for."
 image: img/posts/zelda-ocarina-of-time-switch-2-key-art.webp
 image_alt: "Official key art for The Legend of Zelda: Ocarina of Time for Nintendo Switch 2, with young Link holding the ocarina on a sunlit forest path, the fairy Navi beside him and the game's logo with the Master Sword and Hylian Shield"

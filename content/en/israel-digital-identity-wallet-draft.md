@@ -3,6 +3,8 @@ title: "Your ID card and driving licence on your phone: Israel publishes a digit
 date: 2026-11-11
 slug: israel-digital-identity-wallet-draft
 category: tech-news
+world: techhigh
+type: news
 excerpt: "The National Cyber Directorate and the National Digital Agency published a draft digital identity strategy: a national phone wallet for your ID card and driving licence, and one login for banks, insurers and health organizations instead of sending everyone a photo of your ID. Public comments close on November 30."
 image: img/posts/israeli-biometric-id-card-specimen.webp
 image_alt: "A specimen Israeli biometric ID card with a chip, a blurred photo, name, ID number and dates in Hebrew and Arabic, stamped 'sample'"

@@ -3,6 +3,8 @@ title: "INOKIM נכנסת למחסני חשמל ולשקם: הקורקינט ה�
 date: 2026-09-28
 slug: inokim-electra-stores
 category: tech-news
+world: techhigh
+type: news
 excerpt: "מותג הקורקינטים שנולד כ-MyWay ב-2009 יימכר בכ-200 סניפים של אלקטרה. 7,500 קורקינטים בשנה, כרבע מהשוק, ותו תקן ישראלי שאין לאף מתחרה."
 source_links:
   - "https://www.ice.co.il/consumerism/news/article/1131276"

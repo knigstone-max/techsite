@@ -3,6 +3,8 @@ title: "Galaxy S26 FE review: a new chip, and everything else from last year"
 date: 2026-11-14
 slug: galaxy-s26-fe-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "Samsung's FE finally gets a faster processor and seven years of updates, but the cameras, battery and screen barely moved, and the USB port actually got worse. At ₪2,299 (about $719) it only makes sense on sale."
 image: img/posts/galaxy-s26-fe-mint.webp
 image_alt: "A mint-green Galaxy S26 FE at an angle, with three rear cameras and a photo of a woman in sunglasses on the screen"

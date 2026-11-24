@@ -3,6 +3,8 @@ title: "ביקורת Where the Seeds Fall: שלוש שעות של קפיצות �
 date: 2026-11-13
 slug: where-the-seeds-fall-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "המשחק הראשון של CygamesEdge הופך את משחקי הטיפוס על הראש: יורדים מעץ ענק, נלחמים ברוח ובכוח המשיכה, ומגנים על ילדה שכולם מפחדים ממנה. ב-39.99 ₪ בסטים (9.99 דולר) זה ערב אחד מצוין, רק קצר מדי."
 image: img/posts/where-the-seeds-fall-beam.webp
 image_alt: "דמות עם צעיף צהוב עומדת על קצה קורת אבן שבורה שבולטת מצוק, מעל תהום של עננים כחולים ולהקת ציפורים לבנות"

@@ -3,6 +3,8 @@ title: "Xiaomi Clip: 5.5-gram clip-on earbuds with Apple Find My and LHDC, for �
 date: 2026-11-22
 slug: xiaomi-clip-open-ear-earbuds
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Xiaomi's first clip-on earbuds under its own name went global alongside the Xiaomi 18 Pro. They cost €149.99 in Spain (about ₪547, or $165) and £129.99 in the UK. What they offer, how they compare with the OnePlus Buds Clip sold here for ₪499, and what's still unknown for Israel."
 image: img/posts/xiaomi-clip-hero.webp
 image_alt: "A pair of Xiaomi Clip earbuds in Sand Gold, with a curved metal bridge and a partly transparent speaker sphere"

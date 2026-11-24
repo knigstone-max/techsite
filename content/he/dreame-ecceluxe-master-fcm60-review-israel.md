@@ -3,6 +3,8 @@ title: "ביקורת Dreame Ecceluxe Master FCM60: אספרסו טוב ו-Cold B
 date: 2026-11-11
 slug: dreame-ecceluxe-master-fcm60-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "מכונת הקפה הראשונה של Dreame, מהפולים לכוס, עם מטחנת פלדה, 19 בר, מכל חלב של חצי ליטר ותוכנית Cold Brew. באתר הרשמי בישראל היא עולה 2,110 ₪ במבצע. עברתי על המפרט, על המחירים כאן ובחו״ל ועל מה שהבדיקות שפורסמו מראות, והנה השורה התחתונה."
 image: img/posts/dreame-ecceluxe-master-fcm60.webp
 image_alt: "מכונת קפה אוטומטית בצבע שמנת של Dreame במבט אלכסוני, עם מכל פולים כהה למעלה, לוח מגע שחור, פיית קפה כסופה ומכל חלב שקוף"

@@ -3,6 +3,8 @@ title: "טינקו מעלה את הקיטור ל-230 מעלות: שני שואב
 date: 2026-11-19
 slug: tineco-supersteam-3-230c-floor-washers
 category: tech-news
+world: home
+type: news
 excerpt: "Tineco השיקה את Floor One S9 Artist SuperSteam ו-S7 SuperSteam, עם קיטור של 230 מעלות משמונה פיות, יניקה של 30,000Pa וייבוש רולר באוויר חם. בישראל הם עוד לא נמכרים, אבל דגם הקיטור הנוכחי של החברה עולה כאן 2,950 ₪."
 image: img/posts/tineco-supersteam-hero.webp
 image_alt: "שני שואבים-שוטפים של Tineco: דגם S7 SuperSteam שחור עם גוף שקוף שבו נראית אש כתומה, ודגם S9 Artist SuperSteam ירוק כהה שמתיז קיטור מהראש על רצפה כחולה"

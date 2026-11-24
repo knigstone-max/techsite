@@ -3,6 +3,8 @@ title: "ביקורת Faraway: כוכב שביט, כפתור אחד ו-16 שנו�
 date: 2026-11-08
 slug: faraway-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "סטף טיריון, היוצר של Eliss, עבד לבד כמעט שני עשורים על משחק ארקייד שבו מחברים כוכבים לקבוצות כוכבים. יצא ב-5 בנובמבר ל-Switch, Switch 2, PS5, Xbox ו-PC. ב-PS Store ישראל הוא עולה 40 ₪, ובהנחת השקה 32 ₪."
 image: img/posts/faraway-red-constellation.webp
 image_alt: "מסך מתוך Faraway: עיגול כהה מוקף טבעת אדומה זוהרת, ובתוכו קבוצת כוכבים מחוברת בקווים צהובים עם ניקוד"

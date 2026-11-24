@@ -3,6 +3,8 @@ title: "Suspected Binance hack: withdrawals frozen and billions locked up. What 
 date: 2026-10-30
 slug: binance-hack-withdrawals-paused
 category: tech-news
+world: techhigh
+type: news
 excerpt: "The world's largest crypto exchange halted deposits and withdrawals after what looks like the biggest theft in crypto history, with estimates around $5.9 billion (about ₪18.4 billion). What we know, what we don't, and what to do if you hold an account."
 image: img/posts/binance-merch-commons.webp
 image_alt: "A black T-shirt with the yellow BINANCE logo and wordmark next to a yellow tote bag printed with the word BINANCE repeated"

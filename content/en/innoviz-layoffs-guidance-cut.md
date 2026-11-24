@@ -3,6 +3,8 @@ title: "Innoviz lays off about 20% of staff and cuts its revenue forecast by a t
 date: 2026-11-13
 slug: innoviz-layoffs-guidance-cut
 category: tech-news
+world: techhigh
+type: news
 excerpt: "The Rosh HaAyin lidar maker is cutting about 80 jobs, mostly in Israel, after a car customer pushed a program back a year. 2026 guidance fell to $44-46 million (about ₪140-147 million), and the company is pinning its hopes on defense."
 image: img/posts/lidar-point-cloud-street.webp
 image_alt: "A purple and orange lidar point cloud of a city intersection, showing buildings, trees, cars and crosswalks"

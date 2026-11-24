@@ -3,6 +3,8 @@ title: "ביקורת Nocturnal 2: חרב בוערת, עיר פרסית בחוש�
 date: 2026-11-17
 slug: nocturnal-2-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "ההמשך של Sunnyside Games השוויצרית הופך פלטפורמר קצר למטרוידווניה מלאה, שבנויה סביב רעיון אחד: לשמור על הלהבה בחרב. ב-32.99 ₪ ב-Steam בישראל (8.99 דולר בארה״ב) זה משחק יפהפה, מהיר וקצר, עם קרבות בוס מצוינים ולחימה שלא מתפתחת מספיק."
 image: img/posts/nocturnal-2-key-art.webp
 image_alt: "אמנות רשמית של Nocturnal 2: לוחם עם חרב בוערת עומד בין דמויות ענק כהות באולם עתיק מואר באש"

@@ -3,6 +3,8 @@ title: "אופו משיקה בעולם את Find X10 ו-Find X10 Pro Max, עם �
 date: 2026-10-22
 slug: oppo-find-x10-series-global-launch
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "ב-Pro Max יש חיישן של 200 מגה-פיקסל מאחורי כל שלוש העדשות האחוריות, בשני הדגמים סוללה של עד 8,000 מיליאמפר-שעה, והמכירות בעולם מתחילות בסוף אוקטובר."
 image: img/posts/oppo-find-x10-series-crop.webp
 image_position: "center 22%"

@@ -82,6 +82,15 @@ def to_row(path, status):
            "published_at": published_at}
     for k in FIELDS:
         row[k] = (meta.get(k) or None) if k != "excerpt" else (meta.get(k) or "")
+    # world (home / play / techhigh) + type (reviews / news / comparisons / recommendations / guides);
+    # set them in the frontmatter, otherwise build.py's rules pick them from category, slug and title
+    if meta.get("world") and meta["world"] not in build.WORLD_SLUGS:
+        sys.exit(f"{path.name}: unknown world {meta['world']!r}; use one of {build.WORLD_SLUGS}")
+    if meta.get("type") and meta["type"] not in build.TYPE_SLUGS:
+        sys.exit(f"{path.name}: unknown type {meta['type']!r}; use one of {build.TYPE_SLUGS}")
+    wt = dict(meta)
+    build.assign_world(wt)
+    row["world"], row["type"] = wt["world"], wt["type"]
     return row
 
 

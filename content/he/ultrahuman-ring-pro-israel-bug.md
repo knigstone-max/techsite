@@ -3,6 +3,8 @@ title: "טבעת Ultrahuman Ring PRO הגיעה לבאג: 1,499 ₪ בהשקה, 
 date: 2026-11-17
 slug: ultrahuman-ring-pro-israel-bug
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "רשת באג, היבואנית הרשמית, התחילה למכור את הטבעת החכמה של Ultrahuman ב-1,499 ₪ (כ-465 דולר) עד 2 בדצמבר, ואחר כך 1,799 ₪. בקופסה יש מארז טעינה שמאריך את הסוללה לעד 45 יום, ואין דמי מנוי. מה מקבלים, ומה כדאי לבדוק לפני שקונים."
 image: img/posts/ultrahuman-ring-pro-charging-case.webp
 image_alt: "טבעת Ultrahuman Ring PRO בגוון כסוף מונחת על מארז הטעינה שלה בגוון זהב, על רקע אפור בהיר"

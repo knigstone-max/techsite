@@ -3,6 +3,8 @@ title: "Gemini מדבר עכשיו עם נהגים ב-Google Maps על Apple Car
 date: 2026-10-22
 slug: gemini-google-maps-apple-carplay
 category: tech-news
+world: techhigh
+type: news
 excerpt: "כפתור Gemini ב-Google Maps על CarPlay עונה על שאלות מרובות שלבים ומדווח על בעיות תנועה בקול. זמין עכשיו בארה\"ב, והפריסה העולמית כבר התחילה."
 image: img/posts/carplay-vw-id4.webp
 image_alt: "מסך הבית של Apple CarPlay בתצוגה שבלוח המחוונים של פולקסווגן ID.4"

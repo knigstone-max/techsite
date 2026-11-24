@@ -3,6 +3,8 @@ title: "קטלוג הנשקים של GTA VI: כל 66 כלי הנשק, מחירי
 date: 2026-11-21
 slug: gta-6-weapons-catalog
 category: gaming-lite
+world: play
+type: guides
 excerpt: "53 כלי ירייה, 9 נשק קר ו-4 נפצים. ריכזנו את כל הנשקים של GTA VI ששמם ידוע, כמה כל אחד עולה ב-Ammu-Nation, מה צריך כדי לפתוח אותו, איפה יש נשק בחינם, ומה מקבלים בגרסת Ultimate."
 image: img/posts/gta6-weap-morgan.webp
 image_alt: "זוג אקדחי תוף Hawk & Little Morgan על שולחן: אחד עם כוונת, השני עם ידית מוזהבת וחריטת עצי דקל"

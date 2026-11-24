@@ -3,6 +3,8 @@ title: "ביקורת De'Longhi Rivelia Start: שני סוגי פולים, מכו
 date: 2026-10-31
 slug: delonghi-rivelia-start-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "מכונת האספרסו האוטומטית החדשה של דלונגי מגיעה עם שני מיכלי פולים שמחליפים בשנייה, עשרה משקאות וקולד ברו בפחות מחמש דקות. בכ-3,200 ₪ (כ-1,026 דולר), למי היא מתאימה ומתי עדיף לקנות את אחותה."
 image: img/posts/delonghi-rivelia-start.webp
 image_alt: "שתי ידיים מחליפות מיכל פולי קפה שקוף על מכונת האספרסו De'Longhi Rivelia Start הלבנה"

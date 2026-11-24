@@ -3,6 +3,8 @@ title: "ביקורת Roborock Saros 20 Flow Complete: רובוט שוטף שסו
 date: 2026-10-29
 slug: roborock-saros-20-flow-complete-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "רולר שטיפה שנשטף כל הזמן, מים חמים מהתחנה, זרוע שמטפסת על ספים של 8.8 ס״מ וגוף של פחות מ-9 ס״מ. ב-4,990 ₪ (כ-1,595 דולר) זה הרובוט הכי מעניין שהגיע לארץ הסתיו, עם כמה הסתייגויות."
 image: img/posts/roborock-saros-20-flow-complete.webp
 image_alt: "רובוט השואב Roborock Saros 20 Flow Complete בלבן לצד תחנת העגינה הגבוהה שלו"

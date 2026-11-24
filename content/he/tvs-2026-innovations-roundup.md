@@ -3,6 +3,8 @@ title: "טלוויזיות 2026: תאורת RGB בכל מקום, OLED בהיר �
 date: 2026-11-23
 slug: tvs-2026-innovations-roundup
 category: home-appliances
+world: home
+type: recommendations
 excerpt: "סדרת סיכומי השנה שלנו מגיעה לסלון. 2026 הייתה השנה שבה נורות אדומות, ירוקות וכחולות נכנסו מאחורי פאנל ה-LCD, ה-OLED נעשה בהיר בהרבה, ה-Mini LED ירד למחיר של טלוויזיה רגילה ו-Dolby Vision 2 יצא לדרך. מה כל דבר אומר, וממה מתחילים המחירים בישראל."
 image: img/posts/tvs-2026-roundup-collage.webp
 image_alt: "שתי טלוויזיות של 2026 זו לצד זו: טלוויזיית Samsung Micro RGB על רגל דקה עם פרץ צבעים כחול, ירוק ואדום, וטלוויזיית Sony BRAVIA True RGB על מזנון נמוך בסלון עם רמקולים גבוהים"

@@ -3,6 +3,8 @@ title: "סמסונג מיישרת את חזית מכונת הכביסה: מה ר
 date: 2026-09-05
 slug: samsung-ifa-2026-flat-washers
 category: home-appliances
+world: home
+type: news
 excerpt: "העיצוב השטוח של הדגמים היקרים עובר לליין מכונות הפתח הקדמי החדש, עם דלת גדולה יותר ו-Bubble Shot. עדיין אב-טיפוס, ועוד אין תאריך השקה."
 image: img/posts/samsung-ifa-2026-washers.webp
 image_alt: "תצוגת מכונות כביסה ומקררים של סמסונג בתערוכת Samsung Connect בברלין"

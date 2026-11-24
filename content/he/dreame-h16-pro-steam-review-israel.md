@@ -3,6 +3,8 @@ title: "ביקורת Dreame H16 Pro Steam: קיטור, שתי זרועות וש�
 date: 2026-11-20
 slug: dreame-h16-pro-steam-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "השואב-שוטף החדש של דרימי מגיע עם קיטור, יניקה של 28,000Pa, זרוע שמגיעה עד הקיר ועוד אחת שמקרצפת כתמים. אצל היבואן הוא עולה עכשיו 2,533 ₪ (כ-772 דולר), ובזאפ אפשר למצוא אותו גם בפחות. בדקתי מה מקבלים בכסף הזה ואיפה כדאי לשים לב."
 image: img/posts/dreame-h16-pro-steam-hero.webp
 image_alt: "ראש הניקוי של שואב-שוטף Dreame H16 Pro Steam על רצפה כהה, עם פס תאורה כחול בחזית, רולר אדום בצד וגוף השואב מאחור"

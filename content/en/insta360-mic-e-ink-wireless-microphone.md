@@ -3,6 +3,8 @@ title: "Insta360 Mic adds a customizable E-Ink screen and microSD recording for 
 date: 2026-10-23
 slug: insta360-mic-e-ink-wireless-microphone
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "The new wireless mic sits between the Mic Air and Mic Pro, records 32-bit float backups to a microSD card, and connects straight to six Insta360 cameras over Bluetooth."
 image: img/posts/insta360-mic-crop.webp
 image_alt: "Two round Insta360 Mic transmitters with custom images on their E-Ink screens, floating above a black charging case and receiver"

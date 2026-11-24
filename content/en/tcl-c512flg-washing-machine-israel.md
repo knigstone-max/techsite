@@ -3,6 +3,8 @@ title: "TCL's auto-dosing washer arrives in Israel: 12 kg for ₪2,990"
 date: 2026-11-05
 slug: tcl-c512flg-washing-machine-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "Electra Consumer Products is bringing in the TCL C512FLG, a 12 kg washer with a drawer that measures detergent and softener for you, a direct-drive motor and app control. At ₪2,990 it costs more than the TCL models that arrived in September. Here's what the extra buys."
 image: img/posts/tcl-c512flg-washer.webp
 image_alt: "A dark grey TCL C512FLG front-loading washing machine seen from the side, with a silver control panel and a round dial"

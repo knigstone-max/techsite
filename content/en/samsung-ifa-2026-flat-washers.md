@@ -3,6 +3,8 @@ title: "Samsung flattens the front of its washers: what it showed in Berlin"
 date: 2026-09-05
 slug: samsung-ifa-2026-flat-washers
 category: home-appliances
+world: home
+type: news
 excerpt: "The flat design from Samsung's premium models moves to its new front-loader line, with a bigger door and Bubble Shot. Still pre-production, with no launch date."
 image: img/posts/samsung-ifa-2026-washers.webp
 image_alt: "Samsung washers and fridges on display at Samsung Connect in Berlin"

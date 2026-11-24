@@ -3,6 +3,8 @@ title: "אלקטרולוקס ו-AEG ב-IFA: כביסה של 39 דקות, מדי�
 date: 2026-09-15
 slug: electrolux-aeg-ifa-2026
 category: home-appliances
+world: home
+type: news
 excerpt: "אלקטרולוקס הציגה מכונה שמורידה כתמים ב-30 מעלות ב-39 דקות, ו-AEG הביאה כיריים עם תוכנית פסטה ורובוט שואב בגובה 7.89 ס״מ."
 source_links:
   - "https://www.marketscreener.com/news/electrolux-group-showcases-innovations-at-ifa-2026-that-give-people-more-time-for-what-truly-matters-ce785bdede81f723"

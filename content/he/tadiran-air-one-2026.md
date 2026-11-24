@@ -3,6 +3,8 @@ title: "תדיראן משיקה את AIR ONE: מזגן בשחור או לבן ע
 date: 2026-07-20
 slug: tadiran-air-one-2026
 category: home-appliances
+world: home
+type: news
 excerpt: "חמישה דגמים מ-1 ועד 3.5 כ״ס, דירוג A++, חיישן שמכוון את האוויר אליכם או מכם, מצב שבת וחמש שנות אחריות. מה חדש בסדרה ולמי היא מתאימה."
 image: img/posts/tadiran-air-one.webp
 image_alt: "מזגן עילי של תדיראן מסדרת AIR ONE על קיר בסלון"

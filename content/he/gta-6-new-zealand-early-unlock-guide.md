@@ -3,6 +3,8 @@ title: "רוצים GTA VI כבר ביום רביעי ב-13:00? ככה עושים
 date: 2026-11-14
 slug: gta-6-new-zealand-early-unlock-guide
 category: gaming-lite
+world: play
+type: guides
 excerpt: "ניו זילנד היא הראשונה בעולם שמקבלת את GTA VI: חצות שם זה 13:00 ביום רביעי אצלנו, 11 שעות לפני החשבון הישראלי. מה צריך ב-PS5 וב-Xbox, כמה זה עולה בדולר ניו זילנדי, ומה הסיכון."
 image: img/posts/gta-history-vi-vice-city-day.webp
 image_alt: "וייס סיטי של GTA VI באור יום: חוף, דקלים וגורדי שחקים מעל המים"

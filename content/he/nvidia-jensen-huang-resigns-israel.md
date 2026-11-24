@@ -3,6 +3,8 @@ title: "ג'נסן הואנג עזב את אנבידיה. מה זה אומר על
 date: 2026-11-14
 slug: nvidia-jensen-huang-resigns-israel
 category: tech-news
+world: techhigh
+type: news
 excerpt: "מייסד אנבידיה התפטר בתוקף מיידי, וסמנכ״לית הכספים קולט קרס מחליפה אותו זמנית. בישראל השאלה הגדולה היא הקמפוס המתוכנן ל-10,000 עובדים, והתשובות הראשונות עשויות להגיע בדוחות של יום שלישי."
 image: img/posts/nvidia-yokneam-office.webp
 image_alt: "בניין משרדים מזכוכית עם השלט הירוק של אנבידיה על הגג, ביום מעונן"

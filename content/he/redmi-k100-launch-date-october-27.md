@@ -3,6 +3,8 @@ title: "Redmi K100 יושק בסין ב-27 באוקטובר, עם מסך 165 ה�
 date: 2026-10-20
 slug: redmi-k100-launch-date-october-27
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "שיאומי קבעה תאריך להשקת ה-Redmi K100 הרגיל והציגה את העיצוב שלו. הוא מצטרף ל-K100 Pro ול-Pro Max שיצאו באוגוסט."
 source_links:
   - "https://www.notebookcheck.net/Xiaomi-reveals-new-Snapdragon-8-Elite-phone-with-165Hz-display-and-Bose-tuned-audio.1427654.0.html"

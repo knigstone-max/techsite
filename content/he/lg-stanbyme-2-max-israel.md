@@ -3,6 +3,8 @@ title: "LG StanbyME 2 Max מגיע לישראל: מסך 32 אינץ' על גלג
 date: 2026-11-05
 slug: lg-stanbyme-2-max-israel
 category: smartphones-gadgets
+world: home
+type: news
 excerpt: "הדור החדש של המסך הנייד של LG גדל ל-32 אינץ' ו-4K, עם סוללה לעד 4.5 שעות וידאו ומעמד על גלגלים. מחיר רשמי בישראל עוד אין, ההערכה היא כ-4,500 ₪. מה מקבלים, ולמי זה מתאים."
 image: img/posts/lg-stanbyme-2-max-patio.webp
 image_alt: "מסך LG StanbyME 2 Max לבן על מעמד גבוה, עומד במרפסת מקורה עם ספות עץ, ועל המסך סירה בנהר ירוק"

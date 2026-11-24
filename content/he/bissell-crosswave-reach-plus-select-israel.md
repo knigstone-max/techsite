@@ -3,6 +3,8 @@ title: "Bissell השיקה בישראל ראשונה בעולם את CrossWave R
 date: 2026-11-07
 slug: bissell-crosswave-reach-plus-select-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "השואב-שוטף האלחוטי 4509N מגיע לישראל לפני שאר העולם דרך המילטון: שכיבה 180°, Gap Zero עד הקיר, סוללה עד 40 דקות ותחנת עגינה עם ייבוש מברשת באוויר חם. מחיר השקה 1,490 ₪ ואחריות 24 חודשים."
 image: img/posts/bissell-crosswave-reach-plus-select.webp
 image_alt: "שואב-שוטף אלחוטי Bissell CrossWave Reach Plus Select שחור עם ידית כסופה וראש מברשת שקוף"

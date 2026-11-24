@@ -3,6 +3,8 @@ title: "ביקורת MONOMOON: ירח קטן, עולם שלם של חידות, �
 date: 2026-11-18
 slug: monomoon-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "הסטודיו Gentle Giant בנה מטרואידווניה בלי קרבות ובלי הוראות, שבה הכלי היחיד שלכם הוא ירח קטן שזז עם העכבר. ב-45.99 ₪ ב-Steam בישראל (11.99 דולר בארה״ב), זה אחד ממשחקי הפאזל הכי מקוריים של השנה, עם כמה רגעים שבהם תרגישו אבודים לגמרי."
 image: img/posts/monomoon-key-art.webp
 image_alt: "איור רשמי של MONOMOON: יצור קטן עם כובע כחול וגלימה אדומה עומד על גבעה ירוקה ומביט בירח סהר צהוב בשמי לילה"

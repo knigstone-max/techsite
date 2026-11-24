@@ -3,6 +3,8 @@ title: "NICE is cutting about 500 jobs worldwide, and says Israel will be largel
 date: 2026-11-04
 slug: nice-layoffs-500-employees
 category: tech-news
+world: techhigh
+type: news
 excerpt: "The Ra'anana-based software company is laying off about 5% of its roughly 10,000 employees as it reorganises around AI customer service. The cuts come on the day it reports third-quarter results, with a $6.5 billion valuation far from its pandemic peak."
 image: img/posts/nice-raanana-headquarters.webp
 image_alt: "NICE office building in Ra'anana, a modern glass and stone building with the company's logo near the top"

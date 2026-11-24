@@ -3,6 +3,8 @@ title: "Galaxy Buds On: האוזניות הפתוחות הראשונות של ס
 date: 2026-11-02
 slug: galaxy-buds-on-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "סמסונג התחילה למכור בקוריאה את Galaxy Buds On, אוזניות קליפס שנתפסות על האוזן ומשאירות את התעלה פתוחה. המחיר שם שווה ערך לכ-698 שקל, ובישראל הן עדיין לא הוכרזו."
 image: img/posts/samsung-galaxy-buds-on.webp
 image_alt: "גבר ואישה מחייכים מול שמיים כחולים, עונדים אוזניות קליפס שחורות על האוזן ומחזיקים מארזי טעינה שקופים עם האוזניות בפנים"

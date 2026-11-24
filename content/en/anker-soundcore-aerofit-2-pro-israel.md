@@ -3,6 +3,8 @@ title: "soundcore AeroFit 2 Pro in Israel: open-ear buds that also cancel noise"
 date: 2026-10-31
 slug: anker-soundcore-aerofit-2-pro-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Anker's new earbuds have an ear hook with five positions. Low settings keep them open-ear, high ones press them into your ear and switch on noise cancelling. KSP sells them for ₪730 (about $234). Here's what you need to know."
 image: img/posts/soundcore-aerofit-2-pro.webp
 image_alt: "A pair of black soundcore AeroFit 2 Pro earbuds with curved ear hooks on a black background"

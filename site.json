@@ -150,7 +150,19 @@
       "staff_login": "כניסת צוות",
       "featured": "כתבה נבחרת",
       "gta_mode": "מצב GTA VI",
-      "gta_mode_hint": "עיצוב בהשראת GTA VI. לחיצה נוספת מחזירה לעיצוב הרגיל"
+      "gta_mode_hint": "עיצוב בהשראת GTA VI. לחיצה נוספת מחזירה לעיצוב הרגיל",
+      "worlds": "עולמות",
+      "worlds_intro": "בחרו עולם",
+      "world_all": "הכול",
+      "enter_world": "כניסה לעולם",
+      "world_latest": "חדש בעולם",
+      "see_all_type": "לכל ה",
+      "world_of": "העולם",
+      "moved_note": "הקטגוריה הזו היא חלק מ",
+      "moved_note_multi": "הסיקורים מחולקים עכשיו לפי עולמות:",
+      "in_world": "ב",
+      "empty_type": "עדיין אין כאן כתבות. בינתיים אפשר לקרוא את העדכונים האחרונים בעולם הזה.",
+      "col_world": "עולם"
     },
     "en": {
       "site_name": "TechnoBayit",
@@ -212,7 +224,19 @@
       "staff_login": "Staff login",
       "featured": "Featured",
       "gta_mode": "GTA VI mode",
-      "gta_mode_hint": "A GTA VI inspired look. Click again for the regular design"
+      "gta_mode_hint": "A GTA VI inspired look. Click again for the regular design",
+      "worlds": "Worlds",
+      "worlds_intro": "Pick a world",
+      "world_all": "All",
+      "enter_world": "Enter",
+      "world_latest": "New in this world",
+      "see_all_type": "All ",
+      "world_of": "World",
+      "moved_note": "This category is now part of ",
+      "moved_note_multi": "Reviews are now split by world:",
+      "in_world": "in ",
+      "empty_type": "Nothing here yet. Meanwhile, here is the latest from this world.",
+      "col_world": "World"
     }
   },
   "about": {
@@ -226,5 +250,108 @@
   },
   "featured": {
     "slug": "gta-6-review"
+  },
+  "worlds": [
+    {
+      "slug": "home",
+      "he": "טכנו בית",
+      "en": "Techno Home",
+      "color": "#f08a24",
+      "color2": "#ffb547",
+      "image": "img/worlds/home.webp",
+      "tagline": {
+        "he": "מוצרי חשמל לבית: שואבים, מזגנים, מקררים, כביסה ומטבח",
+        "en": "Home appliances: vacuums, ACs, fridges, laundry and the kitchen"
+      },
+      "desc": {
+        "he": "כל מה שנכנס לבית ומתחבר לשקע. סיקורים, השוואות, המלצות קנייה ומדריכים עם מחירים בארץ.",
+        "en": "Everything in your home that plugs into the wall. Reviews, comparisons, buying advice and guides, with Israeli prices."
+      },
+      "alt": {
+        "he": "איור שטוח של מכונת כביסה, מקרר, מזגן ושואב שוטף על רקע כתום",
+        "en": "Flat illustration of a washing machine, fridge, air conditioner and wet-dry vacuum on an orange background"
+      },
+      "categories": [
+        "home-appliances"
+      ]
+    },
+    {
+      "slug": "play",
+      "he": "פלייטק",
+      "en": "PlayTech",
+      "color": "#e4505f",
+      "color2": "#ff8a6b",
+      "image": "img/worlds/play.webp",
+      "tagline": {
+        "he": "גיימינג: ביקורות משחקים, קונסולות, אביזרים ומדריכי GTA VI",
+        "en": "Gaming: game reviews, consoles, gear and GTA VI guides"
+      },
+      "desc": {
+        "he": "משחקים, קונסולות ואביזרים. ביקורות, עדכונים, מחירים בארץ ומדריכים לעולם של GTA VI.",
+        "en": "Games, consoles and gear. Reviews, news, Israeli prices and guides to the world of GTA VI."
+      },
+      "alt": {
+        "he": "איור שטוח של שלט משחק, אוזניות גיימינג, גביע וקונסולה על רקע אדום-כתום",
+        "en": "Flat illustration of a game controller, gaming headset, trophy and console on a red-orange background"
+      },
+      "categories": [
+        "gaming-lite"
+      ]
+    },
+    {
+      "slug": "techhigh",
+      "he": "טקהיי",
+      "en": "TechHigh",
+      "color": "#7b5cf0",
+      "color2": "#ff8fa3",
+      "image": "img/worlds/techhigh.webp",
+      "tagline": {
+        "he": "אפליקציות, סמארטפונים, גאדג'טים ולבישים",
+        "en": "Apps, smartphones, gadgets and wearables"
+      },
+      "desc": {
+        "he": "אפליקציות, טלפונים, שעונים, אוזניות ומה שקורה בעולם הדיגיטלי. מה הגיע לארץ, כמה זה עולה ומה שווה לקנות.",
+        "en": "Apps, phones, watches, earbuds and digital life. What reached Israel, what it costs and what's worth buying."
+      },
+      "alt": {
+        "he": "איור שטוח של סמארטפון עם אפליקציות, שעון חכם ואוזניות על רקע סגול-ורוד",
+        "en": "Flat illustration of a smartphone with apps, a smartwatch and earbuds on a purple-pink background"
+      },
+      "categories": [
+        "smartphones-gadgets",
+        "tech-news"
+      ]
+    }
+  ],
+  "types": [
+    {
+      "slug": "reviews",
+      "he": "סיקורים",
+      "en": "Reviews"
+    },
+    {
+      "slug": "news",
+      "he": "עדכונים",
+      "en": "News"
+    },
+    {
+      "slug": "comparisons",
+      "he": "השוואות",
+      "en": "Comparisons"
+    },
+    {
+      "slug": "recommendations",
+      "he": "המלצות",
+      "en": "Recommendations"
+    },
+    {
+      "slug": "guides",
+      "he": "מדריכים",
+      "en": "Guides"
+    }
+  ],
+  "world_featured": {
+    "home": "wet-dry-vacuum-buying-guide-israel",
+    "play": "gta-6-review"
   }
 }

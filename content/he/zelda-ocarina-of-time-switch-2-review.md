@@ -3,6 +3,8 @@ title: "זלדה: Ocarina of Time ל-Switch 2: הקלאסיקה מקבלת את 
 date: 2026-11-04
 slug: zelda-ocarina-of-time-switch-2-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "נינטנדו בונה מחדש את הזלדה של 1998 ל-Switch 2, עם גרפיקה חדשה, דיבוב מלא, כפתור קפיצה ומצלמה חופשית. הוא יוצא מחר, ובישראל הוא עולה בערך 315 ₪. מה השתנה, ולמי זה מתאים."
 image: img/posts/zelda-ocarina-of-time-switch-2-key-art.webp
 image_alt: "איור רשמי של The Legend of Zelda: Ocarina of Time ל-Nintendo Switch 2: לינק הצעיר מחזיק אוקרינה על שביל ביער מואר, הפיה נאבי לידו, ולוגו המשחק עם חרב המאסטר ומגן היליאן"

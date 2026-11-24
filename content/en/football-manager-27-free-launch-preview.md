@@ -3,6 +3,8 @@ title: "Football Manager 27 is free to play until Tuesday, and your save carries
 date: 2026-10-31
 slug: football-manager-27-free-launch-preview
 category: gaming-lite
+world: play
+type: news
 excerpt: "SEGA has opened the FM27 Launch Preview to everyone on PC and Mac for free until 18:00 GMT on November 3. What you can play, what it costs on Steam in Israel and what to know before you start."
 image: img/posts/football-manager-27-stadium.webp
 image_alt: "An in-engine Football Manager 27 screenshot: players in red and white on the pitch in a packed stadium"

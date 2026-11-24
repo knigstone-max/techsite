@@ -3,6 +3,8 @@ title: "beyerdynamic AVENTHO Y arrive in Israel, with a battery you can swap you
 date: 2026-10-29
 slug: beyerdynamic-aventho-y-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Biconnect has launched beyerdynamic's new wireless headphones at ₪599 (about $191). They promise 90+ hours of battery life and noise cancelling, but the real hook is a battery you can pop out and replace at home."
 image: img/posts/beyerdynamic-aventho-y-colors.webp
 image_alt: "Four pairs of beyerdynamic AVENTHO Y headphones in black, blue, mint green and peach, side by side"

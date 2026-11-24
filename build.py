@@ -29,6 +29,79 @@ for _c in CATS:
     if _c.get("image") and not (STATIC / _c["image"]).is_file():
         sys.exit(f"ERROR site.json: category {_c['slug']}: image not found: static/{_c['image']}")
 REQUIRED = ["title", "date", "slug", "category", "excerpt"]
+WORLDS = CFG["worlds"]
+WORLD_SLUGS = [w["slug"] for w in WORLDS]
+TYPES = CFG["types"]
+TYPE_SLUGS = [t["slug"] for t in TYPES]
+for _w in WORLDS:
+    if _w.get("image") and not (STATIC / _w["image"]).is_file():
+        sys.exit(f"ERROR site.json: world {_w['slug']}: image not found: static/{_w['image']}")
+
+# ---------- worlds: world + type for every post ----------
+# Posts carry `world` and `type` in frontmatter / the CMS. When a post has none (or an unknown value),
+# these deterministic rules fill them in from category, slug and title, so a post is never left out.
+_PLAY_KW = r"\b(xbox|playstation|ps5|ps6|dualsense|nintendo|switch 2|steam deck|gta|legion tab|console|consoles|gaming handheld|game pass)\b"
+_HOME_KW = (r"\b(vacuum|vacuums|wet dry|floor washer|floor washers|floor cleaning|mop|mopping|steam|tineco|roborock|dreame|narwal|ecovacs|bissell|eufy omni|dyson|shark|"
+            r"fridge|fridges|refrigerator|refrigerators|freezer|washer|washers|dryer|dryers|washtower|washing machine|dishwasher|laundry|fabric care|"
+            r"air conditioner|air conditioners|ac|acs|inverter|compressor|compressors|heat pump|"
+            r"oven|hob|microwave|kitchen|espresso|coffee|verocafe|ecceluxe|rivelia|nespresso|air fryer|ninja|stand mixer|blender|kettle|"
+            r"purifier|humidifier|puricare|breatheclear|tv|tvs|oled|mini led|qled|stanbyme|soundbar|beam ultra|"
+            r"shaver|shave|toothbrush|toothbrushes|hair dryer|braun|smart switch|bulb cam|security cameras|smart home|appliances|appliance|white goods|ifa|electricity)\b")
+_REC_KW = r"\b(roundup|innovations|buying guide|picks|recommendations|recommended|checklist|which to buy|gift guide)\b"
+_CMP_KW = r"\b(vs|versus|compared|comparison|compare|head to head)\b"
+_GUIDE_KW = (r"\b(guide|guides|explained|how to|catalog|hub|history|profile|oem|odm|who makes|factories|factory|plants|datasheet|nameplate|"
+             r"refrigerant|seer|scop|frequency|turndown|derating|resonance|oil return|pfc|vcc|valve|energy label|industry)\b")
+# Hand-checked exceptions where the keyword rules get it wrong. Everything else follows the rules.
+WORLD_OVERRIDES = {
+    "lenovo-legion-tab-gen-5-review-israel": ("play", "reviews"),
+    "microsoft-xbox-best-buy-trade-in-emails": ("play", "news"),
+    "israel-appliances-wireless-licensing-exemption": ("home", "news"),
+    "winter-tou-electricity-peak-hours-appliances": ("home", "news"),
+    "compressor-datasheet-rating-conditions-cop-vs-speed": ("home", "guides"),
+    "rotary-scroll-reciprocating-twin-rotary-compressors": ("home", "comparisons"),
+    "jiaxipera-refrigerator-compressors": ("home", "guides"),
+    "inokim-electra-stores": ("techhigh", "news"),
+    "ksp-content-images-lawsuit-competitors": ("techhigh", "news"),
+    "welcome": ("techhigh", "news"),
+    "gta-6-guides-hub": ("play", "guides"),
+    "ipad-mini-a20-pro-oled": ("techhigh", "news"),
+    "sonos-ace-ultra-israel": ("techhigh", "news"),
+}
+CAT_WORLD = {"home-appliances": "home", "gaming-lite": "play"}
+
+def classify(meta):
+    """(world, type) from category, slug and title. Deterministic; used for posts without valid values."""
+    slug = str(meta.get("slug", ""))
+    if slug in WORLD_OVERRIDES:
+        return WORLD_OVERRIDES[slug]
+    cat = meta.get("category", "")
+    hay = " " + re.sub(r"[^a-z0-9]+", " ", (slug + " " + str(meta.get("title_en") or meta.get("title") or "")).lower()) + " "
+    if cat in CAT_WORLD:
+        world = CAT_WORLD[cat]
+    elif re.search(_PLAY_KW, hay):
+        world = "play"
+    elif re.search(_HOME_KW, hay):
+        world = "home"
+    else:
+        world = "techhigh"
+    if cat == "reviews" or re.search(r"\breview\b", hay):
+        typ = "reviews"
+    elif re.search(_REC_KW, hay):
+        typ = "recommendations"
+    elif re.search(_CMP_KW, hay) and not re.search(r"\b(launch|launches|price|prices)\b", hay):
+        typ = "comparisons"
+    elif re.search(_GUIDE_KW, hay):
+        typ = "guides"
+    else:
+        typ = "news"
+    return world, typ
+
+def assign_world(meta):
+    w, t = meta.get("world"), meta.get("type")
+    if w not in WORLD_SLUGS or t not in TYPE_SLUGS:
+        cw, ct = classify(meta)
+        meta["world"] = w if w in WORLD_SLUGS else cw
+        meta["type"] = t if t in TYPE_SLUGS else ct
 CMS = CFG.get("cms", {})
 SB_URL = os.environ.get("SUPABASE_URL", CMS.get("supabase_url", "")).rstrip("/")
 SB_KEY = os.environ.get("SUPABASE_PUBLISHABLE_KEY", CMS.get("publishable_key", ""))
@@ -214,7 +287,7 @@ def parse_frontmatter(text, fname):
             meta[key] = [v for v in (_yaml_scalar(i, fname) for i in items) if v != ""]
         else:
             meta[key] = _yaml_scalar([val] + cont, fname)
-    for k in ("date", "slug", "category", "title", "excerpt"):
+    for k in ("date", "slug", "category", "title", "excerpt", "world", "type"):
         if k in meta and not isinstance(meta[k], str):
             meta[k] = str(meta[k])
     return meta, m.group(2) or ""
@@ -350,6 +423,10 @@ def finish_post(meta, body, lang, where):
         sys.exit(f"ERROR {where}: date must be YYYY-MM-DD or ISO 8601")
     if meta.get("draft") is True:
         return None
+    for k, allowed in (("world", WORLD_SLUGS), ("type", TYPE_SLUGS)):
+        if meta.get(k) and meta[k] not in allowed:
+            print(f"WARNING {where}: unknown {k} {meta[k]!r} (use one of {allowed}); classified automatically", file=sys.stderr)
+    assign_world(meta)
     src = meta.get("source_links") or []
     meta["source_links"] = [s for s in (src if isinstance(src, list) else [src]) if isinstance(s, str) and s.strip()]
     meta["html"] = md_to_html(body, where)
@@ -389,7 +466,7 @@ def load_posts(lang, cms=None):
             if r["lang"] != lang:
                 continue
             meta = {k: (r.get(k) or "") for k in ("title", "slug", "category", "excerpt", "image", "image_alt",
-                                                     "image_credit", "image_credit_url", "image_position")}
+                                                     "image_credit", "image_credit_url", "image_position", "world", "type")}
             meta["date"] = r.get("published_at") or r.get("created_at") or ""
             meta["source_links"] = r.get("source_links") or []
             meta["placeholder"] = bool(r.get("placeholder"))
@@ -418,6 +495,22 @@ def load_posts(lang, cms=None):
 # ---------- templates ----------
 def cat_name(slug, lang):
     return next(c[lang] for c in CATS if c["slug"] == slug)
+
+def world(slug):
+    return next(w for w in WORLDS if w["slug"] == slug)
+
+def type_name(slug, lang):
+    return next(t[lang] for t in TYPES if t["slug"] == slug)
+
+def world_path(w, typ=None):
+    return w + "/" + (typ + "/" if typ else "")
+
+def world_label(p, lang):
+    return f'{world(p["world"])[lang]} · {type_name(p["type"], lang)}'
+
+def world_chip(p, lang):
+    return (f'<a class="chip-cat chip-world w-{p["world"]}" href="{url(lang, world_path(p["world"], p["type"]))}">'
+            f'{WORLD_ICONS[p["world"]]}{esc(world_label(p, lang))}</a>')
 
 def fmt_date(dt, lang):
     if lang == "he":
@@ -454,7 +547,55 @@ CAT_ICONS = {
     "reviews": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg>',
     "tips": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg>',
 }
+WORLD_ICONS = {
+    "home": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10"/><circle cx="12" cy="15" r="2.6"/></svg>',
+    "play": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8h10a4 4 0 0 1 4 4.3l-.4 3.9a2.5 2.5 0 0 1-4.3 1.4L14.6 16H9.4l-1.7 1.6a2.5 2.5 0 0 1-4.3-1.4L3 12.3A4 4 0 0 1 7 8z"/><path d="M8 11v3M6.5 12.5h3"/><path d="M15.5 12h.01M17.5 13.5h.01"/></svg>',
+    "techhigh": '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.4"/><rect x="9" y="6" width="2.4" height="2.4" rx=".6"/><rect x="12.6" y="6" width="2.4" height="2.4" rx=".6"/><rect x="9" y="9.6" width="2.4" height="2.4" rx=".6"/><rect x="12.6" y="9.6" width="2.4" height="2.4" rx=".6"/><path d="M11 18.5h2"/></svg>',
+}
 LATEST = {}
+WORLD_COUNTS = {}
+CUR = ' aria-current="page"'
+
+def world_img(w, eager=False, cls=""):
+    if not w.get("image"):
+        return ""
+    iw, ih = image_size(STATIC / w["image"])
+    load = 'loading="eager" fetchpriority="high"' if eager else 'loading="lazy"'
+    return f'<img{cls} src="{asset(w["image"])}" alt="" width="{iw}" height="{ih}" {load} decoding="async">'
+
+def world_nav(lang, active=None):
+    t = CFG["strings"][lang]
+    items = "".join(
+        f'<li><a class="world-pill w-{w["slug"]}" href="{url(lang, world_path(w["slug"]))}"'
+        f'{CUR if active == w["slug"] else ""}>{WORLD_ICONS[w["slug"]]}<span>{esc(w[lang])}</span></a></li>'
+        for w in WORLDS)
+    return f'<nav class="world-nav" aria-label="{esc(t["worlds"])}"><ul>{items}</ul></nav>'
+
+def world_cards(lang, eager=False):
+    """Big entry cards for the three worlds (homepage)."""
+    t = CFG["strings"][lang]
+    out = []
+    for w in WORLDS:
+        n = WORLD_COUNTS.get(lang, {}).get(w["slug"], 0)
+        out.append(f"""<li><a class="world-card w-{w['slug']}" href="{url(lang, world_path(w['slug']))}">
+  <span class="world-card-media">{world_img(w, eager)}</span>
+  <span class="world-card-body">
+    <span class="world-card-title">{WORLD_ICONS[w['slug']]}<strong>{esc(w[lang])}</strong></span>
+    <span class="world-card-tag">{esc(w['tagline'][lang])}</span>
+    <span class="world-card-foot"><small>{esc(count_label(n, lang))}</small><span class="world-card-go">{esc(t['enter_world'])} <span aria-hidden="true">{'&larr;' if DIR[lang] == 'rtl' else '&rarr;'}</span></span></span>
+  </span></a></li>""")
+    return f'<nav class="world-entry" aria-label="{esc(t["worlds"])}"><h2 class="visually-hidden">{esc(t["worlds"])}</h2><ul class="world-cards">{"".join(out)}</ul></nav>'
+
+def type_chips(lang, w, posts, active=None):
+    """Sub-category tabs inside a world. Types with no posts yet are left out."""
+    t = CFG["strings"][lang]
+    wp = [p for p in posts if p["world"] == w]
+    chips = [f'<li><a class="type-chip" href="{url(lang, world_path(w))}"{CUR if active is None else ""}>{esc(t["world_all"])} <small>{len(wp)}</small></a></li>']
+    for ty in TYPES:
+        n = sum(1 for p in wp if p["type"] == ty["slug"])
+        if n or active == ty["slug"]:
+            chips.append(f'<li><a class="type-chip" href="{url(lang, world_path(w, ty["slug"]))}"{CUR if active == ty["slug"] else ""}>{esc(ty[lang])} <small>{n}</small></a></li>')
+    return f'<nav class="type-chips" aria-label="{esc(world(w)[lang])}"><ul>{"".join(chips)}</ul></nav>'
 
 def cat_img(c, lang, size="tile", eager=False):
     """Category image (decorative inside a labelled link). Credit goes in the title attribute and on the about page."""
@@ -491,7 +632,7 @@ def cat_bar(lang):
     items += f'<li><a class="cat-pill cat-pill-all" href="{url(lang, "categories/")}">{esc(t["all_categories"])}</a></li>'
     return f'<nav class="cat-bar" aria-label="{esc(t["categories"])}"><div class="wrap"><ul>{items}</ul></div></nav>'
 
-def layout(lang, path, title, description, body, other_path, og_type="website", noindex=False, needs_auth=False, image=None, catbar=True):
+def layout(lang, path, title, description, body, other_path, og_type="website", noindex=False, needs_auth=False, image=None, catbar=True, world=None):
     """path / other_path: site-relative paths without lang prefix, e.g. 'posts/x/'."""
     t = CFG["strings"][lang]
     other = "en" if lang == "he" else "he"
@@ -567,8 +708,8 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
       </div>
     </div>
     <div class="header-panels">
-      <section class="hp hp-info" aria-label="{esc(t['site_name'])}">
-        <p class="hp-tagline">{esc(t['tagline'])}</p>
+      <section class="hp hp-info hp-worlds" aria-label="{esc(t['worlds'])}">
+        {world_nav(lang, world)}
       </section>
       <form class="hp hp-search" role="search" action="{url(lang, 'archive/')}" method="get">
         <label class="visually-hidden" for="site-q">{esc(t['search'])}</label>
@@ -599,8 +740,8 @@ def layout(lang, path, title, description, body, other_path, og_type="website", 
 def thumb(p, lang, big=False, eager=False):
     """Card/hero media. Real image when the post has one, otherwise the CSS-gradient placeholder.
     Decorative here (the linked title next to it carries the meaning), so alt is empty."""
-    cls = f'thumb c-{p["category"]}{" thumb-big" if big else ""}'
-    label = f'<span>{esc(cat_name(p["category"], lang))}</span>'
+    cls = f'thumb c-{p["category"]} w-{p["world"]}{" thumb-big" if big else ""}'
+    label = f'<span>{esc(world(p["world"])[lang])}</span>'
     im = p.get("image")
     if not im:
         return f'<div class="{cls}" aria-hidden="true">{label}</div>'
@@ -625,7 +766,7 @@ def post_figure(p, lang):
 def meta_line(p, lang):
     t = CFG["strings"][lang]
     badge = f' <span class="badge">{esc(t["placeholder"])}</span>' if p.get("placeholder") else ""
-    return (f'<p class="meta"><a class="cat chip-cat c-{p["category"]}" href="{url(lang, "category/" + p["category"] + "/")}">{esc(cat_name(p["category"], lang))}</a>'
+    return (f'<p class="meta">{world_chip(p, lang)}'
             f'<time datetime="{p["dt"].date().isoformat()}">{fmt_date(p["dt"], lang)}</time>{badge}</p>')
 
 def card(p, lang):
@@ -682,12 +823,12 @@ def write_raw(relpath, content):
 
 def build_lang(lang, posts, other_slugs):
     t = CFG["strings"][lang]
-    # home: hero story + latest grid + per-category rows
-    cat_blocks = []
-    for c in CATS:
-        cp = [p for p in posts if p["category"] == c["slug"]][:3]
-        if cp:
-            cat_blocks.append(f'<section class="cat-block"><h2 class="section-title"><a href="{url(lang, "category/" + c["slug"] + "/")}">{esc(c[lang])}</a></h2>{listing(cp, lang)}</section>')
+    # home: world entries + featured story + latest grid + a row per world
+    world_blocks = []
+    for w in WORLDS:
+        wp = [p for p in posts if p["world"] == w["slug"]][:3]
+        if wp:
+            world_blocks.append(f'<section class="cat-block world-block w-{w["slug"]}"><h2 class="section-title section-world"><a href="{url(lang, world_path(w["slug"]))}">{WORLD_ICONS[w["slug"]]}{esc(w[lang])}</a></h2>{listing(wp, lang)}</section>')
     feat = featured_post(posts)
     if feat:
         top = hero(feat, lang, kicker=t.get("featured"))
@@ -698,13 +839,51 @@ def build_lang(lang, posts, other_slugs):
     latest = f'<section><h2 class="section-title">{esc(t["latest"])}</h2>{listing(rest, lang)}</section>' if rest else ""
     home = f"""<h1 class="visually-hidden">{esc(t['site_name'])}: {esc(t['tagline'])}</h1>
 <div class="home-gta-bg" style="--gta-bg-img:url('{asset('img/gta-theme-bg.webp')}')">
-<nav class="cat-strip" aria-label="{esc(t['categories'])}">{cat_tiles(lang, eager=True)}</nav>
+{world_cards(lang, eager=True)}
 {top}
 </div>
 {latest}
-{''.join(cat_blocks) if len(posts) > 3 else ''}
+{''.join(world_blocks) if len(posts) > 3 else ''}
 <p class="more"><a class="btn btn-ghost" href="{url(lang, 'archive/')}">{esc(t['all_posts'])}</a></p>"""
     write(lang, "", layout(lang, "", t["site_name"], t["tagline"], home, "", catbar=False))
+
+    # worlds: landing page per world + a page per sub-category
+    for w in WORLDS:
+        ws = w["slug"]
+        wp = [p for p in posts if p["world"] == ws]
+        head = (f'<header class="world-hero w-{ws}"><div class="world-hero-media" aria-hidden="true">{world_img(w, eager=True)}</div>'
+                f'<div class="world-hero-body"><p class="kicker">{esc(t["worlds"])}</p><h1>{WORLD_ICONS[ws]}{esc(w[lang])}</h1>'
+                f'<p class="world-hero-tag">{esc(w["tagline"][lang])}</p><p class="page-desc">{esc(w["desc"][lang])}</p>'
+                f'<p class="world-hero-count">{esc(count_label(len(wp), lang))}</p></div></header>')
+        fslug = (CFG.get("world_featured") or {}).get(ws)
+        fp = next((p for p in wp if p["slug"] == fslug), None) or next((p for p in wp if p["type"] == "reviews"), None) or (wp[0] if wp else None)
+        sections = []
+        for ty in TYPES:
+            tp = [p for p in wp if p["type"] == ty["slug"] and p is not fp]
+            if not tp:
+                continue
+            href = url(lang, world_path(ws, ty["slug"]))
+            sections.append(f'<section class="cat-block type-block"><h2 class="section-title"><a href="{href}">{esc(ty[lang])}</a></h2>{listing(tp[:3], lang)}'
+                            + (f'<p class="more more-type"><a class="btn btn-ghost" href="{href}">{esc(t["see_all_type"])}{esc(ty[lang])} ({len(tp) + (1 if fp is not None and fp["type"] == ty["slug"] else 0)})</a></p>' if len(tp) > 3 else "")
+                            + '</section>')
+        body = (f'{head}{type_chips(lang, ws, posts)}'
+                + (f'<div class="world-feature">{hero(fp, lang, kicker=t.get("featured"))}</div>' if fp else "")
+                + ("".join(sections) or listing([], lang)))
+        wpath = world_path(ws)
+        write(lang, wpath, layout(lang, wpath, w[lang], w["tagline"][lang], body, wpath, image=None, world=ws))
+        for ty in TYPES:
+            tp = [p for p in wp if p["type"] == ty["slug"]]
+            tpath = world_path(ws, ty["slug"])
+            small_head = (f'<header class="page-head world-head w-{ws}"><div class="page-head-img" aria-hidden="true">{world_img(w, eager=True)}</div>'
+                          f'<div><p class="kicker"><a href="{url(lang, wpath)}">{WORLD_ICONS[ws]}{esc(w[lang])}</a></p><h1>{esc(ty[lang])}</h1>'
+                          f'<p class="page-desc">{esc(w["tagline"][lang])}</p></div></header>')
+            if tp:
+                tbody = small_head + type_chips(lang, ws, posts, ty["slug"]) + listing(tp, lang)
+            else:
+                tbody = (small_head + type_chips(lang, ws, posts, ty["slug"]) + f'<p class="empty">{esc(t["empty_type"])}</p>' + listing(wp[:6], lang))
+            title = f'{ty[lang]} | {w[lang]}'
+            write(lang, tpath, layout(lang, tpath, title, f'{ty[lang]} {t["in_world"]}{w[lang]}: {w["tagline"][lang]}', tbody, tpath,
+                                      noindex=not tp, world=ws))
 
     # categories index
     counts = cat_counts(lang)
@@ -732,8 +911,16 @@ def build_lang(lang, posts, other_slugs):
         p = "category/" + c["slug"] + "/"
         cp = [x for x in posts if x["category"] == c["slug"]]
         head_img = f'<div class="page-head-img" aria-hidden="true">{cat_img(c, lang, eager=True)}</div>' if c.get("image") else ""
+        cw = [w for w in WORLDS if c["slug"] in w.get("categories", [])]
+        if cw:
+            note = (f'{esc(t["moved_note"])}' + ", ".join(f'<a href="{url(lang, world_path(w["slug"]))}">{esc(w[lang])}</a>' for w in cw))
+        else:  # mixed category (reviews): one link per world that has posts from it
+            ws_here = [w for w in WORLDS if any(x["world"] == w["slug"] for x in cp)]
+            note = esc(t["moved_note_multi"]) + " " + ", ".join(
+                f'<a href="{url(lang, world_path(w["slug"], "reviews" if c["slug"] == "reviews" else None))}">{esc(w[lang])}</a>' for w in ws_here)
         body = (f'<header class="page-head cat-head c-{c["slug"]}">{head_img}<div><p class="kicker">{esc(t["categories"])}</p><h1>{esc(c[lang])}</h1>'
-                f'<p class="page-desc">{esc(c.get("desc", {}).get(lang, ""))}</p></div></header>{listing(cp, lang)}')
+                f'<p class="page-desc">{esc(c.get("desc", {}).get(lang, ""))}</p></div></header>'
+                f'<p class="notice world-move">{note}</p>{listing(cp, lang)}')
         write(lang, p, layout(lang, p, c[lang], f"{c[lang]} | {t['tagline']}", body, p))
 
     # archive grouped by month
@@ -744,8 +931,8 @@ def build_lang(lang, posts, other_slugs):
             groups.append((k, [])); cur = k
         groups[-1][1].append(x)
     arch = "".join(
-        f'<section class="arch-month" data-arch><h2>{k}</h2><div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">{esc(t["col_date"])}</th><th scope="col">{esc(t["col_title"])}</th><th scope="col">{esc(t["col_cat"])}</th></tr></thead><tbody>' + "".join(
-            f'<tr data-search="{esc((x["title"] + " " + x["excerpt"] + " " + cat_name(x["category"], lang)).lower())}"><td class="td-date"><time datetime="{x["dt"].date().isoformat()}">{fmt_date(x["dt"], lang)}</time></td><td class="td-title"><a href="{url(lang, "posts/" + x["slug"] + "/")}">{esc(x["title"])}</a></td><td><a class="chip-cat c-{x["category"]}" href="{url(lang, "category/" + x["category"] + "/")}">{esc(cat_name(x["category"], lang))}</a></td></tr>'
+        f'<section class="arch-month" data-arch><h2>{k}</h2><div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">{esc(t["col_date"])}</th><th scope="col">{esc(t["col_title"])}</th><th scope="col">{esc(t["col_world"])}</th></tr></thead><tbody>' + "".join(
+            f'<tr data-search="{esc((x["title"] + " " + x["excerpt"] + " " + world_label(x, lang)).lower())}"><td class="td-date"><time datetime="{x["dt"].date().isoformat()}">{fmt_date(x["dt"], lang)}</time></td><td class="td-title"><a href="{url(lang, "posts/" + x["slug"] + "/")}">{esc(x["title"])}</a></td><td>{world_chip(x, lang)}</td></tr>'
             for x in items) + "</tbody></table></div></section>" for k, items in groups) or f'<p>{esc(t["no_posts"])}</p>'
     arch = (f'<form class="panel arch-search" role="search" action="" method="get"><label class="visually-hidden" for="arch-q">{esc(t["search"])}</label>'
             f'<input type="search" id="arch-q" name="q" placeholder="{esc(t["search_placeholder"])}" autocomplete="off"><span class="arch-count" aria-live="polite" data-none="{esc(t["no_results"])}"></span></form>' + arch)
@@ -773,11 +960,15 @@ def build_lang(lang, posts, other_slugs):
             src = f'<section class="sources"><h2>{esc(t["sources"])}</h2><ul>' + "".join(
                 f'<li><a href="{esc(s)}" rel="noopener" target="_blank">{esc(s)}</a></li>' for s in x["source_links"]) + "</ul></section>"
         badge = f' <span class="badge">{esc(t["placeholder"])}</span>' if x.get("placeholder") else ""
-        related = [r for r in posts if r["category"] == x["category"] and r["slug"] != x["slug"]][:3]
-        rel_html = f'<section class="related"><h2 class="section-title">{esc(cat_name(x["category"], lang))}</h2>{listing(related, lang)}</section>' if related else ""
+        related = [r for r in posts if r["world"] == x["world"] and r["type"] == x["type"] and r["slug"] != x["slug"]][:3]
+        if len(related) < 3:
+            related += [r for r in posts if r["world"] == x["world"] and r["slug"] != x["slug"] and r not in related][:3 - len(related)]
+        rel_html = (f'<section class="related"><h2 class="section-title"><a href="{url(lang, world_path(x["world"], x["type"]))}">{esc(world_label(x, lang))}</a></h2>{listing(related, lang)}</section>'
+                    if related else "")
         body = f"""<article class="post" data-slug="{esc(x['slug'])}" data-title="{esc(x['title'])}">
 <header class="post-head">
-<p class="meta"><a class="cat chip-cat c-{x['category']}" href="{url(lang, 'category/' + x['category'] + '/')}">{esc(cat_name(x['category'], lang))}</a><span>{esc(t['published'])} <time datetime="{x['dt'].isoformat()}">{fmt_date(x['dt'], lang)}</time></span>{badge}</p>
+<nav class="crumbs" aria-label="breadcrumb"><a href="{url(lang)}">{esc(t['home'])}</a><span aria-hidden="true">/</span><a href="{url(lang, world_path(x['world']))}">{esc(world(x['world'])[lang])}</a><span aria-hidden="true">/</span><a href="{url(lang, world_path(x['world'], x['type']))}">{esc(type_name(x['type'], lang))}</a></nav>
+<p class="meta">{world_chip(x, lang)}<span>{esc(t['published'])} <time datetime="{x['dt'].isoformat()}">{fmt_date(x['dt'], lang)}</time></span>{badge}</p>
 <h1>{esc(x['title'])}</h1>
 <p class="lead">{esc(x['excerpt'])}</p>
 <div class="post-actions" id="fav-root" hidden></div>
@@ -790,7 +981,7 @@ def build_lang(lang, posts, other_slugs):
 <section class="comments prose" id="comments-root" aria-label="{esc(t['comments'])}" hidden></section>
 </article>
 {rel_html}"""
-        write(lang, p, layout(lang, p, x["title"], x["excerpt"], body, other_p, og_type="article", image=x.get("image")))
+        write(lang, p, layout(lang, p, x["title"], x["excerpt"], body, other_p, og_type="article", image=x.get("image"), world=x["world"]))
 
     # RSS
     items = "".join(f"""
@@ -799,7 +990,7 @@ def build_lang(lang, posts, other_slugs):
     <link>{abs_url(lang, 'posts/' + x['slug'] + '/')}</link>
     <guid isPermaLink="true">{abs_url(lang, 'posts/' + x['slug'] + '/')}</guid>
     <pubDate>{format_datetime(x['dt'])}</pubDate>
-    <category>{esc(cat_name(x['category'], lang))}</category>
+    <category>{esc(world_label(x, lang))}</category>
     <description>{esc(x['excerpt'])}</description>
   </item>""" for x in posts[:30])
     rss = f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -828,7 +1019,9 @@ def build_admin():
     """The CMS single-page app (static/admin/*), served at /admin/. Talks to Supabase with the public key only."""
     cfg = {"supabaseUrl": SB_URL, "publishableKey": SB_KEY, "bucket": CMS.get("bucket", "post-images"),
            "base": BASE, "siteUrl": SITE_URL, "assets": BASE + "assets/",
-           "categories": [{"slug": c["slug"], "he": c["he"], "en": c["en"]} for c in CATS]}
+           "categories": [{"slug": c["slug"], "he": c["he"], "en": c["en"]} for c in CATS],
+           "worlds": [{"slug": w["slug"], "he": w["he"], "en": w["en"], "categories": w.get("categories", [])} for w in WORLDS],
+           "types": [{"slug": ty["slug"], "he": ty["he"], "en": ty["en"]} for ty in TYPES]}
     tpl = (STATIC / "admin" / "index.html").read_text(encoding="utf-8")
     ver = hashlib.sha1(b"".join((STATIC / "admin" / n).read_bytes() for n in ("app.js", "admin.css", "render.js"))).hexdigest()[:10]
     page = (tpl.replace("{{CONFIG}}", json.dumps(cfg, ensure_ascii=False).replace("</", "<\\/"))
@@ -858,7 +1051,11 @@ def build_sitemap(all_posts):
     pages = ["", "archive/", "about/", "categories/"] + ["category/" + c["slug"] + "/" for c in CATS]
     for lang in LANGS:
         other = "en" if lang == "he" else "he"
-        for p in pages:
+        lp = list(pages)
+        for w in WORLDS:
+            lp.append(world_path(w["slug"]))
+            lp += [world_path(w["slug"], ty["slug"]) for ty in TYPES if any(x["world"] == w["slug"] and x["type"] == ty["slug"] for x in all_posts[lang])]
+        for p in lp:
             entries.append((lang, p, p, other, None))
         other_slugs = {x["slug"] for x in all_posts[other]}
         for x in all_posts[lang]:
@@ -889,6 +1086,7 @@ def main():
     for l in LANGS:
         LATEST[l] = fmt_date(posts[l][0]["dt"], l) if posts[l] else ""
         CAT_COUNTS[l] = {c["slug"]: sum(1 for x in posts[l] if x["category"] == c["slug"]) for c in CATS}
+        WORLD_COUNTS[l] = {w["slug"]: sum(1 for x in posts[l] if x["world"] == w["slug"]) for w in WORLDS}
     for lang in LANGS:
         other = "en" if lang == "he" else "he"
         build_lang(lang, posts[lang], {x["slug"] for x in posts[other]})

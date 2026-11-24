@@ -3,6 +3,8 @@ title: "חשד לפריצה בבינאנס: המשיכות מושעות, ומי�
 date: 2026-10-30
 slug: binance-hack-withdrawals-paused
 category: tech-news
+world: techhigh
+type: news
 excerpt: "בורסת הקריפטו הגדולה בעולם השעתה הפקדות ומשיכות אחרי מה שנראה כמו הפריצה הגדולה ביותר בתולדות הקריפטו. ההערכות מדברות על כ-5.9 מיליארד דולר (כ-18.4 מיליארד ₪). מה ידוע, מה לא, ומה כדאי לעשות אם יש לכם חשבון."
 image: img/posts/binance-merch-commons.webp
 image_alt: "חולצה שחורה עם הלוגו והכיתוב BINANCE בצהוב, ולידה תיק בד צהוב עם הכיתוב BINANCE שחוזר על עצמו"

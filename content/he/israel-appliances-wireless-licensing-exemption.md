@@ -3,6 +3,8 @@ title: "מקרר עם Wi-Fi כבר לא צריך אישור ממשרד התקש�
 date: 2026-10-29
 slug: israel-appliances-wireless-licensing-exemption
 category: home-appliances
+world: home
+type: news
 excerpt: "מזגנים, מקררים, מכונות כביסה, מדיחים ועוד עשר קטגוריות עם סימון CE יוכלו להשתחרר מהמכס בלי רישוי נוסף בגלל רכיב ה-Wi-Fi או הבלוטות' שבהם. מה זה אומר ליבואנים, למחירים ולמי שמביא מכשיר בעצמו."
 image: img/posts/appliance-store-washers-aisle.webp
 image_alt: "מעבר בחנות מוצרי חשמל עם שורות של מכונות כביסה בפתח קדמי, שלטי מחיר ופרסומות"

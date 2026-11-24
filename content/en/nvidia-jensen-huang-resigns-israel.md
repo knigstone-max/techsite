@@ -3,6 +3,8 @@ title: "Jensen Huang has left Nvidia. What it means for its 5,000+ staff in Isra
 date: 2026-11-14
 slug: nvidia-jensen-huang-resigns-israel
 category: tech-news
+world: techhigh
+type: news
 excerpt: "Nvidia's founder resigned effective immediately, and CFO Colette Kress is interim CEO. In Israel the big question is the planned 10,000-job campus, and the first answers could come with Tuesday's earnings."
 image: img/posts/nvidia-yokneam-office.webp
 image_alt: "A glass office building with Nvidia's green logo on the roof, on a cloudy day"

@@ -3,6 +3,8 @@ title: "LG WashTower בגרסת 25 אינץ': 20 ק\"ג כביסה ו-20 ק\"ג 
 date: 2026-11-08
 slug: lg-washtower-25-inch-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "LG מתחילה להפיץ במזרח התיכון את מגדל הכביסה החדש שלה, עם מכונה ומייבש שעובדים במקביל ומסך מגע 6.8 אינץ' באמצע. מה הוא נותן, ואיך זה מסתדר מול ה-WT40 שנמכר היום בישראל מ-8,427 ₪."
 image: img/posts/lg-washtower-25-inch.webp
 image_alt: "מגדל כביסה LG WashTower בגוון כהה בחדר כביסה מודרני, מייבש למעלה, מכונת כביסה למטה ופאנל שליטה ביניהם"

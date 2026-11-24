@@ -3,6 +3,8 @@ title: "Tadiran launches AIR ONE: a black or white air conditioner with a motion
 date: 2026-07-20
 slug: tadiran-air-one-2026
 category: home-appliances
+world: home
+type: news
 excerpt: "Five models from 1 to 3.5 horsepower, A++ rating, a sensor that aims air at you or away, Shabbat mode and five years of warranty."
 image: img/posts/tadiran-air-one.webp
 image_alt: "A Tadiran AIR ONE wall-mounted air conditioner in a living room"

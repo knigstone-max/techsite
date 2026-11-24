@@ -3,6 +3,8 @@ title: "Braun NEVO ב-KSP ב-1,889 ₪ במקום 2,499 ₪"
 date: 2026-11-07
 slug: braun-nevo-ksp-1889
 category: smartphones-gadgets
+world: home
+type: news
 excerpt: "מכונת הגילוח הפרימיום של בראון, דגם 15010C עם AeroTouch ותחנת NEVO Care 7 ב-1, נכנסת למבצעי נובמבר של KSP. מיוצרת בגרמניה, אחריות יבואן רשמי לשנתיים, עד סוף החודש או עד גמר המלאי."
 image: img/posts/braun-nevo-15010c.webp
 image_alt: "מכונת גילוח Braun NEVO בצבע גרפיט עם ראש זהוב, תצוגה דיגיטלית ונרתיק נסיעות לצד תחנת טיפוח"

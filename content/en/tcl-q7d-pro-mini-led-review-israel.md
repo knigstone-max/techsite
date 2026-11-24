@@ -3,6 +3,8 @@ title: "TCL Q7D PRO review: TCL's cheapest Mini LED is also its brightest"
 date: 2026-10-30
 slug: tcl-q7d-pro-mini-led-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "From ₪3,990 (about $1,281) for 55 inches you get Mini LED with up to 2,200 nits, 144Hz and apps from yes, HOT, Partner and Cellcom. I went through the full spec sheet to see where it's a steal and where a different size makes more sense."
 image: img/posts/tcl-q7d-pro-mini-led.webp
 image_alt: "The TCL Q7D PRO TV seen from an angle, a slim screen on two feet showing colorful blue, orange and gold artwork"

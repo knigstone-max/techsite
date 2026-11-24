@@ -3,6 +3,8 @@ title: "Horses of Hoofprint Bay review: a stable sim that takes horses seriously
 date: 2026-11-21
 slug: horses-of-hoofprint-bay-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "Three developers who love horses built a hand-drawn stable management game with real daily care, training, competitions and breeding. At ₪98.99 on Steam ($26.99 in the US), it's one of November's surprise cosy games, as long as you enjoy routine."
 image: img/posts/horses-of-hoofprint-bay-hero.webp
 image_alt: "Artwork from Horses of Hoofprint Bay: a rider in a yellow shirt and helmet jumps a chestnut horse over a wooden obstacle, with a blue bay and a lighthouse on a cliff behind"

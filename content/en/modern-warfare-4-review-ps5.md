@@ -3,6 +3,8 @@ title: "Modern Warfare 4 review on PS5: the Call of Duty we've been waiting for"
 date: 2026-10-26
 slug: modern-warfare-4-review-ps5
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "After a few years of entries that felt rushed, Infinity Ward is back with a campaign you won't want to put down, tight multiplayer and a DMZ that returns in style. I played it on PS5 and came away grinning."
 image: img/posts/mw4-hero-korea-front.webp
 image_alt: "Three helmeted soldiers take cover behind a wall, watching huge explosions tear through a forest as a fighter jet passes overhead"

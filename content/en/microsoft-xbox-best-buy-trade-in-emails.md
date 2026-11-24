@@ -3,6 +3,8 @@ title: "Microsoft is emailing idle Xbox owners to trade in their consoles at Bes
 date: 2026-10-20
 slug: microsoft-xbox-best-buy-trade-in-emails
 category: tech-news
+world: play
+type: news
 excerpt: "Owners who haven't used their Xbox Series X in a while are getting an offer of Best Buy gift cards, while a new Series X costs $799 in the US."
 image: img/posts/xbox-series-x.webp
 image_alt: "A black Xbox Series X console standing on a wooden shelf"

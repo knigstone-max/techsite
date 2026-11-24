@@ -3,6 +3,8 @@ title: "Roborock Saros 20 Flow Complete review: a mopping robot that finally get
 date: 2026-10-29
 slug: roborock-saros-20-flow-complete-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "A roller mop that's rinsed nonstop, hot water from the dock, an arm that climbs 8.8 cm thresholds and a body under 9 cm tall. At ₪4,990 (about $1,595) it's the most interesting robot to reach Israel this fall, with a few caveats."
 image: img/posts/roborock-saros-20-flow-complete.webp
 image_alt: "The white Roborock Saros 20 Flow Complete robot vacuum next to its tall docking station"

@@ -3,6 +3,8 @@ title: "Sonos Ace Ultra arrives in Israel at ₪1,699: headphones that take the 
 date: 2026-11-23
 slug: sonos-ace-ultra-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Sonos's new over-ear headphones are on sale in Israel at a list price of ₪1,699 (about $511), after a ₪1,599 pre-sale. The big new trick: hold one button and whatever is playing on your Sonos speaker or soundbar moves to your ears over Wi-Fi, no phone needed. Here's what you get, what's still in early access, and what the full setup costs."
 image: img/posts/sonos-ace-ultra-hero.webp
 image_alt: "A pair of black Sonos Ace Ultra over-ear headphones on a muted teal background"

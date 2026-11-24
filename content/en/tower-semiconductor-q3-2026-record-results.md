@@ -3,6 +3,8 @@ title: "Tower posts a record Q3 and is hiring 150 people in Migdal HaEmek"
 date: 2026-11-03
 slug: tower-semiconductor-q3-2026-record-results
 category: tech-news
+world: techhigh
+type: news
 excerpt: "The Israeli chipmaker brought in $526 million last quarter, expects $600 million next quarter and will end 2026 at about $2 billion. CEO Russell Ellwanger says it's hiring 150 operators and technicians in Israel."
 image: img/posts/tower-semiconductor-migdal-haemek-hq.webp
 image_alt: "Tower Semiconductor's headquarters building in Migdal HaEmek, with the company logo on the facade"

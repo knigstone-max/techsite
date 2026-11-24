@@ -3,6 +3,8 @@ title: "Gemini now talks to drivers in Google Maps on Apple CarPlay"
 date: 2026-10-22
 slug: gemini-google-maps-apple-carplay
 category: tech-news
+world: techhigh
+type: news
 excerpt: "A Gemini button in Google Maps on CarPlay answers multi-step questions and reports traffic problems by voice. It's live in the US, with a global rollout underway."
 image: img/posts/carplay-vw-id4.webp
 image_alt: "The Apple CarPlay home screen on the dashboard display of a Volkswagen ID.4"

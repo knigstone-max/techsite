@@ -3,6 +3,8 @@ title: "המשביר מתחילה למכור מקררים, מכונות כביס
 date: 2026-11-12
 slug: hamashbir-enters-home-appliances
 category: home-appliances
+world: home
+type: news
 excerpt: "רשת חנויות הכלבו נכנסת למוצרי חשמל גדולים, קודם באתר ובהמשך בסניפים. מכונות כביסה מתחילות ב-1,550 ₪ (כ-489 דולר) ומקררים ב-1,099 ₪. מה זה אומר על שוק שאלקטרה שולטת בו יותר ויותר."
 image: img/posts/hamashbir-rishon-lezion-store.webp
 image_alt: "חזית בניין המשביר ברחוב ז'בוטינסקי בראשון לציון, עם שלטים כחולים בעברית על חזית אבן בהירה"

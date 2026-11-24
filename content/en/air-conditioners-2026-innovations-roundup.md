@@ -3,6 +3,8 @@ title: "Air conditioners in 2026: sensors that know you're there, drying without
 date: 2026-11-24
 slug: air-conditioners-2026-innovations-roundup
 category: home-appliances
+world: home
+type: recommendations
 excerpt: "This year ACs learned to tell whether anyone's in the room, show how much power they use, pull humidity out without freezing the living room, and start moving to propane. What was shown worldwide, what already reached Israel, and what to check before you buy an AC for next summer."
 image: img/posts/air-conditioners-2026-hero.webp
 image_alt: "A white LG wall-mounted air conditioner high on the wall of a bright living room with cream sofas, a wooden floor and a bookcase, with airflow blowing into the room"

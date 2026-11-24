@@ -3,6 +3,8 @@ title: "Bissell launches CrossWave Reach Plus Select in Israel first, at ₪1,49
 date: 2026-11-07
 slug: bissell-crosswave-reach-plus-select-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "The cordless 4509N vac-mop arrives in Israel before the rest of the world through Hamilton: 180° lay-flat, Gap Zero edge cleaning, up to 40 minutes of runtime and a dock that dries the brush with hot air. Launch price ₪1,490, 24-month warranty."
 image: img/posts/bissell-crosswave-reach-plus-select.webp
 image_alt: "Black Bissell CrossWave Reach Plus Select cordless vac-mop with silver neck and clear brush head"

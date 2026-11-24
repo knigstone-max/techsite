@@ -3,6 +3,8 @@ title: "סיכום 2026 בניקוי רצפות: שישה חידושים בשו�
 date: 2026-11-20
 slug: floor-cleaning-2026-innovations-roundup
 category: home-appliances
+world: home
+type: recommendations
 excerpt: "קיטור חם יותר בשואבים-השוטפים, רובוטים עם רגליים, רולרים במקום מגבים מסתובבים ונורות UV-C מתחת לרובוט. עברנו על מה שהשתנה השנה בניקוי הרצפות, ובדקנו מה כבר נמכר בארץ ובכמה."
 image: img/posts/roborock-f25-ultra-steam.webp
 image_alt: "שואב-שוטף אלחוטי Roborock F25 Ultra Steam Gen 2 באפור כהה, לצד ערכת אביזרים וטלפון שמציג את האפליקציה"

@@ -3,6 +3,8 @@ title: "Motorola adds a Polar-powered watch and Bose-tuned earbuds: prices and w
 date: 2026-11-09
 slug: moto-watch-2-fit-buds-2-ultra
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Alongside the Signature 27, Motorola announced the Moto Watch 2 Fit, with Polar fitness insights and up to 12 days of battery, and the Moto Buds 2 Ultra with Bose noise cancelling. They start at €99 and €199 in Europe, and the rollout includes the Middle East."
 image: img/posts/moto-watch-2-fit-colors.webp
 image_alt: "Three Moto Watch 2 Fit watches on silicone straps in sage, pink and blue, their square screens showing an analog face"

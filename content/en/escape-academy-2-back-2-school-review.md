@@ -3,6 +3,8 @@ title: "Escape Academy 2 review: escape rooms, now with a whole campus to explor
 date: 2026-11-05
 slug: escape-academy-2-back-2-school-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "The sequel to the escape room game played by more than 4 million people is out today on Xbox, PC and PS5, and on Game Pass from day one. It adds an open campus, split-screen co-op and a no-timer mode. At around ₪63, it's one of the best games to play as a pair."
 image: img/posts/escape-academy-2-key-art.webp
 image_alt: "Official key art for Escape Academy 2: two students in red uniforms, one holding a sheet of paper and binoculars, the other with pink hair holding a key, in front of a colourful campus with a clock tower"

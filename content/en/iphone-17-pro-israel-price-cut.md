@@ -3,6 +3,8 @@ title: "iPhone 17 Pro drops by ₪320: the new prices and who should care"
 date: 2026-08-20
 slug: iphone-17-pro-israel-price-cut
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Apple cut $90, which became ₪320 (about $104) in Israel. The 256GB 17 Pro now costs ₪4,279 (about $1,390) at Machsanei Hashmal."
 source_links:
   - "https://tech.walla.co.il/item/3862038"

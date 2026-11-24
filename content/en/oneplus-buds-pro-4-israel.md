@@ -3,6 +3,8 @@ title: "OnePlus Buds Pro 4 arrive in Israel at ₪649, with two drivers per ear 
 date: 2026-11-12
 slug: oneplus-buds-pro-4-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "OnePlus's new flagship earbuds are on sale here through Cell Now for ₪649 (about $205). You get an 11 mm woofer plus a 6 mm tweeter, adaptive noise cancelling and up to 53 hours with the case. Here's what to check before you buy."
 image: img/posts/oneplus-buds-pro-4.webp
 image_alt: "Silver OnePlus Buds Pro 4 earbuds floating above an open white charging case, next to a second case with a Dynaudio badge on the lid"

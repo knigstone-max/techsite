@@ -3,6 +3,8 @@ title: "After years of saying no, Apple puts a touchscreen and a Dynamic Island 
 date: 2026-10-29
 slug: macbook-pro-proled-xdr-touch-dynamic-island
 category: tech-news
+world: techhigh
+type: news
 excerpt: "The new MacBook Pro gets a tandem OLED display, the first touchscreen on a Mac, a Dynamic Island and a lighter body. It starts at $2,899 (about ₪9,068) in the US, with no Israeli price yet."
 image: img/posts/macbook-pro-proled-xdr-lineup.webp
 image_alt: "Two open MacBook Pro laptops, 14-inch and 16-inch, on a black background, with a Dynamic Island at the top of the screen"

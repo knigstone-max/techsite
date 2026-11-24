@@ -3,6 +3,8 @@ title: "Sony WH-CH730N בישראל: אוזניות עם סינון רעשים �
 date: 2026-11-21
 slug: sony-wh-ch730n-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "האוזניות החדשות של סוני מהסדרה הזולה הגיעו לארץ דרך היבואן הרשמי, ונמכרות ב-360 עד 410 ₪ (כ-108 עד 123 דולר). בארה\"ב המחיר המומלץ הוא 179.99 דולר. מה מקבלים, ועל מה מוותרים."
 image: img/posts/sony-wh-ch730n-hero.webp
 image_alt: "אוזניות קשת אלחוטיות Sony WH-CH730N בצבע כחול על רקע לבן"

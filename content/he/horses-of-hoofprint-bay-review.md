@@ -3,6 +3,8 @@ title: "ביקורת Horses of Hoofprint Bay: משחק האורווה שמתיי
 date: 2026-11-21
 slug: horses-of-hoofprint-bay-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "שלוש מפתחות שאוהבות סוסים בנו משחק ניהול אורווה מצויר ביד, עם טיפול יומיומי אמיתי, אימונים, תחרויות ורבייה. ב-98.99 ₪ ב-Steam (26.99 דולר בארה\"ב), זה אחד משחקי הקוזי המפתיעים של נובמבר, בתנאי שאתם אוהבים שגרה."
 image: img/posts/horses-of-hoofprint-bay-hero.webp
 image_alt: "איור מתוך Horses of Hoofprint Bay: רוכבת בחולצה צהובה וקסדה קופצת על סוס ערמוני מעל מכשול עץ, ומאחוריה מפרץ כחול ומגדלור על צוק"

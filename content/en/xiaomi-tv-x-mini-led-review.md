@@ -3,6 +3,8 @@ title: "Xiaomi TV X Mini LED review: Mini LED for the price of an ordinary TV"
 date: 2026-11-05
 slug: xiaomi-tv-x-mini-led-review
 category: reviews
+world: home
+type: reviews
 excerpt: "Xiaomi is bringing its budget Mini LED range to Israel, from ₪1,549 for 43 inches up to ₪3,490 for 75. I went through what you get for the money, where Xiaomi cut corners and who it's right for."
 image: img/posts/xiaomi-tv-x-mini-led.webp
 image_alt: "A Xiaomi TV X Mini LED with a thin bezel on feet, showing a colourful orange and blue flower"

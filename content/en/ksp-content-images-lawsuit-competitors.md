@@ -3,6 +3,8 @@ title: "KSP planted its own ad on rival sites, and is suing Lior Electric for â‚
 date: 2026-10-29
 slug: ksp-content-images-lawsuit-competitors
 category: tech-news
+world: techhigh
+type: news
 excerpt: "KSP found competing chains were pulling product photos and copy straight from its servers, so it swapped the images for an ad of its own. Now it's taking one of them to court."
 image: img/posts/ksp-store-sign-holon.webp
 image_alt: "A large yellow KSP sign above a shopfront in Holon, next to other store signs"

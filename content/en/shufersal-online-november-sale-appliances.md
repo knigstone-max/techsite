@@ -3,6 +3,8 @@ title: "Shufersal Online's November sale: on appliances, the discounts are small
 date: 2026-11-03
 slug: shufersal-online-november-sale-appliances
 category: home-appliances
+world: home
+type: news
 excerpt: "Shufersal Online promises up to 60% off, but Dyson, Ecovacs and Nespresso only drop 15% to 25%. We went through the appliances on sale and worked out what actually comes off each one."
 image: img/posts/dyson-v15-detect-laser.webp
 image_alt: "A Dyson V15 Detect cleaner head lighting up a dark floor with a green laser, revealing dust and small particles"

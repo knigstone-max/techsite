@@ -3,6 +3,8 @@ title: "Jackery FridgeGuard: a backup battery that sits on your fridge and keeps
 date: 2026-11-14
 slug: jackery-fridgeguard-fridge-backup-battery
 category: home-appliances
+world: home
+type: news
 excerpt: "Jackery is launching an ultra-slim battery in Canada that plugs in between the wall and the fridge and takes over within 10 milliseconds. It costs CA$699.99 there, about ₪1,571 ($491). There's no word on Israel yet."
 image: img/posts/jackery-fridgeguard-on-fridge.webp
 image_alt: "A man presses a button on a slim silver unit resting on top of a dark two-door fridge"

@@ -3,6 +3,8 @@ title: "ביקורת Sonos Play: הרמקול הכי שימושי של סונו�
 date: 2026-11-16
 slug: sonos-play-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "ה-Play של סונוס נמכר בישראל ב-1,169 ₪ (כ-365 דולר) ונמצא בדיוק באמצע בין ה-Roam הקטן ל-Move 2 הכבד. סאונד מאוזן ועשיר, WiFi ו-Bluetooth, עמידות IP67 וסוללה שאפשר להחליף. מצד שני: 1.3 ק״ג, אין שיחות טלפון, ואין ראש מטען בקופסה."
 image: img/posts/sonos-play-black.webp
 image_alt: "רמקול Sonos Play שחור, אליפטי וגבוה, עם רשת בד ולוגו Sonos אנכי בצד, על רקע אפור-תכלת בהיר"

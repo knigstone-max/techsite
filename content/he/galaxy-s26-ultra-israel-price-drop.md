@@ -3,6 +3,8 @@ title: "Galaxy S26 Ultra כבר זול בכאלף שקל ממחיר ההשקה"
 date: 2026-10-14
 slug: galaxy-s26-ultra-israel-price-drop
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "בהזמנה המוקדמת בפברואר ה-Ultra בנפח 512GB עלה 4,549 ₪. היום היבואן הרשמי מוכר אותו ב-3,999 ₪ (כ-1,300 דולר), ובמבצע אפשר למצוא 256GB ב-3,299 ₪."
 image: img/posts/galaxy-s26-ultra.webp
 image_alt: "שלושה מכשירי Galaxy S26 בגוון סגול, צילום יחצ של סמסונג"

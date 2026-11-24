@@ -3,6 +3,8 @@ title: "Village in the Shade review: a gentle farm by day, quiet dread by night"
 date: 2026-11-01
 slug: village-in-the-shade-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "The Yomawari team took a cosy Stardew-style farming game and set it in a mountain village with eight strange rules and knocks on the door at midnight. It's slow to get going, but it pays off."
 image: img/posts/village-in-the-shade-key-art.webp
 image_alt: "Hand-painted art of a blonde girl with a red ribbon in her hair, kneeling beside a young sapling in a sunlit green grove"

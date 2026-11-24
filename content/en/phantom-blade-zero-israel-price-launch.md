@@ -3,6 +3,8 @@ title: "Phantom Blade Zero is out: the critics' favorite kung fu game, and what 
 date: 2026-10-30
 slug: phantom-blade-zero-israel-price-launch
 category: gaming-lite
+world: play
+type: news
 excerpt: "S-GAME's Chinese action game launched yesterday on PS5 and PC with an 88 on Metacritic. On Israel's digital stores it costs about ₪150 (around $48). Prices, PC requirements and what to know before you buy."
 image: img/posts/phantom-blade-zero-key-art.webp
 image_alt: "Official Phantom Blade Zero key art: the warrior Soul in a wide straw hat and torn cloak, drawing a long sword against a dark grey background"

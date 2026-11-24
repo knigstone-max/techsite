@@ -3,6 +3,8 @@ title: "Redmi Note 17 Pro Max review: a 10,000mAh battery in a ₪2,199 phone"
 date: 2026-11-02
 slug: redmi-note-17-pro-max-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "The biggest model in the new Redmi Note line brings a huge battery, IP69 protection and a 3,500-nit screen. Here's what ₪2,199 gets you, where it cuts corners, and who it's really for."
 image: img/posts/redmi-note-17-pro-max-colors.webp
 image_alt: "Three Redmi Note 17 Pro Max phones seen from the back, in black, white and purple, with a round camera island in the top corner"

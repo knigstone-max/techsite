@@ -3,6 +3,8 @@ title: "Tineco pushes steam to 230°C: two new floor washers, and what's on sale
 date: 2026-11-19
 slug: tineco-supersteam-3-230c-floor-washers
 category: tech-news
+world: home
+type: news
 excerpt: "Tineco has launched the Floor One S9 Artist SuperSteam and S7 SuperSteam, with 230°C steam from eight nozzles, 30,000Pa suction and hot-air roller drying. They're not sold in Israel yet, but Tineco's current steam model costs ₪2,950 here."
 image: img/posts/tineco-supersteam-hero.webp
 image_alt: "Two Tineco floor washers: a black S7 SuperSteam with a clear body showing an orange flame graphic, and a dark green S9 Artist SuperSteam releasing steam from its head onto a blue floor"

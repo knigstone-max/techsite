@@ -3,6 +3,8 @@ title: "Tineco S9 Artist Steam Pro review: steam, a 90-minute battery and a pric
 date: 2026-11-21
 slug: tineco-s9-artist-steam-pro-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "Tineco's steam wet-dry vacuum costs ₪2,950 (about $887) from the official importer, but Zap lists it from ₪1,889 (about $568). It's lighter than its rivals and lasts a long time on a charge, and it skips a few things others already offer. I went through the details."
 image: img/posts/tineco-s9-artist-steam-pro-hero.webp
 image_alt: "A dark grey Tineco S9 Artist Steam Pro cordless wet-dry vacuum with a colourful light strip at the top of the body and steam coming out of the cleaning head"

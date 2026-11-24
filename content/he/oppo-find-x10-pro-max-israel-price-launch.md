@@ -3,6 +3,8 @@ title: "OPPO Find X10 Pro Max נוחת בישראל: 6,499 ₪, שלוש מצל�
 date: 2026-10-29
 slug: oppo-find-x10-pro-max-israel-price-launch
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "רונלייט, היבואנית של OPPO, מוכרת את דגם הדגל ב-6,499 ₪ (כ-2,078 דולר) עם 512GB. מה מקבלים בחבילת ההשקה, ולמה כדאי לבדוק את הסוללה על האריזה."
 image: img/posts/oppo-find-x10-series.webp
 image_alt: "הגב של OPPO Find X10 בתכלת ושל Find X10 Pro Max בלבן, ליד הכיתוב Find X10 Series"

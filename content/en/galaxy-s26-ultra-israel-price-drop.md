@@ -3,6 +3,8 @@ title: "Galaxy S26 Ultra now costs about ₪1,000 less than at launch"
 date: 2026-10-14
 slug: galaxy-s26-ultra-israel-price-drop
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "At preorder in February the 512GB Ultra cost ₪4,549. The official importer now sells it for ₪3,999 (about $1,300), and the 256GB model is on sale for ₪3,299."
 image: img/posts/galaxy-s26-ultra.webp
 image_alt: "Three Galaxy S26 phones in violet, Samsung press photo"

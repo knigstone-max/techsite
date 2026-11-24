@@ -3,6 +3,8 @@ title: "iPhone 18 Pro lands in Israel with the rest of the world: what each reta
 date: 2026-09-19
 slug: iphone-18-pro-israel-prices
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "This year Israel launched alongside the rest of the world. The 256GB Pro starts at about ₪5,029 (about $1,630) and reaches ₪5,399 at iStore. Here are the price lists and the catches."
 image: img/posts/iphone-18-pro.webp
 image_alt: "iPhone 18 Pro and iPhone 18 Pro Max in burgundy, Apple press photo"

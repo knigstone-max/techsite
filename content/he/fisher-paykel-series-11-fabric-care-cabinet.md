@@ -3,6 +3,8 @@ title: "Fisher & Paykel משיקה ארון שמרענן ומחטא בגדים �
 date: 2026-11-21
 slug: fisher-paykel-series-11-fabric-care-cabinet
 category: tech-news
+world: home
+type: news
 excerpt: "סדרת Series 11 Minimal כוללת ארון טיפוח לבגדים עדינים, מכונת כביסה של 12 ק\"ג עם מינון לפי סוג הבד ושני מייבשי משאבת חום. בבריטניה הארון יעלה 2,750 ליש\"ט (כ-11,991 ₪, כ-3,605 דולר) ויגיע רק באפריל 2027. בישראל החברה מוכרת בינתיים רק מוצרי מטבח."
 image: img/posts/fisher-paykel-series-11-fabric-care-hero.webp
 image_alt: "ארון טיפוח בגדים גבוה וצר בגימור זכוכית אפורה של Fisher & Paykel, ולידו מכונת כביסה בפתח קדמי באותו גימור"

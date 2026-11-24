@@ -3,6 +3,8 @@ title: "נספרסו וסברובסקי: מכונת CitiZ עם 44 קריסטלי
 date: 2026-11-01
 slug: nespresso-citiz-platinum-swarovski-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "קולקציית החורף של נספרסו כוללת השנה מכונת CitiZ Platinum משובצת קריסטלים של סברובסקי ב-1,250 שקל. בדקנו מה מקבלים, כמה זה יותר מהדגם הרגיל ומה עוד יש בקולקציה."
 image: img/posts/nespresso-citiz-platinum-swarovski.webp
 image_alt: "מכונת קפה CitiZ Platinum כסופה עם שורת קריסטלים לאורך הצד, על משטח ורוד, עם כוס אספרסו ואצבעות עם טבעות נוצצות"

@@ -3,6 +3,8 @@ title: "Virtue and a Sledgehammer review: going home with a giant hammer, and fi
 date: 2026-11-16
 slug: virtue-and-a-sledgehammer-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "The new game from Deconstructeam, the studio behind The Red Strings Club, sends a grieving woman to tear down a whole town of robots carrying her neighbors' memories. At ₪54.49 on Steam in Israel ($14.99 in the US), it's a short, angry, painful game about grief, family and AI, with a hammer that feels great and gameplay that repeats itself."
 image: img/posts/virtue-sledgehammer-key-art.webp
 image_alt: "Official Virtue and a Sledgehammer key art: Pratelle holding a huge sledgehammer, tangled in turquoise threads, between two large faces in red"

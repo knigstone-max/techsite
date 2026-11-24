@@ -3,6 +3,8 @@ title: "Intel's worst day since 1974, and the Kiryat Gat fab at the heart of it"
 date: 2026-11-01
 slug: intel-worst-day-since-1974-kiryat-gat
 category: tech-news
+world: techhigh
+type: news
 excerpt: "Intel shares fell 28.6% on Friday, their steepest drop since 1974. Part of the reason is in Israel: the shutdown of Fab 28 in Kiryat Gat after a deadly accident is costing the company about $300 million in revenue a quarter."
 image: img/posts/intel-kiryat-gat-campus.webp
 image_alt: "Aerial photo of Intel's campus in the Kiryat Gat industrial zone, with fab buildings, parking lots and fields around them"

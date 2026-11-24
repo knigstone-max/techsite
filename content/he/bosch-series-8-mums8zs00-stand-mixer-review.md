@@ -3,6 +3,8 @@ title: "ביקורת Bosch Series 8 MUMS8ZS00: מיקסר של 1,800 וואט ש
 date: 2026-11-03
 slug: bosch-series-8-mums8zs00-stand-mixer-review
 category: reviews
+world: home
+type: reviews
 excerpt: "המיקסר הכי חזק של בוש מגיע עם קערה של 6 ליטר, משקל מובנה, תוכניות אוטומטיות ואחריות של 10 שנים על המנוע. בדקתי אם הוא שווה כ-3,550 שקל, ולמי הוא באמת מתאים."
 image: img/posts/bosch-series-8-mums8-key-visual.webp
 image_alt: "אישה במטבח מחזיקה כיכר לחם עגולה, ולידה על השיש מיקסר Bosch Series 8 בצבע כסף עם קערת נירוסטה, כיכרות לחם וענן קמח באוויר"

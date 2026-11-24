@@ -3,6 +3,8 @@ title: "ברוכים הבאים לאתר (פוסט לדוגמה)"
 date: 2026-10-18
 slug: welcome
 category: tech-news
+world: techhigh
+type: news
 excerpt: "זה פוסט לדוגמה שמראה איך פוסט נראה באתר. אפשר למחוק אותו אחרי שמתפרסם התוכן האמיתי הראשון."
 placeholder: true
 source_links: []

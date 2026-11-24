@@ -3,6 +3,8 @@ title: "Haier ב-IFA: מכונה עם מצלמה בתוף, ארבעה תופים
 date: 2026-09-10
 slug: haier-ifa-2026-ai-home
 category: home-appliances
+world: home
+type: news
 excerpt: "Haier Europe הציגה מכונת כביסה שמזהה צבעים ופריטים שנשכחו, את Multi Care עם ארבעה תופים ותוכנית השקעה של 13 מיליארד יורו בבינה מלאכותית."
 image: img/posts/haier-ifa-2026.webp
 image_alt: "רובוט דמוי אדם ליד מכונת כביסה בביתן של Haier ב-IFA 2026"

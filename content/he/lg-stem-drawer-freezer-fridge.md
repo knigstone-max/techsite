@@ -3,6 +3,8 @@ title: "LG STEM: מקרר עם מתקן מים וקרח, מקפיא במגירו
 date: 2026-10-27
 slug: lg-stem-drawer-freezer-fridge
 category: home-appliances
+world: home
+type: news
 excerpt: "בדגם החדש שהושק בקוריאה, LG החליפה את דלתות המקפיא התחתון בשתי מגירות. המגירה האמצעית יכולה להיות מקרר או מקפיא, עם 14 מצבי אחסון לפי סוג המזון."
 image: img/posts/lg-stem-drawer-fridge.webp
 image_alt: "מקרר LG STEM בצבע בז' משולב בארונות מטבח, עם מתקן מים וקרח בדלת השמאלית ושתי שורות מגירות למטה"

@@ -3,6 +3,8 @@ title: "soundcore AeroFit 2 Pro בישראל: אוזניות פתוחות שיו
 date: 2026-10-31
 slug: anker-soundcore-aerofit-2-pro-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "האוזניות החדשות של אנקר מגיעות עם וו אוזן שמזיזים בין חמש דרגות: בדרגות הנמוכות הן פתוחות, ובגבוהות הן נצמדות לאוזן ומפעילות ביטול רעשים. ב-KSP הן עולות 730 ₪ (כ-234 דולר). כל מה שצריך לדעת."
 image: img/posts/soundcore-aerofit-2-pro.webp
 image_alt: "שתי אוזניות soundcore AeroFit 2 Pro בצבע שחור עם וו אוזן מעוקל, על רקע שחור"

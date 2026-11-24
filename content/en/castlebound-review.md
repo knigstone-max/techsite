@@ -3,6 +3,8 @@ title: "Castlebound review: a castle with legs, four friends on the couch, and b
 date: 2026-11-15
 slug: castlebound-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "Mexican studio Ogre Pixel's new game is a colorful action roguelite about protecting a walking castle, solo or with up to three friends on one screen. At ₪35.99 on Steam in Israel ($9.99 in the US), it's a steal for co-op nights, even if the difficulty curve and the bosses still need polish."
 image: img/posts/castlebound-key-art.webp
 image_alt: "Official Castlebound key art: the heroes and the castle in a papercraft style facing an army of enemies"

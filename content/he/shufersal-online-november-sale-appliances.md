@@ -3,6 +3,8 @@ title: "מבצע נובמבר בשופרסל אונליין: על מוצרי ה�
 date: 2026-11-03
 slug: shufersal-online-november-sale-appliances
 category: home-appliances
+world: home
+type: news
 excerpt: "שופרסל אונליין מבטיחה עד 60% הנחה, אבל על דייסון, אקובקס ונספרסו ההנחות הן 15% עד 25%. עברנו על מוצרי החשמל במבצע, וחישבנו כמה באמת יורד מכל אחד."
 image: img/posts/dyson-v15-detect-laser.webp
 image_alt: "ראש השואב של Dyson V15 Detect מאיר בלייזר ירוק רצפה כהה, וחושף אבק וחלקיקים קטנים"

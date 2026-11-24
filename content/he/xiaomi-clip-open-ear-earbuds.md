@@ -3,6 +3,8 @@ title: "Xiaomi Clip: אוזניות קליפס של 5.5 גרם עם Apple Find M
 date: 2026-11-22
 slug: xiaomi-clip-open-ear-earbuds
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "אוזניות הקליפס הראשונות של שיאומי תחת השם שלה הושקו בעולם לצד Xiaomi 18 Pro. הן עולות 149.99 אירו בספרד (כ-547 ₪, או 165 דולר) ו-129.99 ליש\"ט בבריטניה. מה הן מציעות, איך הן מול OnePlus Buds Clip שנמכרות כאן ב-499 ₪, ומה עוד לא ידוע לגבי ישראל."
 image: img/posts/xiaomi-clip-hero.webp
 image_alt: "זוג אוזניות Xiaomi Clip בצבע זהב חולי, עם גשר מתכת מעוקל וכדור רמקול שקוף בחלקו"

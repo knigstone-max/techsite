@@ -3,6 +3,8 @@ title: "Annihilated review: four broken heroes, one way out, and weapons that hi
 date: 2026-11-14
 slug: annihilated-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "Death Kumiai's debut is a story-driven roguelite with card battles, where you can only rescue one of four heroes from a cursed dungeon. At $16.99 on Steam (₪60.99), it's a great buy if you're here for the story, even if the combat isn't as deep as it looks."
 image: img/posts/annihilated-key-art.webp
 image_alt: "Annihilated promo art: five anime-style characters, including a witch in a wide hat and a blue-eyed girl holding a sword, next to the game's logo"

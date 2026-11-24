@@ -3,6 +3,8 @@ title: "INOKIM enters Machsanei Hashmal and Shekem: the Israeli scooter wants fi
 date: 2026-09-28
 slug: inokim-electra-stores
 category: tech-news
+world: techhigh
+type: news
 excerpt: "The scooter brand born as MyWay in 2009 will be sold in about 200 Electra branches. 7,500 scooters a year, about a quarter of the market, and an Israeli standards mark no rival has."
 source_links:
   - "https://www.ice.co.il/consumerism/news/article/1131276"

@@ -3,6 +3,8 @@ title: "iPhone Duo review: Apple's foldable gets almost everything right, except
 date: 2026-10-29
 slug: iphone-duo-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "Apple's first foldable has a 7.6-inch inner screen, two displays with the same shape and an A20 Pro chip. In Israel it starts at ₪8,199 (about $2,621), and Israeli buyers should know about two big caveats."
 image: img/posts/iphone-duo-colors.webp
 image_alt: "Two iPhone Duo foldables, one white and one dark blue, half open with dual rear cameras"

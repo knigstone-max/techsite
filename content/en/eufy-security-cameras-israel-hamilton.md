@@ -3,6 +3,8 @@ title: "eufy security cameras officially land in Israel: from ₪199, with no mo
 date: 2026-11-14
 slug: eufy-security-cameras-israel-hamilton
 category: smartphones-gadgets
+world: home
+type: news
 excerpt: "Hamilton is bringing five eufy cameras and kits to Israel, from a ₪199 indoor cam (about $62) to a ₪1,649 outdoor kit with a hub (about $515). Recordings stay at home, and there's nothing to pay each month."
 image: img/posts/eufy-solocam-e42-solar.webp
 image_alt: "A white eufy security camera with a pan-and-tilt head and a black solar panel on top, against a black background"

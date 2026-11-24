@@ -3,6 +3,8 @@ title: "MONOMOON review: a tiny moon, a whole world of puzzles and zero explanat
 date: 2026-11-18
 slug: monomoon-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "Gentle Giant has built a Metroidvania with no combat and no instructions, where your only tool is a little moon you move with the mouse. At ₪45.99 on Steam in Israel ($11.99 in the US), it's one of the most original puzzle games of the year, with a few stretches where you'll feel completely lost."
 image: img/posts/monomoon-key-art.webp
 image_alt: "Official MONOMOON art: a small creature in a blue hat and red cape stands on a green hill, looking up at a yellow crescent moon in the night sky"

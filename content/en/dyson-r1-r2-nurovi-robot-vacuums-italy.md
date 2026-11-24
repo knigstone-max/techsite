@@ -3,6 +3,8 @@ title: "Dyson's R1 and R2 Nurovi robot vacuums go on sale in Italy, from 549 eur
 date: 2026-10-21
 slug: dyson-r1-r2-nurovi-robot-vacuums-italy
 category: home-appliances
+world: home
+type: news
 excerpt: "The R1 Nurovi Dry vacuums only, the R2 Nurovi Wash+Dry also mops with triangle-shaped pads, and both empty into a bagless dock that holds up to 90 days of dust."
 image: img/posts/dyson-r2-nurovi-wash-dry-dock.webp
 image_alt: "Dyson R2 Nurovi Wash+Dry robot vacuum parked in its open dock, showing the water tanks and the cyclone dust bin"

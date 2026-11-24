@@ -3,6 +3,8 @@ title: "Shark BreatheClear NeverChange review: an air purifier that skips filter
 date: 2026-11-01
 slug: shark-breatheclear-neverchange-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "Shark has brought two compact air purifiers to Israel at ₪799 and ₪990, both promising up to six years without a filter swap. I looked at what that promise really means, which room each one suits, and where they fall short."
 image: img/posts/shark-breatheclear-neverchange-duo.webp
 image_alt: "The two Shark air purifiers side by side: the small HP062 and the taller HP162, both in grey and white with a round air-quality display"

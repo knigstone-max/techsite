@@ -3,6 +3,8 @@ title: "Xiaomi brings a 546-litre fridge with an ice maker to Europe, and it's o
 date: 2026-11-20
 slug: xiaomi-mijia-fridge-546l-europe-launch
 category: tech-news
+world: home
+type: news
 excerpt: "The Mijia Refrigerator Pro Multi-Door 546L comes in two layouts, with a 195-litre freezer, an automatic ice maker and a depth of just 60 cm. In France it starts at €1,299.99 (about ₪4,688 or $1,428) at the end of December. Nothing has been announced for Israel yet."
 image: img/posts/xiaomi-mijia-fridge-546l-hero.webp
 image_alt: "A dark grey Xiaomi French Door fridge with two doors on top and two drawers below, against a black background with mist on the floor"

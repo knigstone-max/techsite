@@ -3,6 +3,8 @@ title: "סקירת TCL Q7D PRO: המיני LED הזול של TCL הוא גם ה�
 date: 2026-10-30
 slug: tcl-q7d-pro-mini-led-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "מ-3,990 ₪ (כ-1,281 דולר) ל-55 אינץ' מקבלים מיני LED עם עד 2,200 ניט, 144Hz ואפליקציות של yes, HOT, פרטנר וסלקום. עברתי על כל המפרט: איפה זו מציאה ואיפה כדאי לבחור גודל אחר."
 image: img/posts/tcl-q7d-pro-mini-led.webp
 image_alt: "טלוויזיית TCL Q7D PRO במבט צד, מסך דק על שתי רגליים, עם איור צבעוני של כחול, כתום וזהב על המסך"

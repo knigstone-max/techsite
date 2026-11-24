@@ -3,6 +3,8 @@ title: "Zero Parades: Director's Cut on Switch 2 review: spy craft, familiar for
 date: 2026-11-07
 slug: zero-parades-directors-cut-switch-2-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "ZA/UM returns after Disco Elysium with a narrative RPG about a broken spy in a political city. The Director's Cut hit Switch 2 and other consoles on November 3 with tens of thousands of new words, a Backstage mode and mouse support. On Israel's PS Store it is ₪159."
 image: img/posts/zero-parades-hershel-key-art.webp
 image_alt: "Character in a glossy red coat holding a weapon, looking back over their shoulder on a black background, from Zero Parades"

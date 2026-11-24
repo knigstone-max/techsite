@@ -3,6 +3,8 @@ title: "Electra brings the Pixel 11 Pro to its stores: prices, warranty and the 
 date: 2026-10-08
 slug: electra-pixel-11-pro-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Machsanei Hashmal and Shekem Electric now sell the Pixel 11 Pro and Pro XL for ₪4,799 to ₪5,449 (about $1,560 to $1,770). It is not official Google import, which matters most when something breaks."
 image: img/posts/pixel-11-pro-collection.webp
 image_alt: "The Pixel 11 lineup with Google's watch and earbuds, press photo"

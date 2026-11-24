@@ -3,6 +3,8 @@ title: "Stellar Blade Complete Edition on Switch 2 review: Eve finally goes port
 date: 2026-11-06
 slug: stellar-blade-complete-edition-switch-2-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "SHIFT UP's action game hit Switch 2 on November 5 with all DLC, Bayonetta outfits and a full cartridge. In Israel it lands around ₪299–309. Worth buying if you already played on PS5?"
 image: img/posts/stellar-blade-complete-edition-key-art.webp
 image_alt: "Eve and Adam facing each other in a futuristic lab in front of a glowing spherical device, from Stellar Blade"

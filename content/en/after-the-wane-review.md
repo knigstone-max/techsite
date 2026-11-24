@@ -3,6 +3,8 @@ title: "After the Wane review: ballet, the occult and a voice in your head, in a
 date: 2026-11-19
 slug: after-the-wane-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "Small French studio Nova-box is back with the story of a young dancer who arrives in the big city looking for the mother who left her. At ₪51.95 on Steam ($13.99 in the US), it's one of the most beautiful story games of the year, with hand-painted art, frame-by-frame dance animation and a twist worth reaching unspoiled."
 image: img/posts/after-the-wane-hero.webp
 image_alt: "Art from After the Wane: a dancer mid-leap against a burning red and orange background, with other dancers at a ballet barre beside her"

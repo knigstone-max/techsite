@@ -3,6 +3,8 @@ title: "Xiaomi Smart Switch 2 Pro הופך מתג קיר רגיל למתג חכ�
 date: 2026-10-20
 slug: xiaomi-smart-switch-2-pro
 category: home-appliances
+world: home
+type: news
 excerpt: "המתג החדש של שיאומי נכנס במקום מתג הקיר הקיים, עובד עם נורות רגילות וחכמות, ומחירו מתחיל ב-114 יואן בקמפיין מימון המונים בסין."
 image: img/posts/xiaomi-smart-switch-2-pro.webp
 image_alt: "שני מתגי קיר Xiaomi Smart Switch 2 Pro, אחד לבן ואחד אפור כהה"

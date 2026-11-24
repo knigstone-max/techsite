@@ -3,6 +3,8 @@ title: "Metaphor: ReFantazio on Switch 2 review: one of the best RPGs of the dec
 date: 2026-11-11
 slug: metaphor-refantazio-switch-2-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "The Persona team's fantasy RPG, about a kingdom choosing its next king by popular vote after a murder, hits Switch 2 tomorrow. The story, combat and music are as good as in 2024. The performance isn't. In Israel it sells for ₪149 to ₪169."
 image: img/posts/metaphor-refantazio-switch-2-key-art.webp
 image_alt: "Official Metaphor: ReFantazio art: the game's logo in the centre, a large crowd of characters in fantasy costumes standing in a square, and huge creatures above them against a red and orange sky"

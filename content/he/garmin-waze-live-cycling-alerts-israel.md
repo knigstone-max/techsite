@@ -3,6 +3,8 @@ title: "Waze יראה לנהגים רוכבי אופניים בזמן אמת, א
 date: 2026-11-11
 slug: garmin-waze-live-cycling-alerts-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Garmin ו-Waze השיקו התראות על רוכבי אופניים: מי שרוכב עם שעון Garmin או מחשב Edge יכול לשתף את המיקום שלו, ונהגים בסביבה יראו אותו כאייקון זז במפה. זה חינמי, עובד גם בישראל, והשיתוף נגמר ברגע שהרכיבה נגמרת."
 image: img/posts/garmin-waze-live-cycling-alerts.webp
 image_alt: "רוכבת אופניים בכביש עירוני ליד רכב, ולצדה סמארטפון עם מפת Waze, שעון חכם ומחשב רכיבה של Garmin"

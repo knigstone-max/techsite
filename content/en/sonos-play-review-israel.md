@@ -3,6 +3,8 @@ title: "Sonos Play review: the most useful speaker Sonos makes, as long as you d
 date: 2026-11-16
 slug: sonos-play-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "The Sonos Play sells in Israel for ₪1,169 (about $365) and sits right between the tiny Roam and the hefty Move 2. Rich, balanced sound, WiFi and Bluetooth, IP67 and a replaceable battery. On the other hand: 1.3 kg, no phone calls, and no charger in the box."
 image: img/posts/sonos-play-black.webp
 image_alt: "A black Sonos Play speaker, tall and oval, with a fabric grille and a vertical Sonos logo on the side, on a light blue-grey background"

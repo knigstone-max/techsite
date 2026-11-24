@@ -3,6 +3,8 @@ title: "המדריך המלא לעולם של GTA VI: כל הקטלוגים, ה�
 date: 2026-11-21
 slug: gta-6-guides-hub
 category: gaming-lite
+world: play
+type: guides
 excerpt: "רכבים, אופנועים, נשקים, גרסאות ותוספות, וגם הביקורת שלנו, ההיסטוריה של הסדרה והטריק של ניו זילנד. כל מה שכתבנו על GTA VI, מסודר בעמוד אחד."
 image: img/posts/gta6-guides-hub.webp
 image_alt: "ג'ייסון ולוסיה ליד מכונית אדומה בשקיעה ורודה-כתומה עם דקלים ומטוס בשמיים, באיור הרשמי של GTA VI"

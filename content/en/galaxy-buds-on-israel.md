@@ -3,6 +3,8 @@ title: "Galaxy Buds On: Samsung's first open earbuds are on sale in Korea. What 
 date: 2026-11-02
 slug: galaxy-buds-on-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Samsung has started selling the Galaxy Buds On in Korea, clip-on earbuds that hook onto the ear and leave the canal open. The Korean price works out to about ₪698, and there's no Israeli launch yet."
 image: img/posts/samsung-galaxy-buds-on.webp
 image_alt: "A smiling man and woman against a blue sky, wearing black clip-on earbuds and holding clear charging cases with the earbuds inside"

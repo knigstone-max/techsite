@@ -3,6 +3,8 @@ title: "Google's Pixel Tag is on sale: what to know before ordering one to Israe
 date: 2026-11-13
 slug: google-pixel-tag-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Google's first tracker costs $29.99 (about ₪96), works with any Android phone from version 9, and runs over a year on a coin cell. It isn't sold here officially, and it doesn't work with iPhones at all."
 image: img/posts/google-pixel-tag-keys.webp
 image_alt: "A light grey Pixel Tag attached to a bunch of keys, sitting in a brown leather tray on a wooden table"

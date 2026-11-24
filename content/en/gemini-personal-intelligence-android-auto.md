@@ -3,6 +3,8 @@ title: "Gemini on Android Auto can now use your Gmail, Calendar and Maps to answ
 date: 2026-10-21
 slug: gemini-personal-intelligence-android-auto
 category: tech-news
+world: techhigh
+type: news
 excerpt: "Google is rolling out Personal Intelligence on Android Auto, with cars that have Google built-in to follow. It's opt-in and not available in the EU, Switzerland or the UK."
 source_links:
   - "https://blog.google/products-and-platforms/platforms/android/android-auto-cars-with-google-built-in-gemini-personal-intelligence/"

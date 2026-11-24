@@ -3,6 +3,8 @@ title: "מ-WASTED בפיקסלים ועד וייס סיטי של 2026: כל הס
 date: 2026-11-10
 slug: gta-series-history-1997-2026
 category: gaming-lite
+world: play
+type: guides
 excerpt: "תשעה ימים ל-GTA VI. לפני שכולם נעלמים לתוך Leonida, חזרנו 29 שנה אחורה: משחק שכמעט בוטל בדנדי, הקפיצה לתלת-ממד שכל התעשייה העתיקה, 480 מיליון עותקים, והשאלה אם Rockstar עוד מסוגלת להפתיע."
 image: img/posts/gta-history-hero-vi.webp
 image_alt: "ג'ייסון ולוסיה עומדים עם אקדח ורובה ציד במרפסת עם מעקה זכוכית סדוק, ומאחוריהם וייס סיטי בשקיעה סגולה ומסוק עם זרקור"

@@ -3,6 +3,8 @@ title: "Wyze Bulb Cam Pan Color: מצלמת אבטחה מסתובבת ב-2.5K ב
 date: 2026-10-23
 slug: wyze-bulb-cam-pan-color
 category: home-appliances
+world: home
+type: news
 excerpt: "המכשיר עולה 99.98 דולר, מתברג לבית נורה רגיל מסוג E26, מסתובב 360 מעלות, מקליט לכרטיס microSD בלי מנוי ומשמש גם כנורה צבעונית של 1100 לומן."
 image: img/posts/wyze-bulb-cam-pan-color.webp
 image_alt: "Wyze Bulb Cam Pan Color: נורה לבנה עם ראש מצלמה שתלוי מתחתיה, על רקע הילה בצבעי הקשת"

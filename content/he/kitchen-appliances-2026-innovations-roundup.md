@@ -3,6 +3,8 @@ title: "המטבח ב-2026: קולד ברו בבית, סירי טיגון מזכ
 date: 2026-11-22
 slug: kitchen-appliances-2026-innovations-roundup
 category: home-appliances
+world: home
+type: recommendations
 excerpt: "סיכום השנה שלנו עובר למטבח: מכונות קפה עם קולד ברו ושני סוגי פולים, סירי טיגון באוויר מזכוכית ובשתי קומות, תנורים וכיריים שעושים חלק מהעבודה, מדיחים מהירים יותר, והמחירים של מה שכבר הגיע לחנויות בארץ."
 image: img/posts/kitchen-2026-roundup-collage.webp
 image_alt: "קולאז' של ארבעה מכשירי מטבח מ-2026: שתי מכונות אספרסו Dreame Ecceluxe, סיר טיגון Ninja CRISPi PRO XL עם כלי זכוכית, שתי ידיים מחליפות מיכל פולים במכונת De'Longhi Rivelia Start, ומיקסר Bosch Series 8 ליד לחם טרי"

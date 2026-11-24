@@ -3,6 +3,8 @@ title: "Braun NEVO at KSP for ₪1,889, down from ₪2,499"
 date: 2026-11-07
 slug: braun-nevo-ksp-1889
 category: smartphones-gadgets
+world: home
+type: news
 excerpt: "Braun's premium 15010C shaver with AeroTouch and the NEVO Care 7-in-1 station lands in KSP's November deals. Made in Germany, two-year official-importer warranty, through the end of the month or while stocks last."
 image: img/posts/braun-nevo-15010c.webp
 image_alt: "Braun NEVO graphite electric shaver with gold cutting head, digital display, travel case and care station"

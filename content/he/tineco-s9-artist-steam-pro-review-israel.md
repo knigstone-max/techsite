@@ -3,6 +3,8 @@ title: "ביקורת Tineco S9 Artist Steam Pro: קיטור, 90 דקות סול�
 date: 2026-11-21
 slug: tineco-s9-artist-steam-pro-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "השואב-השוטף עם הקיטור של טינקו עולה 2,950 ₪ (כ-887 דולר) אצל היבואן הרשמי, ובזאפ אפשר למצוא אותו גם ב-1,889 ₪ (כ-568 דולר). הוא קל יותר מהמתחרים, מחזיק הרבה זמן על סוללה אחת, ומוותר על כמה דברים שאחרים כבר נותנים. עברתי על כל הפרטים."
 image: img/posts/tineco-s9-artist-steam-pro-hero.webp
 image_alt: "שואב-שוטף אלחוטי Tineco S9 Artist Steam Pro בצבע אפור כהה, עם פס תאורה צבעוני בראש הגוף וקיטור שיוצא מראש הניקוי"

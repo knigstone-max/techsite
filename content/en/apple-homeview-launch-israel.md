@@ -3,6 +3,8 @@ title: "Apple's smart display is in stores, just not here: what to know about Ap
 date: 2026-11-16
 slug: apple-homeview-launch-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Apple HomeView, the company's first smart display, went on sale November 13 for $299 (about ₪957). It's sold in only seven countries, Israel isn't one of them, and its Siri AI speaks English only. Here's what it does, what the mounts cost, and why importing one deserves a second thought."
 image: img/posts/apple-homeview-colors.webp
 image_alt: "Four tabletop Apple HomeView displays in silver, starlight, rose pink and space gray, each on a round speaker base"

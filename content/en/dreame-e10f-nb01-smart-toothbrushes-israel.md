@@ -3,6 +3,8 @@ title: "Dreame moves into the bathroom: E10F and NB01 smart toothbrushes arrive 
 date: 2026-11-01
 slug: dreame-e10f-nb01-smart-toothbrushes-israel
 category: smartphones-gadgets
+world: home
+type: news
 excerpt: "The brand Israelis know for robot vacuums and hair dryers is launching two electric toothbrushes: the AI-tracking E10F at ₪449 and the simpler NB01 at ₪349. Here's how they differ and who each one is for."
 image: img/posts/dreame-e10f-toothbrush.webp
 image_alt: "The silver Dreame E10F electric toothbrush with a small screen on the handle, next to its white box"

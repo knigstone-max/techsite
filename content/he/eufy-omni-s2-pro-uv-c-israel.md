@@ -3,6 +3,8 @@ title: "eufy Omni S2 Pro: שואב-שוטף עם אור UV-C שמחטא את ה�
 date: 2026-11-10
 slug: eufy-omni-s2-pro-uv-c-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "אנקר השיקה את Omni S2 Pro, גרסה משודרגת לשואב-השוטף שנמכר בישראל ב-4,699 ₪. הוא מוסיף שש נורות UV-C מתחת לרובוט, שאיבה של 40,000Pa ותחנה ששוטפת את המגב במים רותחים. בארה״ב הוא עולה 1,699 דולר, ובארץ עוד לא הוכרז."
 image: img/posts/eufy-omni-s2-pro.webp
 image_alt: "שואב רובוטי שחור של eufy עם זוהר סגול מתחתיו, לפני תחנת עגינה גבוהה בצבע אפור כהה"

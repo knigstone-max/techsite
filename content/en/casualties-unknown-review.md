@@ -3,6 +3,8 @@ title: "Casualties: Unknown review: a survival game where a splinter in the foot
 date: 2026-11-22
 slug: casualties-unknown-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "A solo developer built a 2D cave survival game that simulates blood flow, every limb and your mood, and players love it: 97% positive on Steam. ₪76.99 in Israel ($22.99 in the US), with 15% off until November 23. Here's why it grips, where it drags, and who should stay away."
 image: img/posts/casualties-unknown-key-art.webp
 image_alt: "Key art for Casualties: Unknown: a dark blue creature with an orange-tipped tail and bandaged arm and leg holds a cloth in a purple alien cave lit by glowing blue plants"

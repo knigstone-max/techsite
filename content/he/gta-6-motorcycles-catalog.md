@@ -3,6 +3,8 @@ title: "קטלוג האופנועים של GTA VI: ספורט, צ'ופרים, ש
 date: 2026-11-21
 slug: gta-6-motorcycles-catalog
 category: gaming-lite
+world: play
+type: guides
 excerpt: "מה-Dinka Enduro שמחכה מתחת לבית של ג'ייסון ועד ה-Western Nightblade שגונבים בשביל מוזס: כל האופנועים של GTA VI ששמם כבר ידוע, מה ההשראה האמיתית שלהם, ואיך משיגים את אלה ששווה להשיג."
 image: img/posts/gta6-moto-enduro.webp
 image_alt: "אופנוע Dinka Enduro בצבע ירוק צבאי חונה מול קיר טורקיז"

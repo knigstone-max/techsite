@@ -3,6 +3,8 @@ title: "OPPO Find X10 Pro Max review: the best camera on an Android phone this y
 date: 2026-11-12
 slug: oppo-find-x10-pro-max-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "Three 200MP cameras, an 8,000mAh battery in the Israeli model and a 2nm chip, for ₪6,499 at Ronlight. I went through the specs, Israeli and European prices and what published testing shows. The cameras and battery are superb. The charging speed, the software and the price are less so."
 image: img/posts/oppo-find-x10-pro-max-white.webp
 image_alt: "A white OPPO Find X10 Pro Max lying on its front against a black background, with a large square camera module and a smaller pill holding the flash and colour sensor"

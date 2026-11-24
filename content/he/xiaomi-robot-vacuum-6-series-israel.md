@@ -3,6 +3,8 @@ title: "שיאומי מביאה לישראל שבעה שואבים חדשים: �
 date: 2026-11-13
 slug: xiaomi-robot-vacuum-6-series-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "המילטון משיקה את סדרת Robot Vacuum 6, שואב-שוטף אלחוטי עם קיטור של 160 מעלות ושלושה שואבים אלחוטיים. המחירים: מ-899 ₪ (כ-282 דולר) ועד 4,690 ₪ (כ-1,470 דולר) לדגם הדגל."
 image: img/posts/xiaomi-robot-vacuum-6-max-dock.webp
 image_alt: "שואב רובוטי שחור של שיאומי עגון בתחנת עגינה גבוהה בצבע אפור מתכתי, על רקע כהה"

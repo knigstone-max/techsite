@@ -3,6 +3,8 @@ title: "ביקורת Shark BreatheClear NeverChange: מטהר אוויר שלא 
 date: 2026-11-01
 slug: shark-breatheclear-neverchange-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "שארק הביאה לישראל שני מטהרי אוויר קומפקטיים, ב-799 וב-990 ₪, שמבטיחים עד שש שנים בלי להחליף פילטר. בדקתי מה עומד מאחורי ההבטחה, לאיזה חדר מתאים כל דגם ואיפה הם פחות משכנעים."
 image: img/posts/shark-breatheclear-neverchange-duo.webp
 image_alt: "שני מטהרי האוויר של שארק זה לצד זה: HP062 הקטן ו-HP162 הגבוה, שניהם בגוף אפור-לבן עם מסך עגול שמציג את איכות האוויר"

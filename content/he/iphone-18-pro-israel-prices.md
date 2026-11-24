@@ -3,6 +3,8 @@ title: "iPhone 18 Pro הגיע לישראל ביחד עם העולם: כמה ה�
 date: 2026-09-19
 slug: iphone-18-pro-israel-prices
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "השנה ההשקה בישראל הייתה סימולטנית. Pro בנפח 256GB מתחיל בכ-5,029 ₪ (כ-1,630 דולר) ומגיע עד 5,399 ₪ באייסטור. ריכזנו את המחירונים, ההבדלים והמלכודות."
 image: img/posts/iphone-18-pro.webp
 image_alt: "iPhone 18 Pro ו-iPhone 18 Pro Max בגוון בורדו, צילום יחצ של אפל"

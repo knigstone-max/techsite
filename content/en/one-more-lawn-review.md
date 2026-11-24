@@ -3,6 +3,8 @@ title: "One More Lawn review: a grumpy old man, an old mower and the simplest jo
 date: 2026-11-24
 slug: one-more-lawn-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "A game about mowing lawns from a ride-on mower, with warm beer, a radio full of crude songs and up to six friends on the same lawn. 95% of 1,158 Steam reviews are positive, and it costs ₪25.49 in Israel (about $7.62), currently ₪17.84 in a launch sale. Here's why it works, and what to know before buying it for kids."
 image: img/posts/one-more-lawn-hero.webp
 image_alt: "A view from the seat of a red ride-on mower in One More Lawn: a row of five red mowers drives across tall grass leaving stripes, with houses and trees under a blue sky"

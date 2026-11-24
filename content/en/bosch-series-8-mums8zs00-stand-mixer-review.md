@@ -3,6 +3,8 @@ title: "Bosch Series 8 MUMS8ZS00 review: an 1,800W stand mixer that weighs your 
 date: 2026-11-03
 slug: bosch-series-8-mums8zs00-stand-mixer-review
 category: reviews
+world: home
+type: reviews
 excerpt: "Bosch's most powerful stand mixer brings a 6-litre bowl, a built-in scale, auto programs and a 10-year motor warranty. I looked at whether it's worth about ₪3,550, and who it's really for."
 image: img/posts/bosch-series-8-mums8-key-visual.webp
 image_alt: "A woman in a kitchen holding a round loaf of bread, next to a silver Bosch Series 8 stand mixer with a stainless bowl, loaves and a cloud of flour on the counter"

@@ -3,6 +3,8 @@ title: "Sony MDR-3R: אוזניות הווקמן מ-1979 חוזרות עם USB-C
 date: 2026-11-08
 slug: sony-mdr-3r-usb-c-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "סוני מחזירה את האוזניות שהגיעו עם הווקמן הראשון, הפעם עם חיבור USB-C ישיר לטלפון, מיקרופון ושלט על הכבל. בישראל הן אמורות להגיע במהלך נובמבר ב-219 ₪, ומהדורת Stranger Things ב-249 ₪."
 image: img/posts/sony-mdr-3r-blue-orange.webp
 image_alt: "שני זוגות אוזניות Sony MDR-3R בצבע כסוף, אחד עם כריות כחולות ואחד עם כריות כתומות, לצד הכיתוב MDR-3R"

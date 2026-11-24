@@ -3,6 +3,8 @@ title: "Xiaomi Smart Band 10 Pro מגיע לספרד ב-79.99 יורו, עם ס�
 date: 2026-10-19
 slug: xiaomi-smart-band-10-pro-spain
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "צמיד הכושר החדש של שיאומי דק יותר מה-9 Pro, עם מסך AMOLED בגודל 1.74 אינץ' בהיר יותר, ועובד גם עם אייפון וגם עם אנדרואיד."
 image: img/posts/xiaomi-smart-band-10-pro.webp
 image_alt: "Xiaomi Smart Band 10 Pro בצבעים כסף, שחור וורוד"

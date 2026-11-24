@@ -3,6 +3,8 @@ title: "TANUKI: Pon's Summer review: a mail carrier on a bike, one summer and a 
 date: 2026-11-10
 slug: tanuki-pons-summer-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "A sweet adventure on a small Japanese island, where a lazy tanuki takes a summer job at the post office to fix up the shrine before the festival. BMX bikes, more than 100 challenges, fishing, sumo and sushi. Out today on every platform, ₪70 on the Israeli Xbox Store and included with Game Pass."
 image: img/posts/tanuki-pons-summer-key-art.webp
 image_alt: "Official TANUKI: Pon's Summer art: a smiling tanuki in a mail carrier cap riding a red bicycle with a wicker basket, with parcels and letters flying around him against a blue sky"

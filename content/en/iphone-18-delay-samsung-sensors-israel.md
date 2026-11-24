@@ -3,6 +3,8 @@ title: "Why there's still no regular iPhone 18: a Japanese report points to Sams
 date: 2026-11-15
 slug: iphone-18-delay-samsung-sensors-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "A Japanese report says Apple held back the base iPhone 18 so Samsung could build enough camera sensors. It's now expected in the first half of 2027. Here's what that means if you're about to buy an iPhone in Israel, where the iPhone 17 costs ₪4,249 (about $1,328)."
 image: img/posts/iphone-17-lineup.webp
 image_alt: "Four iPhone 17 handsets in purple, light blue, black and sage, two of them shown from the back with two cameras"

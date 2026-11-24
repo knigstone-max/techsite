@@ -3,6 +3,8 @@ title: "De'Longhi Rivelia Start review: two kinds of beans, one machine"
 date: 2026-10-31
 slug: delonghi-rivelia-start-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "De'Longhi's new bean-to-cup machine comes with two bean hoppers you can swap in a second, ten drinks and cold brew in under five minutes. At about ₪3,200 (roughly $1,026), who it suits and when the older Rivelia is the smarter buy."
 image: img/posts/delonghi-rivelia-start.webp
 image_alt: "Two hands swapping a clear coffee bean hopper on the white De'Longhi Rivelia Start espresso machine"

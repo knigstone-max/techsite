@@ -3,6 +3,8 @@ title: "Electra Consumer Products: its electronics chains keep growing, ACs sell
 date: 2026-08-21
 slug: electra-consumer-q2-2026
 category: tech-news
+world: home
+type: news
 excerpt: "Quarterly revenue of ₪1.8 billion (about $584 million), net profit of ₪30 million and a ₪45 million dividend. What the report says about the appliance market."
 source_links:
   - "https://www.funder.co.il/article/208009"

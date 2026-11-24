@@ -3,6 +3,8 @@ title: "בר המים והקרח של אלקטרה, והסיפור הגדול י
 date: 2026-11-02
 slug: electra-aqua-water-ice-bar-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "אלקטרה מוכרת מכשיר שולחני שנותן מים קרים, מים חמים וקרח ב-1,290 שקל, ובשקט כבר מכרה כ-15 אלף יחידות. מאחוריו עומדת אסטרטגיה של ייבוא ישיר מהמפעל, שלפי החברה מורידה מחירים בכל השוק."
 source_links:
   - "https://finance.walla.co.il/item/3874468"

@@ -3,6 +3,8 @@ title: "Vivo X300 Pro review: a Zeiss camera phone for about ₪4,449"
 date: 2026-11-06
 slug: vivo-x300-pro-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "Importer Bandai is bringing Vivo's camera flagship to Israel with a 200MP telephoto, Dimensity 9500 and a 6,510 mAh battery. Here's how the specs, local pricing and gaps stack up against Samsung and Apple."
 image: img/posts/vivo-x300-pro.webp
 image_alt: "Five Vivo X300 Pro phones in a row in different colours, four showing the round Zeiss camera island and one showing the front display"

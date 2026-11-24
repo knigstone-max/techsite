@@ -3,6 +3,8 @@ title: "סקירת OnePlus Buds Pro 4: סאונד של אוזניות יקרות
 date: 2026-11-15
 slug: oneplus-buds-pro-4-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "אוזניות הדגל של וואן פלוס הגיעו לארץ ב-649 ₪ (כ-203 דולר), עם וופר וטוויטר מישורי בכל אוזנייה וכיוון של Dynaudio. הסאונד והסוללה משכנעים, ביטול הרעשים השתפר אבל לא מגיע לטופ, ובעלי אייפון יפספסו חלק מהטוב."
 image: img/posts/oneplus-buds-pro-4-white.webp
 image_alt: "אוזניות OnePlus Buds Pro 4 כסופות מרחפות מעל מארז טעינה לבן ופתוח, ולידו מכסה נוסף של מארז, על רקע סגלגל"

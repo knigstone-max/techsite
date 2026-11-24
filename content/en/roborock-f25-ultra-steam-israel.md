@@ -3,6 +3,8 @@ title: "Roborock F25 Ultra Steam lands in Israel for ₪3,290: steam up to 180°
 date: 2026-11-06
 slug: roborock-f25-ultra-steam-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "After the Saros 20 robot, Roborock is bringing its F25 cordless wet-dry vacs to Israel. The flagship is the F25 Ultra Steam Gen 2 with steam up to 180°C for ₪3,290, with the F25 Pro Turbo below it at ₪2,190."
 image: img/posts/roborock-f25-ultra-steam.webp
 image_alt: "Roborock F25 Ultra Steam Gen 2 cordless wet-dry vac in dark grey, with accessory kit and a phone showing the app"

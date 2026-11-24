@@ -3,6 +3,8 @@ title: "ביקורת Metaphor: ReFantazio ל-Switch 2: אחד ה-RPG הכי טו
 date: 2026-11-11
 slug: metaphor-refantazio-switch-2-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "המשחק של יוצרי Persona, על ממלכה שמחפשת מלך בבחירות אחרי רצח, מגיע מחר ל-Switch 2. הסיפור, הקרבות והמוזיקה מצוינים כמו ב-2024. הביצועים פחות. בארץ הוא עולה 149 עד 169 ₪."
 image: img/posts/metaphor-refantazio-switch-2-key-art.webp
 image_alt: "איור רשמי של Metaphor: ReFantazio: לוגו המשחק במרכז, קהל גדול של דמויות בתלבושות פנטזיה עומד ברחבה, ומעליהם יצורים ענקיים על רקע אדום וכתום"

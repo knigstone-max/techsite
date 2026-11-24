@@ -3,6 +3,8 @@ title: "ביקורת Casualties: Unknown: משחק הישרדות שבו רסי�
 date: 2026-11-22
 slug: casualties-unknown-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "מפתח יחיד בנה משחק הישרדות דו-ממדי במערות שמדמה את זרימת הדם, כל איבר בנפרד ואת מצב הרוח, והשחקנים אוהבים: 97% ביקורות חיוביות ב-Steam. ‏76.99 ₪ בישראל (22.99 דולר בארה\"ב), עם 15% הנחה עד 23 בנובמבר. למה הוא תופס, איפה הוא נגרר, ומי צריך להתרחק."
 image: img/posts/casualties-unknown-key-art.webp
 image_alt: "איור הפתיחה של Casualties: Unknown: יצור כחול כהה עם זנב בקצה כתום, יד ורגל חבושות, מחזיק בד במערה סגולה של כוכב זר המוארת בצמחים כחולים זוהרים"

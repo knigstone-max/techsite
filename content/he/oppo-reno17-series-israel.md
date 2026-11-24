@@ -3,6 +3,8 @@ title: "OPPO Reno17 הוכרזה בסין: סוללה של 8,000mAh, ודווק�
 date: 2026-11-18
 slug: oppo-reno17-series-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "OPPO הכריזה על Reno17 ו-Reno17 Pro, עם מחיר התחלתי של כ-1,750 ₪ (כ-540 דולר) בסין. הדגם הרגיל מקבל סוללה ענקית, ה-Pro מקבל מצלמה של 200MP בגוף קטן יותר. מה ידוע, ומה המצב אצל רונלייט בארץ."
 image: img/posts/oppo-reno17-pro-hero.webp
 image_alt: "גב של OPPO Reno17 Pro בצבע תכלת, עם מודול מצלמות מעוגל ודוגמת חתול בזכוכית"

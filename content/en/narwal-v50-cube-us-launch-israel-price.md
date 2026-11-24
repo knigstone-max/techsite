@@ -3,6 +3,8 @@ title: "Narwal's V50 Cube launches in the US, but Israel has had it since August
 date: 2026-11-24
 slug: narwal-v50-cube-us-launch-israel-price
 category: tech-news
+world: home
+type: news
 excerpt: "Narwal's first cordless stick vacuum with a self-emptying dock is now on Amazon in the US at $649.99 (about ₪2,173), with a $499.99 launch offer until the end of November. In Israel it has been on Narwal's local site for three months at ₪1,699 (about $508). The Israeli and US product pages just don't agree on a few numbers."
 image: img/posts/narwal-v50-cube-hero.webp
 image_alt: "A silver-grey Narwal V50 Cube cordless vacuum leaning next to its square self-emptying dock on a white background"

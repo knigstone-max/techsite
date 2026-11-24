@@ -3,6 +3,8 @@ title: "ביקורת TANUKI: Pon's Summer: דוור על אופניים, קיץ 
 date: 2026-11-10
 slug: tanuki-pons-summer-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "הרפתקה חמודה על אי יפני קטן, שבה טנוקי עצלן לוקח עבודת קיץ בדואר כדי לשפץ את המקדש לפני הפסטיבל. אופני BMX, יותר ממאה אתגרים, דייג, סומו וסושי. יוצא היום לכל הפלטפורמות, עולה 70 ₪ ב-Xbox Store ישראל, וכלול ב-Game Pass."
 image: img/posts/tanuki-pons-summer-key-art.webp
 image_alt: "איור רשמי של TANUKI: Pon's Summer: טנוקי חייכן בכובע דוור רוכב על אופניים אדומים עם סל קש, וחבילות ומכתבים עפים סביבו על רקע שמיים כחולים"

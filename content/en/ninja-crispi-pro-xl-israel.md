@@ -3,6 +3,8 @@ title: "Ninja CRISPi PRO XL lands in Israel: a glass air fryer for ₪1,099"
 date: 2026-11-09
 slug: ninja-crispi-pro-xl-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "Sarig, Ninja's importer, is selling the CRISPi PRO XL: a 2,050 W heating head that sits on 5.7- and 2.3-litre glass dishes, with no non-stick coating. It costs ₪1,099, a little less than in the UK. Here is what you get and who it suits."
 image: img/posts/ninja-crispi-pro-xl-kitchen.webp
 image_alt: "A blue-grey Ninja CRISPi PRO XL on a kitchen counter next to a large glass dish of roast chicken and vegetables, a dish of rolls and black storage lids"

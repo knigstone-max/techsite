@@ -3,6 +3,8 @@ title: "מכונת הכביסה של TCL עם מינון אוטומטי: 12 ק״
 date: 2026-11-05
 slug: tcl-c512flg-washing-machine-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "אלקטרה מוצרי צריכה מביאה את ה-TCL C512FLG, מכונה של 12 ק״ג עם מגירה שמנה לבד את הנוזל ואת המרכך, מנוע Direct Drive ושליטה מהאפליקציה. היא עולה 2,990 ₪, יותר מהדגמים של TCL שהגיעו בספטמבר. מה מקבלים על ההפרש."
 image: img/posts/tcl-c512flg-washer.webp
 image_alt: "מכונת כביסה TCL C512FLG בצבע אפור כהה בפתח קדמי, בזווית צד, עם פאנל שליטה כסוף וחוגה עגולה"

@@ -3,6 +3,8 @@ title: "Football Manager 27 פתוח בחינם עד יום שלישי, והקר
 date: 2026-10-31
 slug: football-manager-27-free-launch-preview
 category: gaming-lite
+world: play
+type: news
 excerpt: "SEGA פתחה את גרסת ה-Launch Preview של FM27 לכל שחקני המחשב וה-Mac, בחינם עד 3 בנובמבר בשמונה בערב שעון ישראל. מה אפשר לשחק, כמה המשחק עולה ב-Steam בישראל ומה חשוב לדעת לפני שמתחילים."
 image: img/posts/football-manager-27-stadium.webp
 image_alt: "צילום מסך ממנוע המשחק של Football Manager 27: שחקנים בחולצות אדומות ולבנות על הדשא באצטדיון מלא קהל"

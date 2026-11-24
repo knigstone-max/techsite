@@ -3,6 +3,8 @@ title: "אלקטרה ריטייל נכנסת לטלפונים המוקשחים: 
 date: 2026-08-21
 slug: electra-blackview-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "השקעה של כ-10 מיליון ₪ (כ-3.2 מיליון דולר), אזורי חוויה בסניפים, וטלפונים, טאבלטים ומחשבי מיני של מותג סיני שמוכר בעיקר לאנשי שטח."
 source_links:
   - "https://www.geektime.co.il/flash/electra-retail-exclusive-blackview-israel/"

@@ -3,6 +3,8 @@ title: "שואב שוטף לבית ישראלי: מה באמת חשוב, ואי�
 date: 2026-11-18
 slug: wet-dry-vacuum-buying-guide-israel
 category: home-appliances
+world: home
+type: recommendations
 excerpt: "קראנו מבחנים ישראליים ובינלאומיים ודירוגי בעלים כדי להבין מה חשוב בשואב שוטף: ניקוי עצמי עם ייבוש, קצוות, משקל, סוללה בפועל, שיער, לכלוך דביק ואחריות. הבחירה המאוזנת היא Roborock F25 Ace Pro ב-1,190 ₪ (כ-366 דולר), והכי משתלם Xiaomi W30 Pro ב-1,074 ₪ (כ-331 דולר)."
 image: img/posts/wet-dry-vacuum-guide-hero.webp
 image_alt: "שואב שוטף אלחוטי Roborock F25 Ace Pro בשחור, בשלוש זוויות הטיה עד שכיבה מלאה, עם בקבוק תמיסת ניקוי, מסנן, מברשת וטלפון עם האפליקציה"

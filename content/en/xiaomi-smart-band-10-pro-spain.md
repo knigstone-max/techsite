@@ -3,6 +3,8 @@ title: "Xiaomi Smart Band 10 Pro arrives in Spain at €79.99 with up to 21 days
 date: 2026-10-19
 slug: xiaomi-smart-band-10-pro-spain
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Xiaomi's new fitness band is thinner than the 9 Pro, has a brighter 1.74-inch AMOLED screen, and works with both iPhone and Android."
 image: img/posts/xiaomi-smart-band-10-pro.webp
 image_alt: "Xiaomi Smart Band 10 Pro in silver, black and pink"

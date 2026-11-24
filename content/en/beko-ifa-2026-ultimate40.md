@@ -3,6 +3,8 @@ title: "Beko: a full wash in 40 minutes, an oven that cleans itself in an hour a
 date: 2026-09-12
 slug: beko-ifa-2026-ultimate40
 category: home-appliances
+world: home
+type: news
 excerpt: "The Beko group, which owns 22 brands including Whirlpool, Hotpoint and Grundig, showed numbers instead of slogans. We looked at what is behind each one."
 image: img/posts/beko-ultimatewash-ifa-2026.webp
 image_alt: "A Beko washing machine with UltimateWash technology in a laundry room"

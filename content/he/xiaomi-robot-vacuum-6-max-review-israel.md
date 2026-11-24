@@ -3,6 +3,8 @@ title: "ביקורת Xiaomi Robot Vacuum 6 Max: רובוט שמטפס על מד�
 date: 2026-11-17
 slug: xiaomi-robot-vacuum-6-max-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "רובוט הדגל של שיאומי נחת בארץ ב-4,690 ₪ (כ-1,455 דולר), עם רגליים מכניות לספים של 6 ס״מ, רולר שטיפה עם 16 פתחי מים, זרוע לפינות ותחנה ששוטפת ב-85 מעלות. הוא זול מהמתחרים הישירים, ויש לו כמה פשרות שכדאי להכיר."
 image: img/posts/xiaomi-robot-vacuum-6-max-step-climb.webp
 image_alt: "שואב רובוטי אפור של שיאומי עולה על מדרגה בגובה 6 ס״מ בעזרת רגליים מכניות שיוצאות מתחתיו"

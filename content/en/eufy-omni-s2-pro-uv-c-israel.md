@@ -3,6 +3,8 @@ title: "eufy Omni S2 Pro adds UV-C light to disinfect your floors. Here is what 
 date: 2026-11-10
 slug: eufy-omni-s2-pro-uv-c-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "Anker has launched the Omni S2 Pro, an upgraded version of the robot vacuum-mop sold in Israel for ₪4,699. It adds six UV-C LEDs under the robot, 40,000Pa suction and a station that washes the mop in boiling water. It costs $1,699 in the US and has not been announced here yet."
 image: img/posts/eufy-omni-s2-pro.webp
 image_alt: "A black eufy robot vacuum with a purple glow underneath, in front of a tall dark grey docking station"

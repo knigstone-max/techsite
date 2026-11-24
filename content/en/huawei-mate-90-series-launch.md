@@ -3,6 +3,8 @@ title: "Huawei launches the Mate 90 series in China, four phones from 5,999 yuan
 date: 2026-10-21
 slug: huawei-mate-90-series-launch
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "The Mate 90, Mate 90 Pro, Mate 90 Pro Max and Mate 90 RS run on Huawei's own Kirin chips and HarmonyOS 7, with prices from 5,999 to 12,999 yuan."
 image: img/posts/huawei-mate-90-pro.webp
 image_alt: "The back of a green Huawei Mate 90 Pro with a large round camera module, standing against a dark background"

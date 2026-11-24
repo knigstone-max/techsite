@@ -3,6 +3,8 @@ title: "ביקורת Vivo X300 Pro: מצלמת Zeiss במחיר של כ-4,449 �
 date: 2026-11-06
 slug: vivo-x300-pro-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "היבואן בנדא מביא לישראל את דגל הצילום של Vivo עם טלפוטו 200 מגה-פיקסל, Dimensity 9500 וסוללה של 6,510 mAh. עברתי על המפרט, על המחיר בישראל ועל מה שחסר למי שמחפש חלופה לסמסונג ולאפל."
 image: img/posts/vivo-x300-pro.webp
 image_alt: "חמישה מכשירי Vivo X300 Pro בצבעים שונים בשורה, ארבעה מהגב עם אי מצלמות עגול של Zeiss ואחד מהחזית עם מסך"

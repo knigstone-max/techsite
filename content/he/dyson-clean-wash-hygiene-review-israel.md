@@ -3,6 +3,8 @@ title: "ביקורת Dyson Clean+Wash Hygiene: שוטף רצפות בלי יני
 date: 2026-11-23
 slug: dyson-clean-wash-hygiene-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "הניסיון השני של דייסון בשוטף רצפות מוותר לגמרי על יניקה, משאיר את הלכלוך למטה בראש הניקוי ומייבש סוף סוף את הגליל באוויר חם. בישראל הוא עולה 1,979 ₪ (כ-595 דולר) באתר דייסון, במקום 2,199 ₪. זה המכשיר הקל ביותר מסוגו שבדקנו, ויש לו כמה אותיות קטנות."
 image: img/posts/dyson-clean-wash-hygiene-hero.webp
 image_alt: "ראש הניקוי בצבע טורקיז של Dyson Clean+Wash Hygiene עם גליל מיקרופייבר כחול, מנקה רצפת אבן עם פירורים וכתמים"

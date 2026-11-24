@@ -3,6 +3,8 @@ title: "Bosch at IFA: a heat-pump washer-dryer, a wet-dry vacuum and a lot of ai
 date: 2026-09-09
 slug: bosch-ifa-2026-new-appliances
 category: home-appliances
+world: home
+type: news
 excerpt: "Bosch's first heat-pump washer-dryer, saving 54% energy, three new air fryers and its first portafilter espresso machine. Here is what is worth knowing."
 image: img/posts/bosch-ifa-2026-booth.webp
 image_alt: "Bosch's booth at IFA 2026 in Berlin"

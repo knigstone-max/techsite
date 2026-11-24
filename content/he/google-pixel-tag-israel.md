@@ -3,6 +3,8 @@ title: "Pixel Tag של גוגל יצא למכירה: מה צריך לדעת לפ
 date: 2026-11-13
 slug: google-pixel-tag-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "התגית הראשונה של גוגל עולה 29.99 דולר (כ-96 ₪), עובדת עם כל אנדרואיד מגרסה 9 ומחזיקה יותר משנה על סוללת שעון. היא לא נמכרת כאן רשמית, ולאייפון היא לא מתאימה בכלל."
 image: img/posts/google-pixel-tag-keys.webp
 image_alt: "תגית Pixel Tag בצבע אפור בהיר מחוברת לצרור מפתחות, מונחת במגש עור חום על שולחן עץ"

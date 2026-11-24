@@ -3,6 +3,8 @@ title: "Bosch renews its bean-to-cup machines: two hoppers with two grinders, co
 date: 2026-11-22
 slug: bosch-verocafe-espresso-lineup-2026
 category: tech-news
+world: home
+type: news
 excerpt: "Bosch has refreshed and renamed its VeroCafe Series 4, 6, 8 and 10 for North America, at $999 to $2,999 (about ₪3,323 to ₪9,975). The flagship gets two bean hoppers, each with its own grinder. What's new, and what it means for Israeli buyers."
 image: img/posts/bosch-verocafe-series-4-6-hero.webp
 image_alt: "Two Bosch fully automatic espresso machines, one silver and one black, on a marble kitchen island, one brewing espresso and the other a latte macchiato"

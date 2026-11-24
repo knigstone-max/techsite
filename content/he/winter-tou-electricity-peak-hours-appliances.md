@@ -3,6 +3,8 @@ title: "מ-1 בדצמבר החשמל בערב מתייקר פי 2.5 (גם בשי
 date: 2026-11-16
 slug: winter-tou-electricity-peak-hours-appliances
 category: home-appliances
+world: home
+type: news
 excerpt: "מי שעבר לתעריף תעו״ז ייכנס בעוד שבועיים לעונת החורף: בין 17:00 ל-22:00 קילוואט-שעה יעלה 114.70 אגורות (כ-36 סנט), כל ימות השבוע. מחוץ לשעות האלה הוא יעלה 46.63 אגורות בלבד. מה זה אומר למייבש, למדיח, לדוד ולתנור החימום."
 image: img/posts/smart-electricity-meter.webp
 image_alt: "מונה חשמל דיגיטלי חכם עם צג LCD שמציג קריאת קוט״ש, בתוך מארז שקוף"

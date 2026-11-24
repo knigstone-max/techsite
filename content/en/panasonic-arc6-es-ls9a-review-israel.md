@@ -3,6 +3,8 @@ title: "Panasonic Arc6 ES-LS9A review: six blades, a very close shave and a ₪2
 date: 2026-11-10
 slug: panasonic-arc6-es-ls9a-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "The first foil shaver with six blades, a linear motor doing 84,000 cuts a minute and a clean-and-charge station. In Israel it is sold through official importer Elias, and iCell has it on sale for ₪2,479. I went through the specs, what is on sale here and whether it is worth the money."
 image: img/posts/panasonic-arc6-es-ls9a.webp
 image_alt: "A black Panasonic shaver lying on a blue towel next to a black cleaning and charging station on a dark stone counter"

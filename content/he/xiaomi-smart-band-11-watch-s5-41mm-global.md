@@ -3,6 +3,8 @@ title: "Xiaomi Smart Band 11 ו-Watch S5 בגרסה קטנה יוצאים לעו
 date: 2026-11-19
 slug: xiaomi-smart-band-11-watch-s5-41mm-global
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "שיאומי השיקה גלובלית את צמיד הכושר Smart Band 11, עם מסך של 2,000 ניט ו-21 ימי סוללה, ואת Watch S5 בגודל 41 מ״מ, הראשון בסדרה עם Google Wallet. באירופה הם מתחילים מ-59.90 ו-229.90 אירו. בארץ עדיין לא ראינו מחיר רשמי לשניהם."
 image: img/posts/xiaomi-watch-s5-41mm-hero.webp
 image_alt: "שלושה שעוני Xiaomi Watch S5 41mm עגולים מנירוסטה עם רצועות שחורה, לבנה ותכלת, ויד שמחזיקה את השעון עם הרצועה התכולה"

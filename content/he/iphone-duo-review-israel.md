@@ -3,6 +3,8 @@ title: "ביקורת iPhone Duo: האייפון המתקפל עושה הכל נ�
 date: 2026-10-29
 slug: iphone-duo-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "האייפון המתקפל הראשון מגיע עם מסך פנימי של 7.6 אינץ', שני מסכים באותו יחס ושבב A20 Pro. בישראל הוא מתחיל ב-8,199 ₪ (כ-2,621 דולר), ובשביל הקונה הישראלי יש כאן שתי כוכביות גדולות."
 image: img/posts/iphone-duo-colors.webp
 image_alt: "שני מכשירי iPhone Duo מתקפלים, אחד לבן ואחד כחול כהה, פתוחים למחצה עם מצלמה כפולה בגב"

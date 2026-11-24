@@ -3,6 +3,8 @@ title: "iPad mini חדש: מסך OLED של 8.5 אינץ', שבב A20 Pro ועמ�
 date: 2026-10-27
 slug: ipad-mini-a20-pro-oled
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "אפל הכריזה על iPad mini עם מסך OLED גדול יותר באותו גוף, עובי של 5.4 מ\"מ ותקן IP67. בארה\"ב הוא מתחיל ב-699 דולר (כ-2,150 ₪), וישראל לא נמצאת בגל ההשקה הראשון."
 image: img/posts/ipad-mini-a20-pro-2026.webp
 image_alt: "יד מחזיקה iPad mini חדש בצבע midnight, על המסך הכיתוב mini בכחול וסגול"

@@ -3,6 +3,8 @@ title: "OnePlus Buds Pro 4 הגיעו לישראל ב-649 ₪: שני דרייב
 date: 2026-11-12
 slug: oneplus-buds-pro-4-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "אוזניות הדגל החדשות של וואן פלוס נמכרות כאן דרך סל-נאו ב-649 ₪ (כ-205 דולר). יש בהן וופר של 11 מ״מ וטוויטר של 6 מ״מ, ביטול רעשים אדפטיבי ועד 53 שעות עם המארז. הנה מה שכדאי לבדוק לפני שקונים."
 image: img/posts/oneplus-buds-pro-4.webp
 image_alt: "אוזניות OnePlus Buds Pro 4 כסופות מרחפות מעל מארז טעינה לבן פתוח, ולידן מארז נוסף עם תווית Dynaudio על המכסה"

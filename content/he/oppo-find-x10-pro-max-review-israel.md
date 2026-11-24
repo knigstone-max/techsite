@@ -3,6 +3,8 @@ title: "ביקורת OPPO Find X10 Pro Max: המצלמה הכי טובה באנ�
 date: 2026-11-12
 slug: oppo-find-x10-pro-max-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "שלוש מצלמות 200MP, סוללה של 8,000mAh בדגם הישראלי ומעבד של 2 ננומטר, ב-6,499 ₪ ברונלייט. עברתי על המפרט, על המחירים כאן ובאירופה ועל הבדיקות שפורסמו. המצלמות והסוללה מצוינות. מהירות הטעינה, התוכנה והמחיר פחות."
 image: img/posts/oppo-find-x10-pro-max-white.webp
 image_alt: "OPPO Find X10 Pro Max לבן מונח על הצד הקדמי על רקע שחור, עם מודול מצלמות מרובע וגדול וגלולה קטנה יותר עם הפלאש וחיישן הצבע"

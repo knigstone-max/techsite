@@ -47,6 +47,18 @@ techsite/
 - **כתבות מ-Markdown:** `python3 scripts/upsert_post.py content/he/<slug>.md content/en/<slug>.md` מעלה אותן ל-CMS (פרטי הכניסה ב-`~/.techsite-supabase-env`, מחוץ למאגר). כתבה שכבר רשומה ב-CMS נלקחת רק מה-CMS, ולכן עריכה של קובץ ה-md שלה (כולל Pages CMS) לא תשפיע עליה.
 - סכמה: `supabase/cms_schema.sql`. פונקציה: `supabase/functions/cms-admin/`. מדריך מלא: [docs/CMS-GUIDE.md](docs/CMS-GUIDE.md).
 
+### עולמות
+
+האתר מחולק לשלושה עולמות, וכל אחד מהם מחולק לסוגי כתבות:
+
+| עולם | slug | מה נכנס |
+|---|---|---|
+| טכנו בית | `home` | מוצרי חשמל לבית (המוקד של האתר) |
+| פלייטק | `play` | גיימינג: משחקים, קונסולות, מדריכי GTA VI |
+| טקהיי | `techhigh` | אפליקציות, סמארטפונים, גאדג'טים, לבישים וחדשות דיגיטל |
+
+סוגים (`type`): `reviews` סיקורים, `news` עדכונים, `comparisons` השוואות, `recommendations` המלצות, `guides` מדריכים. עמודים: `/<world>/` ו-`/<world>/<type>/` (וגם תחת `/en/`). כתובות הקטגוריות הישנות (`category/<slug>/`) ממשיכות לעבוד ומפנות לעולם. כתבה בלי `world`/`type` מסווגת אוטומטית לפי הכללים ב-`build.py` (`classify`). `scripts/assign_worlds.py --write` מסווג מחדש את כל הכתבות (קבצים + CMS) בלי לגעת בתוכן.
+
 ### הוספת פוסט
 
 צרו קובץ `content/he/<slug>.md` (ובאותו slug גם `content/en/<slug>.md` אם יש תרגום. ה-slug המשותף הוא מה שמחבר בין השפות):
@@ -57,6 +69,8 @@ title: כותרת הפוסט
 date: 2026-10-19
 slug: example-post
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: משפט או שניים שמסכמים את הפוסט.
 source_links:
   - https://example.com/source-1
@@ -154,6 +168,10 @@ Per language: home, a categories index (`categories/`), 5 category pages (`categ
 
 **Output directory: `dist/`** (git-ignored, built in CI).
 
+### Worlds
+
+The site is split into three worlds: Techno Home (`home`, appliances, the main focus), PlayTech (`play`, gaming) and TechHigh (`techhigh`, apps, phones, gadgets, wearables, digital news). Each post also has a `type`: `reviews`, `news`, `comparisons`, `recommendations` or `guides`. Pages: `/<world>/` and `/<world>/<type>/` (plus `/en/`). Old `category/<slug>/` URLs still work and point to the right world. Posts without `world`/`type` are classified by the rules in `build.py` (`classify`); `scripts/assign_worlds.py --write` re-files every post (markdown + CMS) without touching content.
+
 ### Add a post
 
 Create `content/en/<slug>.md` (and `content/he/<slug>.md` with the same slug for the Hebrew version; the shared slug links the two):
@@ -164,6 +182,8 @@ title: Post title
 date: 2026-10-19
 slug: example-post
 category: home-appliances
+world: home
+type: reviews
 excerpt: One or two sentences that sum up the post.
 source_links:
   - https://example.com/source-1

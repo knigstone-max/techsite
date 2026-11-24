@@ -3,6 +3,8 @@ title: "שלושה שבועות ל-GTA VI: כמה זה עולה בישראל ו�
 date: 2026-10-29
 slug: gta-6-israel-price-preorder
 category: gaming-lite
+world: play
+type: news
 excerpt: "GTA VI יוצא ב-19 בנובמבר ל-PS5 ול-Xbox Series X|S. בחנויות הדיגיטליות בארץ הוא עולה 319 ₪ (כ-102 דולר), בבאג ובאייבורי העותק הפיזי קצת יותר. כל המחירים, התאריכים והבונוסים."
 image: img/posts/gta-6-key-art-rockstar.webp
 image_alt: "קולאז' האיור הרשמי של GTA VI: לוסיה וג'ייסון, סירה מהירה, תנין, מכונית ספורט צהובה ואופנוע, סביב הלוגו של המשחק"

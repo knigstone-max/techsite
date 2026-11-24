@@ -3,6 +3,8 @@ title: "Dreame moves into the laundry room: the L9 WashTower AI set lands in Isr
 date: 2026-10-29
 slug: dreame-l9-washtower-ai-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "An 11 kg washer and a 9 kg heat-pump dryer sold as one set for ₪8,990 (about $2,874). Here is what you get, what the energy labels say, and what the launch offer adds through the end of November."
 image: img/posts/dreame-l9-washtower-ai-set.webp
 image_alt: "A dark grey Dreame washer and dryer stacked in a column, each with a small round screen above the door"

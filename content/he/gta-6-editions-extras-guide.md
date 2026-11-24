@@ -3,6 +3,8 @@ title: "GTA VI: מה יש בגרסת Ultimate, מה מקבלים על הזמנה
 date: 2026-11-21
 slug: gta-6-editions-extras-guide
 category: gaming-lite
+world: play
+type: guides
 excerpt: "Standard ב-319 ₪ או Ultimate ב-399 ₪? פירקנו את כל התוספות: הרכבים, הנשקים, החנויות והמוסכים שנפתחים רק ב-Ultimate, חבילת Vintage Vice City, מה עם GTA+, ומה יש לעשות בלאונידה מעבר לעלילה."
 image: img/posts/gta6-extras-ultimate.webp
 image_alt: "ג'ייסון ולוסיה בבגדים צבעוניים עומדים מתחת לעצי דקל בשקיעה, בתמונה הרשמית של GTA VI Ultimate Edition"

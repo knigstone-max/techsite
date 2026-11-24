@@ -3,6 +3,8 @@ title: "אושר עד מוכרת iPhone Duo ב-7,999 ₪ ו-AirPods 5 ב-399 ₪
 date: 2026-11-06
 slug: osher-ad-iphone-duo-7999
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "רשת המזון נכנסת שוב למלחמת המחירים על מוצרי אפל: האייפון המתקפל ב-256GB ב-7,999 ₪, עד 1,000 ₪ פחות מ-iDigital, ואוזניות AirPods 5 ב-399 ₪. יבוא מקביל, eSIM בלבד, אחריות DCS לשנה, בשבעה סניפים."
 image: img/posts/osher-ad-iphone-duo.webp
 image_alt: "שני מכשירי iPhone Duo מתקפלים, אחד לבן ואחד כחול כהה, פתוחים למחצה עם מצלמה כפולה בגב"

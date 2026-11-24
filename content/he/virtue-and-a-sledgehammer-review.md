@@ -3,6 +3,8 @@ title: "ביקורת Virtue and a Sledgehammer: לחזור לעיר הולדתך
 date: 2026-11-16
 slug: virtue-and-a-sledgehammer-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "המשחק החדש של Deconstructeam, היוצרים של The Red Strings Club, שולח גיבורה אבלה להרוס עיירה שלמה של רובוטים שמחזיקים את הזיכרונות של השכנים שלה. ב-54.49 ₪ ב-Steam בישראל (14.99 דולר בארה״ב) זו חוויה קצרה, כועסת וכואבת על אבל, משפחה ובינה מלאכותית, עם פטיש שמרגיש נהדר ומשחקיות שחוזרת על עצמה."
 image: img/posts/virtue-sledgehammer-key-art.webp
 image_alt: "איור הקידום הרשמי של Virtue and a Sledgehammer: פראטל עומדת עם פטיש ענק, קשורה בחוטים טורקיז, בין שני פרצופים גדולים באדום"

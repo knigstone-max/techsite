@@ -3,6 +3,8 @@ title: "המסך החכם של אפל יצא לחנויות, אבל לא אצל�
 date: 2026-11-16
 slug: apple-homeview-launch-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "מ-13 בנובמבר אפשר לקנות את HomeView, המסך החכם הראשון של אפל, ב-299 דולר (כ-957 ₪). הוא נמכר בשבע מדינות בלבד, ישראל לא ביניהן, ו-Siri AI שבו מדברת רק אנגלית. מה הוא עושה, כמה עולים המתקנים, ולמה כדאי לחשוב פעמיים לפני שמביאים אחד מחו״ל."
 image: img/posts/apple-homeview-colors.webp
 image_alt: "ארבעה מסכי Apple HomeView שולחניים בצבעי כסף, סטארלייט, ורוד ואפור חלל, כל אחד על בסיס רמקול עגול"

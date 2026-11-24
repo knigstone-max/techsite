@@ -3,6 +3,8 @@ title: "מיקרוסופט שולחת מיילים לבעלי Xbox שלא משת
 date: 2026-10-20
 slug: microsoft-xbox-best-buy-trade-in-emails
 category: tech-news
+world: play
+type: news
 excerpt: "מי שלא הדליק את ה-Xbox Series X שלו כבר זמן מה מקבל הצעה לכרטיסי מתנה של Best Buy, בזמן ש-Series X חדש עולה בארה\"ב 799 דולר."
 image: img/posts/xbox-series-x.webp
 image_alt: "קונסולת Xbox Series X שחורה עומדת על מדף עץ"

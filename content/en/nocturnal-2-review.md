@@ -3,6 +3,8 @@ title: "Nocturnal 2 review: a burning sword, a Persian city in the dark, and a p
 date: 2026-11-17
 slug: nocturnal-2-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "Swiss studio Sunnyside Games turns a short platformer into a full Metroidvania built around one idea: keep your sword on fire. At ₪32.99 on Steam in Israel ($8.99 in the US), it's gorgeous, fast and short, with excellent boss fights and combat that doesn't grow enough."
 image: img/posts/nocturnal-2-key-art.webp
 image_alt: "Official Nocturnal 2 key art: a warrior with a flaming sword stands between huge dark figures in an ancient fire-lit hall"

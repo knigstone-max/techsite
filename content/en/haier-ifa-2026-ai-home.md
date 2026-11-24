@@ -3,6 +3,8 @@ title: "Haier at IFA: a camera in the drum, four drums in one body and robots do
 date: 2026-09-10
 slug: haier-ifa-2026-ai-home
 category: home-appliances
+world: home
+type: news
 excerpt: "Haier Europe showed a washer that spots colours and forgotten items, a four-drum Multi Care machine and a €13 billion AI investment plan."
 image: img/posts/haier-ifa-2026.webp
 image_alt: "A humanoid robot next to a washing machine at Haier's IFA 2026 stand"

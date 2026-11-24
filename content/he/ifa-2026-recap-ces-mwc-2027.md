@@ -3,6 +3,8 @@ title: "מה נשאר מ-IFA 2026, ומה בלוח התערוכות עד מרץ"
 date: 2026-10-01
 slug: ifa-2026-recap-ces-mwc-2027
 category: tech-news
+world: home
+type: news
 excerpt: "ארבע מגמות שחזרו כמעט בכל ביתן בברלין, ותאריכי CES ו-MWC הבאות. וגם תזכורת לניו-טק, התערוכה הישראלית שנדחתה לקיץ."
 source_links:
   - "https://www.digit.in/features/home-appliances/ifa-2026-from-ai-washers-to-smart-robot-cleaners-these-are-the-most-interesting-new-appliances.html"

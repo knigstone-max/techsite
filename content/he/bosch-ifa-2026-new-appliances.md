@@ -3,6 +3,8 @@ title: "בוש ב-IFA: מכונת כביסה-מייבש עם משאבת חום, 
 date: 2026-09-09
 slug: bosch-ifa-2026-new-appliances
 category: home-appliances
+world: home
+type: news
 excerpt: "מכונת כביסה-מייבש ראשונה של בוש עם משאבת חום, שחוסכת 54% בחשמל, שלושה אייר פרייר חדשים ומכונת אספרסו ראשונה עם ידית. הנה מה ששווה להכיר."
 image: img/posts/bosch-ifa-2026-booth.webp
 image_alt: "הביתן של בוש ב-IFA 2026 בברלין"

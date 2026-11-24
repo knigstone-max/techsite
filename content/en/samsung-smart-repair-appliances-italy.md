@@ -3,6 +3,8 @@ title: "Samsung brings Smart Repair to home appliances in Italy, with online boo
 date: 2026-10-23
 slug: samsung-smart-repair-appliances-italy
 category: home-appliances
+world: home
+type: news
 excerpt: "Owners of out-of-warranty Samsung washers, fridges, ovens and more can now buy a repair on Samsung.com and get a technician at home, usually within five working days."
 image: img/posts/samsung-smart-repair-appliances-crop.webp
 image_alt: "A Samsung refrigerator, built-in oven and washing machine standing behind the words Smart Repair"

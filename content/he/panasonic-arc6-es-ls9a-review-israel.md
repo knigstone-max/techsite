@@ -3,6 +3,8 @@ title: "ביקורת Panasonic Arc6 ES-LS9A: שישה להבים, גילוח ק�
 date: 2026-11-10
 slug: panasonic-arc6-es-ls9a-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "מכונת הגילוח הראשונה עם שישה להבים בשיטת פויל, עם מנוע ליניארי של 84,000 חיתוכים בדקה ותחנת ניקוי וטעינה. בארץ היא נמכרת דרך היבואן הרשמי אליאס, ב-iCell ב-2,479 ₪ במבצע. עברתי על המפרט, על מה שנמכר כאן ועל השאלה אם היא שווה את הכסף."
 image: img/posts/panasonic-arc6-es-ls9a.webp
 image_alt: "מכונת גילוח שחורה של Panasonic מונחת על מגבת כחולה, ולידה תחנת ניקוי וטעינה שחורה על משטח אבן כהה"

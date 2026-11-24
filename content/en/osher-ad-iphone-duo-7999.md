@@ -3,6 +3,8 @@ title: "Osher Ad sells the iPhone Duo for ₪7,999 and AirPods 5 for ₪399"
 date: 2026-11-06
 slug: osher-ad-iphone-duo-7999
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "The supermarket chain is back undercutting Apple resellers: the 256GB foldable iPhone for ₪7,999, up to ₪1,000 below iDigital, plus AirPods 5 for ₪399. Parallel import, eSIM only, one-year DCS warranty, in seven branches."
 image: img/posts/osher-ad-iphone-duo.webp
 image_alt: "Two iPhone Duo foldables, one white and one dark blue, half open with a dual camera on the back"

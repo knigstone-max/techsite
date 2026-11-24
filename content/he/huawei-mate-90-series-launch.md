@@ -3,6 +3,8 @@ title: "וואווי השיקה בסין את סדרת Mate 90, ארבעה טל�
 date: 2026-10-21
 slug: huawei-mate-90-series-launch
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Mate 90, Mate 90 Pro, Mate 90 Pro Max ו-Mate 90 RS עובדים עם שבבי Kirin של וואווי ועם HarmonyOS 7, במחירים של 5,999 עד 12,999 יואן."
 image: img/posts/huawei-mate-90-pro.webp
 image_alt: "הגב של Huawei Mate 90 Pro בצבע ירוק עם מודול מצלמה עגול וגדול, על רקע כהה"

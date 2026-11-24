@@ -3,6 +3,8 @@ title: "Tineco CARPET ONE Spot DualHeat: מנקה כתמים לספות ולשט
 date: 2026-11-23
 slug: tineco-carpet-one-spot-dualheat
 category: tech-news
+world: home
+type: news
 excerpt: "מנקה הכתמים הנייד החדש של טינקו מחמם מים ל-70 מעלות, מייצר קיטור של 100 מעלות, ואז מייבש באוויר חם את הכתם שהוא ניקה, תוך שלוש דקות לפי נתוני המעבדה של טינקו. בארה\"ב הוא עולה 249 דולר (כ-828 ₪). לישראל הוא לא הוכרז, וכאן טינקו מוכרת רק את שוטף השטיחים הגדול שלה."
 image: img/posts/tineco-carpet-one-spot-dualheat-hero.webp
 image_alt: "מכשיר Tineco CARPET ONE Spot DualHeat בכחול כהה וכחול שקוף על שטיח בהיר, הצינור שלו שואב כתם חום, וברקע ספה צהובה"

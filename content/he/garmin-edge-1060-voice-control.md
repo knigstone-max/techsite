@@ -3,6 +3,8 @@ title: "ל-Garmin Edge 1060 יש רמקול ומיקרופון, ורוכבי א�
 date: 2026-10-22
 slug: garmin-edge-1060-voice-control
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "אומרים \"Okay, Garmin\" ושומעים נתוני רכיבה, בוחרים מסלול או מדווחים על בור בכביש. מחשב הרכיבה החדש נמכר כבר עכשיו ב-799.99 דולר."
 image: img/posts/garmin-edge-1060.webp
 image_alt: "ארבעה רוכבי אופניים בכביש הררי, ולצידם Garmin Edge 1060 שמציג מפה והתראה על בור"

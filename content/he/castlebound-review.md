@@ -3,6 +3,8 @@ title: "סקירת Castlebound: טירה עם רגליים, ארבעה חברי�
 date: 2026-11-15
 slug: castlebound-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "המשחק החדש של Ogre Pixel המקסיקנית הוא רוגלייט פעולה צבעוני שבו מגינים על טירה שהולכת, לבד או עם עד שלושה חברים על אותו מסך. ב-35.99 ₪ ב-Steam (9.99 דולר בארה\"ב) הוא מציאה לערבי קו-אופ, גם אם הקושי והבוסים עוד צריכים ליטוש."
 image: img/posts/castlebound-key-art.webp
 image_alt: "איור הפרומו הרשמי של Castlebound: הגיבורים והטירה בסגנון גזרי נייר מול צבא של אויבים"

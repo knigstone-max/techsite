@@ -63,6 +63,24 @@ content:
             - { value: tech-news, label: "חדשות טכנולוגיה / Tech News" }
             - { value: reviews, label: "ביקורות / Reviews" }
             - { value: gaming-lite, label: "גיימינג לייט / Gaming Lite" }
+      - name: world
+        label: עולם / World
+        type: select
+        options:
+          values:
+            - { value: home, label: "טכנו בית / Techno Home" }
+            - { value: play, label: "פלייטק / PlayTech" }
+            - { value: techhigh, label: "טקהיי / TechHigh" }
+      - name: type
+        label: סוג / Type
+        type: select
+        options:
+          values:
+            - { value: reviews, label: "סיקורים / Reviews" }
+            - { value: news, label: "עדכונים / News" }
+            - { value: comparisons, label: "השוואות / Comparisons" }
+            - { value: recommendations, label: "המלצות / Recommendations" }
+            - { value: guides, label: "מדריכים / Guides" }
       - name: excerpt
         label: תקציר / Excerpt
         type: text

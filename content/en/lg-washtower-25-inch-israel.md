@@ -3,6 +3,8 @@ title: "LG's 25-inch WashTower: 20 kg washing and 20 kg drying in one tower"
 date: 2026-11-08
 slug: lg-washtower-25-inch-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "LG is rolling out its new laundry tower in the Middle East, with a washer and dryer that run at the same time and a 6.8-inch touchscreen in the middle. Here is what it offers and how it stacks up against the WT40 sold in Israel today from ₪8,427."
 image: img/posts/lg-washtower-25-inch.webp
 image_alt: "A dark LG WashTower in a modern laundry room, dryer on top, washer below and a control panel between them"

@@ -3,6 +3,8 @@ title: "מצלמות האבטחה של eufy הגיעו רשמית לישראל: 
 date: 2026-11-14
 slug: eufy-security-cameras-israel-hamilton
 category: smartphones-gadgets
+world: home
+type: news
 excerpt: "המילטון מביאה חמישה דגמים וערכות של מצלמות eufy, ממצלמת פנים ב-199 ₪ (כ-62 דולר) ועד ערכת חוץ עם רכזת ב-1,649 ₪ (כ-515 דולר). ההקלטות נשמרות בבית, ולא צריך לשלם כל חודש."
 image: img/posts/eufy-solocam-e42-solar.webp
 image_alt: "מצלמת אבטחה לבנה של eufy עם ראש מסתובב ופאנל סולארי שחור מעליה, על רקע שחור"

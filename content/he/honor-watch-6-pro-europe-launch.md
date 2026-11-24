@@ -3,6 +3,8 @@ title: "Honor Watch 6 Pro יוצא לאירופה: מסך של 5,500 ניט, ע�
 date: 2026-11-20
 slug: honor-watch-6-pro-europe-launch
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "השעון העגול של Honor, שהושק בסין בספטמבר, נמכר מעכשיו באירופה במחיר השקה של 279 אירו (כ-1,006 ₪, כ-307 דולר) עד סוף השנה. הוא עובד עם אנדרואיד ועם אייפון, ויש לו תכונה רפואית אחת שעוד מחכה לאישור. לישראל עוד לא הוכרז."
 image: img/posts/honor-watch-6-pro-hero.webp
 image_alt: "שלושה שעוני Honor Watch 6 Pro: שחור עם רצועת גומי, כסוף עם רצועת עור חומה ומסגרת חומה, וכסוף עם רצועת מתכת"

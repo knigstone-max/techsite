@@ -3,6 +3,8 @@ title: "Electrolux and AEG at IFA: a 39-minute wash, a slider dishwasher and a h
 date: 2026-09-15
 slug: electrolux-aeg-ifa-2026
 category: home-appliances
+world: home
+type: news
 excerpt: "Electrolux showed a washer that removes stains at 30°C in 39 minutes, and AEG brought a hob with a pasta programme and a 7.89cm-tall robot vacuum."
 source_links:
   - "https://www.marketscreener.com/news/electrolux-group-showcases-innovations-at-ifa-2026-that-give-people-more-time-for-what-truly-matters-ce785bdede81f723"

@@ -3,6 +3,8 @@ title: "ביקורת Castlevania: Belmont's Curse: השוט חזר, והפעם �
 date: 2026-11-02
 slug: castlevania-belmonts-curse-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "קונאמי הביאה את היוצרים של Dead Cells כדי להחזיר את קאסלבניה לחיים. התוצאה: פריז בוערת, שוט שמתנדנדים איתו כמו לוליינית, ובוסים שהופכים לקלפי טארוט. אחד המשחקים הכי טובים של הסתיו, ב-107 שקל."
 image: img/posts/castlevania-belmonts-curse-key-art.webp
 image_alt: "ציור מפורט וצבעוני של לוחמת בלונדינית עם כפפה אדומה מניפה שוט, מוקפת מפלצות, דמויות ערפדיות וטירה אדומה ברקע"

@@ -3,6 +3,8 @@ title: "Electra bypasses SG again and will import TCL air conditioners directly"
 date: 2026-11-08
 slug: electra-tcl-air-conditioners-direct-import
 category: tech-news
+world: home
+type: news
 excerpt: "After TCL TVs, Electra Consumer Products has secured the right to buy TCL air conditioners straight from the Chinese maker, skipping the official importer. They will be sold at Machsanei Hashmal and Shekem Electric, which account for about 30% of Israel's electronics retail."
 image: img/posts/machsanei-hashmal-or-yehuda.webp
 image_alt: "Front of the Machsanei Hashmal branch in Or Yehuda with a large yellow sign, palm trees and a full parking lot"

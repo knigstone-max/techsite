@@ -3,6 +3,8 @@ title: "Xiaomi's new washer has three drums: a big one for the whole family, and
 date: 2026-11-11
 slug: xiaomi-mijia-tri-drum-washer-dryer-pro
 category: home-appliances
+world: home
+type: news
 excerpt: "The Mijia Tri-Drum Washer-Dryer Pro pairs a 12.5 kg drum with two 1 kg mini drums, each with its own water supply and drain, all running at once. In Hong Kong it's about ₪3,626 on pre-order. It hasn't been announced for Israel, but the idea is worth knowing."
 image: img/posts/xiaomi-mijia-tri-drum-washer-dryer-pro.webp
 image_alt: "A tall dark grey washing machine with one large drum below and two small round drums above, next to a wooden shelf in a bright room"

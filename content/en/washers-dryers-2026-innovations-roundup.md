@@ -3,6 +3,8 @@ title: "2026 in the laundry room: eight washer and dryer ideas, and which ones m
 date: 2026-11-19
 slug: washers-dryers-2026-innovations-roundup
 category: home-appliances
+world: home
+type: recommendations
 excerpt: "Three drums in one machine, a camera inside the drum, heat pumps in washer-dryers and laundry towers that keep getting bigger. Here's what manufacturers showed in washing and drying this year, and what you can already buy in Israel."
 image: img/posts/lg-washtower-25-inch.webp
 image_alt: "A dark LG WashTower in a modern laundry room, dryer on top, washer below and a control panel between them"

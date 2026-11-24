@@ -3,6 +3,8 @@ title: "Want GTA VI on Wednesday at 1pm Israel time? Here's the New Zealand tric
 date: 2026-11-14
 slug: gta-6-new-zealand-early-unlock-guide
 category: gaming-lite
+world: play
+type: guides
 excerpt: "New Zealand gets GTA VI first: midnight there is 13:00 on Wednesday in Israel, 11 hours before an Israeli account. What you need on PS5 and Xbox, what it costs in NZ dollars, and the risk."
 image: img/posts/gta-history-vi-vice-city-day.webp
 image_alt: "GTA VI's Vice City in daylight: a beach, palm trees and towers over the water"

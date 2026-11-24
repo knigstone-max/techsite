@@ -3,6 +3,8 @@ title: "iPhone 17 Pro ירד ב-320 שקל: המחירים החדשים ולמי
 date: 2026-08-20
 slug: iphone-17-pro-israel-price-cut
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "אפל הורידה 90 דולר, ובישראל זה תורגם ל-320 ₪ (כ-104 דולר). ה-17 Pro בנפח 256GB עולה עכשיו 4,279 ₪ (כ-1,390 דולר) במחסני חשמל."
 source_links:
   - "https://tech.walla.co.il/item/3862038"

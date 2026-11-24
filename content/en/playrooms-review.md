@@ -3,6 +3,8 @@ title: "Playrooms review: 200,000 balls, an empty play centre and a reason to st
 date: 2026-11-23
 slug: playrooms-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "A small German studio made a game about tidying up ball pits in a play centre that feels like the Backrooms, and players love it: 97% positive out of almost 2,000 Steam reviews. It costs ₪25.25 in Israel ($6.99 in the US) and there's a mode with no horror at all. Here's why the loop works, and where it runs thin."
 image: img/posts/playrooms-review-hero.webp
 image_alt: "A deserted indoor play centre at night with a purple ceiling, clouds painted on the wall and a huge pink-edged pit overflowing with colourful plastic balls"

@@ -3,6 +3,8 @@ title: "Fridges in 2026: cameras inside, plain-language voice control and models
 date: 2026-11-21
 slug: fridges-2026-innovations-roundup
 category: home-appliances
+world: home
+type: recommendations
 excerpt: "This year the fridge learned to recognise what's in it, follow full sentences and pre-cool before you open the door. We went through what Samsung, LG, Xiaomi, Hisense, Haier and Bosch showed, and checked what has actually reached Israel and at what price."
 image: img/posts/lg-fit-max-fridge-ifa-2026-hero.webp
 image_alt: "A black LG Fit & Max French-door fridge with a water dispenser, built flush into a row of wooden kitchen cabinets"

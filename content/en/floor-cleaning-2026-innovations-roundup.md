@@ -3,6 +3,8 @@ title: "2026 in floor cleaning: six changes in wet-dry vacuums and robot vacuums
 date: 2026-11-20
 slug: floor-cleaning-2026-innovations-roundup
 category: home-appliances
+world: home
+type: recommendations
 excerpt: "Hotter steam in wet-dry vacuums, robots with legs, rollers instead of spinning pads and UV-C lights under the robot. We went through what changed in floor cleaning this year and checked what's already on sale in Israel, and for how much."
 image: img/posts/roborock-f25-ultra-steam.webp
 image_alt: "Roborock F25 Ultra Steam Gen 2 cordless wet-dry vac in dark grey, with accessory kit and a phone showing the app"

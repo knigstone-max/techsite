@@ -3,6 +3,8 @@ title: "Bissell CrossWave Reach Plus Select review: the simple wet-dry vac that 
 date: 2026-11-24
 slug: bissell-crosswave-reach-plus-select-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "Bissell's new wet-dry vacuum weighs 3.99 kg, lies flat to 180 degrees under the sofa, and dries its roller with hot air in the dock. Reviewers abroad love how it mops and are less keen on the noisy dock and long charge. In Israel it costs ₪1,490 (about $446), roughly 35% more than in the US."
 image: img/posts/bissell-reach-plus-review-hero.webp
 image_alt: "A black Bissell CrossWave Reach Plus cordless wet-dry vacuum with a long handle, slim body and a cleaning head with a clear water tank, on a white background"

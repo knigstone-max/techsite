@@ -3,6 +3,8 @@ title: "TVs in 2026: RGB backlights everywhere, brighter OLED, cheap Mini LED, a
 date: 2026-11-23
 slug: tvs-2026-innovations-roundup
 category: home-appliances
+world: home
+type: recommendations
 excerpt: "Our year-end series reaches the living room. 2026 was the year red, green and blue LEDs moved behind the LCD panel, OLED got a lot brighter, Mini LED dropped to ordinary-TV prices and Dolby Vision 2 arrived. Here's what each idea means, and where Israeli prices start."
 image: img/posts/tvs-2026-roundup-collage.webp
 image_alt: "Two 2026 TVs side by side: a Samsung Micro RGB TV on a thin stand showing a burst of blue, green and red colour, and a Sony BRAVIA True RGB TV on a low cabinet in a living room with tall speakers"

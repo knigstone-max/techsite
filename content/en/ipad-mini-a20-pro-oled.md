@@ -3,6 +3,8 @@ title: "New iPad mini gets an 8.5-inch OLED screen, A20 Pro and water resistance
 date: 2026-10-27
 slug: ipad-mini-a20-pro-oled
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Apple's new iPad mini fits a bigger OLED panel into the same footprint, is 5.4 mm thin and rated IP67. It starts at $699 (about ₪2,150) in the US, and Israel is not in the first launch wave."
 image: img/posts/ipad-mini-a20-pro-2026.webp
 image_alt: "A hand holding the new iPad mini in midnight, with the word mini drawn in blue and purple on the screen"

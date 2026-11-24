@@ -3,6 +3,8 @@ title: "REDMAGIC 12 Pro in Israel: a liquid-cooled gaming phone with a 185Hz scr
 date: 2026-11-24
 slug: redmagic-12-pro-global-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "REDMAGIC's new gaming phone is on its global store from $899 (about ₪3,005), and as a parallel import in Israel it starts at ₪4,899 (about $1,465). What you get, why the gap is so wide, and what to check before ordering from abroad."
 image: img/posts/redmagic-12-pro-hero.webp
 image_alt: "A black translucent REDMAGIC 12 Pro phone with a round cooling ring lit in blue on the back, next to its front screen showing a figure wearing goggles"

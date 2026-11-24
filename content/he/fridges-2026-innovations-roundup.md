@@ -3,6 +3,8 @@ title: "סיכום 2026 במקררים: מצלמות בפנים, שיחה בשפ
 date: 2026-11-21
 slug: fridges-2026-innovations-roundup
 category: home-appliances
+world: home
+type: recommendations
 excerpt: "השנה המקרר למד לזהות מה יש בו, להבין משפטים שלמים ולקרר מראש לפני שפותחים את הדלת. עברנו על החידושים של סמסונג, LG, שיאומי, Hisense, Haier ובוש, ובדקנו מה מזה כבר הגיע לישראל ובכמה."
 image: img/posts/lg-fit-max-fridge-ifa-2026-hero.webp
 image_alt: "מקרר French Door שחור של LG מסדרת Fit & Max עם מתקן מים בדלת, משולב בקו ארונות עץ במטבח"

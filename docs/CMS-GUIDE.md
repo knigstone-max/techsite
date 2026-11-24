@@ -10,7 +10,8 @@
 - כפתור ה-EN / עב בפינה מחליף את שפת הממשק.
 
 ### כתבות
-- **כתבות:** רשימה עם חיפוש וסינון לפי שפה, סטטוס וקטגוריה.
+- **כתבות:** רשימה עם חיפוש וסינון לפי שפה, עולם, סוג, קטגוריה וסטטוס.
+- **עולם וסוג (חובה):** כל כתבה שייכת לעולם אחד: **טכנו בית** (`home`, מוצרי חשמל), **פלייטק** (`play`, גיימינג) או **טקהיי** (`techhigh`, אפליקציות, טלפונים, גאדג'טים ולבישים). בתוך העולם בוחרים סוג: סיקורים (`reviews`), עדכונים (`news`), השוואות (`comparisons`), המלצות (`recommendations`) או מדריכים (`guides`). העולם והסוג קובעים איפה הכתבה מופיעה באתר (`/home/reviews/` וכו'). הקטגוריה הישנה נשארת בשביל כתובות ישנות.
 - **כתבה חדשה:** שפה, קטגוריה, כותרת, כתובת (slug, נוצרת אוטומטית מהכותרת באנגלית; בעברית כותבים אותה ידנית באותיות לטיניות), תקציר, תמונה ראשית (העלאה, טקסט חלופי וקרדיט חובה), גוף הכתבה ותאריך.
 - **סרגל העיצוב:** כותרות, הדגשה, רשימה, ציטוט, קישור, קופסת מידע, קופסת ציון (`:::score`) ותמונה בתוך הכתבה (עם טקסט חלופי וכיתוב).
 - **תצוגה מקדימה** מתעדכנת בזמן הקלדה, באותו עיצוב כמו באתר.
@@ -36,7 +37,8 @@
 ## English
 
 - **Login:** email and password, "forgot password" sends a reset link. New users get an invite link and choose their own password.
-- **Posts:** list with search and filters; editor with all fields, a formatting toolbar (headings, bold, lists, quote, link, info box, `:::score` box, inline image with alt and caption), live preview in the site's style, cover upload with required alt and credit, and draft / publish / update / unpublish / delete with confirmation.
+- **Worlds:** every post has a **world** (`home` Techno Home = appliances, `play` PlayTech = gaming, `techhigh` TechHigh = apps, phones, gadgets, wearables) and a **type** (`reviews`, `news`, `comparisons`, `recommendations`, `guides`). They decide where the post shows up (`/home/reviews/`, `/en/play/guides/`...). The old category stays for old URLs.
+- **Posts:** list with search and filters (language, world, type, category, status); editor with all fields, a formatting toolbar (headings, bold, lists, quote, link, info box, `:::score` box, inline image with alt and caption), live preview in the site's style, cover upload with required alt and credit, and draft / publish / update / unpublish / delete with confirmation.
 - **Roles:** writer (own drafts) < editor (edit, publish, delete anything) < admin (also invites, role changes, removing users).
 - **Users (admin):** invite by email + role (copyable invite link), password-reset links, role changes, removal (not yourself or the last admin).
 - **Going live:** the site rebuilds every 30 minutes (or run Actions → Deploy manually). Unpublished or deleted posts disappear on the next build.

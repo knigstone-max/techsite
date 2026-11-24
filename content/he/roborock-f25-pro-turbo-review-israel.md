@@ -3,6 +3,8 @@ title: "ביקורת Roborock F25 Pro Turbo: שואב שוטף בלי קיטור
 date: 2026-11-22
 slug: roborock-f25-pro-turbo-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "הוא הושק בישראל ב-2,190 ₪ (כ-658 דולר), והיום הוא נמכר ב-1,529 עד 1,690 ₪ (כ-460 עד 508 דולר). אין קיטור, אבל יש הדק שמגביר מים, שאיבה ומהירות רולר בדיוק כשצריך, 4.7 ק\"ג ותחנה שמייבשת באוויר חם. עברתי על הפרטים והשוויתי למתחרים."
 image: img/posts/roborock-f25-pro-turbo-hero.webp
 image_alt: "שואב שוטף אלחוטי Roborock F25 Pro Turbo בצבע כהה עומד בתחנת הטעינה והניקוי העצמי"

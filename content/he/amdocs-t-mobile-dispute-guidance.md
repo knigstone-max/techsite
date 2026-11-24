@@ -3,6 +3,8 @@ title: "הסכסוך עם T-Mobile מפיל את אמדוקס: המניה צנח
 date: 2026-11-09
 slug: amdocs-t-mobile-dispute-guidance
 category: tech-news
+world: techhigh
+type: news
 excerpt: "אמדוקס חשפה שהיא ו-T-Mobile, אחת הלקוחות הגדולות שלה, שלחו זו לזו הודעות על הפרה מהותית של ההסכמים. החברה צופה ירידה של עד 17.9% בהכנסות בשנה הבאה, והמניה ירדה לרמה הנמוכה ביותר מאז 2014. מה קרה ומה זה אומר."
 image: img/posts/amdocs-park-raanana.webp
 image_alt: "בניין זכוכית בקמפוס אמדוקס ברעננה עם לוגו amdocs גדול, משתקף בבריכת מים רדודה מתחת לשמיים מעוננים"

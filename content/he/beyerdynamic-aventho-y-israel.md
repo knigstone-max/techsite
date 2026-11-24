@@ -3,6 +3,8 @@ title: "beyerdynamic AVENTHO Y הגיעו לישראל: אוזניות עם סו
 date: 2026-10-29
 slug: beyerdynamic-aventho-y-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "ביקונקט השיקה את האוזניות האלחוטיות החדשות של beyerdynamic ב-599 ₪ (כ-191 דולר). יותר מ-90 שעות סוללה, ביטול רעשים, ובעיקר סוללה שאפשר להוציא ולהחליף בבית."
 image: img/posts/beyerdynamic-aventho-y-colors.webp
 image_alt: "ארבעה זוגות אוזניות beyerdynamic AVENTHO Y בשחור, כחול, ירוק-מנטה ואפרסק, זה לצד זה"

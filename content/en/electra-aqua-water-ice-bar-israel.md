@@ -3,6 +3,8 @@ title: "Electra's water and ice bar, and the bigger story of why its house brand
 date: 2026-11-02
 slug: electra-aqua-water-ice-bar-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "Electra sells a countertop unit that does cold water, hot water and ice for ₪1,290, and says it has quietly sold about 15,000 of them. Behind it is a factory-direct import push the company claims is dragging prices down across the Israeli market."
 source_links:
   - "https://finance.walla.co.il/item/3874468"

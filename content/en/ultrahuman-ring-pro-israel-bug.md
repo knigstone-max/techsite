@@ -3,6 +3,8 @@ title: "Ultrahuman Ring PRO lands at Bug in Israel: ₪1,499 at launch, no subsc
 date: 2026-11-17
 slug: ultrahuman-ring-pro-israel-bug
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Bug, Ultrahuman's official importer in Israel, is selling the Ring PRO for ₪1,499 (about $465) until December 2, then ₪1,799. A charging case that stretches battery life to up to 45 days comes in the box, and there are no monthly fees. Here's what you get and what to check first."
 image: img/posts/ultrahuman-ring-pro-charging-case.webp
 image_alt: "A silver Ultrahuman Ring PRO resting on its gold-toned charging case against a light grey background"

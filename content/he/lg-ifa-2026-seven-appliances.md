@@ -3,6 +3,8 @@ title: "מקרר שמדבר, מכונה שחוסכת יותר מ-A ומייבש 
 date: 2026-09-06
 slug: lg-ifa-2026-seven-appliances
 category: home-appliances
+world: home
+type: news
 excerpt: "LG הביאה לברלין מקרר SIGNATURE עם עוזר קולי מבוסס מודל שפה, WashTower בגודל חדש ומדיח שמסיים כביסה וייבוש בשעה. עברנו על הרשימה."
 image: img/posts/lg-ifa-2026-booth.webp
 image_alt: "מבקרים בביתן של LG ב-IFA 2026 צופים בהדגמה של מקררי Fit & Max"

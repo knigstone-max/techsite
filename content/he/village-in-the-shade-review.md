@@ -3,6 +3,8 @@ title: "ביקורת Village in the Shade: חווה פסטורלית ביום, �
 date: 2026-11-01
 slug: village-in-the-shade-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "היוצרים של Yomawari לקחו משחק חווה נעים בסגנון סטארדיו ואלי ושתלו בתוכו כפר הררי עם שמונה חוקים מוזרים ודפיקות בדלת באמצע הלילה. התוצאה איטית בהתחלה, אבל מתגמלת מאוד."
 image: img/posts/village-in-the-shade-key-art.webp
 image_alt: "ציור בסגנון מצויר ביד של ילדה בלונדינית עם סרט אדום בשיער, כורעת ליד שתיל צעיר באור שמש בתוך חורשה ירוקה"

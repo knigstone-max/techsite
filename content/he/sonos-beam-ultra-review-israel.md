@@ -3,6 +3,8 @@ title: "ביקורת Sonos Beam Ultra: Atmos אמיתי במקרן קומפקט�
 date: 2026-11-08
 slug: sonos-beam-ultra-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "סונוס לקחה את ה-Beam, הוסיפה ארבעה דרייברים ושני רמקולים שפונים לתקרה, וקיבלה מקרן קול 7.1.2 שנכנס מתחת לרוב הטלוויזיות. עברתי על המפרט, על המחיר בבאג ועל מה שצריך בבית כדי שזה באמת יעבוד."
 image: img/posts/sonos-beam-ultra-under-tv.webp
 image_alt: "מקרן קול Sonos Beam Ultra לבן על מזנון עץ מתחת לטלוויזיה גדולה, בסלון מואר עם עציץ"

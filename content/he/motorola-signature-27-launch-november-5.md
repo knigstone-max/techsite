@@ -3,6 +3,8 @@ title: "מוטורולה Signature 27 מושק מחר: מה כבר ידוע, ו�
 date: 2026-11-04
 slug: motorola-signature-27-launch-november-5
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "מוטורולה חושפת מחר, 5 בנובמבר, את ספינת הדגל החדשה שלה, עם Snapdragon 8 Elite Extreme Gen 6, מצלמת פריסקופ של 200MP ו-7 שנים של עדכוני מערכת. מחיר עוד אין, אבל הדגם של השנה שעברה נותן רמז טוב לאן זה הולך בישראל."
 image: img/posts/motorola-signature-27-capulet-olive.webp
 image_alt: "הגב של מוטורולה Signature 27 בצבע ירוק זית עם גימור שנראה כמו בד, ומודול מצלמות בולט עם כמה עדשות"

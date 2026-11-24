@@ -3,6 +3,8 @@ title: "Garmin Edge 1060 adds a speaker and microphone so cyclists can control i
 date: 2026-10-22
 slug: garmin-edge-1060-voice-control
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Say \"Okay, Garmin\" to hear ride stats, pick a route or report a pothole. The new cycling computer is on sale now for $799.99."
 image: img/posts/garmin-edge-1060.webp
 image_alt: "Four cyclists riding on a mountain road next to a Garmin Edge 1060 showing a map and a pothole alert"

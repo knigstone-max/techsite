@@ -3,6 +3,8 @@ title: "למה עדיין אין iPhone 18 רגיל: דיווח מיפן מצב�
 date: 2026-11-15
 slug: iphone-18-delay-samsung-sensors-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "לפי דיווח יפני, אפל דחתה את ה-iPhone 18 הבסיסי כדי לחכות שסמסונג תייצר מספיק חיישני מצלמה. הוא צפוי רק בחצי הראשון של 2027. מה זה אומר למי שעומד לקנות אייפון בארץ עכשיו, כשה-iPhone 17 עולה 4,249 ₪ (כ-1,328 דולר)."
 image: img/posts/iphone-17-lineup.webp
 image_alt: "ארבעה מכשירי iPhone 17 בצבעים סגול, תכלת, שחור ומרווה, שניים מהם מוצגים מהגב עם שתי מצלמות"

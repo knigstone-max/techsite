@@ -3,6 +3,8 @@ title: "שיאומי מביאה לאירופה מקרר של 546 ליטר עם �
 date: 2026-11-20
 slug: xiaomi-mijia-fridge-546l-europe-launch
 category: tech-news
+world: home
+type: news
 excerpt: "ה-Mijia Refrigerator Pro Multi-Door 546L מגיע בשתי תצורות, עם מקפיא של 195 ליטר, מכונת קרח אוטומטית ועומק של 60 ס\"מ בלבד. בצרפת הוא יעלה מ-1,299.99 אירו (כ-4,688 ₪, כ-1,428 דולר) בסוף דצמבר. לישראל עוד לא הוכרז."
 image: img/posts/xiaomi-mijia-fridge-546l-hero.webp
 image_alt: "מקרר French Door אפור כהה של שיאומי עם שתי דלתות למעלה ושתי מגירות למטה, על רקע שחור עם ערפל על הרצפה"

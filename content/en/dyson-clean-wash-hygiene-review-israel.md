@@ -3,6 +3,8 @@ title: "Dyson Clean+Wash Hygiene review: a floor washer with no suction and no f
 date: 2026-11-23
 slug: dyson-clean-wash-hygiene-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "Dyson's second try at a wet floor cleaner drops suction altogether, keeps the dirt down in the head and finally dries the roller with hot air. In Israel it costs ₪1,979 (about $595) on Dyson's site, down from ₪2,199. It's the lightest machine of its kind we've looked at, and it has a few catches."
 image: img/posts/dyson-clean-wash-hygiene-hero.webp
 image_alt: "The teal cleaner head of a Dyson Clean+Wash Hygiene with its blue microfibre roller, cleaning a stone floor scattered with crumbs and spills"

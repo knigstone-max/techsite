@@ -3,6 +3,8 @@ title: "REDMAGIC 12 Pro בישראל: טלפון גיימינג עם קירור 
 date: 2026-11-24
 slug: redmagic-12-pro-global-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "טלפון הגיימינג החדש של REDMAGIC עלה לחנות הגלובלית מ-899 דולר (כ-3,005 ₪), וביבוא מקביל בישראל הוא מתחיל ב-4,899 ₪ (כ-1,465 דולר). מה מקבלים, למה הפער כל כך גדול, ומה כדאי לבדוק לפני שמזמינים מחו\"ל."
 image: img/posts/redmagic-12-pro-hero.webp
 image_alt: "טלפון REDMAGIC 12 Pro בצבע שחור שקוף עם טבעת קירור עגולה מוארת בכחול בגב, ולצידו המסך הקדמי המציג דמות עם משקפי מגן"

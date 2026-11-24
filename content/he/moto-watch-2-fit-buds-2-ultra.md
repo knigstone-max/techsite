@@ -3,6 +3,8 @@ title: "מוטורולה מוסיפה שעון עם Polar ואוזניות עם 
 date: 2026-11-09
 slug: moto-watch-2-fit-buds-2-ultra
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "לצד ה-Signature 27 הכריזה מוטורולה על Moto Watch 2 Fit, שעון עם מדדי כושר של Polar ועד 12 ימי סוללה, ועל Moto Buds 2 Ultra עם סינון רעשים של Bose. באירופה הם מתחילים ב-99 וב-199 אירו, וההפצה כוללת את המזרח התיכון."
 image: img/posts/moto-watch-2-fit-colors.webp
 image_alt: "שלושה שעוני Moto Watch 2 Fit ברצועות סיליקון בירוק-אפור, ורוד וכחול, עם מסכים מרובעים שמציגים שעון מחוגים"

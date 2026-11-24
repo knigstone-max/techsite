@@ -3,6 +3,8 @@ title: "ביקורת Modern Warfare 4 ב-PS5: הקול אוף דיוטי שחי�
 date: 2026-10-26
 slug: modern-warfare-4-review-ps5
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "אחרי כמה שנים של כותרים שהרגישו ממהרים, Infinity Ward חוזרת עם קמפיין שקשה לעזוב, מולטיפלייר מהודק ו-DMZ שחזר בגדול. שיחקתי ב-PS5 ויצאתי עם חיוך מאוזן לאוזן."
 image: img/posts/mw4-hero-korea-front.webp
 image_alt: "שלושה חיילים בקסדות מסתתרים מאחורי חומה ומביטים בפיצוצים ענקיים ביער, ומעליהם חולף מטוס קרב"

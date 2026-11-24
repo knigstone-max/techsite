@@ -3,6 +3,8 @@ title: "GTA VI review: we waited 13 years, and Rockstar made a game the scale ca
 date: 2026-11-20
 slug: gta-6-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "Leonida is the most alive open world ever built, Jason and Lucia are the best pair the series has had, and the first big heist will leave you breathless. The one catch: the story takes its sweet time getting off the ground. ₪319 in Israel (about $98), and the best money you'll spend on a game this year."
 image: img/posts/gta6-review-hero.webp
 image_alt: "Official GTA VI cover art: the pink and purple logo in the middle, surrounded by Lucia, Jason, a speedboat, a motorbike and characters from Leonida"

@@ -3,6 +3,8 @@ title: "Motorola Signature 27 launches tomorrow: what we know, and what it means
 date: 2026-11-04
 slug: motorola-signature-27-launch-november-5
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Motorola unveils its new flagship on November 5, with a Snapdragon 8 Elite Extreme Gen 6, a 200MP periscope camera and 7 years of OS upgrades. There's no price yet, but last year's model gives a fair hint of where it could land in Israel."
 image: img/posts/motorola-signature-27-capulet-olive.webp
 image_alt: "Back of the Motorola Signature 27 in olive green with a textile-like finish, with a raised camera module holding several lenses"

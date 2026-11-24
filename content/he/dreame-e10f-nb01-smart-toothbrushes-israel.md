@@ -3,6 +3,8 @@ title: "דרימי נכנסת לאמבטיה: מברשות השיניים החכ
 date: 2026-11-01
 slug: dreame-e10f-nb01-smart-toothbrushes-israel
 category: smartphones-gadgets
+world: home
+type: news
 excerpt: "החברה שמוכרת אצלנו שואבים רובוטיים ומייבשי שיער משיקה שתי מברשות שיניים חשמליות. E10F עם מעקב AI אחרי הצחצוח ב-449 ₪, ו-NB01 הפשוטה ב-349 ₪. מה ההבדל ולמי מתאים מה."
 image: img/posts/dreame-e10f-toothbrush.webp
 image_alt: "מברשת השיניים החשמלית Dreame E10F בצבע כסוף עם מסך קטן בידית, לצד הקופסה הלבנה שלה"

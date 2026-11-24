@@ -3,6 +3,8 @@ title: "Xiaomi Smart Switch 2 Pro turns ordinary wall switches into smart ones, 
 date: 2026-10-20
 slug: xiaomi-smart-switch-2-pro
 category: home-appliances
+world: home
+type: news
 excerpt: "The new switch replaces a standard wall switch, works with both regular and smart bulbs, and starts at 114 yuan in a crowdfunding campaign in China."
 image: img/posts/xiaomi-smart-switch-2-pro.webp
 image_alt: "Two Xiaomi Smart Switch 2 Pro wall switches, one white and one dark gray"

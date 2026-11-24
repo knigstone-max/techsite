@@ -3,6 +3,8 @@ title: "ביקורת Soundcore Liberty 5 Pro: אוזניות ב-799 ₪ עם מ�
 date: 2026-11-07
 slug: soundcore-liberty-5-pro-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "המילטון מביאה לישראל את דגל ה-TWS של soundcore עם שבב Anker Thus, Adaptive ANC 4.0, Bluetooth 6.1 וסוללה של עד 50 שעות. עברתי על המפרט, על המחיר ועל מה שמבדיל אותן מגלקסי באדס ומאפל במחיר דומה."
 image: img/posts/soundcore-liberty-5-pro.webp
 image_alt: "אוזניות Soundcore Liberty 5 Pro כחולות-מתכתיות עם מארז טעינה שמציג מסך ANC ושתי האוזניות מעליו"

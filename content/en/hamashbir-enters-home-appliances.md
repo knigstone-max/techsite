@@ -3,6 +3,8 @@ title: "HaMashbir starts selling fridges, washers and TVs online, with free deli
 date: 2026-11-12
 slug: hamashbir-enters-home-appliances
 category: home-appliances
+world: home
+type: news
 excerpt: "The department store chain is moving into large appliances, online first and in its stores later. Washing machines start at ₪1,550 (about $489) and fridges at ₪1,099. Here's what it means for a market Electra increasingly controls."
 image: img/posts/hamashbir-rishon-lezion-store.webp
 image_alt: "The front of the HaMashbir building on Jabotinsky Road in Rishon LeZion, with blue Hebrew signs on a light stone facade"

@@ -3,6 +3,8 @@ title: "Samsung's smart glasses arrive in mid-December, just not in Israel"
 date: 2026-11-03
 slug: samsung-intelligent-eyewear-december-launch
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "A Korean report says Samsung Intelligent Eyewear launches in mid-December in Korea and the US, with Europe waiting until 2027. There's no price yet, and no word on Israel."
 image: img/posts/samsung-intelligent-eyewear-gentle-monster.webp
 image_alt: "Samsung Intelligent Eyewear in a glossy black Gentle Monster frame, with a small camera at the corner of the frame"

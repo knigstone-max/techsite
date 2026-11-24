@@ -3,6 +3,8 @@ title: "Tineco CARPET ONE Spot DualHeat: a sofa and carpet stain cleaner with st
 date: 2026-11-23
 slug: tineco-carpet-one-spot-dualheat
 category: tech-news
+world: home
+type: news
 excerpt: "Tineco's new portable spot cleaner heats water to 70°C, makes steam at 100°C, and then dries the patch it just cleaned with hot air, in as little as three minutes by Tineco's lab figures. It costs $249 (about ₪828) in the US. It hasn't been announced in Israel, where Tineco sells only its big carpet washer."
 image: img/posts/tineco-carpet-one-spot-dualheat-hero.webp
 image_alt: "A navy and translucent blue Tineco CARPET ONE Spot DualHeat on a light carpet, its hose tool sucking up a brown stain, with a yellow sofa in the background"

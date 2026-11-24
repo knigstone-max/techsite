@@ -3,6 +3,8 @@ title: "A fight with T-Mobile sinks Amdocs: shares fall about 30% as the outlook
 date: 2026-11-09
 slug: amdocs-t-mobile-dispute-guidance
 category: tech-news
+world: techhigh
+type: news
 excerpt: "Amdocs disclosed that it and T-Mobile, one of its biggest customers, have each sent notices claiming the other materially breached their agreements. It now expects revenue to fall by as much as 17.9% next year, and the stock hit its lowest level since 2014. What happened and what it means."
 image: img/posts/amdocs-park-raanana.webp
 image_alt: "A glass building on the Amdocs campus in Ra'anana with a large amdocs logo, reflected in a shallow pool under a cloudy sky"

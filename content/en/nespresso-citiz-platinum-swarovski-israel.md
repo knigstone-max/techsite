@@ -3,6 +3,8 @@ title: "Nespresso's Swarovski CitiZ, with 44 crystals, lands in Israel"
 date: 2026-11-01
 slug: nespresso-citiz-platinum-swarovski-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "Nespresso's winter collection includes a CitiZ Platinum covered in Swarovski crystals, priced at ₪1,250 in Israel. Here's what the extra money buys and what else is in the range."
 image: img/posts/nespresso-citiz-platinum-swarovski.webp
 image_alt: "A silver CitiZ Platinum coffee machine with a line of crystals down its side, on a pink counter next to an espresso cup and hands wearing sparkly rings"

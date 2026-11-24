@@ -3,6 +3,8 @@ title: "ECOVACS DEEBOT X12S lands in Israel: a robot that softens dried stains b
 date: 2026-10-30
 slug: ecovacs-deebot-x12s-omnicyclone-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "ECOVACS' new flagship sells in Israel for ₪4,999 (about $1,605). It has a 27 cm mop roller, a bagless dock and a jet that pre-treats stains before scrubbing. Here's what's inside, what it costs and when the older model makes more sense."
 image: img/posts/ecovacs-deebot-x12s-omnicyclone.webp
 image_alt: "The gold-grey ECOVACS DEEBOT X12S OmniCyclone parked in its dock, with the clear dust bin visible"

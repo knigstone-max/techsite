@@ -3,6 +3,8 @@ title: "LG's new STEM fridge swaps freezer doors for drawers, one of which conve
 date: 2026-10-27
 slug: lg-stem-drawer-freezer-fridge
 category: home-appliances
+world: home
+type: news
 excerpt: "LG's latest STEM ice-and-water fridge, launched in Korea, replaces the bottom freezer doors with two drawers. The middle one switches between fridge and freezer, with 14 food-specific storage modes."
 image: img/posts/lg-stem-drawer-fridge.webp
 image_alt: "A beige LG STEM refrigerator built into kitchen cabinets, with a water and ice dispenser on the left door and two rows of drawers below"

@@ -3,6 +3,8 @@ title: "eufy Omni S2 review: a robot that mops with hot water and makes your hom
 date: 2026-11-04
 slug: eufy-omni-s2-robot-vacuum-review
 category: reviews
+world: home
+type: reviews
 excerpt: "eufy's flagship robot combines 30,000Pa of suction, a roller mop fed with clean water and a station that does 12 jobs, including a scent diffuser. At about ₪4,500 in Israel, I looked at what you actually get, and who'd be better off with a cheaper model."
 image: img/posts/eufy-omni-s2-station.webp
 image_alt: "The eufy Omni S2 robot vacuum docked in its tall station, which has a champagne-coloured body, a dark top and a black base"

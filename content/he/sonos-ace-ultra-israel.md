@@ -3,6 +3,8 @@ title: "Sonos Ace Ultra הגיעו לישראל ב-1,699 ₪: אוזניות ש�
 date: 2026-11-23
 slug: sonos-ace-ultra-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "אוזניות הקשת החדשות של סונוס נמכרות בישראל במחיר מומלץ של 1,699 ₪ (כ-511 דולר), אחרי מכירה מוקדמת ב-1,599 ₪. הטריק החדש: לוחצים לחיצה ארוכה על כפתור, ומה שמתנגן ברמקול או בסאונדבר של סונוס עובר לאוזניים דרך ה-Wi-Fi, בלי טלפון. מה מקבלים, מה עדיין בגרסת ניסוי, וכמה עולה הסט המלא."
 image: img/posts/sonos-ace-ultra-hero.webp
 image_alt: "זוג אוזניות קשת Sonos Ace Ultra בצבע שחור על רקע טורקיז עמום"

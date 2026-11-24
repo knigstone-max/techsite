@@ -3,6 +3,8 @@ title: "ביקורת Zero Parades: Director's Cut ב-Switch 2: הריגול חו
 date: 2026-11-07
 slug: zero-parades-directors-cut-switch-2-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "ZA/UM חוזרת אחרי Disco Elysium עם RPG נרטיבי על מרגלת שבורה בעיר פוליטית. גרסת ה-Director's Cut יצאה ב-3 בנובמבר ל-Switch 2 ולקונסולות, עם עשרות אלפי מילים חדשות, מצב Backstage ותמיכה בעכבר. ב-PS Store ישראל זה 159 ₪."
 image: img/posts/zero-parades-hershel-key-art.webp
 image_alt: "דמות עם מעיל אדום מבריק ומכונה ביד, מסתכלת מעבר לכתף על רקע שחור, מתוך Zero Parades"

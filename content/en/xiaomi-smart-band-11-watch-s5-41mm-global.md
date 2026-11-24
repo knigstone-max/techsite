@@ -3,6 +3,8 @@ title: "Xiaomi Smart Band 11 and a smaller Watch S5 go global: what's new, what 
 date: 2026-11-19
 slug: xiaomi-smart-band-11-watch-s5-41mm-global
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Xiaomi has launched the Smart Band 11 worldwide, with a 2,000-nit screen and 21-day battery, alongside a 41mm Watch S5 that's the first in the series with Google Wallet. In Europe they start at €59.90 and €229.90. There's no official Israeli price for either yet."
 image: img/posts/xiaomi-watch-s5-41mm-hero.webp
 image_alt: "Three round stainless steel Xiaomi Watch S5 41mm watches with black, white and light blue straps, and a hand holding the light blue one"

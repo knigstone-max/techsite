@@ -3,6 +3,8 @@ title: "Xiaomi Wet Dry Vacuum 5 Pro review: 160°C steam, a clever dock and a we
 date: 2026-11-18
 slug: xiaomi-wet-dry-vacuum-5-pro-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "Xiaomi's cordless wet-dry vacuum sells in Israel for ₪2,490 (about $767) through Hamilton. It has steam, lies fully flat under furniture, drives itself forward and has a dock that dries the roller with hot air. It also weighs 6.1 kg, steams for only 20 minutes and comes with a warranty question."
 image: img/posts/xiaomi-wet-dry-vacuum-5-pro-hero.webp
 image_alt: "Two product shots of the white and silver Xiaomi Wet Dry Vacuum 5 Pro: one tilted with its black floor head, one standing in its charging and cleaning dock"

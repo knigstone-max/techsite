@@ -3,6 +3,8 @@ title: "Dreame brings its first espresso machines to Israel: a full-size model a
 date: 2026-11-04
 slug: dreame-ecceluxe-coffee-machines-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "The robot vacuum maker now sells bean-to-cup machines here. The Ecceluxe Master FCM60 costs 2,110 ₪ and does cold brew, and the Slim FCM30 is only 18 cm wide for 1,686 ₪. Here's how they differ and who each one suits."
 image: img/posts/dreame-ecceluxe-master-and-slim.webp
 image_alt: "Two Dreame bean-to-cup espresso machines in cream and white, the wider Master with a cup under the spout and the narrow Slim with a milk container beside it"

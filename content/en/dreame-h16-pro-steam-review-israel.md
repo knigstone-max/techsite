@@ -3,6 +3,8 @@ title: "Dreame H16 Pro Steam review: steam, two arms and a three-year warranty, 
 date: 2026-11-20
 slug: dreame-h16-pro-steam-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "Dreame's new wet-dry vacuum brings steam, 28,000Pa suction, an arm that reaches the wall and another that scrubs stains. The official importer sells it for ₪2,533 (about $772) right now, and Zap lists it for less. Here's what that money gets you and where to be careful."
 image: img/posts/dreame-h16-pro-steam-hero.webp
 image_alt: "The cleaning head of a Dreame H16 Pro Steam wet-dry vacuum on a dark floor, with a blue light strip on the front, a red roller at the side and the vacuum body behind"

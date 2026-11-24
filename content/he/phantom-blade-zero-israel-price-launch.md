@@ -3,6 +3,8 @@ title: "Phantom Blade Zero יצא: משחק הקונג-פו שהביקורות �
 date: 2026-10-30
 slug: phantom-blade-zero-israel-price-launch
 category: gaming-lite
+world: play
+type: news
 excerpt: "משחק האקשן הסיני של S-GAME זמין מאתמול ל-PS5 ול-PC, עם ציון 88 במטאקריטיק. בחנויות הדיגיטליות בארץ הוא עולה כ-150 ₪ (כ-48 דולר). מחירים, דרישות מערכת ומה צריך לדעת לפני שקונים."
 image: img/posts/phantom-blade-zero-key-art.webp
 image_alt: "האיור הרשמי של Phantom Blade Zero: הלוחם סול בכובע קש רחב ובגלימה קרועה, שולף חרב ארוכה על רקע אפור כהה"

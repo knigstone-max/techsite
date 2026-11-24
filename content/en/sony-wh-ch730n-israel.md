@@ -3,6 +3,8 @@ title: "Sony WH-CH730N in Israel: noise-cancelling headphones with a 50-hour bat
 date: 2026-11-21
 slug: sony-wh-ch730n-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Sony's new budget over-ears have arrived through the official importer and sell for ₪360 to ₪410 (about $108 to $123). The US list price is $179.99. What you get, and what you give up."
 image: img/posts/sony-wh-ch730n-hero.webp
 image_alt: "Blue Sony WH-CH730N wireless over-ear headphones on a white background"

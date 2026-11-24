@@ -3,6 +3,8 @@ title: "אלקטרה עוקפת שוב את SG: תייבא ישירות גם א�
 date: 2026-11-08
 slug: electra-tcl-air-conditioners-direct-import
 category: tech-news
+world: home
+type: news
 excerpt: "אחרי הטלוויזיות של TCL, אלקטרה מוצרי צריכה קיבלה מהיצרנית הסינית אישור לקנות ממנה ישירות גם מזגנים, בלי לעבור דרך היבואנית הרשמית. המזגנים יימכרו במחסני חשמל ובשקם אלקטריק, שמחזיקות כ-30% מקמעונאות החשמל בישראל."
 image: img/posts/machsanei-hashmal-or-yehuda.webp
 image_alt: "חזית סניף מחסני חשמל באור יהודה עם שלט צהוב גדול, עצי דקל וחניון מלא מכוניות"

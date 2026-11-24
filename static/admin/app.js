@@ -32,7 +32,9 @@ const T = {
     confirm_delete: 'למחוק את הפוסט?', confirm_delete_body: 'הפוסט "{t}" יימחק לצמיתות ויורד מהאתר בבנייה הבאה. אי אפשר לבטל.', cancel: 'ביטול', yes_delete: 'כן, למחוק',
     deleted: 'הפוסט נמחק.', no_permission: 'אין לך הרשאה לפעולה הזו.',
     new_post: 'פוסט חדש', edit_post: 'עריכת פוסט', f_lang: 'שפה', f_title: 'כותרת', f_slug: 'כתובת (slug)', f_slug_hint: 'אותיות אנגליות קטנות, ספרות ומקפים. זו הכתובת של הפוסט באתר.',
-    f_category: 'קטגוריה', f_excerpt: 'תקציר', f_excerpt_hint: 'משפט-שניים שמופיעים בכרטיס ובתוצאות חיפוש.', f_body: 'תוכן הפוסט',
+    f_category: 'קטגוריה', f_world: 'עולם', f_type: 'סוג כתבה', all_worlds: 'כל העולמות', all_types: 'כל הסוגים',
+    f_world_hint: 'טכנו בית = מוצרי חשמל, פלייטק = גיימינג, טקהיי = אפליקציות, טלפונים וגאדג\'טים. הסוג קובע באיזה לשונית הכתבה תופיע.',
+    f_excerpt: 'תקציר', f_excerpt_hint: 'משפט-שניים שמופיעים בכרטיס ובתוצאות חיפוש.', f_body: 'תוכן הפוסט',
     f_body_hint: 'Markdown: ## כותרת, **מודגש**, - רשימה, > ציטוט. תמונה בגוף: כפתור "תמונה בגוף". קופסת ציון: :::score ... :::',
     f_cover: 'תמונה ראשית', upload: 'העלאת תמונה', uploading: 'מעלה…', remove_img: 'הסרה', f_alt: 'תיאור התמונה (alt)', f_credit: 'קרדיט לתמונה',
     f_credit_url: 'קישור לקרדיט (לא חובה)', f_pos: 'מיקוד התמונה', pos_center: 'מרכז', pos_top: 'למעלה', pos_bottom: 'למטה',
@@ -72,7 +74,9 @@ const T = {
     confirm_delete: 'Delete this post?', confirm_delete_body: '"{t}" will be deleted for good and removed from the site on the next build. This cannot be undone.', cancel: 'Cancel', yes_delete: 'Yes, delete',
     deleted: 'Post deleted.', no_permission: 'You do not have permission for that.',
     new_post: 'New post', edit_post: 'Edit post', f_lang: 'Language', f_title: 'Title', f_slug: 'URL slug', f_slug_hint: 'Lowercase latin letters, digits and hyphens. This is the post address.',
-    f_category: 'Category', f_excerpt: 'Excerpt', f_excerpt_hint: 'One or two sentences for cards and search results.', f_body: 'Post body',
+    f_category: 'Category', f_world: 'World', f_type: 'Post type', all_worlds: 'All worlds', all_types: 'All types',
+    f_world_hint: 'Techno Home = home appliances, PlayTech = gaming, TechHigh = apps, phones and gadgets. The type decides which tab the post appears under.',
+    f_excerpt: 'Excerpt', f_excerpt_hint: 'One or two sentences for cards and search results.', f_body: 'Post body',
     f_body_hint: 'Markdown: ## heading, **bold**, - list, > quote. In-body image: the "Body image" button. Score box: :::score ... :::',
     f_cover: 'Cover image', upload: 'Upload image', uploading: 'Uploading…', remove_img: 'Remove', f_alt: 'Image description (alt)', f_credit: 'Image credit',
     f_credit_url: 'Credit link (optional)', f_pos: 'Image focus', pos_center: 'Center', pos_top: 'Top', pos_bottom: 'Bottom',
@@ -100,6 +104,12 @@ if (!T[LANG]) LANG = 'he';
 const t = (k, vars) => { let s = T[LANG][k] ?? T.he[k] ?? k; for (const [a, b] of Object.entries(vars || {})) s = s.replace('{' + a + '}', b); return s; };
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 const catName = (slug, lang = LANG) => (CFG.categories.find((c) => c.slug === slug) || {})[lang] || slug;
+const WORLDS = CFG.worlds || []; const TYPES = CFG.types || [];
+const worldName = (slug, lang = LANG) => (WORLDS.find((w) => w.slug === slug) || {})[lang] || slug || '';
+const typeName = (slug, lang = LANG) => (TYPES.find((x) => x.slug === slug) || {})[lang] || slug || '';
+// default world for a category (gaming-lite -> play, home-appliances -> home, phones/news -> techhigh)
+const worldForCat = (cat) => (WORLDS.find((w) => (w.categories || []).includes(cat)) || WORLDS[0] || {}).slug;
+const opts = (list, sel, lang = LANG) => list.map((x) => `<option value="${esc(x.slug)}"${x.slug === sel ? ' selected' : ''}>${esc(x[lang])}</option>`).join('');
 const fmtDate = (d) => d ? new Date(d).toLocaleString(LANG === 'he' ? 'he-IL' : 'en-GB', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Jerusalem' }) : '';
 const postUrl = (p) => CFG.base + (p.lang === 'he' ? '' : p.lang + '/') + 'posts/' + p.slug + '/';
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -260,21 +270,25 @@ async function viewPosts() {
     <div class="cms-panel"><form class="filters" id="flt" role="search">
       <input type="search" name="q" placeholder="${esc(t('search'))}" aria-label="${esc(t('search'))}">
       <select name="lang" aria-label="${esc(t('f_lang'))}"><option value="">${esc(t('all_langs'))}</option><option value="he">עברית</option><option value="en">English</option></select>
+      <select name="world" aria-label="${esc(t('f_world'))}"><option value="">${esc(t('all_worlds'))}</option>${opts(WORLDS)}</select>
+      <select name="type" aria-label="${esc(t('f_type'))}"><option value="">${esc(t('all_types'))}</option>${opts(TYPES)}</select>
       <select name="cat" aria-label="${esc(t('f_category'))}"><option value="">${esc(t('all_cats'))}</option>${cats}</select>
       <select name="status" aria-label="status"><option value="">${esc(t('all_status'))}</option><option value="published">${esc(t('published'))}</option><option value="draft">${esc(t('draft'))}</option></select>
     </form></div><p class="hint">${esc(t('rebuild_note'))}</p><ul class="post-list" id="list"><li class="empty-box">${esc(t('loading'))}</li></ul>`;
   const form = $('#flt');
-  for (const k of ['q', 'lang', 'cat', 'status']) form[k].value = filters[k] || '';
+  for (const k of ['q', 'lang', 'world', 'type', 'cat', 'status']) form[k].value = filters[k] || '';
   let timer;
-  const reload = () => { for (const k of ['q', 'lang', 'cat', 'status']) filters[k] = form[k].value; sessionStorage.setItem('cms-filters', JSON.stringify(filters)); load(); };
+  const reload = () => { for (const k of ['q', 'lang', 'world', 'type', 'cat', 'status']) filters[k] = form[k].value; sessionStorage.setItem('cms-filters', JSON.stringify(filters)); load(); };
   form.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(reload, 250); });
   form.addEventListener('submit', (e) => { e.preventDefault(); reload(); });
   const { data: people } = await sb.from('profiles').select('id, display_name');
   const names = new Map((people || []).map((p) => [p.id, p.display_name]));
   async function load() {
-    let q = sb.from('posts').select('id, lang, slug, title, category, status, image, updated_at, published_at, author_id').order('updated_at', { ascending: false }).limit(1000);
+    let q = sb.from('posts').select('id, lang, slug, title, category, world, type, status, image, updated_at, published_at, author_id').order('updated_at', { ascending: false }).limit(1000);
     if (filters.lang) q = q.eq('lang', filters.lang);
     if (filters.cat) q = q.eq('category', filters.cat);
+    if (filters.world) q = q.eq('world', filters.world);
+    if (filters.type) q = q.eq('type', filters.type);
     if (filters.status) q = q.eq('status', filters.status);
     const s = (filters.q || '').replace(/[%,()*"\\]/g, ' ').trim();
     if (s) q = q.or(`title.ilike."*${s}*",slug.ilike."*${s}*"`);
@@ -290,7 +304,7 @@ async function viewPosts() {
       return `<li class="post-row" data-id="${esc(p.id)}">${img}<div>
         <h3>${canEdit ? `<a href="#/edit/${esc(p.id)}">${esc(p.title)}</a>` : esc(p.title)}</h3>
         <div class="meta"><span class="pill ${esc(p.status)}">${esc(t(p.status))}</span><span class="pill">${p.lang === 'he' ? 'עב' : 'EN'}</span>
-          <span>${esc(catName(p.category))}</span><span>${esc(t('updated'))}: ${esc(fmtDate(p.updated_at))}</span>
+          ${p.world ? `<span class="pill w-${esc(p.world)}">${esc(worldName(p.world))} · ${esc(typeName(p.type))}</span>` : ''}<span>${esc(catName(p.category))}</span><span>${esc(t('updated'))}: ${esc(fmtDate(p.updated_at))}</span>
           ${names.get(p.author_id) ? `<span>${esc(t('by'))} ${esc(names.get(p.author_id))}</span>` : ''}</div></div>
         <div class="row-actions">${canEdit ? `<a class="btn small" href="#/edit/${esc(p.id)}">${esc(t('edit'))}</a>` : ''}
           ${p.status === 'published' ? `<a class="btn small" href="${esc(postUrl(p))}" target="_blank" rel="noopener">${esc(t('view'))}</a>` : ''}
@@ -335,7 +349,7 @@ const toLocalInput = (iso) => { if (!iso) return ''; const d = new Date(iso); co
 
 async function viewEditor(id) {
   const main = shell(id ? 'posts' : 'new');
-  let post = { lang: LANG, title: '', slug: '', category: CFG.categories[0].slug, excerpt: '', body: '', image: '', image_alt: '', image_credit: '',
+  let post = { lang: LANG, title: '', slug: '', category: CFG.categories[0].slug, world: '', type: '', excerpt: '', body: '', image: '', image_alt: '', image_credit: '',
     image_credit_url: '', image_position: '', source_links: [], placeholder: false, status: 'draft', published_at: null };
   if (id) {
     main.innerHTML = `<p class="empty-box">${esc(t('loading'))}</p>`;
@@ -359,6 +373,11 @@ async function viewEditor(id) {
           <label class="f"><span>${esc(t('f_lang'))}</span><select name="lang"><option value="he"${post.lang === 'he' ? ' selected' : ''}>עברית</option><option value="en"${post.lang === 'en' ? ' selected' : ''}>English</option></select></label>
           <label class="f"><span>${esc(t('f_category'))}</span><select name="category">${cats}</select></label>
         </div>
+        <div class="grid-2">
+          <label class="f"><span>${esc(t('f_world'))}</span><select name="world" required>${opts(WORLDS, post.world || worldForCat(post.category))}</select></label>
+          <label class="f"><span>${esc(t('f_type'))}</span><select name="type" required>${opts(TYPES, post.type || (post.category === 'reviews' ? 'reviews' : 'news'))}</select></label>
+        </div>
+        <small class="cms-muted world-hint">${esc(t('f_world_hint'))}</small>
         <label class="f"><span>${esc(t('f_title'))}</span><input type="text" name="title" maxlength="300" value="${esc(post.title)}" required></label>
         <label class="f"><span>${esc(t('f_slug'))}</span><input type="text" name="slug" dir="ltr" maxlength="120" value="${esc(post.slug)}" required><small>${esc(t('f_slug_hint'))}</small></label>
         <label class="f"><span>${esc(t('f_excerpt'))}</span><textarea name="excerpt" rows="3" maxlength="1000">${esc(post.excerpt)}</textarea><small>${esc(t('f_excerpt_hint'))}</small></label>
@@ -395,10 +414,16 @@ async function viewEditor(id) {
 function wireEditor(post, canEdit, canPublish) {
   const f = $('#ed'); const pv = $('#pv'); const body = f.body;
   let slugTouched = !!post.slug;
+  let worldTouched = !!post.world;
+  f.world.addEventListener('change', () => { worldTouched = true; });
+  f.category.addEventListener('change', () => {
+    if (!worldTouched) f.world.value = worldForCat(f.category.value);
+    if (f.category.value === 'reviews' && !post.type) f.type.value = 'reviews';
+  });
   const preview = () => {
     const r = renderMarkdown(body.value, CFG.assets);
     const img = f.image.value ? `<img class="preview-cover" src="${esc(imageUrl(f.image.value, CFG.assets))}" alt="${esc(f.image_alt.value)}"${f.image_position.value ? ` style="object-position:${esc(f.image_position.value)}"` : ''}>` : '';
-    pv.innerHTML = `<p class="cms-tag">${esc(t('preview'))} · ${esc(catName(f.category.value, f.lang.value))}</p>
+    pv.innerHTML = `<p class="cms-tag">${esc(t('preview'))} · ${esc(worldName(f.world.value, f.lang.value))} · ${esc(typeName(f.type.value, f.lang.value))}</p>
       <div lang="${esc(f.lang.value)}" dir="${f.lang.value === 'he' ? 'rtl' : 'ltr'}"><h1>${esc(f.title.value)}</h1>
       ${f.excerpt.value ? `<p class="cms-muted">${esc(f.excerpt.value)}</p>` : ''}${img}<div class="prose">${r.html}</div></div>`;
   };
@@ -469,6 +494,7 @@ function wireEditor(post, canEdit, canPublish) {
   // save / publish / unpublish / delete
   const collect = (status) => ({
     lang: f.lang.value, title: f.title.value.trim(), slug: f.slug.value.trim(), category: f.category.value,
+    world: f.world.value || worldForCat(f.category.value), type: f.type.value || 'news',
     excerpt: f.excerpt.value.trim(), body: f.body.value, image: f.image.value || null, image_alt: f.image_alt.value.trim() || null,
     image_credit: f.image_credit.value.trim() || null, image_credit_url: f.image_credit_url.value.trim() || null,
     image_position: f.image_position.value || null, placeholder: f.placeholder.checked,

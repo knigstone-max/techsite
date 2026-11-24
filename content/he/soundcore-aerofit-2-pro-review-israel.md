@@ -3,6 +3,8 @@ title: "ביקורת soundcore AeroFit 2 Pro: אוזניות פתוחות מעו
 date: 2026-11-13
 slug: soundcore-aerofit-2-pro-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "האוזניות של אנקר מנסות להיות גם פתוחות לריצה וגם סגורות עם ביטול רעשים לרכבת, וב-KSP הן עולות 730 ₪ (כ-229 דולר). כאוזניות פתוחות הן מהטובות במחיר הזה. ביטול הרעשים הוא הצד החלש."
 image: img/posts/soundcore-aerofit-2-pro-black-pair.webp
 image_alt: "זוג אוזניות soundcore AeroFit 2 Pro שחורות עם וו אוזן מעוקל, אחת מלפנים ואחת מאחור, על רקע שחור"

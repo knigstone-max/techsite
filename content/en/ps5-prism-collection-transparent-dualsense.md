@@ -3,6 +3,8 @@ title: "Clear controllers are back: Sony unveils the PS5 Prism Collection in thr
 date: 2026-10-29
 slug: ps5-prism-collection-transparent-dualsense
 category: gaming-lite
+world: play
+type: news
 excerpt: "Glossy see-through DualSense controllers and console covers in orange, green and gray. Pre-orders open November 10, launch is February 4, 2027, and a controller costs $84.99 (about ₪266)."
 image: img/posts/ps5-prism-collection.webp
 image_alt: "Three PS5 consoles with transparent covers in gray, orange and green, each next to a matching transparent DualSense controller, against colored light streaks"

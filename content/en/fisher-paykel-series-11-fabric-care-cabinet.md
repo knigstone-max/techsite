@@ -3,6 +3,8 @@ title: "Fisher & Paykel launches a cabinet that refreshes and sanitises clothes 
 date: 2026-11-21
 slug: fisher-paykel-series-11-fabric-care-cabinet
 category: tech-news
+world: home
+type: news
 excerpt: "The Series 11 Minimal range includes a care cabinet for delicate clothes, a 12 kg washer that doses detergent by fabric type and two heat-pump dryers. In the UK the cabinet will cost £2,750 (about ₪11,991, about $3,605) and ships only in April 2027. In Israel the brand sells kitchen appliances only, for now."
 image: img/posts/fisher-paykel-series-11-fabric-care-hero.webp
 image_alt: "A tall, narrow Fisher & Paykel clothes care cabinet in grey glass, next to a front-loading washing machine in the same finish"

@@ -3,6 +3,8 @@ title: "Sonic Pico Park review: ten dollars of shouting at your friends, in the 
 date: 2026-11-12
 slug: sonic-pico-park-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "The co-op puzzle series Pico Park teams up with Sonic for his 35th anniversary. For $9.99 (about ₪32) you get 15 worlds for 2 to 8 players, clever Sonic mechanics and plenty of laughs. It's just over too fast."
 image: img/posts/sonic-pico-park-key-art.webp
 image_alt: "The Sonic Pico Park title in blue letters, above a row of small pixel characters: Amy, Knuckles, Tails, Sonic, a sign with Sonic's face and four Pico Cats in blue, pink, yellow and green"

@@ -100,6 +100,10 @@ create table if not exists public.posts (
 );
 create index if not exists posts_status_pub_idx on public.posts (status, published_at desc);
 create index if not exists posts_author_idx on public.posts (author_id);
+-- worlds (Nov 2026): every post sits in one world and one type; `category` stays for old URLs
+alter table public.posts add column if not exists world text check (world is null or world in ('home', 'play', 'techhigh'));
+alter table public.posts add column if not exists type  text check (type is null or type in ('reviews', 'news', 'comparisons', 'recommendations', 'guides'));
+create index if not exists posts_world_type_idx on public.posts (world, type);
 alter table public.posts enable row level security;
 
 create or replace function private.posts_touch()

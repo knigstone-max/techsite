@@ -3,6 +3,8 @@ title: "ביקורת Xiaomi TV X Mini LED: מיני LED במחיר של טלוו
 date: 2026-11-05
 slug: xiaomi-tv-x-mini-led-review
 category: reviews
+world: home
+type: reviews
 excerpt: "שיאומי מביאה את סדרת ה-Mini LED הזולה שלה לישראל, מ-1,549 ₪ ל-43 אינץ' ועד 3,490 ₪ ל-75 אינץ'. עברתי על מה שמקבלים במחיר הזה, איפה חסכו, ולמי היא מתאימה."
 image: img/posts/xiaomi-tv-x-mini-led.webp
 image_alt: "טלוויזיית Xiaomi TV X Mini LED עם מסגרת דקה על רגליים, ועל המסך פרח צבעוני בגוונים של כתום וכחול"

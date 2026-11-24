@@ -3,6 +3,8 @@ title: "Electra Retail moves into rugged phones with exclusive Blackview imports
 date: 2026-08-21
 slug: electra-blackview-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "An investment of about ₪10 million (about $3.2 million), experience zones in stores, and phones, tablets and mini PCs from a Chinese brand best known to people who work outdoors."
 source_links:
   - "https://www.geektime.co.il/flash/electra-retail-exclusive-blackview-israel/"

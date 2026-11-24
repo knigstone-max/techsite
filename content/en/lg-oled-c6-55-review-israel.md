@@ -3,6 +3,8 @@ title: "LG OLED evo C6 55-inch review: the OLED most living rooms need, with one
 date: 2026-11-19
 slug: lg-oled-c6-55-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "LG's C series has long been the default for anyone who wants OLED without paying flagship money. The C6 gets the flagship processor, 165Hz for gamers and four HDMI 2.1 ports. In Israel it starts at ₪4,489 (about $1,377) with a three-year warranty. What's good, and what to know before you buy."
 image: img/posts/lg-oled-c6-hero.webp
 image_alt: "An LG OLED evo C6 TV mounted on a pale wall in a designer living room, above a wooden console and facing a yellow sofa, showing a sunset over a river and a lit bridge"

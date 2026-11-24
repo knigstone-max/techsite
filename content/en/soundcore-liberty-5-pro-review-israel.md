@@ -3,6 +3,8 @@ title: "Soundcore Liberty 5 Pro review: ₪799 earbuds with a case screen and sh
 date: 2026-11-07
 slug: soundcore-liberty-5-pro-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "Hamilton brings soundcore's TWS flagship to Israel with the Anker Thus chip, Adaptive ANC 4.0, Bluetooth 6.1 and up to 50 hours of battery. I went through the specs, the local price and how they sit against Galaxy Buds and Apple at a similar spend."
 image: img/posts/soundcore-liberty-5-pro.webp
 image_alt: "Metallic blue Soundcore Liberty 5 Pro earbuds above a charging case showing an ANC touchscreen"

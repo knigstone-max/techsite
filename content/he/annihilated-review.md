@@ -3,6 +3,8 @@ title: "סקירת Annihilated: ארבעה גיבורים שבורים, יציא
 date: 2026-11-14
 slug: annihilated-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "משחק הבכורה של Death Kumiai הוא רוגלייט סיפורי עם קרבות קלפים, שבו מצילים רק אחד מארבעה גיבורים מצינוק מקולל. ב-60.99 ₪ ב-Steam (16.99 דולר) הוא קנייה מצוינת למי שבא בשביל הסיפור, גם אם הקרבות לא עמוקים כמו שהם נראים."
 image: img/posts/annihilated-key-art.webp
 image_alt: "איור הפרומו של Annihilated: חמש דמויות בסגנון אנימה, ביניהן מכשפה בכובע רחב ונערה עם עיניים כחולות שאוחזת חרב, לצד הלוגו של המשחק"

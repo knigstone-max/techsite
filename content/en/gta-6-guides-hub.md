@@ -3,6 +3,8 @@ title: "The complete GTA VI world guide: every catalog, the review and our guide
 date: 2026-11-21
 slug: gta-6-guides-hub
 category: gaming-lite
+world: play
+type: guides
 excerpt: "Vehicles, motorbikes, weapons, editions and extras, plus our review, the history of the series and the New Zealand trick. Everything we've written about GTA VI, on one page."
 image: img/posts/gta6-guides-hub.webp
 image_alt: "Jason and Lucia by a red car under a pink and orange sunset with palm trees and a plane in the sky, from the official GTA VI art"

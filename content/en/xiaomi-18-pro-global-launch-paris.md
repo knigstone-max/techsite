@@ -3,6 +3,8 @@ title: "Xiaomi 18 Pro and its rear screen leave China: global launch on November
 date: 2026-11-10
 slug: xiaomi-18-pro-global-launch-paris
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Xiaomi has confirmed that the 18 Pro series, with a small screen on the back next to the cameras and two 200MP Leica cameras, launches globally next week. There is no date or price for Israel yet. Here is what we know, and what the leaked European prices suggest."
 image: img/posts/xiaomi-18-pro-max-rear-display.webp
 image_alt: "The back of a red Xiaomi 18 Pro Max with two cameras and a small glowing red screen showing a clock, with LEICA printed below"

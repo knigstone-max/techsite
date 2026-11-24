@@ -3,6 +3,8 @@ title: "OPPO unveils the Reno17 in China: an 8,000mAh battery, and the Pro is th
 date: 2026-11-18
 slug: oppo-reno17-series-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "OPPO has announced the Reno17 and Reno17 Pro, starting at about $540 (around ₪1,750) in China. The regular model gets a huge battery, while the Pro packs a 200MP camera into a smaller body. Here's what we know, and where things stand with Ronlight in Israel."
 image: img/posts/oppo-reno17-pro-hero.webp
 image_alt: "The back of a light blue OPPO Reno17 Pro with a rounded camera module and a cat pattern in the glass"

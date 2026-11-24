@@ -3,6 +3,8 @@ title: "Three weeks to GTA VI: what it costs in Israel and where to pre-order"
 date: 2026-10-29
 slug: gta-6-israel-price-preorder
 category: gaming-lite
+world: play
+type: news
 excerpt: "GTA VI launches November 19 on PS5 and Xbox Series X|S. Israel's digital stores charge ₪319 (about $102), while boxed copies at Bug and Ivory cost a little more. Here are the prices, dates and bonuses."
 image: img/posts/gta-6-key-art-rockstar.webp
 image_alt: "The official GTA VI key art collage: Lucia and Jason, a speedboat, an alligator, a yellow sports car and a motorbike, around the game's logo"

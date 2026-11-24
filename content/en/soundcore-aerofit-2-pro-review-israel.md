@@ -3,6 +3,8 @@ title: "soundcore AeroFit 2 Pro review: great open earbuds, noise cancelling tha
 date: 2026-11-13
 slug: soundcore-aerofit-2-pro-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "Anker's earbuds try to be open for running and sealed with ANC for the train, and KSP sells them for ₪730 (about $229). As open earbuds they're among the best at this price. The noise cancelling is the weak spot."
 image: img/posts/soundcore-aerofit-2-pro-black-pair.webp
 image_alt: "A pair of black soundcore AeroFit 2 Pro earbuds with curved ear hooks, one facing forward and one back, on a black background"

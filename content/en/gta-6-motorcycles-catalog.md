@@ -3,6 +3,8 @@ title: "GTA VI motorcycle catalog: sport bikes, choppers, dirt bikes and scooter
 date: 2026-11-21
 slug: gta-6-motorcycles-catalog
 category: gaming-lite
+world: play
+type: guides
 excerpt: "From the Dinka Enduro parked under Jason's house to the Western Nightblade you steal for Moses: every GTA VI motorbike with a known name, the real bike behind it, and how to get the ones worth getting."
 image: img/posts/gta6-moto-enduro.webp
 image_alt: "An army-green Dinka Enduro motorbike parked against a turquoise wall"

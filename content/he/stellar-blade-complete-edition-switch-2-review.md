@@ -3,6 +3,8 @@ title: "ביקורת Stellar Blade Complete Edition ל-Switch 2: איווה סו
 date: 2026-11-06
 slug: stellar-blade-complete-edition-switch-2-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "משחק האקשן של SHIFT UP יצא ל-Switch 2 ב-5 בנובמבר עם כל ה-DLC, תלבושות Bayonetta ומחסנית מלאה. בישראל מוצאים אותו סביב 299 עד 309 ₪. האם שווה לקנות אם כבר שיחקתם ב-PS5?"
 image: img/posts/stellar-blade-complete-edition-key-art.webp
 image_alt: "איווה ואדם עומדים זה מול זה במעבדה עתידנית מול מתקן כדורי זוהר, מתוך Stellar Blade"

@@ -3,6 +3,8 @@ title: "אוזניות הקליפס OnePlus Buds Clip הגיעו לישראל ב
 date: 2026-10-27
 slug: oneplus-buds-clip-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "אוזניות פתוחות שנצמדות לאוזן בקשת גמישה, עם שני דרייברים בכל צד שכוונו עם Dynaudio. היבואנית Cell Now מוכרת אותן ב-499 ₪ (כ-160 דולר) בשלושה צבעים."
 image: img/posts/oneplus-buds-clip-pebble-gray.webp
 image_alt: "אוזניית OnePlus Buds Clip בצבע אפור Pebble Gray, עם קשת מתכתית שמחברת בין שני חלקי האוזנייה"

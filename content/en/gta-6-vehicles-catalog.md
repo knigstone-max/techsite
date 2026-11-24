@@ -3,6 +3,8 @@ title: "GTA VI vehicle catalog: every car, boat and aircraft with a confirmed na
 date: 2026-11-21
 slug: gta-6-vehicles-catalog
 category: gaming-lite
+world: play
+type: guides
 excerpt: "277 base models, no dealerships, and most cars are stolen first and registered later. Here's every vehicle that Rockstar or at least two serious guides have already named: cars by class, the Ultimate Edition bonuses, boats, planes and helicopters, and where to find them."
 image: img/posts/gta6-veh-cheetah.webp
 image_alt: "A white '95 Grotti Cheetah with red stripes parked in front of a pink parking garage with palm trees in Vice City"

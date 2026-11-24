@@ -3,6 +3,8 @@ title: "ECOVACS DEEBOT X12S הגיע לארץ: רובוט שמרכך כתמים 
 date: 2026-10-30
 slug: ecovacs-deebot-x12s-omnicyclone-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "הדגם החדש של אקובקס נמכר בישראל ב-4,999 ₪ (כ-1,605 דולר), עם רולר שטיפה של 27 ס\"מ, תחנה בלי שקיות ומערכת שמתיזה מים על כתמים לפני הקרצוף. מה יש בו, כמה הוא עולה ומתי הדגם הקודם מספיק."
 image: img/posts/ecovacs-deebot-x12s-omnicyclone.webp
 image_alt: "הרובוט ECOVACS DEEBOT X12S OmniCyclone בגוון זהב-אפור, חונה בתוך תחנת העגינה עם מיכל האבק השקוף"

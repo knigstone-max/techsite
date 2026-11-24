@@ -3,6 +3,8 @@ title: "Waze will now show drivers nearby cyclists in real time, if they ride wi
 date: 2026-11-11
 slug: garmin-waze-live-cycling-alerts-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "Garmin and Waze launched live cycling alerts. Ride with a Garmin watch or Edge bike computer, opt in, and drivers nearby see you as a moving icon on the map. It's free, it works in Israel, and sharing stops the moment your ride ends."
 image: img/posts/garmin-waze-live-cycling-alerts.webp
 image_alt: "A cyclist on a city street next to a car, alongside a smartphone showing a Waze map, a smartwatch and a Garmin bike computer"

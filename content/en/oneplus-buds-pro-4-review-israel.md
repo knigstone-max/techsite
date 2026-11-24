@@ -3,6 +3,8 @@ title: "OnePlus Buds Pro 4 review: premium sound, good-not-great noise cancellin
 date: 2026-11-15
 slug: oneplus-buds-pro-4-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "OnePlus's flagship earbuds landed in Israel at ₪649 (about $203), with a woofer and a planar tweeter in each ear and Dynaudio tuning. The sound and battery deliver, the noise cancelling improved a lot without reaching the top tier, and iPhone owners miss out on some of the good stuff."
 image: img/posts/oneplus-buds-pro-4-white.webp
 image_alt: "Silver OnePlus Buds Pro 4 earbuds floating above an open white charging case, with a second case lid beside it, on a lavender background"

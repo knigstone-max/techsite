@@ -3,6 +3,8 @@ title: "Welcome to the site (sample post)"
 date: 2026-10-18
 slug: welcome
 category: tech-news
+world: techhigh
+type: news
 excerpt: "This is a sample post that shows what a post looks like on the site. It can be deleted once the first real post is published."
 placeholder: true
 source_links: []

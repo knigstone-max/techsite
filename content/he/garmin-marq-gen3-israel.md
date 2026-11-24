@@ -3,6 +3,8 @@ title: "Garmin MARQ Gen 3 בישראל: שעון טיטניום עם מפות, �
 date: 2026-10-30
 slug: garmin-marq-gen3-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "הדור השלישי של סדרת היוקרה של גרמין כולל שישה דגמים, ביניהם Diver חדש לצלילה. בישראל הוא מתחיל ב-8,999 ₪ (כ-2,890 דולר). מה מקבלים בכסף הזה, ומה כדאי לבדוק לפני שקונים בארץ."
 image: img/posts/garmin-marq-gen3-family.webp
 image_alt: "שישה שעוני Garmin MARQ Gen 3 בשורה, כל אחד עם רצועה ולוח שעון בצבע אחר: שחור, חום, ירוק, כחול, שחור-זהב וכחול-אדום"

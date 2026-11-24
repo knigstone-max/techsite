@@ -3,6 +3,8 @@ title: "סקירת Galaxy S26 FE: מעבד חדש, כל השאר מהשנה שע
 date: 2026-11-14
 slug: galaxy-s26-fe-review-israel
 category: reviews
+world: techhigh
+type: reviews
 excerpt: "ה-FE של סמסונג קיבל סוף סוף מעבד חזק יותר ושבע שנות עדכונים, אבל המצלמות, הסוללה והמסך כמעט לא זזו, ויציאת ה-USB אפילו ירדה דרגה. ב-2,299 ₪ (כ-719 דולר) הוא קנייה סבירה רק אם תמצאו אותו בהנחה."
 image: img/posts/galaxy-s26-fe-mint.webp
 image_alt: "סמארטפון Galaxy S26 FE בצבע ירוק מנטה בזווית, עם שלוש מצלמות בגב ותמונה של אישה עם משקפי שמש על המסך"

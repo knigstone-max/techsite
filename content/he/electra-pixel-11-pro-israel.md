@@ -3,6 +3,8 @@ title: "אלקטרה מביאה את Pixel 11 Pro לרשתות שלה: המחי�
 date: 2026-10-08
 slug: electra-pixel-11-pro-israel
 category: smartphones-gadgets
+world: techhigh
+type: news
 excerpt: "מחסני חשמל ושקם אלקטריק מוכרות עכשיו את Pixel 11 Pro ו-Pro XL בין 4,799 ל-5,449 ₪ (כ-1,560 עד 1,770 דולר). זה לא יבוא רשמי של גוגל, וזה משנה בעיקר כשמשהו מתקלקל."
 image: img/posts/pixel-11-pro-collection.webp
 image_alt: "סדרת Pixel 11 לצד שעון ואוזניות של גוגל, צילום יחצ"

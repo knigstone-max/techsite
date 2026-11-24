@@ -3,6 +3,8 @@ title: "ביקורת Escape Academy 2: חדרי בריחה, עכשיו עם קמ
 date: 2026-11-05
 slug: escape-academy-2-back-2-school-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "ההמשך למשחק חדרי הבריחה שכבש 4 מיליון שחקנים יוצא היום ל-Xbox, ל-PC ול-PS5, וגם ל-Game Pass מהיום הראשון. עכשיו יש קמפוס פתוח, קו-אופ במסך מפוצל ומצב בלי טיימר. במחיר של כ-63 ₪, זה אחד המשחקים הכי טובים לשחק בזוג."
 image: img/posts/escape-academy-2-key-art.webp
 image_alt: "איור הפרסום הרשמי של Escape Academy 2: שני תלמידים במדים אדומים, אחד מחזיק דף ומשקפת ואחת עם שיער ורוד מחזיקה מפתח, על רקע קמפוס צבעוני עם מגדל שעון"

@@ -3,6 +3,8 @@ title: "Israel drops the extra licence for Wi-Fi fridges, washers and A/Cs: what
 date: 2026-10-29
 slug: israel-appliances-wireless-licensing-exemption
 category: home-appliances
+world: home
+type: news
 excerpt: "Air conditioners, fridges, washing machines, dishwashers and nine more categories with a CE mark will clear Israeli customs without a separate Ministry of Communications licence for their Wi-Fi or Bluetooth module. Here's what that means for importers, prices and personal imports."
 image: img/posts/appliance-store-washers-aisle.webp
 image_alt: "An electronics store aisle lined with front-loading washing machines, price tags and promo signs"

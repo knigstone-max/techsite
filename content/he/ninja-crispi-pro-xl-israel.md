@@ -3,6 +3,8 @@ title: "נינג'ה CRISPi PRO XL הגיע לישראל: סיר טיגון בא�
 date: 2026-11-09
 slug: ninja-crispi-pro-xl-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "שריג, היבואנית של נינג'ה, מוכרת את ה-CRISPi PRO XL: ראש חימום של 2,050 וואט שמתלבש על מיכלי זכוכית של 5.7 ו-2.3 ליטר, בלי ציפוי טפלון. הוא עולה 1,099 ₪, קצת פחות מאשר בבריטניה. מה מקבלים, ולמי זה מתאים."
 image: img/posts/ninja-crispi-pro-xl-kitchen.webp
 image_alt: "Ninja CRISPi PRO XL בגוון כחול-אפור על שיש במטבח, לצד מיכל זכוכית גדול עם עוף צלוי וירקות, מיכל עם לחמניות ומכסים שחורים"

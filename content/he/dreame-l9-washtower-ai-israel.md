@@ -3,6 +3,8 @@ title: "Dreame נכנסת למכבסה: ערכת כביסה וייבוש L9 Wash
 date: 2026-10-29
 slug: dreame-l9-washtower-ai-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "מכונת כביסה של 11 ק״ג ומייבש משאבת חום של 9 ק״ג, בערכה אחת שעולה 8,990 ₪ (כ-2,874 דולר). מה יש בה, מה אומרות תוויות האנרגיה, ומה מקבלים בהטבת ההשקה עד סוף נובמבר."
 image: img/posts/dreame-l9-washtower-ai-set.webp
 image_alt: "מכונת כביסה ומייבש כביסה של Dreame בצבע אפור כהה, מוצבים אחד על השני בעמודה, עם מסכים עגולים קטנים מעל כל דלת"

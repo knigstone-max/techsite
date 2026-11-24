@@ -3,6 +3,8 @@ title: "VOID/BREAKER review: drop the building on the robots, then shoot"
 date: 2026-11-09
 slug: void-breaker-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "A roguelite shooter made by one person, the creator of The Entropy Centre. One gun per run, mods that turn it into something absurd, and arenas you can level to the ground. Out November 4 on PS5, Xbox and PC, ₪107 (about $34) on the Israeli PS Store, and included in Game Pass."
 image: img/posts/void-breaker-key-art.webp
 image_alt: "Official VOID/BREAKER artwork: a fighter in a white and red helmet and suit fires a rifle against a glowing red background, surrounded by jagged black robots"

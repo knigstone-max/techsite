@@ -3,6 +3,8 @@ title: "Xiaomi brings seven new vacuums to Israel, including a robot that climbs
 date: 2026-11-13
 slug: xiaomi-robot-vacuum-6-series-israel
 category: home-appliances
+world: home
+type: news
 excerpt: "Hamilton is launching the Robot Vacuum 6 series, a cordless wet-dry vacuum with 160°C steam and three stick vacuums. Prices run from ₪899 (about $282) to ₪4,690 (about $1,470) for the flagship."
 image: img/posts/xiaomi-robot-vacuum-6-max-dock.webp
 image_alt: "A black Xiaomi robot vacuum docked in a tall metallic grey base station against a dark background"

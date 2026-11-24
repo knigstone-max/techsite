@@ -3,6 +3,8 @@ title: "Lenovo Legion Tab Gen 5 review: a console the size of a paperback, for â
 date: 2026-11-09
 slug: lenovo-legion-tab-gen-5-review-israel
 category: reviews
+world: play
+type: reviews
 excerpt: "An 8.8-inch tablet with a Snapdragon 8 Elite Gen 5, a 3K 165Hz screen, a 9,000mAh battery and two USB-C ports. Israel only gets the 12GB/256GB model, at â‚ª2,889 from Bezeq Store. I went through the specs, what is on sale here and what to know before buying."
 image: img/posts/legion-tab-gen-5.webp
 image_alt: "A black Lenovo Legion Tab Gen 5 shown from the front with a colorful screen and from the back with its camera module and purple light ring"

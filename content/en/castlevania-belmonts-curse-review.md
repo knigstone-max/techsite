@@ -3,6 +3,8 @@ title: "Castlevania: Belmont's Curse review: the whip is back, and this time a d
 date: 2026-11-02
 slug: castlevania-belmonts-curse-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "Konami handed Castlevania to the Dead Cells team, and it paid off. Paris is on fire, the whip swings you around like a trapeze artist, and beaten bosses turn into tarot cards. One of the best games this autumn, for ₪107."
 image: img/posts/castlevania-belmonts-curse-key-art.webp
 image_alt: "A detailed, colourful illustration of a blonde warrior with a red gauntlet swinging a whip, surrounded by monsters, vampiric figures and a red castle"

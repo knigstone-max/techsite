@@ -3,6 +3,8 @@ title: "טאואר שברה שיאים ברבעון השלישי, ומגייסת
 date: 2026-11-03
 slug: tower-semiconductor-q3-2026-record-results
 category: tech-news
+world: techhigh
+type: news
 excerpt: "יצרנית השבבים הישראלית הכניסה 526 מיליון דולר ברבעון, צופה 600 מיליון ברבעון הבא ותסגור את 2026 עם כ-2 מיליארד דולר. המנכ\"ל ראסל אלוונגר הודיע על גיוס של 150 מפעילים וטכנאים בישראל."
 image: img/posts/tower-semiconductor-migdal-haemek-hq.webp
 image_alt: "בניין המטה של טאואר סמיקונדקטור במגדל העמק, עם הלוגו של החברה על החזית"

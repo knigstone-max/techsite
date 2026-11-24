@@ -3,6 +3,8 @@ title: "Xiaomi Robot Vacuum 6 Max review: it climbs a step and washes its mop at
 date: 2026-11-17
 slug: xiaomi-robot-vacuum-6-max-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "Xiaomi's flagship robot vacuum is now in Israel at ₪4,690 (about $1,455), with mechanical legs for 6 cm thresholds, a roller mop fed by 16 water outlets, an arm for corners and a dock that washes at 85°C. It undercuts its direct rivals, with a few trade-offs worth knowing."
 image: img/posts/xiaomi-robot-vacuum-6-max-step-climb.webp
 image_alt: "A grey Xiaomi robot vacuum climbing a 6 cm step using mechanical legs that extend from underneath"

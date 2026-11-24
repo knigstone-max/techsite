@@ -3,6 +3,8 @@ title: "A fridge that talks, a washer beyond A and a hair dryer: LG's seven at I
 date: 2026-09-06
 slug: lg-ifa-2026-seven-appliances
 category: home-appliances
+world: home
+type: news
 excerpt: "LG brought an LLM voice assistant in a SIGNATURE fridge, a new WashTower size and a dishwasher that washes and dries in an hour. We went through the list."
 image: img/posts/lg-ifa-2026-booth.webp
 image_alt: "Visitors at LG's IFA 2026 booth watch a Fit & Max refrigerator demo"

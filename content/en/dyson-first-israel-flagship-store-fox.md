@@ -3,6 +3,8 @@ title: "Dyson opens its first Israeli flagship store, with a toothbrush on the w
 date: 2026-10-31
 slug: dyson-first-israel-flagship-store-fox
 category: home-appliances
+world: home
+type: news
 excerpt: "Dyson's first flagship store in Israel opened at Big Fashion Glilot, run by its new importer Fox Group. What's inside, what Dyson's robotics lead said at the launch and which product is coming to Israel next."
 image: img/posts/dyson-spot-scrub-ai-israel.webp
 image_alt: "The black Dyson Spot+Scrub Ai robot vacuum on a light floor, shining a green light on a spill to detect it"

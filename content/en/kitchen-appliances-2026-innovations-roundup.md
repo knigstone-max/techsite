@@ -3,6 +3,8 @@ title: "The kitchen in 2026: cold brew at home, glass air fryers, hobs that cook
 date: 2026-11-22
 slug: kitchen-appliances-2026-innovations-roundup
 category: home-appliances
+world: home
+type: recommendations
 excerpt: "Our year-end roundup moves to the kitchen: bean-to-cup machines with cold brew and two kinds of beans, air fryers in glass and on two levels, ovens and hobs that do part of the work, faster dishwashers, and the prices of what has already reached Israeli shops."
 image: img/posts/kitchen-2026-roundup-collage.webp
 image_alt: "A collage of four kitchen appliances from 2026: two Dreame Ecceluxe espresso machines, a Ninja CRISPi PRO XL air fryer with glass dishes, two hands swapping a bean hopper on a De'Longhi Rivelia Start, and a Bosch Series 8 stand mixer next to fresh bread"

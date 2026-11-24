@@ -3,6 +3,8 @@ title: "ביקורת Sonic Pico Park: עשרה דולר של צעקות על ה�
 date: 2026-11-12
 slug: sonic-pico-park-review
 category: gaming-lite
+world: play
+type: reviews
 excerpt: "סדרת הפאזלים השיתופית Pico Park חוברת לסוניק לרגל יום ההולדת ה-35 שלו. ב-9.99 דולר (כ-32 ₪) מקבלים 15 עולמות ל-2 עד 8 שחקנים, מכניקות חכמות מעולם של סוניק והרבה צחוקים. רק שזה נגמר מהר מדי."
 image: img/posts/sonic-pico-park-key-art.webp
 image_alt: "הכותרת Sonic Pico Park באותיות כחולות, מעל שורה של דמויות פיקסל קטנות: איימי, נאקלס, טיילס, סוניק, שלט עם הפרצוף של סוניק וארבעה חתולי פיקו בכחול, ורוד, צהוב וירוק"

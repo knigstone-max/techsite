@@ -3,6 +3,8 @@ title: "ביקורת eufy Omni S2: רובוט ששוטף במים חמים ומ�
 date: 2026-11-04
 slug: eufy-omni-s2-robot-vacuum-review
 category: reviews
+world: home
+type: reviews
 excerpt: "רובוט הדגל של eufy משלב יניקה של 30,000Pa, מגב גלילי שמקבל כל הזמן מים נקיים ותחנה שעושה 12 פעולות, כולל מפיץ ריח. ב-4,500 ₪ בערך בישראל, בדקתי מה באמת מקבלים, ולמי עדיף דגם זול יותר."
 image: img/posts/eufy-omni-s2-station.webp
 image_alt: "שואב הרובוט eufy Omni S2 עגון בתחנה הגבוהה שלו, עם גוף בצבע שמפניה, חלק עליון כהה ובסיס שחור"

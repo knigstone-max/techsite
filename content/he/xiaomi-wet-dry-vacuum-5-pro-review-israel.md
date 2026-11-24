@@ -3,6 +3,8 @@ title: "ביקורת Xiaomi Wet Dry Vacuum 5 Pro: שואב-שוטף עם קיט�
 date: 2026-11-18
 slug: xiaomi-wet-dry-vacuum-5-pro-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "השואב-שוטף האלחוטי של שיאומי נמכר בארץ ב-2,490 ₪ (כ-767 דולר) אצל המילטון. יש לו קיטור, שכיבה מלאה מתחת לרהיטים, הנעה עצמית ותחנה שמייבשת את הרולר באוויר חם. יש גם 6.1 ק״ג, 20 דקות קיטור ושאלה פתוחה לגבי האחריות."
 image: img/posts/xiaomi-wet-dry-vacuum-5-pro-hero.webp
 image_alt: "שני צילומי מוצר של השואב-שוטף Xiaomi Wet Dry Vacuum 5 Pro בלבן וכסוף: אחד מוטה עם ראש שחור, ואחד עומד בתחנת הטעינה והניקוי"

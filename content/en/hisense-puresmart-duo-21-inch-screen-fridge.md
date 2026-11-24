@@ -3,6 +3,8 @@ title: "Hisense's fridge with a 21-inch screen: three cameras inside, TV on the 
 date: 2026-11-17
 slug: hisense-puresmart-duo-21-inch-screen-fridge
 category: home-appliances
+world: home
+type: news
 excerpt: "Hisense's new PureSmart Duo series is already on sale in the UK: a 611-litre four-door fridge with a huge touchscreen, cameras that keep track of your food and an ice and water dispenser in the door. What it does, what we still don't know, and what it means if you're shopping for a fridge in Israel."
 image: img/posts/hisense-puresmart-duo-hero.webp
 image_alt: "A black stainless steel Hisense PureSmart Duo four-door fridge with a large touchscreen on the right door and a water dispenser on the left, next to screenshots of its interface"

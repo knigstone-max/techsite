@@ -3,6 +3,8 @@ title: "GTA VI: what's in the Ultimate Edition, what the pre-order bonus gives y
 date: 2026-11-21
 slug: gta-6-editions-extras-guide
 category: gaming-lite
+world: play
+type: guides
 excerpt: "Standard at ₪319 or Ultimate at ₪399? We broke down every extra: the vehicles, weapons, shops and garages you only get with Ultimate, the Vintage Vice City Pack, the GTA+ catch, and what there is to do in Leonida beyond the story."
 image: img/posts/gta6-extras-ultimate.webp
 image_alt: "Jason and Lucia in colourful outfits standing under palm trees at sunset, from the official GTA VI Ultimate Edition art"

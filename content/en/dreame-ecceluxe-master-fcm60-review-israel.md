@@ -3,6 +3,8 @@ title: "Dreame Ecceluxe Master FCM60 review: good espresso and one-tap cold brew
 date: 2026-11-11
 slug: dreame-ecceluxe-master-fcm60-review-israel
 category: reviews
+world: home
+type: reviews
 excerpt: "Dreame's first bean-to-cup machine, with a steel grinder, 19 bar, a half-litre milk carafe and a cold brew button. On Dreame's Israeli site it's ₪2,110 on sale. I went through the specs, prices here and abroad, and what published testing shows. Here's the verdict."
 image: img/posts/dreame-ecceluxe-master-fcm60.webp
 image_alt: "A cream Dreame bean-to-cup coffee machine at an angle, with a dark bean hopper on top, a black touch panel, a silver coffee spout and a clear milk carafe"

@@ -3,6 +3,8 @@ title: "From pixel-sized WASTED to 2026's Vice City: the whole GTA story"
 date: 2026-11-10
 slug: gta-series-history-1997-2026
 category: gaming-lite
+world: play
+type: guides
 excerpt: "Nine days until GTA VI. Before everyone vanishes into Leonida, we went back 29 years: a game its publisher nearly binned, the 3D leap the whole industry copied, 480 million copies, and whether Rockstar can still surprise anyone."
 image: img/posts/gta-history-hero-vi.webp
 image_alt: "Jason and Lucia stand on a balcony with cracked glass railings, holding a pistol and a shotgun, with Vice City at a purple sunset and a helicopter searchlight behind them"

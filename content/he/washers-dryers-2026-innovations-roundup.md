@@ -3,6 +3,8 @@ title: "סיכום 2026 בחדר הכביסה: שמונה חידושים במכ�
 date: 2026-11-19
 slug: washers-dryers-2026-innovations-roundup
 category: home-appliances
+world: home
+type: recommendations
 excerpt: "שלושה תופים במכונה אחת, מצלמה בתוך התוף, משאבת חום במכונה משולבת ומגדלי כביסה שגדלים לגובה. עברנו על מה שהיצרנים הציגו השנה בכביסה ובייבוש, ובדקנו מה אפשר כבר לקנות בארץ ובכמה."
 image: img/posts/lg-washtower-25-inch.webp
 image_alt: "מגדל כביסה כהה של LG בחדר כביסה מודרני, מייבש למעלה, מכונת כביסה למטה ולוח בקרה ביניהם"

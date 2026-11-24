@@ -3,6 +3,8 @@ title: "KSP שתלה פרסומת אצל המתחרים, ותובעת את לי�
 date: 2026-10-29
 slug: ksp-content-images-lawsuit-competitors
 category: tech-news
+world: techhigh
+type: news
 excerpt: "KSP גילתה שרשתות מתחרות מושכות תמונות וטקסטים ישירות מהשרתים שלה, והחליפה את התמונות בפרסומת לעצמה. עכשיו היא גם הולכת לבית המשפט."
 image: img/posts/ksp-store-sign-holon.webp
 image_alt: "שלט צהוב גדול של KSP על חזית חנות בחולון, לצד שלטי חנויות נוספות"
